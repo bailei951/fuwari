@@ -4,6 +4,12 @@ import MainGridLayout from "../layouts/MainGridLayout.astro";
 
 const tools = [
     {
+        name: "服装品牌设计 · 答题测试",
+        description: "单文件版服装品牌设计答题测试，无需加载额外资源，适合快速访问与离线使用。",
+        url: "/quiz-app.html",
+        icon: "fa6-solid:shirt",
+    },
+    {
         name: "数据结构 · 刷题工具",
         description: "涵盖线性表、栈队列、串、树、图、排序、查找等全部章节，共 837 道判断题与单选题，支持题库筛选、错题集、随机考试，含 LaTeX 数学公式渲染。",
         url: "/tools/data-structure/",
@@ -21,35 +27,34 @@ const tools = [
         url: "/tools/chuangxin/",
         icon: "fa6-solid:lightbulb",
     },
-    {
-        name: "服装品牌设计 · 答题测试（旧版）",
-        description: "单文件版服装品牌设计答题测试，无需加载额外资源，适合快速访问与离线使用。",
-        url: "/quiz-app.html",
-        icon: "fa6-solid:file-code",
-    },
 ];
+
+let delay = 0;
+const interval = 60;
 ---
 <MainGridLayout title="工具" description="实用工具集合">
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
-            <h2 class="text-2xl font-bold mb-6">🛠️ 实用工具</h2>
+            <h2 class="text-2xl font-bold mb-6 dark:text-neutral-50 transition">🛠️ 实用工具</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {tools.map(tool => (
-                    <a href={tool.url} class="card-base p-5 rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group no-underline">
+                    <a href={tool.url}
+                       class="card-base p-5 rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group no-underline onload-animation"
+                       style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}>
                         <div class="flex items-start gap-4">
                             <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-[var(--primary)]/10 flex items-center justify-center group-hover:bg-[var(--primary)]/20 transition-colors">
                                 <Icon name={tool.icon} class="text-2xl text-[var(--primary)]" />
                             </div>
                             <div class="min-w-0">
-                                <h3 class="font-bold text-lg mb-1.5 group-hover:text-[var(--primary)] transition-colors">{tool.name}</h3>
-                                <p class="text-sm text-neutral-400 leading-relaxed">{tool.description}</p>
+                                <h3 class="font-bold text-lg mb-1.5 group-hover:text-[var(--primary)] dark:text-neutral-100 transition-colors">{tool.name}</h3>
+                                <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed transition">{tool.description}</p>
                             </div>
                         </div>
                     </a>
                 ))}
             </div>
             {tools.length === 0 && (
-                <div class="text-center py-16 text-neutral-400">
+                <div class="text-center py-16 text-neutral-400 dark:text-neutral-500">
                     <Icon name="fa6-solid:hammer" class="text-5xl mb-4 opacity-30" />
                     <p class="text-lg">暂无工具，敬请期待</p>
                 </div>
