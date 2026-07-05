@@ -29,7 +29,24 @@ export const siteConfig: SiteConfig = {
 		enable: true,
 		depth: 2,
 	},
-	favicon: [],
+	favicon: [
+		{
+			src: "/favicon/favicon-32.png",
+			sizes: "32x32",
+		},
+		{
+			src: "/favicon/favicon-128.png",
+			sizes: "128x128",
+		},
+		{
+			src: "/favicon/favicon-180.png",
+			sizes: "180x180",
+		},
+		{
+			src: "/favicon/favicon-192.png",
+			sizes: "192x192",
+		},
+	],
 };
 
 export const navBarConfig: NavBarConfig = {
@@ -42,6 +59,11 @@ export const navBarConfig: NavBarConfig = {
 			external: false,
 		},
 		LinkPreset.About,
+		{
+			name: "工具",
+			url: "/quiz-app.html",
+			external: false,
+		},
 		{
 			name: "GitHub",
 			url: "https://github.com/bailei951",

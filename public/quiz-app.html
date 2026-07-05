@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>服装品牌设计课程 · 答题测试</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#faf8f5;--fg:#1a1a2e;--muted:#8b8b9e;--accent:#e85d3a;--accent-light:#fff0ec;
+--correct:#22c55e;--correct-light:#ecfdf5;--wrong:#ef4444;--wrong-light:#fef2f2;
+--card:#fff;--border:#e8e4df;--shadow:0 2px 16px rgba(26,26,46,.06);
+--radius:14px;--transition:all .25s cubic-bezier(.4,0,.2,1);
+--font-display:'ZCOOL KuaiLe',cursive;--font-body:'Noto Sans SC',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--bg);color:var(--fg);min-height:100vh;line-height:1.7;overflow-x:hidden}
+body::before{content:'';position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;
+background:radial-gradient(ellipse at 20% 0%,rgba(232,93,58,.06) 0%,transparent 60%),
+radial-gradient(ellipse at 80% 100%,rgba(34,197,94,.05) 0%,transparent 60%)}
+
+/* HEADER */
+.app-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.85);backdrop-filter:blur(20px);
+border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.app-title{font-family:var(--font-display);font-size:1.25rem;color:var(--accent);white-space:nowrap}
+.app-title span{color:var(--fg);font-family:var(--font-body);font-weight:400;font-size:.85rem;margin-left:8px}
+.header-stats{display:flex;gap:16px;font-size:.8rem;color:var(--muted)}
+.header-stats .stat-num{font-weight:700;font-size:1.1rem;margin-right:2px}
+.header-stats .stat-correct .stat-num{color:var(--correct)}
+.header-stats .stat-wrong .stat-num{color:var(--wrong)}
+.progress-wrap{flex:1;max-width:200px}
+.progress-bar{height:6px;border-radius:3px;background:var(--border);overflow:hidden}
+.progress-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),#f97316);
+transition:width .5s ease;width:0}
+
+/* LAYOUT */
+.app-container{position:relative;z-index:1;display:flex;max-width:1200px;margin:0 auto;padding:24px;gap:24px}
+
+/* SIDEBAR */
+.sidebar{width:280px;flex-shrink:0;position:sticky;top:72px;align-self:flex-start;max-height:calc(100vh - 90px);overflow-y:auto;
+border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow);border:1px solid var(--border)}
+.sidebar::-webkit-scrollbar{width:4px}
+.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sidebar-section{padding:16px;border-bottom:1px solid var(--border)}
+.sidebar-section:last-child{border-bottom:none}
+.sidebar-section h3{font-size:.75rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:12px;font-weight:500}
+.filter-btns{display:flex;flex-wrap:wrap;gap:6px}
+.filter-btn{padding:6px 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg);cursor:pointer;
+font-size:.78rem;color:var(--fg);transition:var(--transition);font-family:var(--font-body);white-space:nowrap}
+.filter-btn:hover{border-color:var(--accent);color:var(--accent)}
+.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.setting-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;font-size:.85rem}
+.toggle{position:relative;width:44px;height:24px;cursor:pointer}
+.toggle input{opacity:0;width:0;height:0}
+.toggle-track{position:absolute;inset:0;background:var(--border);border-radius:12px;transition:var(--transition)}
+.toggle-track::after{content:'';position:absolute;width:20px;height:20px;border-radius:50%;background:#fff;top:2px;left:2px;
+transition:var(--transition);box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.toggle input:checked+.toggle-track{background:var(--accent)}
+.toggle input:checked+.toggle-track::after{left:22px}
+.action-btn{width:100%;padding:10px;border-radius:10px;border:none;cursor:pointer;font-size:.85rem;font-weight:500;
+font-family:var(--font-body);transition:var(--transition);margin-top:6px}
+.action-btn.primary{background:var(--accent);color:#fff}
+.action-btn.primary:hover{background:#d04e2d}
+.action-btn.secondary{background:var(--bg);color:var(--fg);border:1px solid var(--border)}
+.action-btn.secondary:hover{border-color:var(--accent);color:var(--accent)}
+
+/* QUESTION NAV */
+.q-nav-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+.q-nav-btn{width:100%;aspect-ratio:1;border-radius:8px;border:1px solid var(--border);background:var(--bg);cursor:pointer;
+font-size:.72rem;font-weight:500;color:var(--fg);transition:var(--transition);display:flex;align-items:center;justify-content:center;
+font-family:var(--font-body)}
+.q-nav-btn:hover{border-color:var(--accent);transform:scale(1.05)}
+.q-nav-btn.answered{background:#f3f4f6;border-color:#d1d5db}
+.q-nav-btn.correct{background:var(--correct-light);border-color:var(--correct);color:var(--correct)}
+.q-nav-btn.wrong{background:var(--wrong-light);border-color:var(--wrong);color:var(--wrong)}
+.q-nav-btn.bookmarked::after{content:'';position:absolute;top:1px;right:1px;width:6px;height:6px;background:var(--accent);border-radius:50%}
+.q-nav-btn{position:relative}
+.q-nav-btn.active{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-light)}
+
+/* MAIN CONTENT */
+.main-content{flex:1;min-width:0}
+.question-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--border);
+padding:32px;margin-bottom:20px;animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.q-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px}
+.q-meta{display:flex;align-items:center;gap:10px}
+.q-number{font-family:var(--font-display);font-size:1.5rem;color:var(--accent)}
+.q-tag{padding:3px 10px;border-radius:6px;font-size:.72rem;font-weight:500}
+.q-tag.choice{background:#dbeafe;color:#1d4ed8}
+.q-tag.fill{background:#fef3c7;color:#92400e}
+.q-tag.short{background:#ede9fe;color:#6d28d9}
+.q-tag.essay{background:#fce7f3;color:#9d174d}
+.q-score{font-size:.8rem;color:var(--muted)}
+.q-actions{display:flex;gap:6px}
+.icon-btn{width:36px;height:36px;border-radius:10px;border:1px solid var(--border);background:var(--bg);cursor:pointer;
+display:flex;align-items:center;justify-content:center;transition:var(--transition);font-size:.9rem}
+.icon-btn:hover{border-color:var(--accent);color:var(--accent)}
+.icon-btn.active{background:var(--accent-light);border-color:var(--accent);color:var(--accent)}
+
+.q-text{font-size:1.05rem;font-weight:500;margin-bottom:24px;line-height:1.9;white-space:pre-wrap}
+
+/* OPTIONS */
+.options-list{display:flex;flex-direction:column;gap:10px}
+.option-item{padding:14px 18px;border-radius:12px;border:2px solid var(--border);cursor:pointer;transition:var(--transition);
+display:flex;align-items:flex-start;gap:12px;font-size:.95rem;line-height:1.6;position:relative}
+.option-item:hover{border-color:var(--accent);background:var(--accent-light)}
+.option-item.selected{border-color:var(--accent);background:var(--accent-light)}
+.option-item.correct-reveal{border-color:var(--correct);background:var(--correct-light)}
+.option-item.wrong-reveal{border-color:var(--wrong);background:var(--wrong-light)}
+.option-item.disabled{cursor:default;pointer-events:none}
+.option-label{width:28px;height:28px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;
+font-weight:700;font-size:.8rem;flex-shrink:0;transition:var(--transition)}
+.option-item.selected .option-label{border-color:var(--accent);background:var(--accent);color:#fff}
+.option-item.correct-reveal .option-label{border-color:var(--correct);background:var(--correct);color:#fff}
+.option-item.wrong-reveal .option-label{border-color:var(--wrong);background:var(--wrong);color:#fff}
+.option-icon{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:1.1rem}
+
+/* FILL BLANKS */
+.blank-group{display:flex;flex-direction:column;gap:16px}
+.blank-row{display:flex;align-items:center;gap:12px;font-size:.95rem}
+.blank-label{font-weight:500;color:var(--muted);min-width:60px}
+.blank-input{flex:1;padding:12px 16px;border:2px solid var(--border);border-radius:12px;font-size:.95rem;
+font-family:var(--font-body);transition:var(--transition);outline:none;background:var(--bg)}
+.blank-input:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px var(--accent-light)}
+.blank-input.correct{border-color:var(--correct);background:var(--correct-light)}
+.blank-input.wrong{border-color:var(--wrong);background:var(--wrong-light)}
+.blank-input.show-answer{border-color:var(--correct);background:var(--correct-light);color:var(--correct);font-weight:500}
+.blank-actions{display:flex;gap:8px;margin-top:12px}
+.blank-btn{padding:8px 20px;border-radius:10px;border:none;cursor:pointer;font-size:.85rem;font-weight:500;font-family:var(--font-body);transition:var(--transition)}
+.blank-btn.check{background:var(--accent);color:#fff}
+.blank-btn.check:hover{background:#d04e2d}
+.blank-btn.show{background:var(--bg);color:var(--fg);border:1px solid var(--border)}
+.blank-btn.show:hover{border-color:var(--correct);color:var(--correct)}
+
+/* SHORT/ESSAY ANSWER */
+.answer-area{width:100%;min-height:160px;padding:16px;border:2px solid var(--border);border-radius:12px;
+font-size:.95rem;font-family:var(--font-body);resize:vertical;outline:none;transition:var(--transition);line-height:1.8;background:var(--bg)}
+.answer-area:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px var(--accent-light)}
+.self-eval{display:flex;gap:10px;margin-top:16px}
+.eval-btn{padding:10px 24px;border-radius:10px;border:2px solid var(--border);cursor:pointer;font-size:.85rem;
+font-weight:500;font-family:var(--font-body);transition:var(--transition);background:var(--bg)}
+.eval-btn.mastered{color:var(--correct)}.eval-btn.mastered:hover{border-color:var(--correct);background:var(--correct-light)}
+.eval-btn.not-mastered{color:var(--wrong)}.eval-btn.not-mastered:hover{border-color:var(--wrong);background:var(--wrong-light)}
+.eval-btn.active{border-width:2px}
+.eval-btn.mastered.active{border-color:var(--correct);background:var(--correct-light)}
+.eval-btn.not-mastered.active{border-color:var(--wrong);background:var(--wrong-light)}
+.ref-answer-toggle{margin-top:16px}
+.ref-answer-toggle button{padding:8px 20px;border-radius:10px;border:1px solid var(--border);background:var(--bg);cursor:pointer;
+font-size:.85rem;font-family:var(--font-body);transition:var(--transition);color:var(--fg)}
+.ref-answer-toggle button:hover{border-color:var(--accent);color:var(--accent)}
+.ref-answer-content{margin-top:12px;padding:16px;border-radius:12px;background:var(--correct-light);border:1px solid rgba(34,197,94,.2);
+font-size:.9rem;line-height:1.9;color:#166534;white-space:pre-wrap;display:none}
+.ref-answer-content.visible{display:block;animation:fadeIn .3s ease}
+
+/* EXPLANATION */
+.explanation{margin-top:20px;padding:20px;border-radius:12px;background:linear-gradient(135deg,#f0f9ff,#eff6ff);
+border:1px solid rgba(59,130,246,.12);font-size:.9rem;line-height:1.9;color:#1e40af;display:none}
+.explanation.visible{display:block;animation:fadeIn .3s ease}
+.explanation h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;color:#3b82f6}
+
+/* NAVIGATION */
+.q-nav-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+.nav-btn{padding:12px 28px;border-radius:12px;border:none;cursor:pointer;font-size:.9rem;font-weight:500;font-family:var(--font-body);
+transition:var(--transition);display:flex;align-items:center;gap:8px}
+.nav-btn.prev{background:var(--bg);color:var(--fg);border:1px solid var(--border)}
+.nav-btn.prev:hover{border-color:var(--accent);color:var(--accent)}
+.nav-btn.next{background:var(--accent);color:#fff}
+.nav-btn.next:hover{background:#d04e2d}
+.nav-btn:disabled{opacity:.4;cursor:not-allowed}
+
+/* MOBILE SIDEBAR */
+.mobile-toggle{display:none;position:fixed;bottom:20px;right:20px;z-index:200;width:52px;height:52px;border-radius:50%;
+background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:1.3rem;box-shadow:0 4px 20px rgba(232,93,58,.35);
+transition:var(--transition)}
+.mobile-toggle:hover{transform:scale(1.1)}
+.sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:149}
+.sidebar-overlay.visible{display:block}
+
+/* CATEGORY NAV */
+.cat-tabs{display:flex;gap:4px;flex-wrap:wrap}
+.cat-tab{padding:6px 14px;border-radius:8px;border:1px solid var(--border);background:var(--bg);cursor:pointer;
+font-size:.75rem;color:var(--muted);transition:var(--transition);font-family:var(--font-body)}
+.cat-tab:hover{color:var(--fg);border-color:var(--fg)}
+.cat-tab.active{background:var(--fg);color:#fff;border-color:var(--fg)}
+
+/* RESPONSIVE */
+@media(max-width:860px){
+.app-container{flex-direction:column;padding:16px}
+.sidebar{position:fixed;left:-320px;top:0;bottom:0;width:300px;z-index:150;border-radius:0;
+transition:left .35s cubic-bezier(.4,0,.2,1)}
+.sidebar.open{left:0}
+.mobile-toggle{display:flex;align-items:center;justify-content:center}
+.app-header{padding:10px 16px}
+.app-title{font-size:1.05rem}
+.header-stats{gap:10px;font-size:.72rem}
+.q-nav-grid{grid-template-columns:repeat(8,1fr)}
+.question-card{padding:20px}
+}
+@media(max-width:500px){
+.q-nav-grid{grid-template-columns:repeat(6,1fr)}
+.header-stats .stat-bookmark,.header-stats .stat-review{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="app-header">
+<div class="app-title">服装品牌设计 · 综合测试<span>总分 100 分</span></div>
+<div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div></div>
+<div class="header-stats">
+<div class="stat-correct"><span class="stat-num" id="correctCount">0</span>正确</div>
+<div class="stat-wrong"><span class="stat-num" id="wrongCount">0</span>错误</div>
+<div class="stat-bookmark"><span class="stat-num" id="bookmarkCount">0</span>收藏</div>
+<div class="stat-review"><span class="stat-num" id="reviewCount">0</span>稍后看</div>
+</div>
+</header>
+
+<div class="app-container">
+<aside class="sidebar" id="sidebar">
+<div class="sidebar-section">
+<h3>刷题模式</h3>
+<div class="filter-btns" id="modeFilters">
+<button class="filter-btn active" data-mode="all">全部题目</button>
+<button class="filter-btn" data-mode="wrong">只练错题</button>
+<button class="filter-btn" data-mode="bookmarked">只练收藏</button>
+<button class="filter-btn" data-mode="random">随机刷题</button>
+<button class="filter-btn" data-mode="review">稍后再看</button>
+</div>
+</div>
+<div class="sidebar-section">
+<h3>题型分类</h3>
+<div class="cat-tabs" id="catTabs">
+<button class="cat-tab active" data-cat="all">全部</button>
+<button class="cat-tab" data-cat="choice">选择题</button>
+<button class="cat-tab" data-cat="fill">填空题</button>
+<button class="cat-tab" data-cat="short">简答题</button>
+<button class="cat-tab" data-cat="essay">论述题</button>
+</div>
+</div>
+<div class="sidebar-section">
+<h3>设置</h3>
+<div class="setting-row">
+<span>选择后立即判题</span>
+<label class="toggle"><input type="checkbox" id="instantJudge" checked><div class="toggle-track"></div></label>
+</div>
+</div>
+<div class="sidebar-section">
+<h3>题号导航</h3>
+<div class="q-nav-grid" id="qNavGrid"></div>
+</div>
+<div class="sidebar-section">
+<button class="action-btn secondary" onclick="resetQuiz()">重新开始</button>
+</div>
+</aside>
+
+<main class="main-content">
+<div id="questionArea"></div>
+<div class="q-nav-bottom">
+<button class="nav-btn prev" id="prevBtn" onclick="goQuestion(currentIndex-1)">← 上一题</button>
+<span id="qPosition" style="font-size:.85rem;color:var(--muted)"></span>
+<button class="nav-btn next" id="nextBtn" onclick="goQuestion(currentIndex+1)">下一题 →</button>
+</div>
+</main>
+</div>
+
+<button class="mobile-toggle" id="mobileToggle" onclick="toggleSidebar()">☰</button>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<script>
+// ==================== QUESTION DATA ====================
+const QUESTIONS = [
+  // ========== 一、单项选择题 ==========
+  {id:1,cat:'choice',tag:'单项选择题',score:2,
+  text:'具备专属名称、LOGO 辨识度，可区分同类服装产品的商业标识是（  ）',
+  options:['服装面料','服装品牌','服装工艺','服装版型'],answer:1,answerLabel:'B',
+  explanation:'服装品牌是拥有专属名称、LOGO、独特风格，能够区分同类服装产品的商业标识。'},
+  {id:2,cat:'choice',tag:'单项选择题',score:2,
+  text:'Zara、优衣库典型属于哪类服装品牌模式（  ）',
+  options:['快销时尚品牌','非遗手工品牌','高端奢侈品牌','小众文创品牌'],answer:0,answerLabel:'A',
+  explanation:'Zara、优衣库以款式更新快、平价走量为核心特点，属于典型的快销时尚品牌。'},
+  {id:3,cat:'choice',tag:'单项选择题',score:2,
+  text:'主打平价大众通勤服饰，面向普通工薪群体的品牌定位为（  ）',
+  options:['高端奢侈定位','大众平价定位','小众高定定位','设计师独立定位'],answer:1,answerLabel:'B',
+  explanation:'面向普通工薪群体、主打平价通勤服饰，属于大众平价定位。'},
+  {id:4,cat:'choice',tag:'单项选择题',score:2,
+  text:'服装品牌 LOGO 的核心作用是（  ）',
+  options:['增加服装重量','增加品牌辨识与记忆','提升面料质感','简化缝制工序'],answer:1,answerLabel:'B',
+  explanation:'LOGO 的核心作用是增加品牌辨识度与消费者记忆度。'},
+  {id:5,cat:'choice',tag:'单项选择题',score:2,
+  text:'四季服装企划中，秋冬新品企划常规筹备起始月份为（  ）',
+  options:['1 月','5 月','11 月','12 月'],answer:1,answerLabel:'B',
+  explanation:'秋冬新品企划通常从 5 月开始筹备，提前约半年进行规划。'},
+  {id:6,cat:'choice',tag:'单项选择题',score:2,
+  text:'专为儿童体型、儿童穿搭场景设计的服装品类是（  ）',
+  options:['男装','女装','童装','工装'],answer:2,answerLabel:'C',
+  explanation:'专为儿童体型和穿搭场景设计的服装品类是童装。'},
+  {id:7,cat:'choice',tag:'单项选择题',score:2,
+  text:'品牌线下直营店属于哪种销售渠道（  ）',
+  options:['线下实体渠道','直播电商渠道','微商渠道','跨境渠道'],answer:0,answerLabel:'A',
+  explanation:'品牌线下直营店属于线下实体渠道。'},
+  {id:8,cat:'choice',tag:'单项选择题',score:2,
+  text:'下列属于服装品牌基础视觉元素的是（  ）',
+  options:['裁剪方式','品牌标准色','水洗工艺','针脚密度'],answer:1,answerLabel:'B',
+  explanation:'品牌标准色是品牌基础视觉元素（VI）的重要组成部分。'},
+  {id:9,cat:'choice',tag:'单项选择题',score:2,
+  text:'服装季度企划的第一步工作是（  ）',
+  options:['批量生产成衣','市场消费人群调研','门店铺货','广告宣传'],answer:1,answerLabel:'B',
+  explanation:'市场消费人群调研是服装季度企划的第一步工作。'},
+  {id:10,cat:'choice',tag:'单项选择题',score:2,
+  text:'主打运动透气、健身穿搭的服装品类是（  ）',
+  options:['正装西装','运动服饰','复古汉服','晚宴礼服'],answer:1,answerLabel:'B',
+  explanation:'主打运动透气、健身穿搭的服装品类是运动服饰。'},
+  {id:11,cat:'choice',tag:'单项选择题',score:2,
+  text:'主打性价比、大批量走货的经营模式是（  ）',
+  options:['限量高定模式','大众量产模式','私人定制模式','古董改造模式'],answer:1,answerLabel:'B',
+  explanation:'主打性价比、大批量走货属于大众量产模式。'},
+  {id:12,cat:'choice',tag:'单项选择题',score:2,
+  text:'企划时调研周边同行店铺属于（  ）',
+  options:['竞品分析','面料采购','车位排班','成衣质检'],answer:0,answerLabel:'A',
+  explanation:'调研周边同行店铺属于竞品分析。'},
+  {id:13,cat:'choice',tag:'单项选择题',score:2,
+  text:'适配校园学生、休闲百搭的品牌定位是（  ）',
+  options:['商务极简风','校园休闲风','复古宫廷风','高定礼服风'],answer:1,answerLabel:'B',
+  explanation:'适配校园学生、休闲百搭的品牌定位是校园休闲风。'},
+  {id:14,cat:'choice',tag:'单项选择题',score:2,
+  text:'新品上市前最基础的宣传方式是（  ）',
+  options:['面料改版','修改衣长','新品海报推送','更换缝纫线'],answer:2,answerLabel:'C',
+  explanation:'新品海报推送是新品上市前最基础的宣传方式。'},
+  {id:15,cat:'choice',tag:'单项选择题',score:2,
+  text:'以棉麻天然面料、简约原生态穿搭为主的风格是（  ）',
+  options:['森系自然风','朋克街头风','晚宴华丽风','工装硬核风'],answer:0,answerLabel:'A',
+  explanation:'以棉麻天然面料、简约原生态穿搭为主的风格是森系自然风。'},
+  {id:16,cat:'choice',tag:'单项选择题',score:2,
+  text:'划分服装品牌档次最直观依据是（  ）',
+  options:['缝线数量','服装价格与受众','衣领样式','店铺层高'],answer:1,answerLabel:'B',
+  explanation:'服装价格与受众是划分品牌档次最直观的依据。'},
+  {id:17,cat:'choice',tag:'单项选择题',score:2,
+  text:'季度企划款式开发的核心依据是（  ）',
+  options:['工厂裁剪速度','当下流行趋势','仓库库存','门店装修风格'],answer:1,answerLabel:'B',
+  explanation:'当下流行趋势是季度企划款式开发的核心依据。'},
+  {id:18,cat:'choice',tag:'单项选择题',score:2,
+  text:'只服务单一固定人群的企划方式是（  ）',
+  options:['精准受众企划','全人群企划','随机款式企划','复古复刻企划'],answer:0,answerLabel:'A',
+  explanation:'精准受众企划是只服务单一固定人群的企划方式。'},
+  {id:19,cat:'choice',tag:'单项选择题',score:2,
+  text:'电商直播卖衣服属于（  ）',
+  options:['面料开发渠道','线上销售渠道','制版渠道','仓库渠道'],answer:1,answerLabel:'B',
+  explanation:'电商直播属于线上销售渠道。'},
+  {id:20,cat:'choice',tag:'单项选择题',score:2,
+  text:'面向职场上班族研发的服饰风格统称为（  ）',
+  options:['复古宫廷风','商务通勤风','朋克街头风','工装硬核风'],answer:1,answerLabel:'B',
+  explanation:'面向职场上班族的服饰风格是商务通勤风。'},
+
+  // ========== 二、填空题 ==========
+  {id:21,cat:'fill',tag:'填空题',score:2,
+  text:'区别于快时尚，款式迭代慢、主打长期经典款的品牌称为______。',
+  blanks:['经典常青款'],answer:'经典常青款',
+  explanation:'经典常青款品牌以长期经典款式为核心，款式迭代速度慢，注重持久性和经典设计。'},
+  {id:22,cat:'fill',tag:'填空题',score:2,
+  text:'品牌直接面向消费者售卖服装的模式叫作______。',
+  blanks:['直营零售'],answer:'直营零售',
+  explanation:'品牌直接面向消费者售卖的模式是直营零售（DTC）。'},
+  {id:23,cat:'fill',tag:'填空题',score:2,
+  text:'盘扣、水墨画、中式纹样是______品牌常用设计元素。',
+  blanks:['国潮'],answer:'国潮',
+  explanation:'盘扣、水墨画、中式纹样是国潮品牌常用的核心设计元素。'},
+  {id:24,cat:'fill',tag:'填空题',score:2,
+  text:'品牌包装设计里，消费者第一感知品牌的视觉要素是______。',
+  blanks:['品牌色彩'],answer:'品牌色彩',
+  explanation:'品牌色彩是消费者第一感知品牌的视觉要素。'},
+  {id:25,cat:'fill',tag:'填空题',score:2,
+  text:'服装品牌三大核心价值：使用价值、______、______。',
+  blanks:['审美价值','文化价值'],answer:'审美价值、文化价值',
+  explanation:'服装品牌三大核心价值为使用价值、审美价值、文化价值。'},
+  {id:26,cat:'fill',tag:'填空题',score:2,
+  text:'四季企划分为春、夏、______、______四大系列。',
+  blanks:['秋','冬'],answer:'秋、冬',
+  explanation:'四季企划对应春夏秋冬四大系列。'},
+  {id:27,cat:'fill',tag:'填空题',score:2,
+  text:'代表品牌文化理念、对外宣传的短句叫作______。',
+  blanks:['品牌广告语'],answer:'品牌广告语',
+  explanation:'代表品牌文化理念、对外宣传的短句叫作品牌广告语（Slogan）。'},
+  {id:28,cat:'fill',tag:'填空题',score:2,
+  text:'主打防风防水、户外穿搭的服饰品类为______。',
+  blanks:['户外功能型服饰'],answer:'户外功能型服饰',
+  explanation:'主打防风防水、户外穿搭的品类为户外功能型服饰。'},
+  {id:29,cat:'fill',tag:'填空题',score:2,
+  text:'服装产品开发的首要参考依据是______。',
+  blanks:['流行趋势'],answer:'流行趋势',
+  explanation:'流行趋势是服装产品开发的首要参考依据。'},
+  {id:30,cat:'fill',tag:'填空题',score:2,
+  text:'吊牌上品牌名、尺码、成分信息属于______。',
+  blanks:['品牌终端包装形象'],answer:'品牌终端包装形象',
+  explanation:'吊牌上的品牌名、尺码、成分等信息属于品牌终端包装形象。'},
+
+  // ========== 三、简答题 ==========
+  {id:31,cat:'short',tag:'简答题',score:5,
+  text:'什么是服装品牌视觉形象？',
+  refAnswer:'服装品牌视觉形象是品牌全部可视化视觉要素的总和，包含 LOGO、标准色、吊牌包装、门店陈列、宣传海报、服装纹样等视觉内容；作用是统一品牌视觉辨识度，传递品牌风格与市场定位，让消费者直观区分、识别品牌。'},
+  {id:32,cat:'short',tag:'简答题',score:5,
+  text:'简述春夏服装品牌企划主要考量哪些气候穿搭特点？',
+  refAnswer:'①春夏气温偏高，优先选用轻薄、透气、吸汗、防晒面料；\n②多雨天气，规划轻薄防水便携外套；\n③日照强烈，配套防晒衣、遮阳配饰开发；\n④整体款式宽松简约，减少厚重叠穿设计；\n⑤适配出游、校园、通勤户外场景，色彩以清爽浅色系为主。'},
+  {id:33,cat:'short',tag:'简答题',score:5,
+  text:'列举三类服装品牌线上销售渠道。',
+  refAnswer:'①电商平台旗舰店（淘宝、京东）；\n②短视频直播带货（抖音、快手）；\n③品牌微信小程序商城。\n其他可选：品牌独立官网、私域微商、跨境线上平台。'},
+  {id:34,cat:'short',tag:'简答题',score:5,
+  text:'简述精准定位消费人群对服装企划的作用。',
+  refAnswer:'①明确面料、版型、款式风格开发方向，避免盲目设计；\n②根据人群消费能力精准定价；\n③匹配适配的宣传渠道、视觉设计；\n④合理规划生产，控制库存，降低滞销风险；\n⑤打造差异化品牌特色，提升消费者粘性。'},
+
+  // ========== 四、简答基础题（选做） ==========
+  {id:35,cat:'short',tag:'简答基础题',score:5,
+  text:'简述服装品牌的基础定义。',
+  refAnswer:'服装品牌是拥有专属名称、LOGO、独特风格，能够区分同类服装产品的商业标识与产品体系；同时承载使用价值、审美价值、文化价值，面向特定消费人群提供服饰产品。'},
+  {id:36,cat:'short',tag:'简答基础题',score:5,
+  text:'简述服装品牌企划核心目的。',
+  refAnswer:'精准找准品牌市场定位，紧跟流行趋势开发适配产品，统筹生产、宣传、销售全流程；塑造独特品牌形象，稳定目标客群，提升产品销量，实现品牌长期盈利。'},
+  {id:37,cat:'short',tag:'简答基础题',score:5,
+  text:'简述快时尚服装品牌两大基础特点。',
+  refAnswer:'①款式更新速度快，紧跟市场潮流快速迭代上新；\n②产品平价亲民，大批量量产，消费门槛低。'},
+  {id:38,cat:'short',tag:'简答基础题',score:5,
+  text:'按受众人群划分，服装品牌三大基础品类是什么？',
+  refAnswer:'男装、女装、童装。'},
+
+  // ========== 五、论述题 ==========
+  {id:39,cat:'essay',tag:'论述题',score:20,
+  text:'结合当下服装消费市场环境，试述国潮服装品牌发展优势，并说明高职服装设计专业学生可从哪些方面参与国潮品牌企划工作。（不少于 400 字）',
+  refAnswer:'一、国潮服装品牌发展优势\n\n文化红利优势：当下国风文化全面复兴，年轻消费者文化自信提升，对传统纹样、中式剪裁、传统工艺接受度极高，国潮服饰自带文化吸引力，区别于欧美、日韩外来服饰风格，形成差异化竞争力。\n\n市场需求优势：Z 世代、大学生、年轻职场人成为消费主力，追求个性、国风穿搭，汉服、新中式、国风日常装市场规模持续扩大，空白市场空间充足。\n\n传播渠道优势：抖音、小红书等短视频平台大力扶持国风内容，穿搭博主、国风直播低成本就能完成品牌宣传，传播效率远高于传统线下广告。\n\n政策扶持优势：国家大力扶持传统文化、非遗产业发展，非遗刺绣、传统纹样、传统手工艺可与服装结合，品牌可借助文创政策获得扶持资源。\n\n产品差异化优势：市面普通快时尚同质化严重，国潮依托盘扣、水墨画、苏绣、旗袍廓形等中式元素，形成独特记忆点，更容易打造爆款单品。\n\n二、高职服装设计专业学生参与国潮企划的方向\n\n设计板块：挖掘传统纹样、非遗工艺，完成国风图案、版型、面料搭配设计，改良传统服饰适配日常穿搭；\n\n市场调研板块：调研国风消费人群喜好、竞品国潮款式，整理流行国风元素报告；\n\n视觉企划板块：设计国风海报、吊牌、包装、品牌标准色，打造中式品牌视觉形象；\n\n运营宣传板块：拍摄国风穿搭短视频、策划直播穿搭方案、线下门店国风陈列；\n\n产品落地板块：参与打样改版，调整国风服饰版型、面料，优化穿着实用性。\n\n整体来看，国潮赛道发展前景广阔，服装设计专业学生可依托专业技能，从调研、设计、视觉、运营全流程参与品牌企划，实现专业落地。'},
+  {id:40,cat:'essay',tag:'论述题',score:20,
+  text:'结合课程所学，试述完整服装季度品牌企划全流程，并说明每个环节基础工作内容。',
+  refAnswer:'完整服装季度品牌企划分为八大核心环节：\n\n1. 市场调研阶段\n调研当下流行色彩、面料、款式趋势；走访竞品门店做竞品分析；调研目标消费人群年龄、穿搭需求、消费预算；整理气候、季节穿搭需求数据，形成调研报告。\n\n2. 品牌产品定位阶段\n结合调研数据确定本季度风格、目标受众、价格区间；明确本季度主打系列，规划产品品类配比。\n\n3. 款式开发设计阶段\n根据定位选定面料、辅料；完成服装版型、纹样、色彩设计；绘制款式图，确定设计细节，区分基础常青款与潮流新款。\n\n4. 打样与改版阶段\n制作初版样衣，测试面料舒适度、版型合身度；根据试穿反馈修改衣长、缝纫工艺、面料材质，最终确定确认样。\n\n5. 成本核算与生产规划阶段\n核算面料、人工、辅料成本，制定终端售价；统计各款式订货量，对接工厂排产，规划分批出货时间，控制库存总量。\n\n6. 品牌视觉宣传物料制作阶段\n制作新品宣传海报、吊牌、包装袋；拍摄服装穿搭图、短视频素材；确定线上线下统一视觉配色，完成品牌季度视觉包装。\n\n7. 全渠道铺货规划阶段\n划分线上（直播、商城）、线下门店渠道，分配各渠道货品款式与数量；制定门店陈列方案，规划上新时间节点。\n\n8. 上市运营与后期管控阶段\n上线新品直播、门店促销活动；实时监控各款式销量，滞销款及时调整营销策略；季度末尾复盘销量、客群数据，为下一季度企划提供参考。\n\n整套季度企划环环相扣，前期调研决定产品方向，中期设计打样把控产品质量，后期宣传运营决定最终销量，完整流程保障品牌季度产品有序落地。'}
+];
+
+// ==================== STATE MANAGEMENT ====================
+const STORAGE_KEY = 'fashion_quiz_state_v2';
+const LABELS = ['A','B','C','D','E','F'];
+
+let state = {
+  userAnswers:{},      // {qId: value}
+  judged:{},            // {qId: true}
+  results:{},           // {qId: 'correct'|'wrong'}
+  bookmarks:new Set(),
+  reviewLater:new Set(),
+  selfEval:{},          // {qId: 'mastered'|'not-mastered'}
+  refShown:{},          // {qId: true}
+  instantJudge:true,
+  currentMode:'all',
+  currentCat:'all',
+  currentIndex:0,
+  randomOrder:null
+};
+
+function saveState(){
+  const s = {...state,
+    bookmarks:[...state.bookmarks],
+    reviewLater:[...state.reviewLater],
+    randomOrder:state.randomOrder
+  };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(s));
+}
+
+function loadState(){
+  try{
+    const s = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    if(!s) return false;
+    state.userAnswers = s.userAnswers || {};
+    state.judged = s.judged || {};
+    state.results = s.results || {};
+    state.bookmarks = new Set(s.bookmarks || []);
+    state.reviewLater = new Set(s.reviewLater || []);
+    state.selfEval = s.selfEval || {};
+    state.refShown = s.refShown || {};
+    state.instantJudge = s.instantJudge !== undefined ? s.instantJudge : true;
+    state.currentMode = s.currentMode || 'all';
+    state.currentCat = s.currentCat || 'all';
+    state.currentIndex = s.currentIndex || 0;
+    state.randomOrder = s.randomOrder || null;
+    return true;
+  }catch(e){ return false; }
+}
+
+// ==================== FILTERED QUESTIONS ====================
+function getFilteredQuestions(){
+  let list = [...QUESTIONS];
+  // category filter
+  if(state.currentCat !== 'all') list = list.filter(q => q.cat === state.currentCat);
+  // mode filter
+  const mode = state.currentMode;
+  if(mode === 'wrong') list = list.filter(q => state.results[q.id] === 'wrong');
+  else if(mode === 'bookmarked') list = list.filter(q => state.bookmarks.has(q.id));
+  else if(mode === 'review') list = list.filter(q => state.reviewLater.has(q.id));
+  else if(mode === 'random') list = shuffleArray([...list]);
+  else if(state.randomOrder && mode === 'all'){
+    // keep original order for 'all' mode
+  }
+  return list;
+}
+
+function shuffleArray(arr){
+  const a = [...arr];
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+
+let filteredQs = QUESTIONS;
+function updateFiltered(){
+  if(state.currentMode === 'random'){
+    filteredQs = getFilteredQuestions();
+  } else {
+    filteredQs = getFilteredQuestions();
+  }
+}
+
+// ==================== RENDERING ====================
+function render(){
+  updateFiltered();
+  renderQuestion();
+  renderNavGrid();
+  updateStats();
+  updateProgress();
+  updateNavButtons();
+}
+
+function renderQuestion(){
+  const q = filteredQs[state.currentIndex];
+  if(!q){
+    document.getElementById('questionArea').innerHTML = 
+      '<div style="text-align:center;padding:60px;color:var(--muted)"><div style="font-size:3rem;margin-bottom:16px">📋</div><div style="font-size:1.1rem">当前模式下没有可用的题目</div><div style="margin-top:8px;font-size:.85rem">请切换到其他刷题模式</div></div>';
+    return;
+  }
+  const area = document.getElementById('questionArea');
+  const isJudged = state.judged[q.id];
+  const result = state.results[q.id];
+  const isBookmarked = state.bookmarks.has(q.id);
+  const isReview = state.reviewLater.has(q.id);
+  const catClass = q.cat;
+  const catLabels = {choice:'选择题',fill:'填空题',short:'简答题',essay:'论述题'};
+
+  let html = `<div class="question-card">
+    <div class="q-header">
+      <div class="q-meta">
+        <span class="q-number">Q${q.id}</span>
+        <span class="q-tag ${catClass}">${q.tag}</span>
+        <span class="q-score">${q.score} 分</span>
+      </div>
+      <div class="q-actions">
+        <button class="icon-btn ${isBookmarked?'active':''}" onclick="toggleBookmark(${q.id})" title="收藏">★</button>
+        <button class="icon-btn ${isReview?'active':''}" onclick="toggleReview(${q.id})" title="稍后再看">⏰</button>
+      </div>
+    </div>
+    <div class="q-text">${escapeHtml(q.text)}</div>`;
+
+  if(q.cat === 'choice'){
+    html += renderChoiceOptions(q, isJudged, result);
+  } else if(q.cat === 'fill'){
+    html += renderFillBlanks(q, isJudged);
+  } else if(q.cat === 'short' || q.cat === 'essay'){
+    html += renderShortEssay(q);
+  }
+
+  // Explanation
+  if(q.explanation){
+    html += `<div class="explanation ${isJudged?'visible':''}" id="exp_${q.id}">
+      <h4>📖 解析</h4><div>${escapeHtml(q.explanation)}</div></div>`;
+  }
+
+  html += `</div>`;
+  area.innerHTML = html;
+  document.getElementById('qPosition').textContent = `${state.currentIndex+1} / ${filteredQs.length}`;
+}
+
+function renderChoiceOptions(q, isJudged, result){
+  const selected = state.userAnswers[q.id];
+  const inst = document.getElementById('instantJudge').checked;
+  let html = '<div class="options-list">';
+  q.options.forEach((opt, i) => {
+    let cls = '';
+    if(isJudged){
+      cls += ' disabled';
+      if(i === q.answer) cls += ' correct-reveal';
+      if(i === selected && i !== q.answer) cls += ' wrong-reveal';
+    } else if(selected === i){
+      cls += ' selected';
+    }
+    let icon = '';
+    if(isJudged){
+      if(i === q.answer) icon = '<span class="option-icon" style="color:var(--correct)">✓</span>';
+      else if(i === selected && i !== q.answer) icon = '<span class="option-icon" style="color:var(--wrong)">✗</span>';
+    }
+    html += `<div class="option-item${cls}" onclick="selectOption(${q.id},${i})">
+      <span class="option-label">${LABELS[i]}</span>
+      <span>${escapeHtml(opt)}</span>
+      ${icon}</div>`;
+  });
+  html += '</div>';
+
+  if(!inst && !isJudged && selected !== undefined){
+    html += `<div class="blank-actions"><button class="blank-btn check" onclick="judgeChoice(${q.id})">提交答案</button></div>`;
+  }
+
+  if(isJudged && result){
+    const statusText = result === 'correct' ? '✅ 回答正确' : '❌ 回答错误，正确答案：'+LABELS[q.answer];
+    const statusColor = result === 'correct' ? 'var(--correct)' : 'var(--wrong)';
+    html += `<div style="margin-top:12px;font-weight:600;color:${statusColor};font-size:.9rem">${statusText}</div>`;
+  }
+  return html;
+}
+
+function renderFillBlanks(q, isJudged){
+  const userVal = state.userAnswers[q.id] || [];
+  let html = '<div class="blank-group">';
+  q.blanks.forEach((ans, i) => {
+    const val = userVal[i] || '';
+    let cls = '';
+    if(isJudged){
+      if(val.trim() === ans.trim()) cls = ' correct';
+      else cls = ' wrong';
+    }
+    html += `<div class="blank-row">
+      <span class="blank-label">第${i+1}空</span>
+      <input class="blank-input${cls}" type="text" value="${escapeAttr(val)}" 
+        placeholder="请输入答案" 
+        onchange="updateFill(${q.id},${i},this.value)"
+        ${isJudged?'readonly':''}>
+    </div>`;
+    if(isJudged && val.trim() !== ans.trim()){
+      html += `<div style="margin-left:72px;font-size:.82rem;color:var(--correct);margin-top:-8px;margin-bottom:8px">正确答案：${escapeHtml(ans)}</div>`;
+    }
+  });
+  html += '</div>';
+  if(!isJudged){
+    html += `<div class="blank-actions">
+      <button class="blank-btn check" onclick="judgeFill(${q.id})">提交答案</button>
+      <button class="blank-btn show" onclick="showFillAnswer(${q.id})">显示答案</button>
+    </div>`;
+  }
+  if(isJudged){
+    const allCorrect = q.blanks.every((ans,i) => (userVal[i]||'').trim() === ans.trim());
+    const statusText = allCorrect ? '✅ 全部正确' : '❌ 存在错误';
+    const statusColor = allCorrect ? 'var(--correct)' : 'var(--wrong)';
+    html += `<div style="margin-top:12px;font-weight:600;color:${statusColor};font-size:.9rem">${statusText}</div>`;
+  }
+  return html;
+}
+
+function renderShortEssay(q){
+  const userVal = state.userAnswers[q.id] || '';
+  const evalState = state.selfEval[q.id] || '';
+  const refVisible = state.refShown[q.id];
+  let html = `<textarea class="answer-area" placeholder="请在此输入你的答案..." 
+    onchange="updateShortAnswer(${q.id},this.value)">${escapeHtml(userVal)}</textarea>`;
+
+  html += `<div class="self-eval">
+    <button class="eval-btn mastered ${evalState==='mastered'?'active':''}" onclick="selfEval(${q.id},'mastered')">✓ 我已掌握</button>
+    <button class="eval-btn not-mastered ${evalState==='not-mastered'?'active':''}" onclick="selfEval(${q.id},'not-mastered')">✗ 未掌握</button>
+  </div>`;
+
+  html += `<div class="ref-answer-toggle">
+    <button onclick="toggleRef(${q.id})">${refVisible?'🔓 隐藏参考答案':'🔒 查看参考答案'}</button>
+  </div>`;
+  html += `<div class="ref-answer-content ${refVisible?'visible':''}" id="ref_${q.id}">${escapeHtml(q.refAnswer||'')}</div>`;
+  return html;
+}
+
+function renderNavGrid(){
+  const grid = document.getElementById('qNavGrid');
+  let html = '';
+  filteredQs.forEach((q, i) => {
+    let cls = '';
+    if(i === state.currentIndex) cls += ' active';
+    if(state.results[q.id] === 'correct') cls += ' correct';
+    else if(state.results[q.id] === 'wrong') cls += ' wrong';
+    else if(state.userAnswers[q.id] !== undefined) cls += ' answered';
+    if(state.bookmarks.has(q.id)) cls += ' bookmarked';
+    if(state.reviewLater.has(q.id)) cls += ' bookmarked';
+    html += `<button class="q-nav-btn${cls}" onclick="goQuestion(${i})">${q.id}</button>`;
+  });
+  grid.innerHTML = html;
+}
+
+function updateStats(){
+  const total = QUESTIONS.length;
+  let correct = 0, wrong = 0;
+  QUESTIONS.forEach(q => {
+    if(state.results[q.id]==='correct') correct++;
+    if(state.results[q.id]==='wrong') wrong++;
+  });
+  document.getElementById('correctCount').textContent = correct;
+  document.getElementById('wrongCount').textContent = wrong;
+  document.getElementById('bookmarkCount').textContent = state.bookmarks.size;
+  document.getElementById('reviewCount').textContent = state.reviewLater.size;
+}
+
+function updateProgress(){
+  const answered = QUESTIONS.filter(q => state.userAnswers[q.id] !== undefined).length;
+  const pct = Math.round(answered / QUESTIONS.length * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+}
+
+function updateNavButtons(){
+  document.getElementById('prevBtn').disabled = state.currentIndex <= 0;
+  document.getElementById('nextBtn').disabled = state.currentIndex >= filteredQs.length - 1;
+}
+
+// ==================== INTERACTIONS ====================
+function selectOption(qId, optIdx){
+  if(state.judged[qId]) return;
+  state.userAnswers[qId] = optIdx;
+  const inst = document.getElementById('instantJudge').checked;
+  if(inst) judgeChoice(qId);
+  else renderQuestion();
+  saveState();
+  updateStats();
+  updateProgress();
+  renderNavGrid();
+}
+
+function judgeChoice(qId){
+  if(state.judged[qId]) return;
+  const q = QUESTIONS.find(x => x.id === qId);
+  const selected = state.userAnswers[qId];
+  if(selected === undefined) return;
+  state.judged[qId] = true;
+  state.results[qId] = selected === q.answer ? 'correct' : 'wrong';
+  renderQuestion();
+  saveState();
+  updateStats();
+  renderNavGrid();
+}
+
+function updateFill(qId, blankIdx, value){
+  if(!state.userAnswers[qId]) state.userAnswers[qId] = [];
+  state.userAnswers[qId][blankIdx] = value;
+  saveState();
+  updateProgress();
+}
+
+function judgeFill(qId){
+  const q = QUESTIONS.find(x => x.id === qId);
+  const userVal = state.userAnswers[qId] || [];
+  state.judged[qId] = true;
+  const allCorrect = q.blanks.every((ans,i) => (userVal[i]||'').trim() === ans.trim());
+  state.results[qId] = allCorrect ? 'correct' : 'wrong';
+  renderQuestion();
+  saveState();
+  updateStats();
+  renderNavGrid();
+}
+
+function showFillAnswer(qId){
+  const q = QUESTIONS.find(x => x.id === qId);
+  state.userAnswers[qId] = [...q.blanks];
+  state.judged[qId] = true;
+  state.results[qId] = 'correct';
+  renderQuestion();
+  saveState();
+  updateStats();
+  renderNavGrid();
+}
+
+function updateShortAnswer(qId, value){
+  state.userAnswers[qId] = value;
+  saveState();
+  updateProgress();
+}
+
+function selfEval(qId, val){
+  state.selfEval[qId] = val;
+  if(val === 'mastered') state.results[qId] = 'correct';
+  else state.results[qId] = 'wrong';
+  renderQuestion();
+  saveState();
+  updateStats();
+  renderNavGrid();
+}
+
+function toggleRef(qId){
+  state.refShown[qId] = !state.refShown[qId];
+  const el = document.getElementById('ref_'+qId);
+  if(el) el.classList.toggle('visible');
+  renderQuestion();
+  saveState();
+}
+
+function toggleBookmark(qId){
+  if(state.bookmarks.has(qId)) state.bookmarks.delete(qId);
+  else state.bookmarks.add(qId);
+  saveState();
+  render();
+}
+
+function toggleReview(qId){
+  if(state.reviewLater.has(qId)) state.reviewLater.delete(qId);
+  else state.reviewLater.add(qId);
+  saveState();
+  render();
+}
+
+function goQuestion(idx){
+  if(idx < 0 || idx >= filteredQs.length) return;
+  state.currentIndex = idx;
+  saveState();
+  render();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function toggleSidebar(){
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('visible');
+}
+
+// ==================== MODE & FILTER ====================
+document.getElementById('modeFilters').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if(!btn) return;
+  document.querySelectorAll('#modeFilters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  state.currentMode = btn.dataset.mode;
+  state.currentIndex = 0;
+  if(state.currentMode === 'random'){
+    // generate new random order each time
+  }
+  saveState();
+  render();
+  closeSidebarMobile();
+});
+
+document.getElementById('catTabs').addEventListener('click', e => {
+  const btn = e.target.closest('.cat-tab');
+  if(!btn) return;
+  document.querySelectorAll('#catTabs .cat-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  state.currentCat = btn.dataset.cat;
+  state.currentIndex = 0;
+  saveState();
+  render();
+  closeSidebarMobile();
+});
+
+document.getElementById('instantJudge').addEventListener('change', e => {
+  state.instantJudge = e.target.checked;
+  saveState();
+  render();
+});
+
+function resetQuiz(){
+  if(!confirm('确定要重新开始吗？所有答题记录将被清除。')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  state = {
+    userAnswers:{},judged:{},results:{},bookmarks:new Set(),reviewLater:new Set(),
+    selfEval:{},refShown:{},instantJudge:document.getElementById('instantJudge').checked,
+    currentMode:'all',currentCat:'all',currentIndex:0,randomOrder:null
+  };
+  document.querySelectorAll('#modeFilters .filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('#modeFilters .filter-btn[data-mode="all"]').classList.add('active');
+  document.querySelectorAll('#catTabs .cat-tab').forEach(b => b.classList.remove('active'));
+  document.querySelector('#catTabs .cat-tab[data-cat="all"]').classList.add('active');
+  document.getElementById('instantJudge').checked = true;
+  saveState();
+  render();
+  closeSidebarMobile();
+}
+
+function closeSidebarMobile(){
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarOverlay').classList.remove('visible');
+}
+
+// ==================== UTILITIES ====================
+function escapeHtml(str){
+  if(!str) return '';
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+function escapeAttr(str){
+  if(!str) return '';
+  return str.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+  if(e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if(e.key === 'ArrowLeft' || e.key === 'ArrowUp') goQuestion(state.currentIndex - 1);
+  if(e.key === 'ArrowRight' || e.key === 'ArrowDown') goQuestion(state.currentIndex + 1);
+  if(e.key >= '1' && e.key <= '4'){
+    const q = filteredQs[state.currentIndex];
+    if(q && q.cat === 'choice' && !state.judged[q.id]) selectOption(q.id, parseInt(e.key)-1);
+  }
+});
+
+// ==================== INIT ====================
+loadState();
+document.getElementById('instantJudge').checked = state.instantJudge;
+// sync active filter buttons
+document.querySelectorAll('#modeFilters .filter-btn').forEach(b => {
+  b.classList.toggle('active', b.dataset.mode === state.currentMode);
+});
+document.querySelectorAll('#catTabs .cat-tab').forEach(b => {
+  b.classList.toggle('active', b.dataset.cat === state.currentCat);
+});
+render();
+</script>
+</body>
+</html>
