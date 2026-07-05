@@ -1,9 +1,46 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+## About Me
 
-::github{repo="saicaca/fuwari"}
+我是一名计算机方向的学习者，目前专注于以下方向：
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+- 深度学习与大模型系统
+- 强化学习算法与应用
+- 高性能计算与分布式推理系统
+- AI 工程化与系统优化
+
+我目前参与多个实验室与超算相关项目，主要研究如何在大规模计算环境下高效运行智能模型。
+
+---
+
+## Research Interests
+
+- Large-scale inference systems
+- Reinforcement learning
+- High-performance computing (HPC)
+- Deep learning systems engineering
+
+---
+
+## Experience
+
+### 超算中心（2024.10 - 至今）
+
+负责多服务器多卡大模型推理系统部署与工程落地，包括前后端服务搭建、任务调度与负载均衡设计，并优化分布式推理性能与系统稳定性。
+
+### 孙霖实验室（2025.03 - 2025.07）
+
+参与量化交易预测模型设计与实现，进行金融时间序列建模与特征工程，支持策略回测与模型评估。
+
+### 石龙翔实验室（2025.09 - 至今）
+
+从事强化学习算法研究与工程实现，参与强化学习训练环境设计与策略优化，探索强化学习在复杂任务中的应用。
+
+---
+
+## Awards
+
+- **2025** 蓝桥杯 B组 Python组 省三等奖
+- **2024 / 2025** 学科竞赛二等奖学金（连续两年）
+
+---
+
+> 我相信：智能不是模型本身，而是系统与计算共同塑造的结果。
