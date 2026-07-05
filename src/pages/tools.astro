@@ -1,0 +1,41 @@
+---
+import { Icon } from "astro-icon/components";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const tools = [
+    {
+        name: "服装品牌设计课程 · 答题测试",
+        description: "基于服装品牌设计课程知识点的在线答题测试工具，涵盖品牌定位、视觉识别、面料工艺等核心内容。",
+        url: "/quiz-app.html",
+        icon: "fa6-solid:shirt",
+    },
+];
+---
+<MainGridLayout title="工具" description="实用工具集合">
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="card-base z-10 px-9 py-6 relative w-full ">
+            <h2 class="text-2xl font-bold mb-6">🛠️ 实用工具</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {tools.map(tool => (
+                    <a href={tool.url} class="card-base p-5 rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group no-underline">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-[var(--primary)]/10 flex items-center justify-center group-hover:bg-[var(--primary)]/20 transition-colors">
+                                <Icon name={tool.icon} class="text-2xl text-[var(--primary)]" />
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="font-bold text-lg mb-1.5 group-hover:text-[var(--primary)] transition-colors">{tool.name}</h3>
+                                <p class="text-sm text-neutral-400 leading-relaxed">{tool.description}</p>
+                            </div>
+                        </div>
+                    </a>
+                ))}
+            </div>
+            {tools.length === 0 && (
+                <div class="text-center py-16 text-neutral-400">
+                    <Icon name="fa6-solid:hammer" class="text-5xl mb-4 opacity-30" />
+                    <p class="text-lg">暂无工具，敬请期待</p>
+                </div>
+            )}
+        </div>
+    </div>
+</MainGridLayout>

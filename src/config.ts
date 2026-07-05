@@ -61,7 +61,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "工具",
-			url: "/quiz-app.html",
+			url: "/tools/",
 			external: false,
 		},
 		{
