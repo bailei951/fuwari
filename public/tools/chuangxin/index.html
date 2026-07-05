@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>离线做题</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="title">离线做题</div>
+        <div class="meta">
+          <div id="stats"></div>
+          <div class="controls">
+            <select id="viewSelect">
+              <option value="practice">刷题模式</option>
+              <option value="exam">随机考试</option>
+            </select>
+            <div id="practiceControls" class="controls">
+              <select id="modeSelect">
+                <option value="all">全部题目</option>
+                <option value="wrong">仅错题</option>
+              </select>
+              <select id="typeSelect">
+                <option value="all">全部题型</option>
+                <option value="tf">判断题</option>
+                <option value="single">单选题</option>
+                <option value="multi">多选题</option>
+              </select>
+              <div class="jump">
+                <input id="jumpInput" type="number" min="1" step="1" placeholder="题号" />
+                <button id="jumpBtn" type="button">跳转</button>
+              </div>
+              <button id="resetProgressBtn" type="button">重置进度</button>
+              <button id="clearWrongBtn" type="button">清空错题本</button>
+            </div>
+            <div id="examControls" class="controls">
+              <div class="exam-config">
+                <div class="cfg">
+                  <label for="tfCount">判断</label>
+                  <input id="tfCount" type="number" min="0" step="1" value="20" />
+                </div>
+                <div class="cfg">
+                  <label for="singleCount">单选</label>
+                  <input id="singleCount" type="number" min="0" step="1" value="20" />
+                </div>
+                <div class="cfg">
+                  <label for="multiCount">多选</label>
+                  <input id="multiCount" type="number" min="0" step="1" value="10" />
+                </div>
+                <div id="examTotal" class="tag"></div>
+              </div>
+              <button id="startExamBtn" type="button" class="primary">开始考试</button>
+              <button id="submitExamBtn" type="button">交卷评分</button>
+              <button id="resetExamBtn" type="button">重置考试</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="card">
+          <div class="qhead">
+            <div id="qIndex"></div>
+            <div id="qType" class="tag"></div>
+          </div>
+          <div id="examStatus" class="exam-status"></div>
+          <div id="qPrompt" class="prompt"></div>
+          <form id="answerForm" class="options"></form>
+
+          <div class="actions">
+            <button id="prevBtn" type="button">上一题</button>
+            <button id="nextBtn" type="button">下一题</button>
+            <button id="submitBtn" type="button" class="primary">提交</button>
+          </div>
+
+          <div id="result" class="result" aria-live="polite"></div>
+          <div id="examResult" class="result" aria-live="polite"></div>
+
+          <div class="wrong-actions">
+            <button id="toggleWrongBtn" type="button"></button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="hint">
+          数据与错题本保存在本机浏览器中（localStorage）。
+        </div>
+      </footer>
+    </div>
+
+    <script src="./questions.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
