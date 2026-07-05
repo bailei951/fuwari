@@ -11,7 +11,7 @@ const tools = [
     },
     {
         name: "数据结构 · 刷题工具",
-        description: "涵盖线性表、栈队列、串、树、图、排序、查找等全部章节，共 837 道判断题与单选题，支持题库筛选、错题集、随机考试，含 LaTeX 数学公式渲染。",
+        description: "涵盖线性表、栈队列、串、树、图、排序、查找等全部章节，共 837 道判断题与单选题，支持章节筛选、错题专项练习、随机考试，含 LaTeX 数学公式渲染。",
         url: "/tools/data-structure/",
         icon: "fa6-solid:diagram-project",
     },
@@ -28,9 +28,6 @@ const tools = [
         icon: "fa6-solid:lightbulb",
     },
 ];
-
-let delay = 0;
-const interval = 60;
 ---
 <MainGridLayout title="工具" description="实用工具集合">
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
@@ -39,8 +36,7 @@ const interval = 60;
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {tools.map(tool => (
                     <a href={tool.url}
-                       class="card-base p-5 rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group no-underline onload-animation"
-                       style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}>
+                       class="card-base p-5 rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group no-underline">
                         <div class="flex items-start gap-4">
                             <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-[var(--primary)]/10 flex items-center justify-center group-hover:bg-[var(--primary)]/20 transition-colors">
                                 <Icon name={tool.icon} class="text-2xl text-[var(--primary)]" />
