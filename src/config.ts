@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: false,
-		src: "assets/images/demo-banner.png",
+		src: "assets/images/demo-banner.png?v=2",
 		position: "center",
 		credit: {
 			enable: false,
@@ -31,19 +31,19 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		{
-			src: "/favicon/favicon-32.png",
+			src: "/favicon/favicon-32.png?v=2",
 			sizes: "32x32",
 		},
 		{
-			src: "/favicon/favicon-128.png",
+			src: "/favicon/favicon-128.png?v=2",
 			sizes: "128x128",
 		},
 		{
-			src: "/favicon/favicon-180.png",
+			src: "/favicon/favicon-180.png?v=2",
 			sizes: "180x180",
 		},
 		{
-			src: "/favicon/favicon-192.png",
+			src: "/favicon/favicon-192.png?v=2",
 			sizes: "192x192",
 		},
 	],
