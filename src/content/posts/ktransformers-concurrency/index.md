@@ -3,7 +3,7 @@ title: "KTransformers 多并发架构深度分析：与 vLLM / SGLang 的对比"
 published: 2025-05-15
 updated: 2025-05-15
 description: "深入剖析 KTransformers v0.2.4 多并发架构的三层设计，分析 Prefill 并行度瓶颈与 KV Cache 管理问题，并与 vLLM、SGLang 进行全面对比。"
-image: ""
+image: "./cover.jpg"
 tags: ["KTransformers", "LLM Inference", "vLLM", "SGLang", "DeepSeek", "HPC"]
 category: "LLM Inference"
 draft: false

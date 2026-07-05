@@ -3,7 +3,7 @@ title: "终身强化学习中的灾难性遗忘：从 LAICA 到 Cal-LAICA"
 published: 2025-11-20
 updated: 2025-11-20
 description: "系统梳理 LAICA 与 Cal-LAICA 的核心思想，详解 L-MDP 框架下的策略分解机制，并对比 EWC、GEM、PackNet 等灾难性遗忘缓解方法。"
-image: ""
+image: "./cover.jpg"
 tags: ["Lifelong RL", "Catastrophic Forgetting", "LAICA", "Cal-LAICA", "EWC", "GEM", "PackNet", "Continual Learning"]
 category: "Reinforcement Learning"
 draft: false

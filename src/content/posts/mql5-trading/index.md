@@ -3,7 +3,7 @@ title: "MQL5 算法交易入门：用 Python 构建你的第一个交易机器�
 published: 2025-04-10
 updated: 2025-04-10
 description: "从零开始学习 MetaTrader 5 算法交易，详解 MT5 Python API 的行情获取、账户管理、订单操作与 EA 框架，并给出完整的交易机器人模板。"
-image: ""
+image: "./cover.jpg"
 tags: ["MQL5", "Algorithmic Trading", "Python", "MetaTrader", "Quant"]
 category: "Finance"
 draft: false
