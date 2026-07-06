@@ -190,7 +190,7 @@ font-size:.75rem;color:var(--muted);transition:var(--transition);font-family:var
 @media(max-width:860px){
 .app-container{flex-direction:column;padding:16px}
 .sidebar{position:fixed;left:-320px;top:0;bottom:0;width:300px;z-index:150;border-radius:0;
-transition:left .35s cubic-bezier(.4,0,.2,1)}
+overflow-y:auto;-webkit-overflow-scrolling:touch;transition:left .35s cubic-bezier(.4,0,.2,1)}
 .sidebar.open{left:0}
 .mobile-toggle{display:flex;align-items:center;justify-content:center}
 .app-header{padding:10px 16px}
@@ -259,9 +259,9 @@ transition:left .35s cubic-bezier(.4,0,.2,1)}
 <main class="main-content">
 <div id="questionArea"></div>
 <div class="q-nav-bottom">
-<button class="nav-btn prev" id="prevBtn" onclick="goQuestion(currentIndex-1)">← 上一题</button>
+<button class="nav-btn prev" id="prevBtn">← 上一题</button>
 <span id="qPosition" style="font-size:.85rem;color:var(--muted)"></span>
-<button class="nav-btn next" id="nextBtn" onclick="goQuestion(currentIndex+1)">下一题 →</button>
+<button class="nav-btn next" id="nextBtn">下一题 →</button>
 </div>
 </main>
 </div>
@@ -877,6 +877,16 @@ function escapeAttr(str){
   if(!str) return '';
   return str.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
+
+// Navigation button listeners (fixed for mobile touch)
+document.getElementById('prevBtn').addEventListener('click', e => {
+  e.preventDefault();
+  goQuestion(state.currentIndex - 1);
+});
+document.getElementById('nextBtn').addEventListener('click', e => {
+  e.preventDefault();
+  goQuestion(state.currentIndex + 1);
+});
 
 // Keyboard navigation
 document.addEventListener('keydown', e => {
