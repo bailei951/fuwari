@@ -1,0 +1,843 @@
+{
+  "id": "2004-old",
+  "year": 2004,
+  "subject": "统一卷",
+  "title": "2004年统一卷",
+  "sections": [
+    {
+      "id": "sec-cloze",
+      "type": "cloze",
+      "title": "英语知识运用",
+      "directions": "Directions: Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "cloze-1",
+          "title": "完形填空",
+          "type": "cloze",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Many theories concerning the causes of juvenile delinquency (crimes committed by young people) focus either on the individual or on society as the major contributing influence. Theories "
+            },
+            {
+              "type": "blank",
+              "blankId": 1
+            },
+            {
+              "type": "paragraph",
+              "content": " on the individual suggest that children engage in criminal behavior "
+            },
+            {
+              "type": "blank",
+              "blankId": 2
+            },
+            {
+              "type": "paragraph",
+              "content": " they were not sufficiently penalized for previous misdeeds or that they have learned criminal behavior through "
+            },
+            {
+              "type": "blank",
+              "blankId": 3
+            },
+            {
+              "type": "paragraph",
+              "content": " with others. Theories focusing on the role of society suggest that children commit crimes in "
+            },
+            {
+              "type": "blank",
+              "blankId": 4
+            },
+            {
+              "type": "paragraph",
+              "content": " to their failure to rise above their socioeconomic status, "
+            },
+            {
+              "type": "blank",
+              "blankId": 5
+            },
+            {
+              "type": "paragraph",
+              "content": " as a rejection of middle-class values. Most theories of juvenile delinquency have focused on children from disadvantaged families, "
+            },
+            {
+              "type": "blank",
+              "blankId": 6
+            },
+            {
+              "type": "paragraph",
+              "content": " the fact that children from wealthy homes also commit crimes. The latter may commit crimes "
+            },
+            {
+              "type": "blank",
+              "blankId": 7
+            },
+            {
+              "type": "paragraph",
+              "content": " lack of adequate parental control. All theories, however, are tentative and are "
+            },
+            {
+              "type": "blank",
+              "blankId": 8
+            },
+            {
+              "type": "paragraph",
+              "content": " to criticism. Changes in the social structure may indirectly "
+            },
+            {
+              "type": "blank",
+              "blankId": 9
+            },
+            {
+              "type": "paragraph",
+              "content": " juvenile crime rates. For example, changes in the economy that "
+            },
+            {
+              "type": "blank",
+              "blankId": 10
+            },
+            {
+              "type": "paragraph",
+              "content": " to fewer job opportunities for youth and rising unemployment "
+            },
+            {
+              "type": "blank",
+              "blankId": 11
+            },
+            {
+              "type": "paragraph",
+              "content": " make gainful employment increasingly difficult to obtain. The resulting discontent may in "
+            },
+            {
+              "type": "blank",
+              "blankId": 12
+            },
+            {
+              "type": "paragraph",
+              "content": " lead more youths into criminal behavior. Families have also "
+            },
+            {
+              "type": "blank",
+              "blankId": 13
+            },
+            {
+              "type": "paragraph",
+              "content": " changes these years. More families consist of one-parent households or two working parents; "
+            },
+            {
+              "type": "blank",
+              "blankId": 14
+            },
+            {
+              "type": "paragraph",
+              "content": " , children are likely to have less supervision at home "
+            },
+            {
+              "type": "blank",
+              "blankId": 15
+            },
+            {
+              "type": "paragraph",
+              "content": " was common in the traditional family "
+            },
+            {
+              "type": "blank",
+              "blankId": 16
+            },
+            {
+              "type": "paragraph",
+              "content": " . This lack of parental supervision is thought to be an influence on juvenile crime rates. Other "
+            },
+            {
+              "type": "blank",
+              "blankId": 17
+            },
+            {
+              "type": "paragraph",
+              "content": " causes of offensive acts include frustration or failure in school, the increased "
+            },
+            {
+              "type": "blank",
+              "blankId": 18
+            },
+            {
+              "type": "paragraph",
+              "content": " of drugs and alcohol, and the growing "
+            },
+            {
+              "type": "blank",
+              "blankId": 19
+            },
+            {
+              "type": "paragraph",
+              "content": " of child abuse and child neglect. All these conditions tend to increase the probability of a child committing a criminal act, "
+            },
+            {
+              "type": "blank",
+              "blankId": 20
+            },
+            {
+              "type": "paragraph",
+              "content": " a direct causal relationship has not yet been established."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "acting",
+            "B": "relying",
+            "C": "centering",
+            "D": "commenting"
+          },
+          "answer": "C",
+          "analysis": "centering 【线索】与下一句 \"focusing on the role of society\" 形成结构对照 线索就在同段下一句 Theories focusing on the role of society suggest that children commit crimes in __(4)__ to their failure…。两句结构完全平行：Theories ___ on X suggest that…，因此 ___ 必须与 focusing 同义，意为 \"聚焦于、以…为中心\"。这一同段 【选项】A) acting ✗ 搭配偏向 \"行动/扮演\"，与 focus 含义不一致 acting 与 on 搭配多表示 \"对…采取行动\" 或 \"按照…行事\"，与平行句 focusing on the role of society 的 \"聚焦于\" 之意不对应。 B) relying ✗ 义为 \"依赖\"，与 \"聚焦\" 错位 relying on 表 \"依赖于\"，意味着把个体当作工具或依据，与下一句 focusing on the role of C) centering ✓ center on = focus on，与平行句精确对应 center on 是 \"以…为中心、聚焦于…\" 的固定表达，直接对应下一句 Theories focusing on the role of society 中的 focusing on，使两类理论的并列论述结构成立。 D) commenting ✗ 义为 \"评论\"，色彩过轻且与平行项不一致 focusing on 的对照不成立。 【验证】代回原句：Theories __(1)__ on the individual suggest that children engage in criminal behavior… → Theories centering on the individual suggest that…，与下一句 Theories focusing on the role of society suggest that… 形成 \"以个体 vs 以社会为焦点\" 的并列论",
+          "position": 0
+        },
+        {
+          "id": 2,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "before",
+            "B": "unless",
+            "C": "until",
+            "D": "because"
+          },
+          "answer": "D",
+          "analysis": "because 【线索】本句内 \"个人理论\" 的因果指向：惩罚不足 → 犯罪 线索就在空格前后：Theories __(1)__ on the individual suggest that children engage in criminal behavior __(2)__ they were not sufficiently penalized for previous misdeeds 【选项】A) before ✗ 时间先后，无法表达因果 B) unless ✗ 条件反向，会颠倒因果方向 C) until ✗ 时间持续关系，不构成原因解释 D) because ✓ 原因连词，精准对应该理论的因果机制 罪的因果机制；且与同句后半句 or that they have learned criminal behavior through __(3)__ 【验证】代回：children engage in criminal behavior __(2)__ they were not sufficiently penalized for previous misdeeds → because they were not sufficiently penalized…， 与后续 or that they have learned… 形成 \"原因 A 或 原因 B\" 的并列，与 outline 中 \"个体",
+          "position": 0
+        },
+        {
+          "id": 3,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "interaction",
+            "B": "assimilation",
+            "C": "cooperation",
+            "D": "consultation"
+          },
+          "answer": "A",
+          "analysis": "interaction 【线索】本句已点明 \"通过…与他人 learn behavior\"，强调日常往来 线索在本句：they have learned criminal behavior through __(3)__ with others。\"通过 的 because they were not sufficiently penalized 是与之并列的另一种成因，说明本句是 经典的 \"模仿学习\" 视角——日常 interaction 是其前提。 【选项】 A) interaction ✓ 中性、双向的 \"互动\"，完美承载 \"与他人接触习得行为\" B) assimilation ✗ 义为 \"同化\"，方向单一且语义过重 C) cooperation ✗ 义为 \"合作\"，色彩与犯罪习得场景不符 D) consultation ✗ 义为 \"咨询\"，语义过窄 【验证】代回：they have learned criminal behavior through __(3)__ with others → through interaction with others，呼应同段开头 Theories __(1)__ on the individual suggest that… 的 \"个体焦点理论\"，承接 \"模仿/习得\" 经典视角，与 outline 中 \"两类经典理论之个",
+          "position": 0
+        },
+        {
+          "id": 4,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "return",
+            "B": "reply",
+            "C": "reference",
+            "D": "response"
+          },
+          "answer": "D",
+          "analysis": "response 【线索】上下文是 \"以社会为焦点\" 的理论给出 \"因→果\" 解释 线索见 Theories focusing on the role of society suggest that children commit crimes in __(4)__ to their failure to rise above their socioeconomic status——\"未能突破自身 社会经济地位\" 是因，\"实施犯罪\" 是果；空格要表达的就是 \"对…的反应\"。in response to 【选项】A) return ✗ in return for 才常用，与本句 to 不匹配 return 的常见搭配是 in return for（作为对…的回报），且 \"回报\" 与 \"因挫败而犯罪\" 的语境 B) reply ✗ 意为 \"答复\"，多用于对话/信件场景 to your letter 之类。 C) reference ✗ in reference to = 关于，与因果不搭 reference 的固定搭配 in reference to 意为 \"关于、提及\"，仅表话题指向，无法表达 \"对挫败的反 D) response ✓ in response to 是 \"作为对…的反应\" 的固定表达 response 与 in / to 构成 in response to，正是 \"作为对（挫败）的反应\" 这一标准说法，精确 【验证】代回：children commit crimes in __(4)__ to their failure to rise above their socioeconomic status → in response to their failure…，与社会焦点理论 \"挫败 → 犯罪",
+          "position": 0
+        },
+        {
+          "id": 5,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "or",
+            "B": "but rather",
+            "C": "but",
+            "D": "or else"
+          },
+          "answer": "A",
+          "analysis": "or 【线索】前后是 \"社会焦点理论\" 给出的两种并列解释，可同时成立 线索见 children commit crimes in __(4)__ to their failure to rise above their socioeconomic status, __(5)__ as a rejection of middle-class values——\"对挫败的反应\" 【选项】 A) or ✓ 并列连接两种解释，符合 \"也可以理解为…\" B) but rather ✗ 需先有否定才能 \"而是\"，结构不成立 C) but ✗ 转折语义不符两种解释并存 D) or else ✗ 表 \"否则将…\"，语义错位 or else 通常用于警告 \"否则会有…后果\"（do X, or else…），与本句陈述两种并列原因的语境完全 【验证】代回：in __(4)__ to their failure to rise above their socioeconomic status, __(5)__ as a rejection of middle-class values → in response to their failure…, or as a rejection of middle-class values，前后两种平行解释自洽共存，与 outline 中 \"社会焦点理论\" 列举多",
+          "position": 0
+        },
+        {
+          "id": 6,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "considering",
+            "B": "ignoring",
+            "C": "highlighting",
+            "D": "discarding"
+          },
+          "answer": "B",
+          "analysis": "ignoring 【线索】主句聚焦弱势家庭，但事实是富裕家庭也犯罪，隐含转折 线索在本句：Most theories…have focused on children from disadvantaged families, __(6)__ the fact that children from wealthy homes also commit crimes.——前半句说 【选项】A) considering ✗ 意为 \"考虑\"，与主句 \"只关注弱势\" 矛盾 focused on…disadvantaged families\"，两者自相矛盾。 B) ignoring ✓ \"忽视\" 完美对应理论盲区 C) highlighting ✗ 义为 \"突出\"，与盲区指控相反 D) discarding ✗ 义为 \"丢弃\"，对象错配且语气过重 discarding 意为 \"抛弃、丢弃\"，多用于丢弃物品/想法，对 \"事实\" 而言通常用 ignore；且语气过 【验证】代回：Most theories…have focused on children from disadvantaged families, __(6)__ the fact that children from wealthy homes also commit crimes. → ignoring the fact",
+          "position": 0
+        },
+        {
+          "id": 7,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "on",
+            "B": "in",
+            "C": "for",
+            "D": "with"
+          },
+          "answer": "C",
+          "analysis": "for 【线索】前是 \"犯罪行为\"，后是 \"管教缺失\"，关系是 \"出于…原因\" 线索见本句 The latter may commit crimes __(7)__ lack of adequate parental control. ——commit crimes 是结果，lack of adequate parental control 是原因。表达 \"出于…原 因/由于…\" 的常用介词是 for（do something for some reason）。 【选项】A) on ✗ on 多表 \"基于/在…之上\"，不与 lack 配做原因 on 在表 \"原因\" 时多见于 act on impulse，与 commit crimes on lack of… 搭配不成立。 B) in ✗ in lack of 不是地道搭配，原因关系不通 in 用在 in need of / in want of 这类固定短语，但 in lack of 并非英语固定搭配，且表达不出 \"出 C) for ✓ for 表 \"出于…原因\"，与 lack of … 自然连用 for 表 \"由于、出于\"，commit crimes for lack of adequate parental control 即 \"由于管教不 D) with ✗ with 表 \"伴随/凭借\"，无法表达 \"由于…\" 【验证】代回：The latter may commit crimes __(7)__ lack of adequate parental control. → for lack of adequate parental control，因果明确，且承接前句 \"富裕家庭孩子也犯罪\" 的原因",
+          "position": 0
+        },
+        {
+          "id": 8,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "immune",
+            "B": "resistant",
+            "C": "sensitive",
+            "D": "subject"
+          },
+          "answer": "D",
+          "analysis": "subject 【线索】前半句 tentative 已奠定 \"未定论、可被挑战\" 的基调 线索就在本句前半：All theories, however, are tentative and are __(8)__ to criticism. ——并列连接词 and 要求空格语义与前半 tentative（暂定的、不确定的）同向。tentative criticism 正是 \"易遭批评\" 的固定说法。 【选项】A) immune ✗ be immune to = \"对…免疫\"，方向与 tentative 相反 immune 表 \"免疫、不受影响\"，若代入则成为 \"理论免受批评\"，与前半 tentative \"还很初步\" 完 B) resistant ✗ be resistant to = \"抗…\"，方向同样相反 resistant 表 \"抵抗、不易受影响\"，与 \"暂定、待考\" 的逻辑同样不一致。 C) sensitive ✗ be sensitive to 多表情绪/感官反应，对象错配 D) subject ✓ be subject to criticism = \"易受批评\"，精准对应 tentative subject 与 to 构成 be subject to，意为 \"易受…、有待…\"，be subject to criticism 即 \"易遭批 评、不能免于批评\"，与 tentative 同向，自然衔接。 【验证】代回：All theories, however, are tentative and are __(8)__ to criticism. → are tentative and are subject to criticism，与 outline 中 \"第二段承认所有理论都有局限\" 的谨慎收束完",
+          "position": 0
+        },
+        {
+          "id": 9,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "affect",
+            "B": "reduce",
+            "C": "chock",
+            "D": "reflect"
+          },
+          "answer": "A",
+          "analysis": "affect 【线索】下一句给出具体路径，说明只是 \"影响\"，并非 \"减少\" 或 \"反映\" 线索见紧接的下一句 For example, changes in the economy that __(10)__ to fewer job opportunities for youth and rising unemployment __(11)__ make gainful employment increasingly difficult to obtain.——这是举例说明 \"社会结构变化如何通 词 affect（影响）来概括，不能是 reduce（减少，方向反了）或 reflect（反映，主客 倒置）。 【选项】 A) affect ✓ 中性 \"影响\"，可被 indirectly 自然修饰 B) reduce ✗ 意为 \"降低\"，与下文 \"导致犯罪上升\" 相反 C) chock ✗ 拼写本身不构成 \"影响/抑制\" 的动词义 D) reflect ✗ 意为 \"反映\"，主客关系反了 【验证】代回：Changes in the social structure may indirectly __(9)__ juvenile crime rates. → may indirectly affect juvenile crime rates，承接下文 \"通过经济传导链\" 的具体例子，与",
+          "position": 0
+        },
+        {
+          "id": 10,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "point",
+            "B": "lead",
+            "C": "come",
+            "D": "amount"
+          },
+          "answer": "B",
+          "analysis": "lead 【线索】to 后是 \"工作机会减少 + 失业上升\"，明显为 \"结果\" 线索在本句：changes in the economy that __(10)__ to fewer job opportunities for youth and rising unemployment——\"工作机会减少和失业上升\" 是因果链中的 \"结果\"， 因此 ___ to 必须是 \"导致\" 的意思。lead to 是表 \"导致\" 的最标准短语。 【选项】A) point ✗ point to = \"指向/暗示\"，并非 \"造成\" B) lead ✓ lead to = \"导致\"，最标准的因果短语 C) come ✗ come to 偏 \"达到/合计\"，不表造成结果 D) amount ✗ amount to = \"总额为/相当于\"，语义错位 【验证】代回：changes in the economy that __(10)__ to fewer job opportunities for youth and rising unemployment → that lead to fewer job opportunities…，符合 outline 中",
+          "position": 0
+        },
+        {
+          "id": 11,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "in general",
+            "B": "on average",
+            "C": "by contrast",
+            "D": "at length"
+          },
+          "answer": "A",
+          "analysis": "in general 【线索】上文给出经济传导链，本句作普遍性结论而非对比/数据 线索见上下文 For example, changes in the economy that __(10)__ to fewer job opportunities for youth and rising unemployment __(11)__ make gainful employment increasingly difficult to obtain.——前面已铺好 \"经济变化→工作机会少 【选项】 A) in general ✓ \"总体而言\"，承接经济变化对就业的普遍后果 B) on average ✗ 需有数据均值语境，本句无数据 C) by contrast ✗ 对比无对象，逻辑断裂 D) at length ✗ \"详尽地/最终\"，与一句话总结的语气不符 【验证】代回：rising unemployment __(11)__ make gainful employment increasingly difficult to obtain → rising unemployment in general make gainful employment…，对前述经",
+          "position": 0
+        },
+        {
+          "id": 12,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "case",
+            "B": "short",
+            "C": "turn",
+            "D": "essence"
+          },
+          "answer": "C",
+          "analysis": "turn 【线索】上文给出 \"经济差→不满\"，本句续接 \"不满→犯罪\"，构成连锁反应 线索遍布第三段：changes in the economy that __(10)__ to fewer job opportunities for youth and rising unemployment __(11)__ make gainful employment increasingly difficult to obtain. The resulting discontent may in __(12)__ lead more youths into criminal behavior.——\"经济变化 → 失业 → 不满 → 犯罪\" 是一连串依次触发的因果链， 【选项】A) case ✗ in case = \"以防/万一\"，与因果链不符 B) short ✗ in short = \"简言之\"，本句不是总结 C) turn ✓ in turn = \"反过来/依次\"，精准承载链式因果 turn 与 in 构成 in turn，意为 \"反过来又/依次\"，与上文 \"经济→失业→不满\" 接续 \"不满→犯罪\" D) essence ✗ in essence = \"本质上\"，语气与链式承接不符 【验证】代回：The resulting discontent may in __(12)__ lead more youths into criminal behavior. → may in turn lead more youths into criminal behavior，与 outline 中 \"第",
+          "position": 0
+        },
+        {
+          "id": 13,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "survived",
+            "B": "noticed",
+            "C": "undertaken",
+            "D": "experienced"
+          },
+          "answer": "D",
+          "analysis": "experienced 【线索】下一句给出 \"单亲、双职工\" 这些社会变迁现象，是被动承受而非主动发起 线索见 More families consist of one-parent households or two working parents; __(14)__, children are likely to have less supervision at home __(15)__ was common in the traditional family __(16)__.——这些是社会层面的客观变化，对家庭而言是被动承受 \"经历\" 而非主动 \"承担\" 或 \"幸存\"。因此应填 experienced。 【选项】A) survived ✗ 意为 \"幸存\"，语义过重且对象错配 survived 表 \"从…中幸存\"，多用于灾难/危机，搭配 changes 不合习惯，且语义过重。 B) noticed ✗ 意为 \"注意到\"，主体应为感知者，家庭难以 notice 变化 noticed 表 \"注意到\"，主语通常是人或观察者，家庭整体作为承载单位 notice changes 不合 C) undertaken ✗ 意为 \"承担/着手\"，要求家庭主动发起变化 D) experienced ✓ \"经历\" 是承载社会变化的标准用语 【验证】代回：Families have also __(13)__ changes these years. → Families have also experienced changes these years.，与下一句单亲/双职工的具体变化举例一致，与 outline 中 \"第四段：家庭变化\" 自洽。",
+          "position": 0
+        },
+        {
+          "id": 14,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "contrarily",
+            "B": "consequently",
+            "C": "similarly",
+            "D": "simultaneously"
+          },
+          "answer": "B",
+          "analysis": "consequently 【线索】前句是家庭结构变化，后句是其后果（监护减少），明显因果 线索就在前后两句的语义关系：前句 More families consist of one-parent households or two working parents 描述家庭结构变化为单亲/双职工，后句 children are likely to have less supervision at home 说明 \"孩子在家所受监护减少\"——后者是前者直接导致的 【选项】A) contrarily ✗ 意为 \"相反地\"，前后并无对立 B) consequently ✓ \"因此\"，恰好引出家庭结构变化的后果 C) similarly ✗ \"类似地\" 需有可比的两类现象 D) simultaneously ✗ \"同时\" 仅表时间并行，缺因果 【验证】代回：More families consist of one-parent households or two working parents; __(14)__, children are likely to have less supervision at home… → ; consequently, children are likely to have less supervision…，前因后果逻辑严密，与 outline 中 \"家庭",
+          "position": 0
+        },
+        {
+          "id": 15,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "than",
+            "B": "that",
+            "C": "which",
+            "D": "as"
+          },
+          "answer": "A",
+          "analysis": "than 【线索】空前 less supervision 已锁死 than 比较 线索就在空前的关键词：children are likely to have less supervision at home __(15)__ was common in the traditional family __(16)__.——less 是比较级的标志，紧接其后的连 【选项】 A) than ✓ less … than … 比较结构的固定连词 than 与前文 less supervision 共同构成 \"比……更少的监护\" 比较结构，是该句法的唯一合法 B) that ✗ 无法引导比较级所需的对象从句 C) which ✗ 关系代词，不能用于比较结构 D) as ✗ as 用于 as … as 同等比较，不与 less 搭 as 用于 as much / as many 等同等比较结构，无法承接 less + 名词 这一不等比较。 【验证】代回：less supervision at home __(15)__ was common in the traditional family __(16)__ → less supervision at home than was common…，比较结构清晰、合法，承接",
+          "position": 0
+        },
+        {
+          "id": 16,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "system",
+            "B": "structure",
+            "C": "concept",
+            "D": "heritage"
+          },
+          "answer": "B",
+          "analysis": "structure 【线索】上下文反复在谈 \"家庭结构变化\"，包括同段开头一句的潜台词 线索见同段一开头 Families have also __(13)__ changes these years. More families consist of one-parent households or two working parents——同段从一开始就在讨论 \"家庭由什么组成、结构如何变化\"，因此 traditional family ___ 应是 traditional family structure（传统家庭结构），与全段主题词 \"结构\" 一致。 【选项】A) system ✗ 意为 \"系统\"，过宽且偏制度化 system 指 \"系统、体制\"，传统家庭 system 偏向制度安排，不及 structure 直接对应 \"家庭组成 形式\"。 B) structure ✓ \"结构\" 精准对应 \"家庭组成形式\" structure 指 \"结构\"，traditional family structure 即 \"传统家庭结构\"，精准呼应同段开头 More families consist of one-parent households or two working parents 提到的家庭组成 C) concept ✗ \"概念\" 偏抽象观念，对象错位 D) heritage ✗ \"遗产\" 含正向文化色彩，与中性结构描述不符 【验证】代回：less supervision at home __(15)__ was common in the traditional family __(16)__. → than was common in the traditional family structure，与全段反复出现的",
+          "position": 0
+        },
+        {
+          "id": 17,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "assessable",
+            "B": "identifiable",
+            "C": "negligible",
+            "D": "incredible"
+          },
+          "answer": "B",
+          "analysis": "identifiable 【线索】include 之后给出三条具体原因，正是 \"可辨识\" 之意 线索见本句中 include 后罗列的三条具体原因：include frustration or failure in school, the increased __(18)__ of drugs and alcohol, and the growing __(19)__ of child abuse 认\" 的范畴，所以 causes 的修饰语只能是 identifiable。 【选项】A) assessable ✗ \"可评估的\"，强调量化评估，对象错配 assessable 指 \"可评估的\"，常用于税项、风险量化，搭配 causes 偏离常用语境，且不及 identifiable 直接表 \"可被辨识\"。 B) identifiable ✓ \"可识别的\"，精准呼应后续具体清单 identifiable 表 \"可识别、可辨认的\"，与 include 后罗列的三条具体原因正好对应——既已能被 C) negligible ✗ \"可忽略的\"，与作者郑重列举矛盾 D) incredible ✗ \"难以置信的\"，色彩夸张且不贴学术语境 【验证】代回：Other __(17)__ causes of offensive acts include frustration or failure in school… → Other identifiable causes…，作者郑重列出三条 \"可识别\" 的额外成因，与 outline 中",
+          "position": 0
+        },
+        {
+          "id": 18,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "expense",
+            "B": "restriction",
+            "C": "allocation",
+            "D": "availability"
+          },
+          "answer": "D",
+          "analysis": "availability 【线索】本句把 drugs and alcohol 与 child abuse、school failure 并列作为犯罪诱因 线索见本句 Other __(17)__ causes of offensive acts include frustration or failure in school, the increased __(18)__ of drugs and alcohol, and the growing __(19)__ of child abuse and child neglect.——三项并列原因中，毒品酒精成为犯罪诱因的方式是 \"可 【选项】A) expense ✗ \"开销\"，搭配 increased expense of drugs 指价格上升，与犯罪诱因不符 expense 指 \"花费\"，increased expense of drugs 意为价格上涨，价格上涨反而会降低犯罪诱 B) restriction ✗ \"限制\"，限制增加只会降低犯罪 restriction 指 \"限制\"，increased restriction 表示约束增强，反而抑制毒品酒精消费，与 \"增加犯 C) allocation ✗ \"分配/拨款\"，多用于资金、资源 D) availability ✓ \"可得性\"，精准对应 \"毒品酒精更易获得\" availability 指 \"可得性、易得程度\"，increased availability of drugs and alcohol 即 \"毒品和 【验证】代回：the increased __(18)__ of drugs and alcohol → the increased availability of drugs and alcohol，与 outline 中 \"第四段：其他诱因（毒品酒精易得性、虐待忽视增",
+          "position": 0
+        },
+        {
+          "id": 19,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "incidence",
+            "B": "awareness",
+            "C": "exposure",
+            "D": "popularity"
+          },
+          "answer": "A",
+          "analysis": "incidence 【线索】三项并列原因均为 \"现象增多→犯罪诱因\"，要求与前两项对称 线索仍在本句的并列结构：include frustration or failure in school, the increased __(18)__ of drugs and alcohol, and the growing __(19)__ of child abuse and child 【选项】 A) incidence ✓ \"发生率\"，精确表达虐童疏忽案例增加 incidence 指 \"发生率、发生频率\"，the growing incidence of child abuse and child neglect B) awareness ✗ \"意识\"，awareness 上升应降低而非增加犯罪 C) exposure ✗ \"曝光/暴露\"，焦点是被报道，不是事件本身增多 D) popularity ✗ \"流行、受欢迎\"，色彩荒谬 【验证】代回：the growing __(19)__ of child abuse and child neglect → the growing incidence of child abuse and child neglect，与前一项 availability 平行对称，承接全段",
+          "position": 0
+        },
+        {
+          "id": 20,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "provided",
+            "B": "since",
+            "C": "although",
+            "D": "supposing"
+          },
+          "answer": "C",
+          "analysis": "although 【线索】前是 \"提高犯罪概率\"，后是 \"未确立直接因果\"，二者构成让步 线索就在前后两个分句：All these conditions tend to increase the probability of a child committing a criminal act, __(20)__ a direct causal relationship has not yet been 因果关系\"。这种 \"前肯定 + 后让步\" 的关系正是 although 的语义。 【选项】A) provided ✗ \"假如/只要\"，需要满足某条件才行 B) since ✗ \"既然/因为\"，引原因，方向不对 C) although ✓ \"虽然\"，让步关系完美承载综述谨慎口吻 犯罪概率\"——是学术综述谨慎收束的标准句型，也呼应了 All theories, however, are tentative D) supposing ✗ \"假设\"，主从句不在假设语境 【验证】代回：All these conditions tend to increase the probability of a child committing a criminal act, __(20)__ a direct causal relationship has not yet been established. → …, although a direct causal relationship has not yet been established.，与全文中性谨 慎、不下绝对结论的综述基调（呼应 All theories, however, are tentative and are __(8)__ to criticism.）完全自洽。 OVERVIEW · 通读建境 综述性强。开篇即点明 Many theories concerning the causes of juvenile delinquency (crimes committed by young people) focus either on the individual or on society as the major contributing influence. 已奠定全篇中性、罗列各家理论的论述基调。 脉络清晰，可切成四个意群：第一段从 focus either on the individual or on society 引出两 类经典理论；第二段从 children from disadvantaged families 出发指出富裕家庭也犯罪、 且声明所有理论都有局限；第三段从 Changes in the social structure may indirectly __(9)__ juvenile crime rates. 谈社会结构变化（就业减少→不满→犯罪）；第四段从 Families have also __(13)__ changes these years. 谈家庭结构变化与其他诱因，并在结尾以 a direct causal relationship has not yet been established 收束全篇的谨慎立场。每个意群内部都呈现因→ SENTENCE INSIGHTS · 句子精讲 7 Many theories concerning the causes of juvenile delinquency (crimes committed by...",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-reading",
+      "type": "reading",
+      "title": "阅读理解",
+      "directions": "Read the following four texts. Answer the questions after each text by choosing A, B, C or D. Mark your answers on the ANSWER SHEET. (40 points)",
+      "articles": [
+        {
+          "id": "text-1",
+          "title": "Text 1",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Hunting for a job late last year, lawyer Gant Redmon stumbled across CareerBuilder, a job database on the Internet. He searched it with no success but was attracted by the site's \"personal search agent\". It's an interactive feature that lets visitors key in job criteria such as location, title, and salary, then E-mails them when a matching position is posted in the database. Redmon chose the keywords legal, intellectual property and Washington, D.C. Three weeks later, he got his first notification of an opening. \"I struck gold,\" says Redmon, who E-mailed his resume to the employer and won a position as in-house counsel for a company. With thousands of career-related sites on the Internet, finding promising openings can be time-consuming and inefficient. Search agents reduce the need for repeated visits to the databases. But although a search agent worked for Redmon, career experts see drawbacks. Narrowing your criteria, for example, may work against you: \"Every time you answer a question you eliminate a possibility,\" says one expert. For any job search, you should start with a narrow concept—what you think you want to do—then broaden it. \"None of these programs do that,\" says another expert. \"There's no career counseling implicit in all of this.\" Instead, the best strategy is to use the agent as a kind of tip service to keep abreast of jobs in a particular database; when you get E-mail, consider it a reminder to check the database again. \"I would not rely on agents for finding everything that is added to a database that might interest me,\" says the author of a job-searching guide. Some sites design their agents to tempt job hunters to return. When CareerSite's agent sends out messages to those who have signed up for its service, for example, it includes only three potential jobs—those it considers the best matches. There may be more matches in the database; job hunters will have to visit the site again to find them—and they do. \"On the day after we send our messages, we see a sharp increase in our traffic,\" says Seth Peets, vice president of marketing for CareerSite. Even those who aren't hunting for jobs may find search agents worthwhile. Some use them to keep a close watch on the demand for their line of work or gather information on compensation to arm themselves when negotiating for a raise. Although happily employed, Redmon maintains his agent at CareerBuilder. \"You always keep your eyes open,\" he says. Working with a personal search agent means having another set of eyes looking out for you."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "title": "Text 2",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Over the past century, all kinds of unfairness and discrimination have been condemned or made illegal. But one insidious form continues to thrive: alphabetism. This, for those as yet unaware of such a disadvantage, refers to discrimination against those whose surnames begin with a letter in the lower half of the alphabet. It has long been known that a taxi firm called AAAA cars has a big advantage over Zodiac cars when customers thumb through their phone directories. Less well known is the advantage that Adam Abbott has in life over Zoë Zysman. English names are fairly evenly spread between the halves of the alphabet. Yet a suspiciously large number of top people have surnames beginning with letters between A and K. Thus the American president and vice-president have surnames starting with B and C respectively; and 26 of George Bush's predecessors (including his father) had surnames in the first half of the alphabet against just 16 in the second half. Even more striking, six of the seven heads of government of the G7 rich countries are alphabetically advantaged (Berlusconi, Blair, Bush, Chirac, Chrétien and Koizumi). The world's three top central bankers (Greenspan, Duisenberg and Hayami) are all close to the top of the alphabet, even if one of them really uses Japanese characters. As are the world's five richest men (Gates, Buffett, Allen, Ellison and Albrecht). Can this merely be coincidence? One theory, dreamt up in all the spare time enjoyed by the alphabetically disadvantaged, is that the rot sets in early. At the start of the first year in infant school, teachers seat pupils alphabetically from the front, to make it easier to remember their names. So short-sighted Zysman junior gets stuck in the back row, and is rarely asked the improving questions posed by those insensitive teachers. At the time the alphabetically disadvantaged may think they have had a lucky escape. Yet the result may be worse qualifications, because they get less individual attention, as well as less confidence in speaking publicly. The humiliation continues. At university graduation ceremonies, the ABCs proudly get their awards first; by the time they reach the Zysmans most people are literally having a ZZZ. Shortlists for job interviews, election ballot papers, lists of conference speakers and attendees: all tend to be drawn up alphabetically, and their recipients lose interest as they plough through them."
+            }
+          ]
+        },
+        {
+          "id": "text-3",
+          "title": "Text 3",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "When it comes to the slowing economy, Ellen Spero isn't biting her nails just yet. But the 47-year-old manicurist isn't cutting, filing or polishing as many nails as she'd like to, either. Most of her clients spend $12 to $50 weekly, but last month two longtime customers suddenly stopped showing up. Spero blames the softening economy. \"I'm a good economic indicator,\" she says. \"I provide a service that people can do without when they're concerned about saving some dollars.\" So Spero is downscaling, shopping at middle-brow Dillard's department store near her suburban Cleveland home, instead of Neiman Marcus. \"I don't know if other clients are going to abandon me, too,\" she says. Even before Alan Greenspan's admission that America's red-hot economy is cooling, lots of working folks had already seen signs of the slowdown themselves. From car dealerships to Gap outlets, sales have been lagging for months as shoppers temper their spending. For retailers, who last year took in 24 percent of their revenue between Thanksgiving and Christmas, the cautious approach is coming at a crucial time. Already, experts say, holiday sales are off 7 percent from last year's pace. But don't sound any alarms just yet. Consumers seem only mildly concerned, not panicked, and many say they remain optimistic about the economy's long-term prospects even as they do some modest belt-tightening. Consumers say they're not in despair because, despite the dreadful headlines, their own fortunes still feel pretty good. Home prices are holding steady in most regions. In Manhattan, \"there's a new gold rush happening in the $4 million to $10 million range, predominantly fed by Wall Street bonuses,\" says broker Barbara Corcoran. In San Francisco, prices are still rising even as frenzied overbidding quiets. \"Instead of 20 to 30 offers, now maybe you only get two or three,\" says John Tealdi, a Bay Area real-estate broker. And most folks still feel pretty comfortable about their ability to find and keep a job. Many folks see silver linings to this slowdown. Potential home buyers would cheer for lower interest rates. Employers wouldn't mind a few fewer bubbles in the job market. Many consumers seem to have been influenced by stock-market swings, which investors now view as a necessary ingredient to a sustained boom. Diners might see an upside, too. Getting a table at Manhattan's hot new Alain Ducasse restaurant used to be impossible. Not anymore. For that, Greenspan & Co. may still be worth toasting."
+            }
+          ]
+        },
+        {
+          "id": "text-4",
+          "title": "Text 4",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Americans today don't place a very high value on intellect. Our heroes are athletes, entertainers, and entrepreneurs, not scholars. Even our schools are where we send our children to get a practical education—not to pursue knowledge for the sake of knowledge. Symptoms of pervasive anti-intellectualism in our schools aren't difficult to find. \"Schools have always been in a society where practical is more important than intellectual,\" says education writer Diane Ravitch. \"Schools could be a counterbalance.\" Ravitch's latest book, Left Back: A Century of Failed School Reforms, traces the roots of anti-intellectualism in our schools, concluding they are anything but a counterbalance to the American distaste for intellectual pursuits. But they could and should be. Encouraging kids to reject the life of the mind leaves them vulnerable to exploitation and control. Without the ability to think critically, to defend their ideas and understand the ideas of others, they cannot fully participate in our democracy. Continuing along this path, says writer Earl Shorris, \"We will become a second-rate country. We will have a less civil society.\" \"Intellect is resented as a form of power or privilege,\" writes historian and professor Richard Hofstadter in Anti-intellectualism in American Life, a Pulitzer-Prize winning book on the roots of anti-intellectualism in US politics, religion, and education. From the beginning of our history, says Hofstadter, our democratic and populist urges have driven us to reject anything that smells of elitism. Practicality, common sense, and native intelligence have been considered more noble qualities than anything you could learn from a book. Ralph Waldo Emerson and other Transcendentalist philosophers thought schooling and rigorous book learning put unnatural restraints on children: \"We are shut up in schools and college recitation rooms for 10 or 15 years and come out at last with a bellyful of words and do not know a thing.\" Mark Twain's Huckleberry Finn exemplified American anti-intellectualism. Its hero avoids being civilized—going to school and learning to read— so he can preserve his innate goodness. Intellect, according to Hofstadter, is different from native intelligence, a quality we reluctantly admire. Intellect is the critical, creative, and contemplative side of the mind. Intelligence seeks to grasp, manipulate, re- order, and adjust, while intellect examines, ponders, wonders, theorizes, criticizes, and imagines. School remains a place where intellect is mistrusted. Hofstadter says our country's educational system is in the grips of people who \"joyfully and militantly proclaim their hostility to intellect and their eagerness to identify with children who show the least intellectual promise.\""
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 21,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "How did Redmon find his job?",
+          "options": {
+            "A": "By searching openings in a job database.",
+            "B": "By posting a matching position in a database.",
+            "C": "By using a special service of a database.",
+            "D": "By E-mailing his resume to a database."
+          },
+          "answer": "C",
+          "analysis": "【判型】How did Redmon find his job? 以 How 提问、指向具体行为，问的是文中已写明的事 【拆句】How did Redmon find his job? 是最朴素的特殊疑问句，主语 Redmon、谓语 find、宾语 his job，无从句、无否定、无比较，零陷阱。 【定位】P1 He searched it with no success but was attracted by the site's \"personal search agent\". It's an interactive feature that lets visitors key in job criteria such as location, title, and salary, then E-mails them when a matching position is posted in the database. 【选项】A) 与原文相反 By searching openings in a job database. 描述的是普通搜索，而原文写得很清楚他 「搜了但没成功」（He searched it with no success），是被 search agent 而非搜索 By posting a matching position in a database. 把「发布岗位」的动作扣在 Redmon C) ✓ 正确 was attracted by the site's \"personal search agent\" ↔ By using a special service of a database. lets visitors key in job criteria ... then E-mails them when a matching position is posted in the database ↔ By using a special service of a database. 预判到「靠 personal search agent」后，四项里只有 C 把它抽象成 special service of a database，而 A、B、D 都偏离了这条事实链。 By E-mailing his resume to a database. 是他在 agent 通知到匹配岗位之后做的应聘",
+          "position": 0
+        },
+        {
+          "id": 22,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "Which of the following can be a disadvantage of search agents?",
+          "options": {
+            "A": "Lack of counseling.",
+            "B": "Limited number of visits.",
+            "C": "Lower efficiency.",
+            "D": "Fewer successful matches."
+          },
+          "answer": "A",
+          "analysis": "【判型】Which of the following can be a disadvantage of search agents? 让你从四项里挑出文 【拆句】Which of the following can be a disadvantage of search agents? 主语是 Which，系 动词 can be，表语 a disadvantage of search agents，情态动词 can 表「可能是」，不 【定位】P2 But although a search agent worked for Redmon, career experts see drawbacks. Narrowing your criteria, for example, may work against you: \"Every time you answer a question you eliminate a possibility,\" says one expert. 【选项】A) ✓ 正确 There's no career counseling implicit in all of this. ↔ Lack of counseling. But although a search agent worked for Redmon, career experts see drawbacks. ↔ Lack of counseling. 文章在 2、3 段共给出两个缺点：narrowing 适得其反、no career counseling；其中 Limited number of visits. 把 search agent 描述成「限制访问次数」，原文从未谈过 visits 被 agent 限制；第 2 段反而说 agent reduce the need for repeated visits—— Lower efficiency. 与原文事实相反——原文 Search agents reduce the need for repeated visits to the databases. 是说 agent 提高效率，不是降低。 Fewer successful matches. 推断「成功匹配更少」，原文只说 narrowing criteria 会 eliminate possibilities，并没断言最终的「成功匹配数」会变少——可能性减少≠成功",
+          "position": 0
+        },
+        {
+          "id": 23,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "The expression \"tip service\" (Line 4, Paragraph 3) most probably means.",
+          "options": {
+            "A": "advisory.",
+            "B": "compensation.",
+            "C": "interaction.",
+            "D": "reminder."
+          },
+          "answer": "D",
+          "analysis": "短语\"tip service\"(第3段第4行)最可能的意思是。 A) 咨询性的。 B) 补偿。 C) 互动。 D) 提醒。 【判型】The expression \"tip service\" (Line 4, Paragraph 3) most probably means. 出现 the expression ... most probably means 的固定句式，且把原文短语用引号标出，是最典型的 【拆句】The expression \"tip service\" (Line 4, Paragraph 3) most probably means. 是不完整陈 【定位】P3 Instead, the best strategy is to use the agent as a kind of tip service to keep abreast of jobs in a particular database; when you get E-mail, consider it a reminder to check the database again. 【选项】A) 与原文相反 advisory. 译作「咨询/建议」，与原文恰好相反——第 3 段反复强调 There's no career counseling implicit in all of this.，明确说 agent 不做咨询。 compensation.（报酬/薪酬）与第 3 段语境无关；该词来自第 5 段 gather information on compensation，与 tip service 的语境完全不搭。 interaction.（互动）与 tip service 的本质不符——agent 发邮件给你属于单向通知， 不是双向互动；interaction 这一描述更适合第 1 段的 interactive feature，但本题问的 是第 3 段的 tip service。 D) ✓ 正确 consider it a reminder to check the database again ↔ reminder.",
+          "position": 0
+        },
+        {
+          "id": 24,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "Why does CareerSite's agent offer each job hunter only three job options?",
+          "options": {
+            "A": "To focus on better job matches.",
+            "B": "To attract more returning visits.",
+            "C": "To reserve space for more messages.",
+            "D": "To increase the rate of success."
+          },
+          "answer": "B",
+          "analysis": "【判型】Why does CareerSite's agent offer each job hunter only three job options? 问的是 【拆句】Why does CareerSite's agent offer each job hunter only three job options? 一般疑问 【定位】P4 Some sites design their agents to tempt job hunters to return. When CareerSite's agent sends out messages to those who have signed up for its service, for example, it includes only three potential jobs—those it considers the best matches. 一些站点把 agent 设计成「引诱求职者回访」的工具。比如 CareerSite 的 agent 给注册用 【选项】A) 偷换概念 To focus on better job matches. 把「选最匹配的三个」当成目的，原文里 those it considers the best matches 只是「为什么挑这三个」的手段，目的是 tempt job hunters to return。 B) ✓ 正确 tempt job hunters to return ↔ To attract more returning visits. On the day after we send our messages, we see a sharp increase in our traffic ↔ To attract more returning visits. 预判到「引诱回访」后，B 项里 attract、returning、visits 三个核心词都能在原文动机 To reserve space for more messages. 在文中找不到任何依据，文章既未谈邮件容量 也未谈 message 空间限制。 To increase the rate of success. 把「精挑三个」推到「提高成功率」，原文从未提及 任何「成功率」「rate of success」，是从手段（精挑）再推一步的过度推断。",
+          "position": 0
+        },
+        {
+          "id": 25,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "Which of the following is true according to the text?",
+          "options": {
+            "A": "Personal search agents are indispensable to job-hunters.",
+            "B": "Some sites keep E-mailing job seekers to trace their demands.",
+            "C": "Personal search agents are also helpful to those already employed.",
+            "D": "Some agents stop sending information to people once they are employed."
+          },
+          "answer": "C",
+          "analysis": "【判型】Which of the following is true according to the text? 明确要求 true according to the 【拆句】Which of the following is true according to the text? 万能题干，无修饰陷阱； according to the text 限定了「答案必须出自原文」，不是常识题。 【定位】P5 Even those who aren't hunting for jobs may find search agents worthwhile. Some use them to keep a close watch on the demand for their line of work or gather information on compensation to arm themselves when negotiating for a raise. 【选项】A) 过度推断 Personal search agents are indispensable to job-hunters. 用 indispensable（不可 或缺）做绝对断言，原文只说有用、有缺点（career experts see drawbacks），并明 确建议不能完全依赖（I would not rely on agents for finding everything）。 Some sites keep E-mailing job seekers to trace their demands. 把第 4 段「站点发 to return，不是追踪需求。 C) ✓ 正确 Even those who aren't hunting for jobs may find search agents worthwhile ↔ Personal search agents are also helpful to those already employed. Although happily employed, Redmon maintains his agent at CareerBuilder. ↔ Personal search agents are also helpful to those already employed. 第 5 段从主张句到 Redmon 个例再到总结金句 another set of eyes looking out for Some agents stop sending information to people once they are employed. 与第 5 段事实完全相反——Although happily employed, Redmon maintains his agent at CareerBuilder. 明示已就业者 agent 仍在持续工作。 SENTENCE INSIGHTS · 句子精讲 6 \"I struck gold,\" says Redmon, who E-mailed his resume to the employer and won a position as in-house counsel for a company. But although a search agent worked for Redmon, career experts see drawbacks. Narrowin...",
+          "position": 0
+        },
+        {
+          "id": 26,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "What does the author intend to illustrate with AAAA cars and Zodiac cars?",
+          "options": {
+            "A": "A kind of overlooked inequality.",
+            "B": "A type of conspicuous bias.",
+            "C": "A type of personal prejudice.",
+            "D": "A kind of brand discrimination."
+          },
+          "answer": "A",
+          "analysis": "作者想通过 AAAA 汽车和 Zodiac 汽车说明什么? 【判型】What does the author intend to illustrate with AAAA cars and Zodiac cars? 直接问作 【拆句】What does the author intend to illustrate with AAAA cars and Zodiac cars? 是常规特 殊疑问句，主干为 What does the author intend to illustrate，with 短语表示「用…来说 【定位】P2 It has long been known that a taxi firm called AAAA cars has a big advantage over Zodiac cars when customers thumb through their phone directories. Less well known is the advantage that Adam Abbott has in life over Zoë Zysman. 【选项】A) ✓ 正确 But one insidious form continues to thrive: alphabetism ↔ A kind of overlooked inequality Less well known is the advantage that Adam Abbott has in life over Zoë Zysman ↔ A kind of overlooked inequality 者，意在揭示这一被忽视的不平等，与 A kind of overlooked inequality 完全吻合。 A type of conspicuous bias 中 conspicuous（显眼的）与原文 insidious 与 Less well A type of personal prejudice 中 personal（个人的）暗示是个体偏见；原文谈的是社 A kind of brand discrimination（品牌歧视）只对应 AAAA/Zodiac 公司例的字面，忽 略了 Less well known is the advantage that Adam Abbott has in life over Zoë",
+          "position": 0
+        },
+        {
+          "id": 27,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "What can we infer from the first three paragraphs?",
+          "options": {
+            "A": "In both East and West, names are essential to success.",
+            "B": "The alphabet is to blame for the failure of Zoë Zysman.",
+            "C": "Customers often pay a lot of attention to companies' names.",
+            "D": "Some form of discrimination is too subtle to recognize."
+          },
+          "answer": "D",
+          "analysis": "【判型】What can we infer from the first three paragraphs? 完全符合推断题的标准句式。 【拆句】What can we infer from the first three paragraphs? 句式简单，from 短语指明推断的依 【定位】P1 But one insidious form continues to thrive: alphabetism. This, for those as yet unaware of such a disadvantage, refers to discrimination against those whose surnames begin with a letter in the lower half of the alphabet. 【选项】A) 无中生有 原文只举了美国总统、G7、富豪等西方例子，even if one of them really uses 重要」。 The alphabet is to blame for the failure of Zoë Zysman 中 failure（失败）远比原文 less … advantage（占便宜较少）严重，且 to blame for（归咎于）把相关性升级为因 Customers often pay a lot of attention to companies' names 只覆盖 a taxi firm called AAAA cars 一个例子，且原文是 thumb through phone directories（翻名 D) ✓ 正确 one insidious form continues to thrive: alphabetism ↔ Some form of discrimination is too subtle to recognize for those as yet unaware of such a disadvantage ↔ too subtle to recognize",
+          "position": 0
+        },
+        {
+          "id": 28,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "The 4th paragraph suggests that_____.",
+          "options": {
+            "A": "questions are often put to the more intelligent students",
+            "B": "alphabetically disadvantaged students often escape from class",
+            "C": "teachers should pay attention to all of their students",
+            "D": "students should be seated according to their eyesight"
+          },
+          "answer": "C",
+          "analysis": "第四段表明_____ 【判型】The 4th paragraph suggests that 是补全句结构，配合 suggests 判为推断题。 【拆句】The 4th paragraph suggests that_____. 是「主语+suggests+that 从句」的补全句，选项 【定位】P4 So short-sighted Zysman junior gets stuck in the back row, and is rarely asked the improving questions posed by those insensitive teachers. … Yet the result may be worse qualifications, because they get less individual attention, as well as less confidence in speaking publicly. 【选项】A) 无中生有 原文只说前排学生因座位被多提问，从未说他们「更聪明」；questions are often put to the more intelligent students 中的 more intelligent 凭空添加。 alphabetically disadvantaged students often escape from class 中 escape from class（逃课）字面误导自 At the time the alphabetically disadvantaged may think they have had a lucky escape——原文意为「以为逃过一劫」，并非「逃课」。 C) ✓ 正确 those insensitive teachers ↔ teachers should pay attention to all of their students they get less individual attention ↔ pay attention to all of their students students should be seated according to their eyesight 抓住了 short-sighted",
+          "position": 0
+        },
+        {
+          "id": 29,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "What does the author mean by \"most people are literally having a ZZZ\" (Lines 2-3, Paragraph 5)?",
+          "options": {
+            "A": "They are getting impatient.",
+            "B": "They are noisily dozing off.",
+            "C": "They are feeling humiliated.",
+            "D": "They are busy with word puzzles."
+          },
+          "answer": "B",
+          "analysis": "【判型】What does the author mean by 加上引号短语，是词义句意题的固定形态。 【拆句】What does the author mean by \"most people are literally having a ZZZ\" 中 literally 【定位】P5 At university graduation ceremonies, the ABCs proudly get their awards first; by the time they reach the Zysmans most people are literally having a ZZZ. 【选项】A) 以偏概全 They are getting impatient（不耐烦）只是 dozing off（已睡着）的前一步状态，原 文 literally having a ZZZ 强调「真的在打呼噜」，已经越过不耐烦。 B) ✓ 正确 most people are literally having a ZZZ ↔ They are noisily dozing off 从拟声修辞 ZZZ 还原为字面动作即 noisily dozing off，与上下文「典礼冗长、听众失 They are feeling humiliated 中 humiliated（感到羞辱）对应的是 The humiliation continues 的句子，但那是描述「被忽视的 Zysmans」的处境，不是 ZZZ 句的语义。 They are busy with word puzzles（在玩字谜）字面联想 ZZZ 像字谜里的符号，但原",
+          "position": 0
+        },
+        {
+          "id": 30,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "Which of the following is true according to the text?",
+          "options": {
+            "A": "People with surnames beginning with N to Z are often ill-treated.",
+            "B": "VIPs in the Western world gain a great deal from alphabetism.",
+            "C": "The campaign to eliminate alphabetism still has a long way to go.",
+            "D": "Putting things alphabetically may lead to unintentional bias."
+          },
+          "answer": "D",
+          "analysis": "【判型】Which of the following is true according to the text? 强调「与原文一致」，属于细节判 【拆句】Which of the following is true according to the text? 是常规筛选式问句，according to 【定位】P5 Shortlists for job interviews, election ballot papers, lists of conference speakers and attendees: all tend to be drawn up alphabetically, and their recipients lose interest as they plough through them. 【选项】A) 过度推断 People with surnames beginning with N to Z are often ill-treated 中 ill-treated （被虐待）远比原文 lose interest、less individual attention 严重，且 often 把「可 VIPs in the Western world gain a great deal from alphabetism 暗示名人靠字母表歧 视获益甚多；但原文只是观察到名人多姓 A\\~K 的相关性，Can this merely be coincidence? 表明作者也只是提出疑问，未定因果。 The campaign to eliminate alphabetism still has a long way to go 中 campaign D) ✓ 正确 all tend to be drawn up alphabetically, and their recipients lose interest as they plough through them ↔ Putting things alphabetically may lead to unintentional bias teachers seat pupils alphabetically from the front, to make it easier to remember their names ↔ may lead to unintentional bias D 用 may（程度词温和）+ unintentional（无意识）+ bias（偏向），三处都与全文措 SENTENCE INSIGHTS · 句子精讲 7 This, for those as yet unaware of such a disadvantage, refers to discrimination against those whose surnames begin with a letter in the lower half of the alphabet. Thus the American president and vice-president have surnames starting with B and C respectively; and 26 of George Bush's predecessors (including his father) had surnames in the first half of the alphabet again...",
+          "position": 0
+        },
+        {
+          "id": 31,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "By \"Ellen Spero isn't biting her nails just yet\" (Line 1, Paragraph 1), the author means_____.",
+          "options": {
+            "A": "Spero can hardly maintain her business.",
+            "B": "Spero is too much engaged in her work.",
+            "C": "Spero has grown out of her bad habit.",
+            "D": "Spero is not in a desperate situation."
+          },
+          "answer": "D",
+          "analysis": "作者说\"Ellen Spero 还没有咬指甲\"(第1段第1行)是指_____。 A) Spero 几乎无法维持她的生意。 B) Spero 过于专注于她的工作。 C) Spero 已经改掉了她的坏习惯。 D) Spero 没有处于绝望的境地。 【判型】题干 By \"Ellen Spero isn't biting her nails just yet\" ... the author means 明确要求解释 【拆句】主句框架是 the author means_____，前面 By \"Ellen Spero isn't biting her nails just 呢」是什么意思——结构无陷阱，关键是认出 bite one's nails 的比喻义。 【定位】P1 When it comes to the slowing economy, Ellen Spero isn't biting her nails just yet. But the 47- year-old manicurist isn't cutting, filing or polishing as many nails as she'd like to, either. 【选项】A) 过度推断 Spero can hardly maintain her business 说她「几乎维持不下去生意」，比原文 isn't cutting ... as many nails as she'd like to（少做了点）严重得多。 Spero is too much engaged in her work 把「咬指甲」字面理解成「忙得没空咬」= Spero has grown out of her bad habit 说她「戒掉了咬指甲这个坏习惯」，把 bite 「戒习惯」。 D) ✓ 正确 isn't biting her nails just yet ↔ Spero is not in a desperate situation 预判核心是「还没到绝望」，四个选项中只有 Spero is not in a desperate situation",
+          "position": 0
+        },
+        {
+          "id": 32,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "How do the public feel about the current economic situation?",
+          "options": {
+            "A": "Optimistic.",
+            "B": "Confused.",
+            "C": "Carefree.",
+            "D": "Panicked."
+          },
+          "answer": "A",
+          "analysis": "A) 乐观的。 B) 困惑的。 C) 无忧无虑的。 D) 恐慌的。 【判型】How do the public feel about the current economic situation 问的是原文已陈述的事实 【拆句】How 引导特殊疑问，about the current economic situation 作介词短语状语限定范围。 【定位】P2 Consumers seem only mildly concerned, not panicked, and many say they remain optimistic about the economy's long-term prospects even as they do some modest belt-tightening. 【选项】A) ✓ 正确 they remain optimistic about the economy's long-term prospects ↔ Optimistic 预判与选项 Optimistic 在词形与极性上完全对齐，not panicked 也同时排除了同选项 Confused 指「困惑、搞不清」，但原文 Consumers seem only mildly concerned, not panicked, and many say they remain optimistic 表达的是清醒的「轻担忧 + 仍 Carefree 意为「无忧无虑」，强度上完全超过 only mildly concerned 与 modest belt-tightening——原文显然仍有担忧，并非无忧。 Panicked 直接被原文 not panicked 否定，这是字面级反义。",
+          "position": 0
+        },
+        {
+          "id": 33,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "When mentioning \"the $4 million to $10 million range\"(Lines 3, Paragraph 3), the author is talking about _____",
+          "options": {
+            "A": "gold market.",
+            "B": "real estate.",
+            "C": "stock exchange.",
+            "D": "venture investment."
+          },
+          "answer": "B",
+          "analysis": "A) 黄金市场。 B) 房地产。 C) 股票交易。 D) 风险投资。 【判型】the author is talking about 要求识别该数字所指代的真实领域，本质是「这串数字背后讲 【拆句】主句 the author is talking about ___，前置 When mentioning ... 是分词状语标明语境。 结构简单，重点在判断 $4 million-$10 million 这个金额所属的语义场（房价？股价？ 金价？）。 【定位】P3 In Manhattan, \"there's a new gold rush happening in the $4 million to $10 million range, predominantly fed by Wall Street bonuses,\" says broker Barbara Corcoran. 金推动，」房地产经纪人 Barbara Corcoran 说。 【选项】A) 偷换概念 gold market 把 gold rush 字面理解为「黄金市场」，但原文的 gold rush 是 19 世纪 B) ✓ 正确 Home prices are holding steady in most regions ↔ real estate says broker Barbara Corcoran ↔ real estate stock exchange 借 Wall Street 制造迷惑，但原文 predominantly fed by Wall Street venture investment 指「风险投资」，原文第 3 段从未谈及风投，更没把 $4M-$10M 与 venture 任何形式关联。",
+          "position": 0
+        },
+        {
+          "id": 34,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "Why can many people see \"silver linings\" to the economic slowdown?",
+          "options": {
+            "A": "They would benefit in certain ways.",
+            "B": "The stock market shows signs of recovery.",
+            "C": "Such a slowdown usually precedes a boom.",
+            "D": "The purchasing power would be enhanced."
+          },
+          "answer": "A",
+          "analysis": "【判型】Why can many people see \"silver linings\" 问原文给出的具体理由，属对原文具体陈述的 【拆句】Why 引导原因问句，see silver linings to the economic slowdown 是「在 X 中看到一线 【定位】P4 Many folks see silver linings to this slowdown. Potential home buyers would cheer for lower interest rates. Employers wouldn't mind a few fewer bubbles in the job market. 【选项】A) ✓ 正确 Many folks see silver linings to this slowdown ↔ They would benefit in certain ways Potential home buyers would cheer for lower interest rates ↔ They would benefit in certain ways The stock market shows signs of recovery 说「股市出现复苏迹象」，但原文 Many consumers seem to have been influenced by stock-market swings, which investors now view as a necessary ingredient to a sustained boom 说的是「股市 中的一支，不能解释「为何 many people see silver linings」。 Such a slowdown usually precedes a boom 称「这种减速通常预示一次繁荣」，但原 文只把 swings 视为 a necessary ingredient to a sustained boom（持续繁荣的必要 The purchasing power would be enhanced 说「购买力将被增强」，但原文谈的是 2 段 modest belt-tightening 反向暗示购买力在收紧。",
+          "position": 0
+        },
+        {
+          "id": 35,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "To which of the following is the author likely to agree?",
+          "options": {
+            "A": "A new boom, on the horizon.",
+            "B": "Tighten the belt, the single remedy.",
+            "C": "Caution all right, panic not.",
+            "D": "The more ventures, the more chances."
+          },
+          "answer": "C",
+          "analysis": "【判型】To which of the following is the author likely to agree 要求选作者最赞同的总判断，本 【拆句】倒装结构：正常语序是 The author is likely to agree to which of the following，把介宾 【选项】A) 过度推断 A new boom, on the horizon 说「新一轮繁荣就在眼前」，但原文 investors now view as a necessary ingredient to a sustained boom 只把股市波动视作「持续繁 到来」。 Tighten the belt, the single remedy 说「勒紧腰带是唯一办法」，原文虽有 modest belt-tightening，但用 modest 限定为「适度」，并且只是消费者反应的一个侧面，从 C) ✓ 正确 Consumers seem only mildly concerned, not panicked ↔ Caution all right, panic not But don't sound any alarms just yet ↔ Caution all right, panic not Many folks see silver linings to this slowdown ↔ Caution all right, panic not 全文调性是「谨慎」与「不必恐慌」的并列，仅 Caution all right, panic not 同时收纳 The more ventures, the more chances 说「越冒险越有机会」，原文从未鼓励冒险投 资，反而第 4 段 Employers wouldn't mind a few fewer bubbles in the job market SENTENCE INSIGHTS · 句子精讲 12 When it comes to the slowing economy, Ellen Spero isn't biting her nails just yet. But the 47-year-old manicurist isn't cutting, filing or polishing as many nails as she'd like to, either. Most of her clients spend $12 to $50 weekly, but last month two longtime customers suddenly stopped showing up. \"I don't know if other clients are going to abandon me, too,\" she says. Even before Alan Greenspan's admission that America's red-hot economy is cooling, lots of working folks had already seen signs of the slowdown themselves. For retailers, who last year took in 24 percent of their revenue between Thanksgiving and Christmas, the cautious approach ...",
+          "position": 0
+        },
+        {
+          "id": 36,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "What do American parents expect their children to acquire in school?",
+          "options": {
+            "A": "The habit of thinking independently.",
+            "B": "Profound knowledge of the world.",
+            "C": "Practical abilities for future career.",
+            "D": "The confidence in intellectual pursuits."
+          },
+          "answer": "C",
+          "analysis": "【判型】What do American parents expect their children to acquire in school? 是一个 what 实 【拆句】主干是 What do American parents expect their children to acquire in school，宾语从 句是 expect + 宾语 their children + to do 不定式 acquire，疑问词 what 是 acquire 的 【定位】P1 Even our schools are where we send our children to get a practical education—not to pursue knowledge for the sake of knowledge. 【选项】A) 张冠李戴 The habit of thinking independently 是作者在第三段 Without the ability to think critically, to defend their ideas and understand the ideas of others, they cannot fully participate in our democracy. 中倡导的能力，并非美国家长当下对孩子的期望。 Profound knowledge of the world 正对应原文被否定的 pursue knowledge for the sake of knowledge，把家长本不期望的内容当作期望，倾向相反。 C) ✓ 正确 practical education ↔ Practical abilities for future career 预判要的是 \"实用层面的所得\"，四个选项中只有 Practical abilities for future career 保留了原文 practical 的核心语义，其余三项均不与 practical education 对应。 The confidence in intellectual pursuits 在原文中无对应——文章只说美国不重视 intellect，没有任何句子说家长期望孩子获得对 intellectual pursuits 的信心。",
+          "position": 0
+        },
+        {
+          "id": 37,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "We can learn from the text that Americans have a history of_____.",
+          "options": {
+            "A": "undervaluing intellect.",
+            "B": "favoring intellectualism.",
+            "C": "supporting school reform.",
+            "D": "suppressing native intelligence."
+          },
+          "answer": "A",
+          "analysis": "【判型】We can learn from the text that Americans have a history of_____. 用 we can learn from the text 而非 infer/imply，问的是文中已点明、可直接读出的判断，仍属细节范畴。 【拆句】主句 We can learn from the text + that 引导的宾语从句 Americans have a history 【定位】P4 From the beginning of our history, says Hofstadter, our democratic and populist urges have driven us to reject anything that smells of elitism. 【选项】A) ✓ 正确 Intellect is resented as a form of power or privilege ↔ undervaluing intellect From the beginning of our history ↔ have a history of undervaluing intellect 同时锁住 \"历史悠久\" 与 \"轻视智识\" 两个语义要素，正与定位段 favoring intellectualism 与原文 Americans today don't place a very high value on intellect 及 Intellect is resented 直接相反。 原文虽提及 Left Back: A Century of Failed School Reforms，但这是一本批判校改失 suppressing native intelligence 与 native intelligence have been considered more noble qualities than anything you could learn from a book 相反——原文恰是说本",
+          "position": 0
+        },
+        {
+          "id": 38,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "The views of Ravitch and Emerson on schooling are_____.",
+          "options": {
+            "A": "identical.",
+            "B": "similar.",
+            "C": "complementary.",
+            "D": "opposite."
+          },
+          "answer": "D",
+          "analysis": "Ravitch和Emerson关于教育的观点是_____。 A) 完全相同的。 B) 相似的。 C) 互补的。 D) 相反的。 【判型】The views of Ravitch and Emerson on schooling are_____. 用 are 直接问两人观点的 关系，选项是 identical/similar/complementary/opposite 四种关系判断，本质是细节 【拆句】主语 The views of Ravitch and Emerson on schooling 是 N+of+N+on+N 的多层后置 修饰，of 限定 views 的归属、on 限定 views 的议题；系动词 are 后接空格表两人观点关 【定位】P5 Ravitch's view: \"Schools could be a counterbalance.\" Emerson's view: schooling and rigorous book learning put unnatural restraints on children; \"We are shut up in schools and college recitation rooms for 10 or 15 years and come out at last with a bellyful of words and do not know a thing.\" 【选项】A) 与原文相反 identical 暗指两人观点完全相同，但 Ravitch 想强化学校作用、Emerson 想削弱乃至 similar 试图把对立立场弱化为 \"相似\"，但 bellyful of words and do not know a thing 与 Schools could be a counterbalance. 在态度极性上反向，无相似可言。 complementary 指两人观点能在不同维度互补成完整论述，但 Ravitch 与 Emerson 是 D) ✓ 正确 Schools could be a counterbalance. ↔ opposite We are shut up in schools and college recitation rooms for 10 or 15 years and come out at last with a bellyful of words and do not know a thing. ↔ opposite",
+          "position": 0
+        },
+        {
+          "id": 39,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "Emerson, according to the text, is probably_____.",
+          "options": {
+            "A": "a pioneer of education reform.",
+            "B": "an opponent of intellectualism.",
+            "C": "a scholar in favor of intellect.",
+            "D": "an advocate of regular schooling."
+          },
+          "answer": "B",
+          "analysis": "根据文章,Emerson很可能是_____。 【判型】Emerson, according to the text, is probably_____. 的 probably 是典型推断信号——答案 【拆句】主干 Emerson is probably_____，中间插入 according to the text 作状语限定结论来源； 【定位】P5 Ralph Waldo Emerson and other Transcendentalist philosophers thought schooling and rigorous book learning put unnatural restraints on children: \"We are shut up in schools and college recitation rooms for 10 or 15 years and come out at last with a bellyful of words and do not know a thing.\" 【选项】A) 无中生有 a pioneer of education reform 在原文无支撑——Emerson 在文中是反对学校教育的 B) ✓ 正确 schooling and rigorous book learning put unnatural restraints on children ↔ an opponent of intellectualism Mark Twain's Huckleberry Finn exemplified American anti-intellectualism ↔ an opponent of intellectualism Emerson 反对学校教育与书本学习，又被作者放进 anti-intellectualism 的论证段落中 举证，由此可一步延伸为 \"反智主义的反对者\"——即 intellectualism 的反对者。 a scholar in favor of intellect 把 Emerson 反智的立场翻转为支持智识者，与 schooling and rigorous book learning put unnatural restraints on children 直接 an advocate of regular schooling 把 Emerson 描绘成常规学校教育的拥护者，但 We are shut up in schools and college recitation rooms for 10 or 15 years and come out at last with a bellyful of words and do not know a thing. 显示他是常规学校教",
+          "position": 0
+        },
+        {
+          "id": 40,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "What does the author think of intellect? Part B Directions: Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points) The relation of language and mind has interested philosophers for many centuries. (41)The Greeks assumed that the structure of language had some connection with the process of thought, which took root in Europe long before people realized how diverse languages could be. Only recently did linguists begin the serious study of languages that were very different from their own. Two anthropologist-linguists, Franz Boas and Edward Sapir, were pioneers in describing many native languages of North and South America during the first half of the twentieth century. (42)We are obliged to them because some of these languages have since vanished, as the peoples who spoke them died out or became assimilated and lost their native languages. Other linguists in the earlier part of this century, however, who were less eager to deal with bizarre data from \"exotic\" language, were not always so grateful. (43)The newly described languages were often so strikingly different from the well studied languages of Europe and Southeast Asia that some scholars even accused Boas and Sapir of fabricating their data. Native American languages are indeed different, so much so in fact that Navajo could be used by the US military as a code during World War II to send secret messages. Sapir's pupil, Benjamin Lee Whorf, continued the study of American Indian languages. (44)Being interested in the relationship of language and thought, Whorf developed the idea that the structure of language determines the structure of habitual thought in a society. He reasoned that because it is easier to formulate certain concepts and not others in a given language, the speakers of that language think along one track and not along another. (45)Whorf came to believe in a sort of linguistic determinism which, in its strongest form, states that language imprisons the mind, and that the grammatical patterns in a language can produce far-reaching consequences for the culture of a society. Later, this idea became known as the Sapir-Whorf hypothesis, but this term is somewhat inappropriate. Although both Sapir and Whorf emphasized the diversity of languages, Sapir himself never explicitly supported the notion of linguistic determinism.",
+          "options": {
+            "A": "It is second to intelligence.",
+            "B": "It evolves from common sense.",
+            "C": "It is to be pursued.",
+            "D": "It underlies power."
+          },
+          "answer": "C",
+          "analysis": "【判型】What does the author think of intellect? 用 think of 直接问作者对某对象的看法，是态 【拆句】主干 What does the author think of intellect? 是 think of sth. 的提问结构，what 作 think of 的宾语前置；句式简单，关键是 think of 等于 have what opinion of。 【选项】A) 张冠李戴 It is second to intelligence 来自 Intellect, according to Hofstadter, is different from native intelligence, a quality we reluctantly admire.，原文只说两者不同、并指 出社会勉强欣赏的是 intelligence，并未说作者认为 intellect 次于 intelligence。 It evolves from common sense 与 Practicality, common sense, and native intelligence have been considered more noble qualities than anything you could learn from a book. 不符——原文把 common sense 与 intellect 并列对照而非演化 C) ✓ 正确 Encouraging kids to reject the life of the mind leaves them vulnerable to exploitation and control. ↔ It is to be pursued intellect is mistrusted ↔ It is to be pursued 四个选项中只有 It is to be pursued 给 intellect 一个明确的正面价值定位，与作者全文 It underlies power 把 Intellect is resented as a form of power or privilege 中 \"被 SENTENCE INSIGHTS · 句子精讲 7 Even our schools are where we send our children to get a practical education—not to pursue knowledge for the sake of knowledge. Ravitch's latest book, Left Back: A Century of Failed School Reforms, traces the roots of anti-intellectualism in our schools, concluding they are anything but a counterbalance to the American distaste for intellectual pursuits. Encouraging kids to reject the life of the mind leaves them vulnerable to exploitation and control. Its hero avoids being civilized—going to school and learning to...",
+          "position": 0
+        }
+      ]
+    }
+  ]
+}

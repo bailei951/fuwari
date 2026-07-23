@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 浅色（书房纸墨）— RGB 通道格式，供 Tailwind 透明度修饰符使用 */
+    --color-paper: 250 246 239;
+    --color-paper-deep: 243 235 219;
+    --color-paper-dark: 235 224 200;
+    --color-ink: 26 22 17;
+    --color-ink-soft: 61 53 48;
+    --color-ink-muted: 107 93 80;
+    --color-ochre: 184 115 51;
+    --color-ochre-dark: 139 90 43;
+    --color-ochre-light: 212 165 116;
+    --color-ochre-pale: 240 224 197;
+    --color-seal: 169 50 38;
+    --color-seal-dark: 125 38 32;
+    --color-line: 232 223 200;
+    --color-line-soft: 240 232 213;
+
+    /* 纸张纹理叠加色（浅色） */
+    --bg-glow-1: rgba(184, 115, 51, 0.045);
+    --bg-glow-2: rgba(169, 50, 38, 0.035);
+    --bg-glow-3: rgba(243, 235, 219, 0.4);
+    --selection-bg: rgba(212, 165, 116, 0.45);
+    --selection-fg: #1a1611;
+    --scrollbar-thumb: rgba(184, 115, 51, 0.25);
+    --scrollbar-thumb-hover: rgba(184, 115, 51, 0.5);
+  }
+
+  html.dark {
+    /* 暗色（夜读书房） */
+    --color-paper: 26 24 20;
+    --color-paper-deep: 35 32 23;
+    --color-paper-dark: 45 41 32;
+    --color-ink: 245 235 214;
+    --color-ink-soft: 212 197 168;
+    --color-ink-muted: 154 138 114;
+    --color-ochre: 212 165 116;
+    --color-ochre-dark: 232 184 122;
+    --color-ochre-light: 184 115 51;
+    --color-ochre-pale: 61 47 31;
+    --color-seal: 196 77 64;
+    --color-seal-dark: 217 104 88;
+    --color-line: 58 52 42;
+    --color-line-soft: 45 40 32;
+
+    --bg-glow-1: rgba(212, 165, 116, 0.05);
+    --bg-glow-2: rgba(196, 77, 64, 0.04);
+    --bg-glow-3: rgba(35, 32, 23, 0.5);
+    --selection-bg: rgba(212, 165, 116, 0.35);
+    --selection-fg: #f5ebd6;
+    --scrollbar-thumb: rgba(212, 165, 116, 0.2);
+    --scrollbar-thumb-hover: rgba(212, 165, 116, 0.4);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    /* 纸张纹理：双径向光晕模拟纸张折光 */
+    background-image:
+      radial-gradient(circle at 22% 18%, var(--bg-glow-1) 0%, transparent 45%),
+      radial-gradient(circle at 78% 82%, var(--bg-glow-2) 0%, transparent 45%),
+      radial-gradient(circle at 50% 50%, var(--bg-glow-3) 0%, transparent 70%);
+    background-attachment: fixed;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* 划词高亮（交互选区） */
+  ::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-fg);
+  }
+
+  /* 滚动条：细线 + 赭石色 */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+    background-clip: content-box;
+  }
+}
+
+@layer components {
+  /* 纸张卡片：基础容器 */
+  .paper-card {
+    @apply bg-paper border border-line rounded-sm shadow-paper transition-all duration-300;
+  }
+  .paper-card-hover:hover {
+    @apply shadow-paper-hover -translate-y-0.5;
+  }
+
+  /* 学者标签：赭石色弱背景 */
+  .scholar-tag {
+    @apply inline-flex items-center gap-1 px-2 py-0.5
+           text-xs font-medium text-ochre-dark
+           bg-ochre-pale/60 border border-ochre/30 rounded-sm;
+  }
+
+  /* 文章正文：阅读区默认样式 */
+  .article-body {
+    @apply font-serif text-ink-soft text-article-base;
+  }
+  .article-body p {
+    @apply mb-4 indent-8;
+  }
+  .article-body p:first-child {
+    @apply indent-0;
+  }
+  .article-body em {
+    @apply italic text-ochre-dark;
+  }
+  .article-body strong {
+    @apply font-bold text-ink;
+  }
+
+  /* 完形填空空格：内联可点击 */
+  .cloze-blank {
+    @apply inline-flex items-center justify-center min-w-[2rem] px-1.5 mx-0.5
+           font-mono text-sm font-bold rounded-sm border-b-2
+           cursor-pointer transition-all select-none;
+    line-height: 1.6;
+  }
+  .cloze-blank:hover {
+    @apply bg-ochre-pale/50 border-ochre;
+  }
+  .cloze-blank.answered {
+    @apply text-ochre-dark border-ochre/40 bg-ochre-pale/30;
+  }
+  .cloze-blank.correct {
+    @apply text-green-700 border-green-500 bg-green-50;
+  }
+  .cloze-blank.wrong {
+    @apply text-seal-dark border-seal/50 bg-seal/5;
+  }
+  .cloze-blank.active {
+    @apply ring-2 ring-ochre ring-offset-1;
+  }
+
+  /* 批注高亮：四种颜色 + 闪烁 + 可点击 */
+  .article-body mark.annot-mark {
+    @apply rounded-sm cursor-pointer transition-colors;
+    padding: 0 1px;
+    border-bottom: 1.5px solid currentColor;
+  }
+  .article-body mark.annot-mark:hover {
+    filter: brightness(0.92);
+  }
+  .article-body mark.annot-yellow {
+    background-color: rgba(250, 204, 21, 0.35);
+    color: #7d2620;
+  }
+  .article-body mark.annot-green {
+    background-color: rgba(74, 222, 128, 0.32);
+    color: #3d3530;
+  }
+  .article-body mark.annot-pink {
+    background-color: rgba(244, 114, 182, 0.32);
+    color: #7d2620;
+  }
+  .article-body mark.annot-blue {
+    background-color: rgba(96, 165, 250, 0.32);
+    color: #1a1611;
+  }
+  /* 跳转闪烁 */
+  @keyframes annotFlash {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 rgba(169, 50, 38, 0);
+    }
+    50% {
+      box-shadow: 0 0 0 4px rgba(169, 50, 38, 0.35);
+    }
+  }
+  .article-body mark.annot-mark.annot-flash {
+    animation: annotFlash 0.6s ease-in-out 2;
+  }
+}
+
+@layer utilities {
+  /* 文字垂直阅读节奏：用于题号、章节序号 */
+  .text-vertical-rl {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}

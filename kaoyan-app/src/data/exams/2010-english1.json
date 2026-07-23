@@ -1,0 +1,843 @@
+{
+  "id": "2010-english1",
+  "year": 2010,
+  "subject": "英语一",
+  "title": "2010年英语一",
+  "sections": [
+    {
+      "id": "sec-cloze",
+      "type": "cloze",
+      "title": "英语知识运用",
+      "directions": "Directions: Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "cloze-1",
+          "title": "完形填空",
+          "type": "cloze",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "In 1924 America's National Research Council sent two engineers to supervise a series of experiments at a telephone-parts factory called the Hawthorne Plant near Chicago. It hoped they would learn how shop-floor lighting "
+            },
+            {
+              "type": "blank",
+              "blankId": 1
+            },
+            {
+              "type": "paragraph",
+              "content": " workers' productivity. Instead, the studies ended "
+            },
+            {
+              "type": "blank",
+              "blankId": 2
+            },
+            {
+              "type": "paragraph",
+              "content": " giving their name to the \"Hawthorne effect,\" the extremely influential idea that the very "
+            },
+            {
+              "type": "blank",
+              "blankId": 3
+            },
+            {
+              "type": "paragraph",
+              "content": " of being experimented upon changed subjects' behavior. The idea arose because of the "
+            },
+            {
+              "type": "blank",
+              "blankId": 4
+            },
+            {
+              "type": "paragraph",
+              "content": " behavior of the women in the plant. According to "
+            },
+            {
+              "type": "blank",
+              "blankId": 5
+            },
+            {
+              "type": "paragraph",
+              "content": " of the experiments, their hourly output rose when lighting was increased, but also when it was dimmed. It did not "
+            },
+            {
+              "type": "blank",
+              "blankId": 6
+            },
+            {
+              "type": "paragraph",
+              "content": " what was done in the experiment; "
+            },
+            {
+              "type": "blank",
+              "blankId": 7
+            },
+            {
+              "type": "paragraph",
+              "content": " something was changed, productivity rose. A(n) "
+            },
+            {
+              "type": "blank",
+              "blankId": 8
+            },
+            {
+              "type": "paragraph",
+              "content": " that they were being experimented upon seemed to be "
+            },
+            {
+              "type": "blank",
+              "blankId": 9
+            },
+            {
+              "type": "paragraph",
+              "content": " to alter workers' behavior "
+            },
+            {
+              "type": "blank",
+              "blankId": 10
+            },
+            {
+              "type": "paragraph",
+              "content": " itself. After several decades, the same data were "
+            },
+            {
+              "type": "blank",
+              "blankId": 11
+            },
+            {
+              "type": "paragraph",
+              "content": " to econometric analysis. The Hawthorne experiments had another surprise in store. "
+            },
+            {
+              "type": "blank",
+              "blankId": 12
+            },
+            {
+              "type": "paragraph",
+              "content": " the descriptions on record, no systematic "
+            },
+            {
+              "type": "blank",
+              "blankId": 13
+            },
+            {
+              "type": "paragraph",
+              "content": " was found that levels of productivity were related to changes in lighting. It turns out that the peculiar way of conducting the experiments may have led to "
+            },
+            {
+              "type": "blank",
+              "blankId": 14
+            },
+            {
+              "type": "paragraph",
+              "content": " interpretations of what happened. "
+            },
+            {
+              "type": "blank",
+              "blankId": 15
+            },
+            {
+              "type": "paragraph",
+              "content": " , lighting was always changed on a Sunday. When work started again on Monday, output "
+            },
+            {
+              "type": "blank",
+              "blankId": 16
+            },
+            {
+              "type": "paragraph",
+              "content": " rose compared with the previous Saturday and "
+            },
+            {
+              "type": "blank",
+              "blankId": 17
+            },
+            {
+              "type": "paragraph",
+              "content": " to rise for the next couple of days. "
+            },
+            {
+              "type": "blank",
+              "blankId": 18
+            },
+            {
+              "type": "paragraph",
+              "content": " , a comparison with data for weeks when there was no experimentation showed that output always went up on Mondays. Workers "
+            },
+            {
+              "type": "blank",
+              "blankId": 19
+            },
+            {
+              "type": "paragraph",
+              "content": " to be diligent for the first few days of the week in any case, before "
+            },
+            {
+              "type": "blank",
+              "blankId": 20
+            },
+            {
+              "type": "paragraph",
+              "content": " a plateau and then slackening off. This suggests that the alleged \"Hawthorne effect\" is hard to pin down."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "affected",
+            "B": "achieved",
+            "C": "extracted",
+            "D": "restored"
+          },
+          "answer": "A",
+          "analysis": "affected 【线索】研究目的是考察照明对产量的影响 本句的关键线索是 It hoped they would learn how shop-floor lighting __(1)__ workers' 【选项】 A) affected ✓ 中性「影响」最契合研究意图 结果方向，与 learn how shop-floor lighting __(1)__ workers' productivity 严丝合缝。 B) achieved ✗ 搭配错——光照不能「取得」产量 achieved 意为「取得、达成」，宾语通常是 goal、success 一类成果名词。说「照明取得了产 C) extracted ✗ 语义跑偏——光照不会「提取」产量 主语是无生命的 lighting，宾语是抽象的 productivity，搭配上完全不成立。 D) restored ✗ 暗示前提不存在——产量并未失而复得 【验证】代回后整句为 learn how shop-floor lighting __(1)__ workers' productivity → learn how shop-floor lighting affected workers' productivity，即「了解车间照明如何影响工人产",
+          "position": 0
+        },
+        {
+          "id": 2,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "at",
+            "B": "up",
+            "C": "with",
+            "D": "off"
+          },
+          "answer": "B",
+          "analysis": "up 【线索】end up doing 表「最终落得做……」 本句 the studies ended __(2)__ giving their name to the \"Hawthorne effect\" 想表达 【选项】A) at ✗ 无 end at 的常用搭配 B) up ✓ end up doing 的标准搭配 up 与 end 构成 end up doing sth. 这一高频短语，表「最终落得做……、结果做……」，正好契 C) with ✗ end with 表「以……结束」，宾语需为名词 with 与 end 搭配时，强调「以某物作结尾」，宾语通常是具体的结尾节目/段落（end with a D) off ✗ end off 罕用且语义不符 off 与 end 几乎不构成固定短语；个别用法如 end off with 也是「以……收尾」，且必带 with，不 【验证】代回得 the studies ended __(2)__ giving their name to the \"Hawthorne effect\" → the studies ended up giving their name to the \"Hawthorne effect\"，意为「这些研究最终",
+          "position": 0
+        },
+        {
+          "id": 3,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "truth",
+            "B": "sight",
+            "C": "act",
+            "D": "proof"
+          },
+          "answer": "C",
+          "analysis": "act 【线索】强调「被实验」这件事本身就改变了行为 线索在 the very __(3)__ of being experimented upon changed subjects' behavior—— 必须能表「行为、举动」，即 act of doing sth.。 【选项】A) truth ✗ 强调真伪，与「行为本身」错位 truth 意为「真相、真理」，the very truth of ... 强调「关于……的真相」，会把焦点引向「实验真 B) sight ✗ 视觉化感官词，搭配 of doing 别扭 sight 是「看见、景象」，多接具体可视对象（the sight of blood），用于抽象 of being experimented upon 既不地道，也无法表达「行为本身致使改变」这层定义。 C) act ✓ the very act of doing「正是做……这一行为本身」 act 表「行为、举动」，the very act of being experimented upon 即「正是被实验这一行为 D) proof ✗ 证据义，与「行为本身致变」逻辑反 proof 表「证据、证明」，the very proof of ... 是「关于……的确凿证据」，会让句意变成「证据 【验证】代回为 the very __(3)__ of being experimented upon changed subjects' behavior → the very act of being experimented upon changed subjects' behavior，「正是被实验",
+          "position": 0
+        },
+        {
+          "id": 4,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "controversial",
+            "B": "perplexing",
+            "C": "mischievous",
+            "D": "ambiguous"
+          },
+          "answer": "B",
+          "analysis": "perplexing 【线索】光强、光弱产量都上升，让人摸不着头脑 下一句 their hourly output rose when lighting was increased, but also when it was 【选项】A) controversial ✗ 「有争议」需有对立立场 B) perplexing ✓ 「令人困惑」对应反常的双向上升 perplexing 意为「使人困惑的」，正对应 their hourly output rose when lighting was increased, but also when it was dimmed 这种「调高调低都升」的反直觉现象，研究者无法用 C) mischievous ✗ 「淘气、恶作剧」与工厂女工行为不搭 D) ambiguous ✗ 「模糊歧义」指意思不明，非现象费解 【验证】代回得「正是工厂女工那令人费解的行为催生了这个概念」，与下文「光强光弱都让产量上",
+          "position": 0
+        },
+        {
+          "id": 5,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "requirements",
+            "B": "explanations",
+            "C": "accounts",
+            "D": "assessments"
+          },
+          "answer": "C",
+          "analysis": "accounts 【线索】下文是实验结果的描述 线索是接下来的内容 their hourly output rose when lighting was increased, but also when it was dimmed——这是对实验观察结果的「描述/记述」。能与之搭配的是「实验 记述/记录」，即 accounts of the experiments。P3 中 Contrary to the descriptions on 【选项】A) requirements ✗ 「要求」是事前规定，不是结果描述 B) explanations ✗ 解释是对结果的分析，非结果本身 explanations 意为「解释」。下一句仅陈述现象 output rose，并未给出原因分析，与「解释」的 语义不符；且 P3 后文用 descriptions on record 回指此处，提示更应是「记述」。 C) accounts ✓ 「记述/描述」契合后文事实陈述 accounts 在此表「记述、描述、报告」，正好与下文 their hourly output rose when lighting was increased, but also when it was dimmed 这种事实陈述相吻合；并和后文 Contrary to the descriptions on record 形成同义回指，互为线索。 D) assessments ✗ 「评估」强调判定优劣，非客观记述 【验证】代回为「根据对这些实验的记述，工人每小时产量在光线增强时上升，在光线变暗时也上 升」，与后文 Contrary to the descriptions on record 形成精准呼应，P2 这一段确实是",
+          "position": 0
+        },
+        {
+          "id": 6,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "conclude",
+            "B": "matter",
+            "C": "indicate",
+            "D": "work"
+          },
+          "answer": "B",
+          "analysis": "matter 【线索】无论做了什么，产量都上升 线索在本句与紧随其后的分句 It did not __(6)__ what was done in the experiment; __(7)__ something was changed, productivity rose——分号后说「只要变了什么，产量 【选项】A) conclude ✗ 「得出结论」与「不重要」的语义不沾 B) matter ✓ It doesn't matter wh-clause = 无所谓 matter 作动词意为「要紧、重要」，It did not matter what was done「做了什么并不重要」 是高频固定句型；与分号后 so long as something was changed, productivity rose 形成「不 C) indicate ✗ 「表明」需有信息内容，主语错位 indicate 表「表明、暗示」，主语通常为「数据、事实」，且否定式 did not indicate what was D) work ✗ 「奏效」需有努力或方法对象 work 作「起作用、奏效」时主语应是某方法或某事物；It did not work what was done 不合语 【验证】代回得「实验里做了什么并不重要；只要变了什么，产量就上升」，前后语义自洽，与 P2",
+          "position": 0
+        },
+        {
+          "id": 7,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "as far as",
+            "B": "for fear that",
+            "C": "in case that",
+            "D": "so long as"
+          },
+          "answer": "D",
+          "analysis": "so long as 【线索】「只要……就」的充分条件关系 前句 It did not __(6)__ what was done in the experiment 否定「做了什么」的作用，分 【选项】A) as far as ✗ 「就……而言」表范围，非条件 as far as 表「就……而言、在……范围内」，常用 as far as I know，强调范围限度；此处需要的是 B) for fear that ✗ 「以免」带主观目的，与客观条件冲突 C) in case that ✗ 「以防、假设」语气与陈述事实不合 in case that 表「以防、万一」，带假设和预防意味，且 in case 后一般不接 that；本句陈述的是 D) so long as ✓ 「只要……就」充分条件，精准契合 【验证】代回 __(7)__ something was changed, productivity rose → so long as something was changed, productivity rose，「只要有什么被改变了，产量就上升」，与前句「做了什么",
+          "position": 0
+        },
+        {
+          "id": 8,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "awareness",
+            "B": "expectation",
+            "C": "sentiment",
+            "D": "illusion"
+          },
+          "answer": "A",
+          "analysis": "awareness 【线索】「察觉自己在被实验」是事实，不是错觉或期待 线索是同位语从句 that they were being experimented upon——工人确实在被实验，这 awareness。这一含义也回指概念定义中的 the very __(3)__ of being experimented upon changed subjects' behavior。 【选项】 A) awareness ✓ 「意识到正在被实验」是事实性察觉 awareness 意为「意识、察觉」，an awareness that ... 表「意识到……这一事实」，与从句内 B) expectation ✗ 「期待」指向未来事件，时态不符 expectation 表「期望、预期」，所接的从句通常是「将要发生的事」（that something will happen）；这里从句是 they were being experimented upon「正被实验」，时态是正在进行， C) sentiment ✗ 「情感/观点」与「察觉到事实」错位 D) illusion ✗ 「错觉」暗示并非事实，与原文矛盾 【验证】代回为「工人意识到自己正在被实验，这种意识本身似乎就足以改变他们的行为」，与 P1 给出的霍桑效应定义 the very __(3)__ of being experimented upon changed subjects' behavior 完全对应，全局自洽。",
+          "position": 0
+        },
+        {
+          "id": 9,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "suitable",
+            "B": "excessive",
+            "C": "enough",
+            "D": "abundant"
+          },
+          "answer": "C",
+          "analysis": "enough 【线索】「单凭这一意识就足以改变行为」的程度副意 线索是结尾的 to alter workers' behavior __(10)__ itself——「单凭它自己就改变工人行 为」。前面 seemed to be ___ to alter 表「似乎足以改变」，意思是「程度足够」，对应 enough（be enough to do = 足以做……）。 【选项】A) suitable ✗ 「合适」强调匹配，不表达「足以」 suitable to do 远不如 enough to do 常用。 B) excessive ✗ 「过量」带负面，与中性陈述不合 C) enough ✓ be enough to do「足以做……」精准成立 enough 用作形容词或副词时常构成 be enough to do sth.「足以做某事」；此处「这种意识似 D) abundant ✗ 「丰富」修饰量大事物，不搭抽象「意识」 abundant 表「丰富、大量的」，多修饰资源、证据等可计量事物（abundant resources/evidence），与单数抽象名词 awareness 搭配生硬，且不传达「足以」的关键含义。 【验证】代回为「这种意识似乎就足以单凭自身改变工人的行为」，与 P2 整段的核心论断「察觉这",
+          "position": 0
+        },
+        {
+          "id": 10,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "about",
+            "B": "for",
+            "C": "on",
+            "D": "by"
+          },
+          "answer": "D",
+          "analysis": "by 【线索】强调「单凭这种意识自身」改变行为 线索是前面的 A(n) __(8)__ that they were being experimented upon seemed to be __(9)__ to alter workers' behavior __(10)__ itself——主语「这种意识」充当唯一原因，意 【选项】A) about ✗ about itself 不构成固定短语 about 与 itself 不存在「单凭自身」的搭配义；about itself 通常表「关于它自己」，语义错配。 B) for ✗ for itself 偏「为自身」，非独立作用 for 与 itself 搭出 for itself「为它自己」，强调对象/受益方；这里要的是「独自起作用」的方式， C) on ✗ on itself 几乎不成立 on 与 itself 几乎不构成习惯短语来表「独自」；on one's own 才是「独自」的常见说法，与本题 D) by ✓ by itself「单凭自身」精准对应 by 与 itself 构成 by itself「单凭它自己、独自地」，正好补足 enough to alter ... by itself「足 【验证】代回得「这种意识似乎就足以单凭其自身改变工人的行为」，与 P2 整段核心一致，构成定",
+          "position": 0
+        },
+        {
+          "id": 11,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "compared",
+            "B": "shown",
+            "C": "subjected",
+            "D": "conveyed"
+          },
+          "answer": "C",
+          "analysis": "subjected 【线索】把旧数据「拿来做」计量经济分析 线索是 After several decades, the same data were __(11)__ to econometric analysis 验」，对应 be subjected to「被施以、接受」。 【选项】A) compared ✗ 「与……比较」需要比较对象，对象不符 compared 与 to 搭出 be compared to「与……相比」，需要的是同类比较对象；但 econometric analysis 是一种「方法」，不能作为被比较的对象，搭配方向错。 B) shown ✗ 「被展示给」与「做分析」错位 shown 接 to + sb. 表「展示给某人」；与「计量经济分析」这种方法搭配不通，且 show to analysis 不构成熟词组。 C) subjected ✓ be subjected to analysis = 被施以分析 subjected 与 to 构成 be subjected to「遭受、被施以」，be subjected to analysis 即「接受/ D) conveyed ✗ 「传达给」对象通常是信息接收者 conveyed 与 to 搭配表「把……传达给某人」，对象通常是人或机构；用于 analysis 不合搭配，意 【验证】代回为「几十年后，同一批数据被施以计量经济分析」，与下文 no systematic __(13)__ was found that levels of productivity were related to changes in lighting 即「重新分",
+          "position": 0
+        },
+        {
+          "id": 12,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "Contrary to",
+            "B": "Consistent with",
+            "C": "Parallel with",
+            "D": "Peculiar to"
+          },
+          "answer": "A",
+          "analysis": "Contrary to 【线索】旧记述说有关系、新分析说没关系 前文 P2 According to __(5)__ of the experiments, their hourly output rose when lighting was increased, but also when it was dimmed 显示旧记述说产量随光照变化； 本句 no systematic __(13)__ was found that levels of productivity were related to Contrary to「与……相反」。 【选项】 A) Contrary to ✓ 「与……相反」对应新旧结论对撞 B) Consistent with ✗ 「与……一致」逻辑反向 C) Parallel with ✗ 「与……平行」侧重同向并列 D) Peculiar to ✗ 「为……所特有」属性义，逻辑错位 Peculiar to 表「为某物所特有的」，例如 a disease peculiar to children，描述属性归属；与 【验证】代回为「与那些记录在案的描述相反，未发现系统性证据表明产量水平与照明变化有关」，",
+          "position": 0
+        },
+        {
+          "id": 13,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "evidence",
+            "B": "guidance",
+            "C": "implication",
+            "D": "source"
+          },
+          "answer": "A",
+          "analysis": "evidence 【线索】「未找到系统性证据表明 X 与 Y 相关」 线索是整句结构 no systematic __(13)__ was found that levels of productivity were related to changes in lighting——that-从句陈述的是有待验证的假说「产量与照明相 相关」。 【选项】 A) evidence ✓ 「系统性证据」+ that-命题，标配搭配 evidence 表「证据」，systematic evidence that ... 是「系统性证据表明……」的经典搭配，与 B) guidance ✗ 「指导」与「证据」语义维度不同 guidance 表「指导、指引」，意指方法上的建议，与论证某结论是否成立无关；systematic guidance that 也不构成固定表达。 C) implication ✗ 「暗示/含义」未能强力支撑「相关性」结论 implication 表「暗示、含义」，强调间接推论；研究语境里 was found 后多接「证据」而非「暗 示」；且 systematic implication 罕用，不如 evidence 精准。 D) source ✗ 「来源」与论证无直接关系 source 表「来源、根源」，多接 of + 名词（the source of the problem），不能用 that-从句作 【验证】代回为「未找到系统性证据表明产量水平与照明变化有关」，与 12 题 Contrary to ... 形成",
+          "position": 0
+        },
+        {
+          "id": 14,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "disputable",
+            "B": "enlightening",
+            "C": "reliable",
+            "D": "misleading"
+          },
+          "answer": "D",
+          "analysis": "misleading 【线索】实验方式有缺陷→产生「误导性」解读 线索一是 peculiar way 已暗示问题；线索二是下文 a comparison with data for weeks when there was no experimentation showed that output always went up on 其实是误读。所以应填 misleading「误导性的」。 【选项】A) disputable ✗ 「有争议」程度太轻 B) enlightening ✗ 「启发性的」是褒义，与推翻语境冲突 C) reliable ✗ 「可靠的」与推翻论调正相反 D) misleading ✓ 「误导性」契合「奇怪做法→错误结论」 【验证】代回为「实验的特殊操作方式可能导致对所发生情况的误导性解读」，与 P4 接下来用「周",
+          "position": 0
+        },
+        {
+          "id": 15,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "In contrast",
+            "B": "For example",
+            "C": "In consequence",
+            "D": "As usual"
+          },
+          "answer": "B",
+          "analysis": "For example 【线索】前句概括→本句给出具体做法 前句 the peculiar way of conducting the experiments may have led to __(14)__ interpretations of what happened 是抽象的「特殊做法导致误解」；本句 lighting was always changed on a Sunday 给出「特殊做法」的具体一例——总在周日改光线。这是典 型的「概括→举例」关系，应填 For example。 【选项】A) In contrast ✗ 「对照之下」需有两方对立 B) For example ✓ 「举例说明」精准契合 C) In consequence ✗ 「结果」指因果，方向错 D) As usual ✗ 「像往常一样」属习惯描述，非逻辑标记 【验证】代回为「例如，光线总是在周日变更」，与下文 Monday 产量上升、对比无实验周的数据",
+          "position": 0
+        },
+        {
+          "id": 16,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "duly",
+            "B": "accidentally",
+            "C": "unpredictably",
+            "D": "suddenly"
+          },
+          "answer": "A",
+          "analysis": "duly 【线索】周一产量上升是「按惯例发生」 线索在后文 a comparison with data for weeks when there was no experimentation showed that output always went up on Mondays——「连没做实验的周也是周一产 而然」。 【选项】 A) duly ✓ 「按预期、如约」契合规律性上升 duly 表「按预期、如约、恰如其分」，正对应后文 always went up on Mondays「总是在周一 B) accidentally ✗ 「偶然地」与「总是发生」矛盾 accidentally 表「偶然、意外」，与后文 always went up on Mondays 的规律性直接冲突。 C) unpredictably ✗ 「不可预测」与规律相悖 D) suddenly ✗ 「突然」强调骤变，不强调规律 【验证】代回为「周一开工时，产量与前一个周六相比按惯例上升了」，与下文 a comparison with data for weeks when there was no experimentation showed that output always went up on Mondays 形成「这是周一常态」的呼应，与 P4 揭示真因的脉络一致。",
+          "position": 0
+        },
+        {
+          "id": 17,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "failed",
+            "B": "ceased",
+            "C": "started",
+            "D": "continued"
+          },
+          "answer": "D",
+          "analysis": "continued 【线索】周一上升后接下来几天仍在上升 线索是前文 output __(16)__ rose「周一产量已上升」与后续 for the next couple of days to rise。 【选项】A) failed ✗ 「未能继续上升」与上下文相反 B) ceased ✗ 「停止上升」与「持续几天上升」矛盾 ceased to rise 表「停止上升」，但下文还提到 before __(20)__ a plateau and then slackening C) started ✗ 「开始上升」否定了周一已上升 started to rise 表「开始上升」，但前半句 output rose 已说周一就上升了，再用 started 会和事 D) continued ✓ 「继续上升」契合数日持续上升 与下一句 before __(20)__ a plateau and then slackening off 的「到达平台前一直上升」连成 【验证】代回为「与前一个周六相比，周一产量按惯例上升了，并在接下来的几天里继续上升」，构",
+          "position": 0
+        },
+        {
+          "id": 18,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "Therefore",
+            "B": "Furthermore",
+            "C": "However",
+            "D": "Meanwhile"
+          },
+          "answer": "C",
+          "analysis": "However 【线索】前文说「实验周周一上升似可归因于实验」→本句揭示其实「无实验周也升」 前文 output __(16)__ rose compared with the previous Saturday and __(17)__ to rise for the next couple of days 还在描述实验周内的产量上升，看似可归因实验；本句 a comparison with data for weeks when there was no experimentation showed that output always went up on Mondays 突然引入「无实验周也升」的对照，是一个推翻前 面隐含归因的转折，应填 However。 【选项】A) Therefore ✗ 「因此」表因果，方向反 B) Furthermore ✗ 「此外」是同向递进，未体现反差 C) However ✓ 「然而」标记新证据推翻旧推断 D) Meanwhile ✗ 「同时」表时间并行，不构成逻辑反差 【验证】代回为「然而，与未开展实验的几周的数据对比显示，产量总是在周一上升」，正是对前文",
+          "position": 0
+        },
+        {
+          "id": 19,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "attempted",
+            "B": "tended",
+            "C": "chose",
+            "D": "intended"
+          },
+          "answer": "B",
+          "analysis": "tended 【线索】「不管怎样、工人每周头几天都更勤奋」是普遍倾向 线索是 Workers __(19)__ to be diligent for the first few days of the week in any case 中的 in any case「无论如何」，以及下半句 before __(20)__ a plateau and then slackening off 表明这是一种规律性的工作节律，描述的是一般倾向，对应 tend to do「倾 向于」。 【选项】A) attempted ✗ 「尝试」强调有意图的努力 B) tended ✓ 「倾向于」对应普遍规律 C) chose ✗ 「选择」突出主观决定 chose 表「选择」，带主观决断意味；客观规律性现象更适合用 tended，不是 chose。 D) intended ✗ 「打算」是主观计划 【验证】代回为「不管怎样，工人在一周的头几天都倾向于勤奋」，与前文 output always went up",
+          "position": 0
+        },
+        {
+          "id": 20,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "breaking",
+            "B": "climbing",
+            "C": "surpassing",
+            "D": "hitting"
+          },
+          "answer": "D",
+          "analysis": "hitting 【线索】「先上升→到达平台→再回落」的节奏 的英语标准说法是 hit a plateau。 【选项】A) breaking ✗ 「打破平台」语义反，且非固定搭配 breaking a plateau 字面是「打破平台期」，本意是冲出停滞继续向上；与下文 slackening off B) climbing ✗ 「攀登」无法搭 a plateau climbing 通常接 mountain/hill 等可被攀上的对象；climb a plateau 不构成固定表达，且方向意 C) surpassing ✗ 「超越」与下文「松懈」矛盾 surpassing 表「超越」，意味突破平台继续上升；但下文 slackening off 是松懈下降，因果链对 D) hitting ✓ hit a plateau=触及平台期/触顶 hitting 与 a plateau 构成 hit a plateau「触及平台期、达到瓶颈」的固定搭配，正对应「头几 【验证】代回为「工人在每周头几天倾向于勤奋，之后触及平台期，再然后松懈下来」，描述出「升 OVERVIEW · 通读建境 人周一惯性高产。基调是冷静、带怀疑的复盘，如开篇 the extremely influential idea that the very __(3)__ of being experimented upon changed subjects' behavior 引出概念，末段 This suggests that the alleged \"Hawthorne effect\" is hard to pin down 给出推翻性结论。 全文按四段递进：P1 交代实验缘起与「霍桑效应」概念的诞生（supervise a series of experiments at a telephone-parts factory called the Hawthorne Plant）；P2 描述当年解释 ——无论怎样改动产量都上升（their hourly output rose when lighting was increased, but also when it was dimmed）；P3 用现代计量分析推翻原结论（no systematic __(13)__ was found that levels of productivity were related to changes in lighting）；P4 揭示真因—— 周一本来就高产（output always went up on Mondays）。把握这条「立—破—释」的链条 SENTENCE INSIGHTS · 句子精讲 7 Instead, the studies ended up giving their name to the \"Hawthorne effect,\" the extremely influential idea that the very act of being experimented upon changed subjects' behavior. The idea arose because of the perplexing behavior of the women in the plant. It did not matter what was done in the experiment; so long as something was changed, productivit...",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-reading",
+      "type": "reading",
+      "title": "阅读理解",
+      "directions": "Read the following four texts. Answer the questions after each text by choosing A, B, C or D. Mark your answers on the ANSWER SHEET. (40 points)",
+      "articles": [
+        {
+          "id": "text-1",
+          "title": "Text 1",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Of all the changes that have taken place in English-language newspapers during the past quarter-century, perhaps the most far-reaching has been the inexorable decline in the scope and seriousness of their arts coverage. It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time when high-quality arts criticism could be found in most big-city newspapers. Yet a considerable number of the most significant collections of criticism published in the 20th century consisted in large part of newspaper reviews. To read such books today is to marvel at the fact that their learned contents were once deemed suitable for publication in general-circulation dailies. We are even farther removed from the unfocused newspaper reviews published in England between the turn of the 20th century and the eve of World War II, at a time when newsprint was dirt-cheap and stylish arts criticism was considered an ornament to the publications in which it appeared. In those far-off days, it was taken for granted that the critics of major papers would write in detail and at length about the events they covered. Theirs was a serious business, and even those reviewers who wore their learning lightly, like George Bernard Shaw and Ernest Newman, could be trusted to know what they were about. These men believed in journalism as a calling, and were proud to be published in the daily press. \"So few authors have brains enough or literary gift enough to keep their own end up in journalism,\" Newman wrote, \"that I am tempted to define 'journalism' as 'a term of contempt applied by writers who are not read to writers who are'.\" Unfortunately, these critics are virtually forgotten. Neville Cardus, who wrote for the Manchester Guardian from 1917 until shortly before his death in 1975, is now known solely as a writer of essays on the game of cricket. During his lifetime, though, he was also one of England's foremost classical-music critics, and a stylist so widely admired that his Autobiography (1947) became a best-seller. He was knighted in 1967, the first music critic to be so honored. Yet only one of his books is now in print, and his vast body of writings on music is unknown save to specialists. Is there any chance that Cardus's criticism will enjoy a revival? The prospect seems remote. Journalistic tastes had changed long before his death, and postmodern readers have little use for the richly upholstered Vicwardian prose in which he specialized. Moreover, the amateur tradition in music criticism has been in headlong retreat."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "title": "Text 2",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Over the past decade, thousands of patents have been granted for what are called business methods. Amazon.com received one for its \"one-click\" online payment system. Merrill Lynch got legal protection for an asset allocation strategy. One inventor patented a technique for lifting a box. Now the nation's top patent court appears completely ready to scale back on business-method patents, which have been controversial ever since they were first authorized 10 years ago. In a move that has intellectual- property lawyers abuzz, the U.S. Court of Appeals for the Federal Circuit said it would use a particular case to conduct a broad review of business-method patents. In re Bilski, as the case is known, is \"a very big deal,\" says Dennis D. Crouch of the University of Missouri School of Law. It \"has the potential to eliminate an entire class of patents.\" Curbs on business-method claims would be a dramatic about-face, because it was the Federal Circuit itself that introduced such patents with its 1998 decision in the so-called State Street Bank case, approving a patent on a way of pooling mutual-fund assets. That ruling produced an explosion in business-method patent filings, initially by emerging Internet companies trying to stake out exclusive rights to specific types of online transactions. Later, more established companies raced to add such patents to their files, if only as a defensive move against rivals that might beat them to the punch. In 2005, IBM noted in a court filing that it had been issued more than 300 business-method patents, despite the fact that it questioned the legal basis for granting them. Similarly, some Wall Street investment firms armed themselves with patents for financial products, even as they took positions in court cases opposing the practice. The Bilski case involves a claimed patent on a method for hedging risk in the energy market. The Federal Circuit issued an unusual order stating that the case would be heard by all 12 of the court's judges, rather than a typical panel of three, and that one issue it wants to evaluate is whether it should \"reconsider\" its State Street Bank ruling. The Federal Circuit's action comes in the wake of a series of recent decisions by the Supreme Court that have narrowed the scope of protections for patent holders. Last April, for example, the justices signaled that too many patents were being upheld for \"inventions\" that are obvious. The judges on the Federal Circuit are \"reacting to the anti-patent trend at the Supreme Court,\" says Harold C. Wegner, a patent attorney and professor at George Washington University Law School."
+            }
+          ]
+        },
+        {
+          "id": "text-3",
+          "title": "Text 3",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "In his book The Tipping Point, Malcolm Gladwell argues that \"social epidemics\" are driven in large part by the actions of a tiny minority of special individuals, often called influentials, who are unusually informed, persuasive, or well connected. The idea is intuitively compelling, but it doesn't explain how ideas actually spread. The supposed importance of influentials derives from a plausible-sounding but largely untested theory called the \"two-step flow of communication\": Information flows from the media to the influentials and from them to everyone else. Marketers have embraced the two-step flow because it suggests that if they can just find and influence the influentials, those select people will do most of the work for them. The theory also seems to explain the sudden and unexpected popularity of certain looks, brands, or neighborhoods. In many such cases, a cursory search for causes finds that some small group of people was wearing, promoting, or developing whatever it is before anyone else paid attention. Anecdotal evidence of this kind fits nicely with the idea that only certain special people can drive trends. In their recent work, however, some researchers have come up with the finding that influentials have far less impact on social epidemics than is generally supposed. In fact, they don't seem to be required at all. The researchers' argument stems from a simple observation about social influence: With the exception of a few celebrities like Oprah Winfrey – whose outsize presence is primarily a function of media, not interpersonal, influence – even the most influential members of a population simply don't interact with that many others. Yet it is precisely these non-celebrity influentials who, according to the two-step-flow theory, are supposed to drive social epidemics, by influencing their friends and colleagues directly. For a social epidemic to occur, however, each person so affected must then influence his or her own acquaintances, who must in turn influence theirs, and so on; and just how many others pay attention to each of these people has little to do with the initial influential. If people in the network just two degrees removed from the initial influential prove resistant, for example, the cascade of change won't propagate very far or affect many people. Building on this basic truth about interpersonal influence, the researchers studied the dynamics of social influence by conducting thousands of computer simulations of populations, manipulating a number of variables relating to people's ability to influence others and their tendency to be influenced. They found that the principal requirement for what is called \"global cascades\" – the widespread propagation of influence through networks – is the presence not of a few influentials but, rather, of a critical mass of easily influenced people."
+            }
+          ]
+        },
+        {
+          "id": "text-4",
+          "title": "Text 4",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Bankers have been blaming themselves for their troubles in public. Behind the scenes, they have been taking aim at someone else: the accounting standard-setters. Their rules, moan the banks, have forced them to report enormous losses, and it's just not fair. These rules say they must value some assets at the price a third party would pay, not the price managers and regulators would like them to fetch. Unfortunately, banks' lobbying now seems to be working. The details may be unknowable, but the independence of standard-setters, essential to the proper functioning of capital markets, is being compromised. And, unless banks carry toxic assets at prices that attract buyers, reviving the banking system will be difficult. After a bruising encounter with Congress, America's Financial Accounting Standards Board (FASB) rushed through rule changes. These gave banks more freedom to use models to value illiquid assets and more flexibility in recognizing losses on long-term assets in their income statements. Bob Herz, the FASB's chairman, cried out against those who \"question our motives.\" Yet bank shares rose and the changes enhance what one lobbying group politely calls \"the use of judgment by management.\" European ministers instantly demanded that the International Accounting Standards Board (IASB) do likewise. The IASB says it does not want to act without overall planning, but the pressure to fold when it completes its reconstruction of rules later this year is strong. Charlie McCreevy, a European commissioner, warned the IASB that it did \"not live in a political vacuum\" but \"in the real world\" and that Europe could yet develop different rules. It was banks that were on the wrong planet, with accounts that vastly overvalued assets. Today they argue that market prices overstate losses, because they largely reflect the temporary illiquidity of markets, not the likely extent of bad debts. The truth will not be known for years. But banks' shares trade below their book value, suggesting that investors are skeptical. And dead markets partly reflect the paralysis of banks which will not sell assets for fear of booking losses, yet are reluctant to buy all those supposed bargains. To get the system working again, losses must be recognized and dealt with. America's new plan to buy up toxic assets will not work unless banks mark assets to levels which buyers find attractive. Successful markets require independent and even combative standard-setters. The FASB and IASB have been exactly that, cleaning up rules on stock options and pensions, for example, against hostility from special interests. But by giving in to critics now they are inviting pressure to make more concessions."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 21,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "It is indicated in Paragraphs 1 and 2 that____",
+          "options": {
+            "A": "arts criticism has disappeared from big-city newspapers.",
+            "B": "English-language newspapers used to carry more arts reviews.",
+            "C": "high-quality newspapers retain a large body of readers.",
+            "D": "young readers doubt the suitability of criticism on dailies."
+          },
+          "answer": "B",
+          "analysis": "【判型】题干 It is indicated in Paragraphs 1 and 2 用 indicated 而非 imply/infer，要求答案是原 【拆句】句子主干 It is indicated in Paragraphs 1 and 2 that ____，形式主语 it + 被动 is indicated + that 从句留白。结构平铺直叙，无陷阱。 【定位】P2 It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time when high-quality arts criticism could be found in most big-city newspapers. 【选项】A) 过度推断 arts criticism has disappeared from big-city newspapers 把原文的 decline 拔高 成 disappeared，但 decline in the scope and seriousness 仅说下降，并未说完全 B) ✓ 正确 a time when high-quality arts criticism could be found in most big-city newspapers ↔ English-language newspapers used to carry more arts reviews the inexorable decline in the scope and seriousness of their arts coverage ↔ more arts reviews B 项同时承接了 P1 的 decline 和 P2 的 a time when... could be found 这条今昔对比 high-quality newspapers retain a large body of readers 的话题是 readers 数量，而 原文谈的是 arts criticism 的多少与质量。 young readers doubt the suitability of criticism on dailies 把'年轻读者无法想象'歪 曲成'年轻读者怀疑评论是否合适'。原文 difficult... to imagine 是不能想象，were once deemed suitable 的 suitable 是作者对过去的感慨，不是年轻读者的态度。",
+          "position": 0
+        },
+        {
+          "id": 22,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "Newspaper reviews in England before World War II were characterized by____",
+          "options": {
+            "A": "free themes.",
+            "B": "casual style.",
+            "C": "elaborate layout.",
+            "D": "radical viewpoints."
+          },
+          "answer": "A",
+          "analysis": "【判型】题干 characterized by ____ 问 reviews 的具体特征，定位即可，不需推断。 【拆句】Newspaper reviews in England before World War II were characterized by ____，主干 reviews were characterized by ___；两个介词短语 in England / before World War II 是 【定位】P3 We are even farther removed from the unfocused newspaper reviews published in England between the turn of the 20th century and the eve of World War II, at a time when newsprint was dirt-cheap and stylish arts criticism was considered an ornament to the publications in which it appeared. In those far-off days, it was taken for granted that the critics of major papers would write in detail and at length about the events they covered. 【选项】A) ✓ 正确 the unfocused newspaper reviews ↔ free themes write in detail and at length about the events they covered ↔ free themes casual style 把 stylish arts criticism 偷换成'随意的风格'，stylish 指有风格/讲究风格 的，casual 指随便、不讲究，方向相反。 elaborate layout 指'精致的版面布局'，但 an ornament to the publications 谈的是评 radical viewpoints 指激进观点，但 P3 全段只谈评论的范围、风格、长度，未提及评论",
+          "position": 0
+        },
+        {
+          "id": 23,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "Which of the following would Shaw and Newman most probably agree on?",
+          "options": {
+            "A": "It is writers' duty to fulfill journalistic goals.",
+            "B": "It is contemptible for writers to be journalists.",
+            "C": "Writers are likely to be tempted into journalism.",
+            "D": "Not all writers are capable of journalistic writing."
+          },
+          "answer": "D",
+          "analysis": "【判型】题干 Which of the following would Shaw and Newman most probably agree on? 含 most probably，要求基于原文做一步合理推断。 【拆句】Which of the following would Shaw and Newman most probably agree on?，疑问主 语 Which + 情态动词 would + 主语 Shaw and Newman + 谓语 agree on。无难点。 【定位】P3 \"So few authors have brains enough or literary gift enough to keep their own end up in journalism,\" Newman wrote, \"that I am tempted to define 'journalism' as 'a term of contempt applied by writers who are not read to writers who are\". 【选项】A) 过度推断 It is writers' duty to fulfill journalistic goals 把 These men believed in journalism as a calling 的'把新闻当作天职'拔高成'所有作家都有义务做新闻'；believed in 与 duty It is contemptible for writers to be journalists 直陈'作家做新闻是可耻的'，但 a term of contempt applied by writers who are not read to writers who are 的语义恰恰 Writers are likely to be tempted into journalism 把 I am tempted to define 的 tempted 偷换成'被引入新闻业的诱惑'。原文 tempted 的对象是 to define（想下定 义），不是'被吸引去做新闻'；且主语是 I（Newman 本人），不是 writers 整体。 D) ✓ 正确 So few authors have brains enough or literary gift enough to keep their own end up in journalism ↔ Not all writers are capable of journalistic writing Newman 是直接说话者；Shaw 与 Newman 同在 like George Bernard Shaw and Ernest Newman, could be trusted to know what they were about 一句中被并列",
+          "position": 0
+        },
+        {
+          "id": 24,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "What can be learned about Cardus according to the last two paragraphs?",
+          "options": {
+            "A": "His music criticism may not appeal to readers today.",
+            "B": "His reputation as a music critic has long been in dispute.",
+            "C": "His style caters largely to modern specialists.",
+            "D": "His writings fail to follow the amateur tradition."
+          },
+          "answer": "A",
+          "analysis": "【判型】题干 What can be learned about Cardus according to the last two paragraphs? 的 can be learned 暗示要从原文事实再走一步得到结论。 【拆句】What can be learned about Cardus according to the last two paragraphs?，疑问代词 What + 情态 can + 被动 be learned + 介短 about Cardus + according to 介短作状语； 【定位】P5 Journalistic tastes had changed long before his death, and postmodern readers have little use for the richly upholstered Vicwardian prose in which he specialized. Moreover, the amateur tradition in music criticism has been in headlong retreat. 【选项】A) ✓ 正确 postmodern readers have little use for the richly upholstered Vicwardian prose in which he specialized ↔ His music criticism may not appeal to readers today Is there any chance that Cardus's criticism will enjoy a revival? The prospect seems remote. ↔ His music criticism may not appeal to readers today A 项把作者明确给出的'今天读者用不上'的判断换成委婉的 may not appeal to readers His reputation as a music critic has long been in dispute 称其声誉长期有争议，但 P4 显示 Cardus 生前被 widely admired、1967 年首位被封爵的乐评家；今天则是 unknown save to specialists（被遗忘），不是被争议。 His style caters largely to modern specialists 称其文风迎合现代专家，但 his vast body of writings on music is unknown save to specialists 与 postmodern readers have little use for the richly upholstered Vicwardian prose 合起来说的是：今天只 His writings fail to follow the amateur tradition 说他没有遵循业余传统；但 the amateur tradition in music criticism has been in headlong retreat 谈的是这一传统",
+          "position": 0
+        },
+        {
+          "id": 25,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "What would be the best title for the text?",
+          "options": {
+            "A": "Newspapers of the Good Old Days",
+            "B": "The Lost Horizon in Newspapers",
+            "C": "Mournful Decline of Journalism",
+            "D": "Prominent Critics in Memory"
+          },
+          "answer": "B",
+          "analysis": "【判型】题干 What would be the best title for the text? 中 best title 直指文章主旨题。 【拆句】What would be the best title for the text?，主语 What + would be + 表语 the best title + 介短 for the text。无难点。 【选项】A) 以偏概全 Newspapers of the Good Old Days 给人怀旧温情感，但全文核心是哀其'衰退/失落'， B) ✓ 正确 the inexorable decline in the scope and seriousness of their arts coverage ↔ The Lost Horizon in Newspapers The prospect seems remote ↔ The Lost Horizon in Newspapers Mournful Decline of Journalism 哀叹的是整个新闻业的衰落，但原文只谈 arts coverage 这一块的衰退，并非整个 journalism；范围被无端放大。 Prominent Critics in Memory 只对应 P4 中 Neville Cardus 这类被遗忘的评论家个 SENTENCE INSIGHTS · 句子精讲 14 It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time when high-quality arts criticism could be found in most big-city newspapers. Yet a considerable number of the most significant collections of criticism published in the 20th century consisted in large part of newspaper reviews. To read such books today is to marvel at the fact that their learned contents were once deemed suitable for publication in general-circulation dailies. 动语态 be deemed 加形容词补足语的结构同样是考试重点,类似用法如 be considered / be In those far-off days, it was taken for granted that the critics of major papers would write in detail and at length about the events they covered. Theirs was a serious business, and even those reviewers who wore their learning lightly, like George Bernard Shaw and Ernest Newman, could be trusted to know what they were about. \"So few autho...",
+          "position": 0
+        },
+        {
+          "id": 26,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "Business-method patents have recently aroused concern because of____",
+          "options": {
+            "A": "their limited value to businesses.",
+            "B": "their connection with asset allocation.",
+            "C": "the possible restriction on their granting.",
+            "D": "the controversy over their authorization."
+          },
+          "answer": "C",
+          "analysis": "【判型】Business-method patents have recently aroused concern because of 用 because of 【拆句】Business-method patents have recently aroused concern because of____ 是一个待补 全陈述句，主干是 \"Business-method patents have aroused concern\"，recently 是时间 【定位】P2 Now the nation's top patent court appears completely ready to scale back on business-method patents, which have been controversial ever since they were first authorized 10 years ago. 【选项】A) 无中生有 their limited value to businesses 在原文中没有任何依据——文章只字未提此类专利对 Merrill Lynch got legal protection for an asset allocation strategy 只是第 1 段举 的一个案例，意在说明商业方法专利的存在，与 \"recently aroused concern 的原因\" C) ✓ 正确 ready to scale back on business-method patents ↔ the possible restriction on their granting 预判 \"准备收紧授予\" 与 the possible restriction on their granting 在语义上完全对 应，故选 C。 原文 which have been controversial ever since they were first authorized 10 years aroused concern 的近期原因，不是十年前授予时的争议。",
+          "position": 0
+        },
+        {
+          "id": 27,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "Which of the following is true of the Bilski case?",
+          "options": {
+            "A": "Its ruling complies with the court decisions.",
+            "B": "It involves a very big business transaction.",
+            "C": "It has been dismissed by the Federal Circuit.",
+            "D": "It may change the legal practices in the U.S."
+          },
+          "answer": "D",
+          "analysis": "【判型】Which of the following is true of the Bilski case 要在四项中挑出与原文事实一致的一 项，属于 which-is-true 型细节题。 【拆句】Which of the following is true of the Bilski case? 是疑问句，true of X 意为 \"关于 X 的 【定位】P4 The Federal Circuit issued an unusual order stating that the case would be heard by all 12 of the court's judges, rather than a typical panel of three, and that one issue it wants to evaluate is whether it should \"reconsider\" its State Street Bank ruling. Street Bank 判例。 【选项】A) 与原文相反 The Federal Circuit's action comes in the wake of a series of recent decisions by the Supreme Court that have narrowed the scope of protections for patent holders 表明 Bilski 案是 \"顺应\" 最高法院的反专利趋势，但 Its ruling complies with the court decisions 中的 \"ruling\" 暗指 Bilski 案已有裁决——而原文显示该案尚在审 原文 The Bilski case involves a claimed patent on a method for hedging risk in 申请；选项 It involves a very big business transaction（涉及一笔重大商业交易）把 原文 The Federal Circuit issued an unusual order stating that the case would be heard by all 12 of the court's judges 明确指出该案将由全院 12 名法官审理，与 It has been dismissed by the Federal Circuit（已被驳回）完全相反。 D) ✓ 正确 whether it should \"reconsider\" its State Street Bank ruling ↔ It may change the legal practices in the U.S. 全院审 + 明确要重审先例 + 有可能 \"消除整类专利\"，与 may change the legal practices in the U.S. 完全对位，故选 D。",
+          "position": 0
+        },
+        {
+          "id": 28,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "The word \"about-face\" (Line 1, Para. 3) most probably means____",
+          "options": {
+            "A": "loss of goodwill.",
+            "B": "increase of hostility.",
+            "C": "change of attitude.",
+            "D": "enhancement of dignity."
+          },
+          "answer": "C",
+          "analysis": "第三段第一行中\"about-face\"一词最可能的意思是____ A) 失去善意。 B) 敌意增加。 C) 态度转变。 D) 尊严提升。 【判型】The word \"about-face\" (Line 1, Para. 3) most probably means 直接问某词的含义，是典 【拆句】The word \"about-face\" (Line 1, Para. 3) most probably means____ 是待补全陈述句， most probably 表示 \"最可能\"，提示该词非字面、需结合语境推断。 【定位】P3 Curbs on business-method claims would be a dramatic about-face, because it was the Federal Circuit itself that introduced such patents with its 1998 decision in the so-called State Street Bank case, approving a patent on a way of pooling mutual-fund assets. Federal Circuit 自己在 1998 年的所谓 State Street Bank 案中以判决引入了此类专利，批 【选项】A) 无中生有 increase of hostility（敌意增加）原文亦无对应——法院只是收紧专利，并未对申请人 C) ✓ 正确 Curbs on business-method claims would be a dramatic about-face, because it was the Federal Circuit itself that introduced such patents ↔ change of attitude attitude 等值，故选 C。 enhancement of dignity（尊严提升）与原文情感色彩相反——原文 dramatic about-",
+          "position": 0
+        },
+        {
+          "id": 29,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "We learn from the last two paragraphs that business-method patents____",
+          "options": {
+            "A": "are immune to legal challenges.",
+            "B": "are often unnecessarily issued.",
+            "C": "lower the esteem for patent holders.",
+            "D": "increase the incidence of risks."
+          },
+          "answer": "B",
+          "analysis": "【判型】We learn from the last two paragraphs that 用 \"we learn\"，要求从段落整体推出未明说 【拆句】We learn from the last two paragraphs that business-method patents____ 是 we learn from X that Y 结构，从 X 里学到 Y 的内容；空格填对 business-method patents 【定位】P5 Last April, for example, the justices signaled that too many patents were being upheld for \"inventions\" that are obvious. 明 \"。 【选项】A) 与原文相反 反专利潮的双重冲击，are immune to legal challenges（不受法律挑战）与原文完全 B) ✓ 正确 too many patents were being upheld for \"inventions\" that are obvious ↔ are often unnecessarily issued 推断结论\"本不该发却被发出去了\" 完全等于 are often unnecessarily issued，故选 B。 原文未对 \"专利持有人的社会声望（esteem for patent holders）\" 作任何评价；lower the esteem for patent holders 是凭空捏造。 原文 The Bilski case involves a claimed patent on a method for hedging risk in the energy market 中的 risk 是 \"对冲风险的方法\" 中的对冲对象，并不是说商业方法专",
+          "position": 0
+        },
+        {
+          "id": 30,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "Which of the following would be the subject of the text?",
+          "options": {
+            "A": "A looming threat to business-method patents.",
+            "B": "Protection for business-method patent holders.",
+            "C": "A legal case regarding business-method patents.",
+            "D": "A prevailing trend against business-method patents."
+          },
+          "answer": "A",
+          "analysis": "【判型】Which of the following would be the subject of the text 直接索要 the subject of the 【拆句】Which of the following would be the subject of the text? 是疑问句，would be 是虚拟 【选项】A) ✓ 正确 ready to scale back on business-method patents ↔ A looming threat to business-method patents. It \"has the potential to eliminate an entire class of patents.\" ↔ A looming threat to business-method patents. 主线的一句话浓缩就是 \"对商业方法专利的逼近威胁\"，与 A looming threat to business-method patents. 完全等值，故选 A。 全文是讲 business-method patent holders 正面临收紧与挑战，Protection for business-method patent holders. 反其道而行——把 \"威胁\" 写成 \"保护\"，与主线情 P4 的 The Bilski case involves a claimed patent on a method for hedging risk in the energy market 只是全文的一个支撑案例，A legal case regarding business- method patents. 把这一案例抬升为全文主题，忽略了第 1、2、3、5 段的铺垫与 A prevailing trend against business-method patents. 听上去与 A 相近，但 \"prevailing trend（已盛行的趋势）\" 与原文表述不符——原文强调的是 Federal Circuit 借 Bilski \"appears completely ready to scale back\"（即将出手的逼近性威 胁）、是动作前夕；prevailing trend 把 \"未起势 \" 说成 \"已成势\"。 SENTENCE INSIGHTS · 句子精讲 8 In a move that has intellectual-property lawyers abuzz, the U.S. Court of Appeals for the Federal Circuit said it would use a particular case to conduct a broad review of business-method patents. In re Bilski, as the case is known, is \"a very big deal,\" says Dennis D. Crouch of the University of Missouri School of Law. Curbs on business-method claims would be a dramatic about-face, because it was the Federal Circuit itself that introduced such patents with its 1998 de...",
+          "position": 0
+        },
+        {
+          "id": 31,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "By citing the book The Tipping Point, the author intends to____",
+          "options": {
+            "A": "analyze the consequences of social epidemics.",
+            "B": "discuss influentials' function in spreading ideas.",
+            "C": "exemplify people's intuitive response to social epidemics.",
+            "D": "describe the essential characteristics of influentials."
+          },
+          "answer": "B",
+          "analysis": "【判型】By citing the book The Tipping Point, the author intends to 明确问\"通过引用某书，作 【拆句】By citing the book The Tipping Point, the author intends to____ 主干是 the author intends to + 选项动词原形；By citing… 是方式状语，限定意图发生的场合，不是宾语， 别把宾语理解成 the book。 【定位】P1 In his book The Tipping Point, Malcolm Gladwell argues that \"social epidemics\" are driven in large part by the actions of a tiny minority of special individuals, often called influentials, who are unusually informed, persuasive, or well connected. The idea is intuitively compelling, but it doesn't explain how ideas actually spread. Gladwell 在《引爆点》中主张：\"社会流行\"主要由一小撮特殊个体（influentials，意为有 【选项】A) 偷换概念 A 项把讨论对象换成 consequences of social epidemics（社会流行的后果），但作者 B) ✓ 正确 driven in large part by the actions of a tiny minority of special individuals, often called influentials ↔ influentials' function in spreading ideas it doesn't explain how ideas actually spread ↔ discuss 预判要的是\"借书引入议题\"，B 的 discuss influentials' function in spreading ideas C 项 exemplify people's intuitive response to social epidemics 抓的是 intuitively compelling 一词，但 intuitively compelling 是作者对 Gladwell 想法的评价，不是 作者想\"举例说明 people's intuitive response\"——这本书没有被用作\"直觉反应\"的 D 项 describe the essential characteristics of influentials 把引此书的目的说成\"描述 influentials 的本质特征\"。原文虽有 unusually informed, persuasive, or well connected 几个特征，但作者引此书的目的不是介绍 influentials 是什么人，而是要质",
+          "position": 0
+        },
+        {
+          "id": 32,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "The author suggests that the \"two-step-flow theory\" ____",
+          "options": {
+            "A": "serves as a solution to marketing problems.",
+            "B": "has helped explain certain prevalent trends.",
+            "C": "has won support from influentials.",
+            "D": "requires solid evidence for its validity."
+          },
+          "answer": "D",
+          "analysis": "【判型】The author suggests that 中的 suggests 表明问的不是原文直说的话，而是作者通过文本 【拆句】The author suggests that the \"two-step-flow theory\" ____ 是带宾语从句的不完整句， that 从句的谓语就是四个选项，选项要能与从句主语 the two-step-flow theory 在语法上 【定位】P2 The supposed importance of influentials derives from a plausible-sounding but largely untested theory called the \"two-step flow of communication\". 【选项】A) 过度推断 A 项 serves as a solution to marketing problems。原文 Marketers have embraced the two-step flow 只是说营销者\"拥抱\"该理论，并未说它真能\"解决\"营销问题——拥抱 ≠解决。 B 项 has helped explain certain prevalent trends。原文 The theory also seems to explain the sudden and unexpected popularity——seems to explain（似乎能解 helped explain。 C 项 has won support from influentials。文章只说营销者（marketers）拥抱该理 论，从未提到 influentials 本身\"支持\"该理论——influentials 在文中是被研究的对象， D) ✓ 正确 largely untested ↔ requires solid evidence for its validity plausible-sounding but largely untested ↔ requires solid evidence for its validity 预判要的是\"该理论缺乏证据/需要证据\"，D 的 requires solid evidence for its validity 恰好是 largely untested 的换说法——同义改写关系最稳，是答案。",
+          "position": 0
+        },
+        {
+          "id": 33,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "What the researchers have observed recently shows that____",
+          "options": {
+            "A": "the power of influence goes with social interactions.",
+            "B": "interpersonal links can be enhanced through the media.",
+            "C": "influentials have more channels to reach the public.",
+            "D": "most celebrities enjoy wide media attention."
+          },
+          "answer": "A",
+          "analysis": "【判型】What the researchers have observed recently shows that____ 问\"研究者观察到的事实 【拆句】What the researchers have observed recently shows that____ 主句是 What…shows that____，What 引导的主语从句作 shows 的主语；shows 后才是答案位，别 把\"researchers observed\"的内容当成答案，要看\"该观察揭示了什么\"。 【定位】P4 With the exception of a few celebrities like Oprah Winfrey – whose outsize presence is primarily a function of media, not interpersonal, influence – even the most influential members of a population simply don't interact with that many others. 【选项】A) ✓ 正确 even the most influential members of a population simply don't interact with that many others ↔ the power of influence goes with social interactions whose outsize presence is primarily a function of media, not interpersonal, influence ↔ social interactions B 项 interpersonal links can be enhanced through the media。原文是\"媒体绕过人 际链条放大名人影响\"（outsize presence is primarily a function of media, not C 项 influentials have more channels to reach the public。研究者的发现恰恰相反 influentials 添加了\"传播渠道更多\"的属性。 D 项 most celebrities enjoy wide media attention。原文里 Oprah 是被作为\"特例\"提 及（With the exception of a few celebrities like Oprah Winfrey），且范围是 a few celebrities，不是 most celebrities；D 把例外当主张、把\"少数\"夸成\"大多数\"。",
+          "position": 0
+        },
+        {
+          "id": 34,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "The underlined phrase \"these people\" in Paragraph 4 refers to the ones who____",
+          "options": {
+            "A": "stay outside the network of social influence.",
+            "B": "have little contact with the source of influence.",
+            "C": "are influenced and then influence others.",
+            "D": "are influenced by the initial influential."
+          },
+          "answer": "C",
+          "analysis": "【判型】The underlined phrase \"these people\" in Paragraph 4 refers to the ones who____ 问 【拆句】The underlined phrase \"these people\" in Paragraph 4 refers to the ones who____ 主 干 the phrase refers to the ones；who 引导定语从句修饰 the ones，选项要能完整接 who，是\"那些……的人\"。 【定位】P4 For a social epidemic to occur, however, each person so affected must then influence his or her own acquaintances, who must in turn influence theirs, and so on; and just how many others pay attention to each of these people has little to do with the initial influential. 那个 influential 已经没什么关系了。 【选项】A) 与原文相反 A 项 stay outside the network of social influence。these people 恰恰在网络内部、 B 项 have little contact with the source of influence。these people 是传播链中的每 C) ✓ 正确 each person so affected must then influence his or her own acquaintances ↔ are influenced and then influence others who must in turn influence theirs, and so on ↔ and then influence others 预判要的就是\"被影响且接着影响他人\"的双重身份，C 用 are influenced and then D 项 are influenced by the initial influential。these people 确实被影响过，但定位",
+          "position": 0
+        },
+        {
+          "id": 35,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "What is the essential element in the dynamics of social influence?",
+          "options": {
+            "A": "The eagerness to be accepted.",
+            "B": "The impulse to influence others.",
+            "C": "The readiness to be influenced.",
+            "D": "The inclination to rely on others."
+          },
+          "answer": "C",
+          "analysis": "【判型】What is the essential element in the dynamics of social influence? 用 What is 直接问 【拆句】What is the essential element in the dynamics of social influence? 主干 What is the essential element；in the dynamics of social influence 是后置介词短语，限定 element 【定位】P5 They found that the principal requirement for what is called \"global cascades\" – the widespread propagation of influence through networks – is the presence not of a few influentials but, rather, of a critical mass of easily influenced people. 【选项】A) 偷换概念 A 项 The eagerness to be accepted。原文说的是 easily influenced（容易被影 响），不是 eager to be accepted（渴望被接纳）——\"被影响\"和\"被接纳\"是两件事， B 项 The impulse to influence others。原文强调的是\"被影响的属性\"（被动方），B influentials 那一面。 C) ✓ 正确 a critical mass of easily influenced people ↔ The readiness to be influenced the principal requirement ↔ the essential element 末段 not A but B 中的 B 就是 easily influenced people 的属性，C 把这个属性抽象为 readiness to be influenced——既不偏，也不强加，是末段结论句的最贴切转述。 D 项 The inclination to rely on others。原文只说\"易被影响\"，不等于\"依赖他人\"—— SENTENCE INSIGHTS · 句子精讲 7 In their recent work, however, some researchers have come up with the finding that influentials have far less impact on social epidemics than is generally supposed. In fact, they don't seem to be required at all. be done、tend to be considered 等句型。 The researchers' argument stems from a simple observation about social influence: With the exception of a few celebrities like Oprah Winfrey – whose outsize presence is primarily a function of media, not interpersonal, ...",
+          "position": 0
+        },
+        {
+          "id": 36,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "Bankers complained that they were forced to____",
+          "options": {
+            "A": "follow unfavorable asset evaluation rules.",
+            "B": "collect payments from third parties.",
+            "C": "cooperate with the price managers.",
+            "D": "reevaluate some of their assets."
+          },
+          "answer": "A",
+          "analysis": "【判型】Bankers complained that they were forced to____ 把答案锁定在一件具体行为上，不涉 【拆句】Bankers complained that they were forced to____ 是“主句 + that 宾语从句”，从句里用 “were forced to + do”被动结构，空格填动词原形短语；整句无陷阱，关键是 forced to 暗 【定位】P1 Their rules, moan the banks, have forced them to report enormous losses, and it's just not fair. These rules say they must value some assets at the price a third party would pay, not the price managers and regulators would like them to fetch. 【选项】A) ✓ 正确 These rules say they must value some assets at the price a third party would pay ↔ follow unfavorable asset evaluation rules 预判“被迫执行不利于自己的估值规则”=follow unfavorable asset evaluation rules， follow=must do、unfavorable=not fair、asset evaluation rules=value assets 的规 collect payments from third parties 把 the price a third party would pay 里仅作“估 cooperate with the price managers 凭空造出一个职业身份 the price managers，原 文 the price managers and regulators would like them to fetch 里的 managers 指 reevaluate some of their assets 与 value some assets at the price a third party",
+          "position": 0
+        },
+        {
+          "id": 37,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "According to the author, the rule changes of the FASB may result in____",
+          "options": {
+            "A": "the diminishing role of management.",
+            "B": "the revival of the banking system.",
+            "C": "the banks' long-term asset losses.",
+            "D": "the weakening of its independence."
+          },
+          "answer": "D",
+          "analysis": "【判型】may result in 表明答案是作者对 FASB 改动后果的判断，文中可能不会原句给出结论，需 【拆句】the rule changes of the FASB may result in____ 主干 the rule changes may result in X，of the FASB 是后置定语限定 changes 归属；空格填名词性短语作 result in 的宾语。 【定位】P3 These gave banks more freedom to use models to value illiquid assets and more flexibility in recognizing losses on long-term assets in their income statements. Bob Herz, the FASB's chairman, cried out against those who \"question our motives.\" Yet bank shares rose and the changes enhance what one lobbying group politely calls \"the use of judgment by management.\" 【选项】A) 与原文相反 原文 enhance what one lobbying group politely calls \"the use of judgment by management\" 明确说管理层判断权被“增强”，the diminishing role of management 第 2 段 unless banks carry toxic assets at prices that attract buyers, reviving the banking system will be difficult 表明在作者眼中，目前的让步只会让复苏更难，the revival of the banking system 与作者判断相反。 more flexibility in recognizing losses on long-term assets in their income statements 谈的是损失“在报表上如何确认”，是会计处理问题；the banks' long-term D) ✓ 正确 the independence of standard-setters, essential to the proper functioning of capital markets, is being compromised ↔ the weakening of its independence the use of judgment by management ↔ the weakening of its independence 预判“准则制定者独立性被削弱”=the weakening of its independence，its 回指 the",
+          "position": 0
+        },
+        {
+          "id": 38,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "According to Paragraph 4, McCreevy objects to the IASB's attempt to____",
+          "options": {
+            "A": "keep away from political influences.",
+            "B": "evade the pressure from their peers.",
+            "C": "act on their own in rule-setting.",
+            "D": "take gradual measures in reform."
+          },
+          "answer": "C",
+          "analysis": "根据第4段,McCreevy反对IASB试图____ 【判型】McCreevy objects to the IASB's attempt to____ 锁定到 McCreevy 反对的具体行为，是 事实细节，限定 According to Paragraph 4。 【拆句】McCreevy objects to the IASB's attempt to____ 中 attempt 后接不定式 to do 表“试图做 【定位】P4 The IASB says it does not want to act without overall planning, but the pressure to fold when it completes its reconstruction of rules later this year is strong. Charlie McCreevy, a European commissioner, warned the IASB that it did \"not live in a political vacuum\" but \"in the real world\" and that Europe could yet develop different rules. 让其屈服的压力将很大。欧洲委员 Charlie McCreevy 警告 IASB，它不是“生活在政治真空 【选项】A) 张冠李戴 keep away from political influences 是 not live in a political vacuum 的同义陈述， 但这恰恰是 McCreevy 警告 IASB 不能做的事，不是 IASB 自己 attempt to 做的事；题 干问的是 McCreevy 反对 IASB 想做什么。 evade the pressure from their peers 中的 peers（同行）在原文找不到对应——压力 C) ✓ 正确 it does not want to act without overall planning ↔ act on their own in rule-setting not live in a political vacuum ↔ act on their own in rule-setting 预判“反对 IASB 不顾政治现实、按自己节奏出规则”=act on their own in rule- setting：on their own 抓住“独自”这一核心，与 McCreevy “你不在真空里”的反讽完全 take gradual measures in reform 谈“渐进改革”，原文 IASB 的表态是“要总体规划再 动”而非“分步走”；gradual 在原文无对应。",
+          "position": 0
+        },
+        {
+          "id": 39,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "The author thinks the banks were \"on the wrong planet\" in that they____",
+          "options": {
+            "A": "misinterpreted market price indicators.",
+            "B": "exaggerated the real value of their assets.",
+            "C": "neglected the likely existence of bad debts.",
+            "D": "denied booking losses in their sale of assets."
+          },
+          "answer": "B",
+          "analysis": "【判型】in that they____ 是因果连词 in that，要求从形象句推出作者所指的实际事实，答案是对原 【拆句】The author thinks the banks were \"on the wrong planet\" in that they____ 主干 The author thinks (that) the banks were ...；in that 是因果连词，相当于 because；空格填 【定位】P5 It was banks that were on the wrong planet, with accounts that vastly overvalued assets. 【选项】A) 答非所问 misinterpreted market price indicators 对应的是 they argue that market prices overstate losses——这是银行如今为自己辩解的话，而非作者用来论证 banks were on the wrong planet 的依据；题干问的是“为什么走错星球”，不是“银行如今怎么 辩护”。 B) ✓ 正确 with accounts that vastly overvalued assets ↔ exaggerated the real value of their assets 预判“严重高估资产”=exaggerated the real value of their assets：exaggerated 对应 overvalued，real value of their assets 对应 accounts 高估的对象，正向一一对位。 原文 not the likely extent of bad debts 只说银行如今认为市价不能反映坏账规模，没 有说银行“忽视坏账的存在”；neglected the likely existence of bad debts 把 the extent of（规模）偷换为 the existence of（存在与否），并把原本的 likely extent 抽 denied booking losses in their sale of assets 对应 banks which will not sell assets for fear of booking losses——这是文章对当前市场停滞的解释，发生在“走错星球”之",
+          "position": 0
+        },
+        {
+          "id": 40,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "The author's attitude towards standard-setters is one of____ Part B Directions: For questions 41-45, choose the most suitable paragraphs from the list A-G and fill them into the numbered boxes to form a coherent text. Paragraph E has been correctly placed. There is one paragraph which does not fit in with the text. Mark your answers on ANSWER SHEET 1. (10 points) and drink in places other than homes has risen from about 32 percent of total consumption in 1995 to 35 percent in 2000 and is expected to approach 38 percent by 2005. This development is boosting wholesale demand from the food service segment by 4 to 5 percent a year across Europe, compared with growth in retail demand of 1 to 2 percent. Meanwhile, as the recession is looming large, people are getting anxious. They tend to keep a tighter hold on their purse and consider eating at home a realistic alternative. retailers hungry for opportunities to grow. Most leading retailers have already tried e-commerce, with limited success, and expansion abroad. But almost all have ignored the big, profitable opportunity in their own backyard: the wholesale food and drink trade, which appears to be just the kind of market retailers need. not. The functioning of the market is based on flexible trends dominated by potential buyers. In other words, it is up to the buyer, rather than the seller, to decide what to buy. At any rate, this change will ultimately be acclaimed by an ever-growing number of both domestic and international consumers, regardless of how long the current consumer pattern will take hold. scale, existing infrastructure, and proven skills in the management of product ranges, logistics, and marketing intelligence. Retailers that master the intricacies of wholesaling in Europe may well expect to rake in substantial profits thereby. At least, that is how it looks as a whole. Closer inspection reveals important differences among the biggest national markets, especially in their customer segments and wholesale structures, as well as the competitive dynamics of individual food and drink categories. Big retailers must understand these differences before they can identify the segments of European wholesaling in which their particular abilities might unseat smaller but entrenched competitors. New skills and unfamiliar business models are needed too. [ E ] Despite variations in detail, wholesale markets in the countries that have been closely examined—France, Germany, Italy and Spain—are made out of the same building blocks. Demand comes mainly from two sources: independent mom-and-pop grocery stores which, unlike large retail chains, are too small to buy straight from producers, and food service operators that cater to consumers when they don't eat at home. Such food service operators range from snack machines to large institutional catering ventures, but most of these businesses are known in the trade as \"horeca\":hotels, restaurants, and cafés. Overall, Europe's wholesale market for food and drink is growing at the same sluggish pace as the retail market, but the figures, when added together, mask two opposing trends. [ F ] For example, wholesale food and drink sales came to $268 billion in France, Germany, Italy, Spain, and the United Kingdom in 2000 – more than 40 percent of retail sales. Moreover, average overall margins are higher in wholesale than in retail; wholesale demand from the food service sector is growing quickly as more Europeans eat out more often; and changes in the competitive dynamics of this fragmented industry are at last making it feasible for wholesalers to consolidate. [ G ] However, none of these requirements should deter large retailers (and even some large food producers and existing wholesalers) from trying their hand, for those that master the intricacies of wholesaling in Europe stand to reap considerable gains.",
+          "options": {
+            "A": "The first and most important is the consumer's growing preference for eating out: the consumption of food",
+            "B": "Retail sales of food and drink in Europe's largest markets are at a standstill, leaving European grocery",
+            "C": "Will such variations bring about a change in the overall structure of the food and drink market? Definitely",
+            "D": "All in all, this clearly seems to be a market in which big retailers could profitably apply their gigantic"
+          },
+          "answer": "D",
+          "analysis": "A) 满意。 B) 怀疑。 C) 客观。 D) 同情。 【判型】The author's attitude towards standard-setters is one of____ 直接问态度，是典型态度 【拆句】The author's attitude towards standard-setters is one of____ 主干为 attitude is one of 【选项】A) 与原文相反 satisfaction 要求作者对 standard-setters 当前状况感到满意，但 is being compromised 与 inviting pressure to make more concessions 都是负面处境描述， skepticism 要求作者对 standard-setters 的能力或动机存疑，但 cleaning up rules on stock options and pensions, for example, against hostility from special interests objectiveness 要求作者保持不偏不倚，但全文从 essential to the proper functioning of capital markets 到 Successful markets require independent and even combative standard-setters 都明显站在 standard-setters 一边，并对其当下让步明 D) ✓ 正确 the independence of standard-setters, essential to the proper functioning of capital markets, is being compromised ↔ sympathy by giving in to critics now they are inviting pressure to make more concessions ↔ sympathy 预判“认可对象、惋惜其处境”=sympathy：作者既高声肯定 independent and even combative standard-setters 的价值，又为其在压力下被迫让步而抱憾，整体语气与“同 SENTENCE INSIGHTS · 句子精讲 7 Bankers have been blaming themselves for their troubles in public. And, unless banks carry toxic assets at prices that attract buyers, reviving the banking system will be difficult. The IASB says it does not want to act without overall planning, but the pressure to fold when it completes its reconstruction of rules later this year is strong. It was banks that were on the wrong planet, with accounts that vastly overvalued assets. And dead markets partly reflect th...",
+          "position": 0
+        }
+      ]
+    }
+  ]
+}

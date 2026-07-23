@@ -1,0 +1,843 @@
+{
+  "id": "2019-english2",
+  "year": 2019,
+  "subject": "英语二",
+  "title": "2019年英语二",
+  "sections": [
+    {
+      "id": "sec-cloze",
+      "type": "cloze",
+      "title": "英语知识运用",
+      "directions": "Directions: Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "cloze-1",
+          "title": "完形填空",
+          "type": "cloze",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Weighing yourself regularly is a wonderful way to stay aware of any significant weight fluctuations. "
+            },
+            {
+              "type": "blank",
+              "blankId": 1
+            },
+            {
+              "type": "paragraph",
+              "content": " , when done too often, this habit can sometimes hurt more than it "
+            },
+            {
+              "type": "blank",
+              "blankId": 2
+            },
+            {
+              "type": "paragraph",
+              "content": " . As for me, weighing myself every day caused me to shift my focus from being generally healthy and physically active, to focusing "
+            },
+            {
+              "type": "blank",
+              "blankId": 3
+            },
+            {
+              "type": "paragraph",
+              "content": " on the scale. That was bad for my overall fitness goals. I had gained weight in the form of muscle mass, but thinking only of "
+            },
+            {
+              "type": "blank",
+              "blankId": 4
+            },
+            {
+              "type": "paragraph",
+              "content": " the number on the scale, I altered my training program. That conflicted with how I needed to train to "
+            },
+            {
+              "type": "blank",
+              "blankId": 5
+            },
+            {
+              "type": "paragraph",
+              "content": " my goals. I also found that weighing myself daily did not provide an accurate "
+            },
+            {
+              "type": "blank",
+              "blankId": 6
+            },
+            {
+              "type": "paragraph",
+              "content": " of the hard work and progress I was making in the gym. It takes about three weeks to a month to notice significant changes in your weight "
+            },
+            {
+              "type": "blank",
+              "blankId": 7
+            },
+            {
+              "type": "paragraph",
+              "content": " altering your training program. The most "
+            },
+            {
+              "type": "blank",
+              "blankId": 8
+            },
+            {
+              "type": "paragraph",
+              "content": " changes will be observed in skill level, strength and inches lost. For these "
+            },
+            {
+              "type": "blank",
+              "blankId": 9
+            },
+            {
+              "type": "paragraph",
+              "content": " , I stopped weighing myself every day and switched to a bimonthly weighing schedule "
+            },
+            {
+              "type": "blank",
+              "blankId": 10
+            },
+            {
+              "type": "paragraph",
+              "content": " . Since weight loss is not my goal, it is less important for me to "
+            },
+            {
+              "type": "blank",
+              "blankId": 11
+            },
+            {
+              "type": "paragraph",
+              "content": " my weight each week. Weighing every other week allows me to observe and "
+            },
+            {
+              "type": "blank",
+              "blankId": 12
+            },
+            {
+              "type": "paragraph",
+              "content": " any significant weight changes. That tells me whether I need to "
+            },
+            {
+              "type": "blank",
+              "blankId": 13
+            },
+            {
+              "type": "paragraph",
+              "content": " my training program. I use my bimonthly weigh-in "
+            },
+            {
+              "type": "blank",
+              "blankId": 14
+            },
+            {
+              "type": "paragraph",
+              "content": " to get information about my nutrition as well. If my training intensity remains the same, but I'm constantly "
+            },
+            {
+              "type": "blank",
+              "blankId": 15
+            },
+            {
+              "type": "paragraph",
+              "content": " and dropping weight, this is a "
+            },
+            {
+              "type": "blank",
+              "blankId": 16
+            },
+            {
+              "type": "paragraph",
+              "content": " that I need to increase my daily caloric intake. The "
+            },
+            {
+              "type": "blank",
+              "blankId": 17
+            },
+            {
+              "type": "paragraph",
+              "content": " to stop weighing myself every day has done wonders for my overall health, fitness and well- being. I'm experiencing increased zeal for working out since I no longer carry the burden of a "
+            },
+            {
+              "type": "blank",
+              "blankId": 18
+            },
+            {
+              "type": "paragraph",
+              "content": " morning weigh-in. I've also experienced greater success in achieving my specific fitness goals, "
+            },
+            {
+              "type": "blank",
+              "blankId": 19
+            },
+            {
+              "type": "paragraph",
+              "content": " I'm training according to those goals, not the numbers on a scale. Rather than "
+            },
+            {
+              "type": "blank",
+              "blankId": 20
+            },
+            {
+              "type": "paragraph",
+              "content": " over the scale, turn your focus to how you look, feel, how your clothes fit and your overall energy level."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "Besides",
+            "B": "Therefore",
+            "C": "Otherwise",
+            "D": "However"
+          },
+          "answer": "D",
+          "analysis": "However 【线索】前句褒后句贬，构成明显语义反转 前句把每日称重描述为a wonderful way（褒义），后句紧接着说this habit can sometimes hurt more than it __(2)__（贬义、提出风险）。一褒一贬之间需要一个表示转 折的连接词，答案应具备\"however/but\"的语义。 【选项】A) Besides ✗ 表补充而非转折 B) Therefore ✗ 表因果方向反了 C) Otherwise ✗ 表假设条件下的相反结果 D) However ✓ 标准转折词，承接\"好处—风险\"反转 However意为\"然而\"，正好承接前句\"a wonderful way\"与后句\"hurt more than it helps\"的褒 【验证】代入后整句为However, when done too often, this habit can sometimes hurt more 第一步 outline 的\"总-反\"开头完全吻合。",
+          "position": 0
+        },
+        {
+          "id": 2,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "helps",
+            "B": "cares",
+            "C": "warns",
+            "D": "reduces"
+          },
+          "answer": "A",
+          "analysis": "helps 【线索】本句 hurt 与空成反义对照 this habit can sometimes hurt more than it __(2)__中，hurt 表\"伤害\"，连词 more 帮助\"。 【选项】 A) helps ✓ 标准反义对照，hurt vs helps helps\"帮助\"与 hurt 构成最经典的英语反义对，hurt more than it helps是\"弊大于利\"的固定表 B) cares ✗ 动作主体不对，且非 hurt 的反义 C) warns ✗ 义近\"提醒\"但与 hurt 不对照 warns\"警告\"虽然能与\"称重\"勉强搭上（提醒体重变化），但与 hurt 不构成反义，hurt more than it warns 语义混乱。 D) reduces ✗ 缺宾语、且语义不对 【验证】代入后this habit can sometimes hurt more than it __(2)__读作\"弊大于利\"，正好作为第1",
+          "position": 0
+        },
+        {
+          "id": 3,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "initially",
+            "B": "solely",
+            "C": "occasionally",
+            "D": "formally"
+          },
+          "answer": "B",
+          "analysis": "solely 【线索】前文用 shift ... from ... to 暗示\"由广转窄\" weighing myself every day caused me to shift my focus from being generally healthy and physically active, to focusing __(3)__ on the scale中，from 后是\"全面健康 【选项】A) initially ✗ 时间维度，错维度 B) solely ✓ \"唯一地、仅仅\"，正与\"generally\"反义 solely\"仅仅、唯一地\"完美对照前文的being generally healthy and physically active——从\"广 C) occasionally ✗ 频率\"偶尔\"，与每日称重事实矛盾 occasionally\"偶尔地\"是频率副词，但作者明确说weighing myself every day，每日称重不可 D) formally ✗ 方式\"正式地\"，语义与场景无关 【验证】代入后to focusing __(3)__ on the scale变为\"仅仅盯着体重秤\"，与前文\"generally healthy\"形成\"广—窄\"对照，又顺势引出下一句That was bad for my overall fitness",
+          "position": 0
+        },
+        {
+          "id": 4,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "recording",
+            "B": "lowering",
+            "C": "explaining",
+            "D": "accepting"
+          },
+          "answer": "B",
+          "analysis": "lowering 【线索】上句揭示\"增肌反致体重上升\"是动机背景 I had gained weight in the form of muscle mass, but thinking only of __(4)__ the number on the scale, I altered my training program——作者已经因增肌而体重上升， 【选项】A) recording ✗ 只\"记\"无须改训练，动机不足 recording\"记录数字\"是被动观察，不会促使作者altered my training program，动机—后果链条 B) lowering ✓ \"降低数字\"才会驱动作者改训练 C) explaining ✗ \"解释数字\"语义不通 D) accepting ✗ 若接受数字就不会改训练，与后果相反 accepting\"接受\"数字意味着作者不在意秤上读数，与紧跟着的\"altered my training program\"完 【验证】代入后thinking only of __(4)__ the number on the scale, I altered my training",
+          "position": 0
+        },
+        {
+          "id": 5,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "modify",
+            "B": "set",
+            "C": "review",
+            "D": "reach"
+          },
+          "answer": "D",
+          "analysis": "reach 【线索】前句指出新训练与正确训练方式相冲突 That conflicted with how I needed to train to __(5)__ my goals——作者已经设定好健 【选项】A) modify ✗ \"修改目标\"与练习目的不符 B) set ✗ \"设定目标\"在训练之前已完成 非\"设定\"。 C) review ✗ \"复审目标\"与训练目的无关 D) reach ✓ \"达到目标\"是 train to 的最自然搭配 reach\"达到\"目标，是 reach one's goals 的高频搭配，且与全文\"为了真正的健身目标该怎么训 【验证】代入后That conflicted with how I needed to train to __(5)__ my goals读作\"那与我为达",
+          "position": 0
+        },
+        {
+          "id": 6,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "definition",
+            "B": "depiction",
+            "C": "distribution",
+            "D": "prediction"
+          },
+          "answer": "B",
+          "analysis": "depiction 【线索】accurate ___ of 努力与进展 = 准确反映/描绘 weighing myself daily did not provide an accurate __(6)__ of the hard work and progress I was making in the gym——作者说每日称重没法\"准确反映\"努力与进展。空处 【选项】A) definition ✗ \"定义\"对象是概念非过程 B) depiction ✓ \"描绘\"努力与进展，正中 accurate 搭配 depiction\"描绘、刻画\"与 accurate 完美搭配（accurate depiction 是高频搭配），意为\"准确反 C) distribution ✗ \"分布\"对象不对 D) prediction ✗ \"预测\"指向未来，时态对不上 prediction\"预测\"指向未来，而原文 the hard work and progress I was making 是已发生事实， 【验证】代入后weighing myself daily did not provide an accurate __(6)__ of the hard work and progress I was making in the gym读作\"每日称重无法准确描绘你已付出的努力与进",
+          "position": 0
+        },
+        {
+          "id": 7,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "due to",
+            "B": "regardless of",
+            "C": "aside from",
+            "D": "along with"
+          },
+          "answer": "A",
+          "analysis": "due to 【线索】前果后因——\"改训练\"是\"体重变化\"的原因 It takes about three weeks to a month to notice significant changes in your weight __(7)__ altering your training program——\"体重变化\"发生在\"改变训练计划\"之后，是后 【选项】 A) due to ✓ \"由于\"，标准因果搭配 B) regardless of ✗ \"不管\"否认因果，与语境相反 C) aside from ✗ \"除……之外\"语义跑偏 D) along with ✗ \"伴随\"表共现非因果 【验证】代入后significant changes in your weight __(7)__ altering your training program读 后一句The most __(8)__ changes will be observed in skill level, strength and inches lost做铺垫。",
+          "position": 0
+        },
+        {
+          "id": 8,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "orderly",
+            "B": "rigid",
+            "C": "precise",
+            "D": "immediate"
+          },
+          "answer": "D",
+          "analysis": "immediate 【线索】前句强调体重变化\"慢\"，本句应给出\"快\"的对照 上句It takes about three weeks to a month to notice significant changes in your weight强调体重变化耗时长；本句以 The most ___ changes 开头，紧承其后讲\"哪种变化 【选项】A) orderly ✗ \"有序的\"与时间维度不符 B) rigid ✗ \"僵硬的\"褒贬不符 C) precise ✗ \"精确的\"维度错，不与\"慢\"对照 D) immediate ✓ \"即时的\"正好与\"3 周到 1 个月\"形成对照 【验证】代入后The most __(8)__ changes will be observed in skill level, strength and inches",
+          "position": 0
+        },
+        {
+          "id": 9,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "claims",
+            "B": "judgments",
+            "C": "reasons",
+            "D": "methods"
+          },
+          "answer": "C",
+          "analysis": "reasons 【线索】第2、3段全是\"为什么不该每日称重\"的原因 weighing myself every day caused me to shift my focus和weighing myself daily did not provide an accurate __(6)__ of the hard work and progress——前两段都在列举\"每 【选项】A) claims ✗ \"主张\"指尚未证实的说法 B) judgments ✗ \"判断\"指评价行为 C) reasons ✓ \"原因\"，承接前两段所有理由 reasons\"原因\"正好回指前两段列举的所有弊端，构成 for these reasons \"基于上述原因\"的高频 D) methods ✗ \"方法\"指代对象与前文不符 【验证】代入后For these __(9)__, I stopped weighing myself every day and switched to a bimonthly weighing schedule __(10)__读作\"基于这些原因，我停了日称改为双周\"，正好",
+          "position": 0
+        },
+        {
+          "id": 10,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "instead",
+            "B": "though",
+            "C": "again",
+            "D": "indeed"
+          },
+          "answer": "A",
+          "analysis": "instead 【线索】stopped ... switched ... 即\"换做新做法\"对比 I stopped weighing myself every day and switched to a bimonthly weighing schedule __(10)__——前一动作是\"停掉旧做法\"，后一动作是\"换上新做法\"。这种\"停 A 换 【选项】 A) instead ✓ \"取而代之\"，正中 stop A switch B 句式 instead\"作为替代\"完美呼应 stopped ... and switched 的替换关系，句末加 instead 把对比强 B) though ✗ \"不过\"用作让步，无对照对象 C) again ✗ \"又一次\"与首次更改不符 D) indeed ✗ \"确实\"用作强调，与替代关系不符 【验证】代入后I stopped weighing myself every day and switched to a bimonthly weighing",
+          "position": 0
+        },
+        {
+          "id": 11,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "track",
+            "B": "overlook",
+            "C": "conceal",
+            "D": "report"
+          },
+          "answer": "A",
+          "analysis": "track 【线索】Since weight loss is not my goal 是因 Since weight loss is not my goal, it is less important for me to __(11)__ my weight 【选项】 A) track ✓ \"追踪\"体重，与\"减重不是目标\"逻辑契合 B) overlook ✗ \"忽视\"则不需\"less important\"修饰 C) conceal ✗ \"隐瞒\"对象错位 D) report ✗ \"汇报\"需有接收方 【验证】代入后Since weight loss is not my goal, it is less important for me to __(11)__ my",
+          "position": 0
+        },
+        {
+          "id": 12,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "depend on",
+            "B": "approve of",
+            "C": "hold onto",
+            "D": "account for"
+          },
+          "answer": "D",
+          "analysis": "account for 【线索】并列动词 observe 锚定\"观察—理解\"语义链 Weighing every other week allows me to observe and __(12)__ any significant weight changes——\"observe\"是观察，本句紧接讲\"That tells me whether I need to __(13)__ my training program\"，说明作者不仅观察还要根据观察做决策。空处应填\"理解/ 【选项】A) depend on ✗ \"依赖\"与 observe 不形成递进 depend on\"依赖\"对象通常是支撑物，不与\"观察\"并列，也无法解释 weight changes。 B) approve of ✗ \"赞成\"语义反向 C) hold onto ✗ \"抓住不放\"对象不对 D) account for ✓ \"解释\"体重变化，与 observe 形成\"看到—解释\"递进 account for\"解释、说明（原因）\"与 observe 并列，构成\"观察体重变化→解释体重变化\"的标 【验证】代入后allows me to observe and __(12)__ any significant weight changes读作\"让我观 察并解释体重的显著变化\"，紧接That tells me whether I need to __(13)__ my training",
+          "position": 0
+        },
+        {
+          "id": 13,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "share",
+            "B": "adjust",
+            "C": "confirm",
+            "D": "prepare"
+          },
+          "answer": "B",
+          "analysis": "adjust 【线索】上句\"解释体重变化\"指向\"是否要改训练\" allows me to observe and __(12)__ any significant weight changes. That tells me whether I need to __(13)__ my training program——根据体重变化决定要不要做的事， 【选项】A) share ✗ \"分享\"无逻辑必要 B) adjust ✓ \"调整\"，根据体重反馈改训练计划 adjust\"调整\"与 training program 是固定搭配（adjust one's training program），并与上 C) confirm ✗ \"确认\"语义偏弱 D) prepare ✗ \"准备\"指向新计划 prepare\"准备\"暗示从头规划，但作者已有 training program，需要的是改而非建。 【验证】代入后That tells me whether I need to __(13)__ my training program读作\"那让我知道",
+          "position": 0
+        },
+        {
+          "id": 14,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "results",
+            "B": "features",
+            "C": "rules",
+            "D": "tests"
+          },
+          "answer": "A",
+          "analysis": "results 【线索】\"用 weigh-in ___ 获取营养信息\"暗示\"结果/数据\" I use my bimonthly weigh-in __(14)__ to get information about my nutrition as well 【选项】 A) results ✓ \"结果\"可被解读以获取营养信息 B) features ✗ \"特征\"对象错 C) rules ✗ \"规则\"无法用于获取信息 D) tests ✗ \"测试\"与 weigh-in 重复 【验证】代入后I use my bimonthly weigh-in __(14)__ to get information about my nutrition as well读作\"我把双周称重的结果用来获取营养信息\"，正与下句If my training intensity remains the same, but I'm constantly __(15)__ and dropping weight构成\"看结果—推",
+          "position": 0
+        },
+        {
+          "id": 15,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "bored",
+            "B": "anxious",
+            "C": "hungry",
+            "D": "sick"
+          },
+          "answer": "C",
+          "analysis": "hungry 【线索】下句\"需要增加每日热量摄入\"反推原因为\"缺热量\" this is a __(16)__ that I need to increase my daily caloric intake——结论是要\"增加每日 【选项】A) bored ✗ \"无聊\"与热量摄入无关 B) anxious ✗ \"焦虑\"无法由\"缺热量\"线性解释 C) hungry ✓ \"饿\"与\"掉体重\"共因，反推\"需增加热量\" D) sick ✗ \"生病\"不能用\"加热量\"解决 【验证】代入后I'm constantly __(15)__ and dropping weight读作\"我一直饿，而且在掉体重\"，与",
+          "position": 0
+        },
+        {
+          "id": 16,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "principle",
+            "B": "secret",
+            "C": "belief",
+            "D": "sign"
+          },
+          "answer": "D",
+          "analysis": "sign 【线索】前文给\"饿+掉体重\"，本句给\"需要加热量\" I'm constantly __(15)__ and dropping weight, this is a __(16)__ that I need to increase my daily caloric intake——前是症状证据，后是推论。空处应填\"标志/信号\"类名词。 【选项】A) principle ✗ \"原则\"对象错 B) secret ✗ \"秘诀\"语境不对 C) belief ✗ \"信念\"对象不对 D) sign ✓ \"标志、迹象\"，正中\"症状指示结论\" sign\"标志、信号\"完美填入 this is a sign that 高频句式，意为\"这是一个表明……的信号\"，正与 【验证】代入后this is a __(16)__ that I need to increase my daily caloric intake读作\"这是一个表",
+          "position": 0
+        },
+        {
+          "id": 17,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "request",
+            "B": "necessity",
+            "C": "decision",
+            "D": "wish"
+          },
+          "answer": "C",
+          "analysis": "decision 【线索】前文\"For these reasons, I stopped\"表明是作者自己拿的主意 For these __(9)__, I stopped weighing myself every day——是作者基于前两段原因主动 【选项】A) request ✗ \"请求\"动作发出者错 B) necessity ✗ \"必要性\"过于客观、与亲历语境不符 C) decision ✓ \"决定\"——作者主动作出，正中亲历语境 decision\"决定\"完美呼应 For these reasons, I stopped 的主动决断，the decision to do sth D) wish ✗ \"愿望\"未必已落实 【验证】代入后The __(17)__ to stop weighing myself every day has done wonders for my overall health, fitness and well-being读作\"停掉日称的决定对我的整体健康、体能和幸福",
+          "position": 0
+        },
+        {
+          "id": 18,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "disappointing",
+            "B": "surprising",
+            "C": "restricting",
+            "D": "consuming"
+          },
+          "answer": "A",
+          "analysis": "disappointing 【线索】burden 是负面词，weigh-in 又与\"看见数字不如意\"挂钩 I no longer carry the burden of a __(18)__ morning weigh-in——burden 是负面词，且 前文I had gained weight in the form of muscle mass 但作者却为\"数字\"焦虑，可见日称 【选项】 A) disappointing ✓ \"令人失望的\"，与 burden 同色调 burden 的负面情感同向。 B) surprising ✗ \"令人惊讶\"偏中性、与 burden 不搭 C) restricting ✗ \"限制性的\"对象错 D) consuming ✗ \"消耗的\"语义偏\"时间/精力消耗\" consuming\"耗费的\"通常与 time/energy 搭配，单用修饰\"早晨称重\"不自然，且未必触 发\"burden\"的情绪意味。 【验证】代入后I no longer carry the burden of a __(18)__ morning weigh-in读作\"我不再背负令",
+          "position": 0
+        },
+        {
+          "id": 19,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "if",
+            "B": "unless",
+            "C": "until",
+            "D": "because"
+          },
+          "answer": "D",
+          "analysis": "because 【线索】主句报喜\"取得更大成功\"，从句给原因\"按目标训练\" I've also experienced greater success in achieving my specific fitness goals, __(19)__ I'm training according to those goals, not the numbers on a scale——主句是结果\"成 【选项】A) if ✗ \"如果\"表假设，与已实现的成功矛盾 B) unless ✗ \"除非\"逻辑反向 C) until ✗ \"直到\"是时间，非因果 D) because ✓ \"因为\"，结果 + 原因的标配 【验证】代入后I've also experienced greater success ..., __(19)__ I'm training according to those goals, not the numbers on a scale读作\"我也取得了更大的成功，因为我是按目标",
+          "position": 0
+        },
+        {
+          "id": 20,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "obsessing",
+            "B": "dominating",
+            "C": "puzzling",
+            "D": "triumphing"
+          },
+          "answer": "A",
+          "analysis": "obsessing 【线索】对照对象 turn focus to ... 暗示\"原本注意力被秤夺走\" Rather than __(20)__ over the scale, turn your focus to how you look, feel, how your clothes fit and your overall energy level——被推荐的做法是\"把注意力转向感受/外观\"， 【选项】 A) obsessing ✓ \"过度执着于\"——obsess over 是固定搭配，正中对照 obsessing\"过度执着于、痴迷于\"与 over 构成固定搭配 obsess over，且\"痴迷于秤上数字\"正 B) dominating ✗ \"支配\"主宾关系反了 C) puzzling ✗ \"困惑\"语义不对 D) triumphing ✗ \"凯旋、胜过\"语义反向 【验证】代入后Rather than __(20)__ over the scale, turn your focus to how you look, feel, how your clothes fit and your overall energy level读作\"与其执着于秤上的数字，不如把注意 OVERVIEW · 通读建境 文章是第一人称经验分享：开篇承认Weighing yourself regularly is a wonderful way to stay aware of any significant weight fluctuations，但紧接着用转折点明做得太频反而有害；随 后The __(17)__ to stop weighing myself every day has done wonders for my overall health, fitness and well-being点出全文立场——少称反而更好。 第1段先肯定后转折(this habit can sometimes hurt more than it __(2)__)；第2段亲历——每 日称重让作者偏离训练目标(weighing myself every day caused me to shift my focus)；第3 段补理由——一个月才能看出体重变化(It takes about three weeks to a month to notice significant changes in your weight)；第4段给出新做法——双周称一次(I stopped weighing myself every day and switched to a bimonthly weighing schedule)；第5段延伸用途——用 称重数据判断营养摄入(to get information about my nutrition as well)；第6段总结好处、 第7段升华建议(turn your focus to how you look, feel, how your clothes fit and your overall energy level)。 SENTENCE INSIGHTS · 句子精讲 11 Weighing yourself regularly is a wonderful way to stay aware of any significant weight fluctuations. As for me, weighing myself eve...",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-reading",
+      "type": "reading",
+      "title": "阅读理解",
+      "directions": "Read the following four texts. Answer the questions after each text by choosing A, B, C or D. Mark your answers on the ANSWER SHEET. (40 points)",
+      "articles": [
+        {
+          "id": "text-1",
+          "title": "Text 1",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Unlike so-called basic emotions such as sadness, fear, and anger, guilt emerges a little later, in conjunction with a child's growing grasp of social and moral norms. Children aren't born knowing how to say \"I'm sorry\"; rather, they learn over time that such statements appease parents and friends – and their own consciences. This is why researchers generally regard so-called moral guilt, in the right amount, to be a good thing. In the popular imagination, of course, guilt still gets a bad rap. It is deeply uncomfortable – it's the emotional equivalent of wearing a jacket weighted with stones. Yet this understanding is outdated. \"There has been a kind of revival or a rethinking about what guilt is and what role guilt can serve,\" says Amrisha Vaish, a psychology researcher at the University of Virginia, adding that this revival is part of a larger recognition that emotions aren't binary – feelings that may be advantageous in one context may be harmful in another. Jealousy and anger, for example, may have evolved to alert us to important inequalities. Too much happiness can be destructive. And guilt, by prompting us to think more deeply about our goodness, can encourage humans to make up for errors and fix relationships. Guilt, in other words, can help hold a cooperative species together. It is a kind of social glue. Viewed in this light, guilt is an opportunity. Work by Tina Malti, a psychology professor at the University of Toronto, suggests that guilt may compensate for an emotional deficiency. In a number of studies, Malti and others have shown that guilt and sympathy may represent different pathways to cooperation and sharing. Some kids who are low in sympathy may make up for that shortfall by experiencing more guilt, which can rein in their nastier impulses. And vice versa: High sympathy can substitute for low guilt. In a 2014 study, for example, Malti looked at 244 children. Using caregiver assessments and the children's self-observations, she rated each child's overall sympathy level and his or her tendency to feel negative emotions after moral transgressions. Then the kids were handed chocolate coins, and given a chance to share them with an anonymous child. For the low-sympathy kids, how much they shared appeared to turn on how inclined they were to feel guilty. The guilt-prone ones shared more, even though they hadn't magically become more sympathetic to the other child's deprivation. \"That's good news,\" Malti says. \"We can be prosocial because we caused harm and we feel regret.\""
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "title": "Text 2",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Forests give us shade, quiet and one of the harder challenges in the fight against climate change. Even as we humans count on forests to soak up a good share of the carbon dioxide we produce, we are threatening their ability to do so. The climate change we are hastening could one day leave us with forests that emit more carbon than they absorb. Thankfully, there is a way out of this trap – but it involves striking a subtle balance. Helping forests flourish as valuable \"carbon sinks\" long into the future may require reducing their capacity to absorb carbon now. California is leading the way, as it does on so many climate efforts, in figuring out the details. The state's proposed Forest Carbon Plan aims to double efforts to thin out young trees and clear brush in parts of the forest. This temporarily lowers carbon-carrying capacity. But the remaining trees draw a greater share of the available moisture, so they grow and thrive, restoring the forest's capacity to pull carbon from the air. Healthy trees are also better able to fend off insects. The landscape is rendered less easily burnable. Even in the event of a fire, fewer trees are consumed. The need for such planning is increasingly urgent. Already, since 2010, drought and insects have killed over 100 million trees in California, most of them in 2016 alone, and wildfires have burned hundreds of thousands of acres. California plans to treat 35,000 acres of forest a year by 2020, and 60,000 by 2030 – financed from the proceeds of the state's emissions-permit auctions. That's only a small share of the total acreage that could benefit, about half a million acres in all, so it will be vital to prioritize areas at greatest risk of fire or drought. The strategy also aims to ensure that carbon in woody material removed from the forests is locked away in the form of solid lumber or burned as biofuel in vehicles that would otherwise run on fossil fuels. New research on transportation biofuels is already under way. State governments are well accustomed to managing forests, but traditionally they've focused on wildlife, watersheds and opportunities for recreation. Only recently have they come to see the vital part forests will have to play in storing carbon. California's plan, which is expected to be finalized by the governor next year, should serve as a model."
+            }
+          ]
+        },
+        {
+          "id": "text-3",
+          "title": "Text 3",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "American farmers have been complaining of labor shortages for several years. The complaints are unlikely to stop without an overhaul of immigration rules for farm workers. Congress has obstructed efforts to create a more straightforward visa for agricultural workers that would let foreign workers stay longer in the U.S. and change jobs within the industry. If this doesn't change, American businesses, communities, and consumers will be the losers. Perhaps half of U.S. farm laborers are undocumented immigrants. As fewer such workers enter the country, the characteristics of the agricultural workforce are changing. Today's farm laborers, while still predominantly born in Mexico, are more likely to be settled rather than migrating and more likely to be married than single. They're also aging. At the start of this century, about one-third of crop workers were over the age of 35. Now more than half are. And picking crops is hard on older bodies. One oft-debated cure for this labor shortage remains as implausible as it's been all along: Native U.S. workers won't be returning to the farm. Mechanization isn't the answer, either – not yet, at least. Production of corn, cotton, rice, soybeans, and wheat has been largely mechanized, but many high-value, labor-intensive crops, such as strawberries, need labor. Even dairy farms, where robots do a small share of milking, have a long way to go before they're automated. As a result, farms have grown increasingly reliant on temporary guest workers using the H-2A visa to fill the gaps in the workforce. Starting around 2012, requests for the visas rose sharply; from 2011 to 2016 the number of visas issued more than doubled. The H-2A visa has no numerical cap, unlike the H-2B visa for nonagricultural work, which is limited to 66,000 a year. Even so, employers complain they aren't given all the workers they need. The process is cumbersome, expensive, and unreliable. One survey found that bureaucratic delays led the average H-2A worker to arrive on the job 22 days late. The shortage is compounded by federal immigration raids, which remove some workers and drive others underground. In a 2012 survey, 71 percent of tree-fruit growers and almost 80 percent of raisin and berry growers said they were short of labor. Some western farmers have responded by moving operations to Mexico. From 1998 to 2000, 14.5 percent of the fruit Americans consumed was imported. Little more than a decade later, the share of imports was 25.8 percent. In effect, the U.S. can import food or it can import the workers who pick it."
+            }
+          ]
+        },
+        {
+          "id": "text-4",
+          "title": "Text 4",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Arnold Schwarzenegger, Dia Mirza and Adrian Grenier have a message for you: It's easy to beat plastic. They're part of a bunch of celebrities starring in a new video for World Environment Day – encouraging you, the consumer, to swap out your single-use plastic staples like straws and cutlery to combat the plastics crisis. The key messages that have been put together for World Environment Day do include a call for governments to enact legislation to curb single-use plastics. But the overarching message is directed at individuals. My concern with leaving it up to the individual, however, is our limited sense of what needs to be achieved. On their own, taking our own bags to the grocery store or quitting plastic straws, for example, will accomplish little and require very little of us. They could even be detrimental, satisfying a need to have \"done our bit\" without ever progressing onto bigger, bolder, more effective actions – a kind of \"moral licensing\" that allays our concerns and stops us doing more and asking more of those in charge. While the conversation around our environment and our responsibility toward it remains centered on shopping bags and straws, we're ignoring the balance of power that implies that as \"consumers\" we must shop sustainably, rather than as \"citizens\" hold our governments and industries to account to push for real systemic change. It's important to acknowledge that the environment isn't everyone's priority – or even most people's. We shouldn't expect it to be. In her latest book, Why Good People Do Bad Environmental Things, Wellesley College professor Elizabeth R. DeSombre argues that the best way to collectively change the behavior of large numbers of people is for the change to be structural. This might mean implementing policy such as a plastic tax that adds a cost to environmentally problematic action, or banning single-use plastics altogether. India has just announced it will \"eliminate all single-use plastic in the country by 2022.\" There are also incentive-based ways of making better environmental choices easier, such as ensuring recycling is at least as easy as trash disposal. DeSombre isn't saying people should stop caring about the environment. It's just that individual actions are too slow, she says, for that to be the only, or even primary, approach to changing widespread behavior. None of this is about writing off the individual. It's just about putting things into perspective. We don't have time to wait. We need progressive policies that shape collective action (and rein in polluting businesses), alongside engaged citizens pushing for change."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 21,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "Researchers think that guilt can be a good thing because it may help____.",
+          "options": {
+            "A": "regulate a child's basic emotions",
+            "B": "improve a child's intellectual ability",
+            "C": "foster a child's moral development",
+            "D": "intensify a child's positive feelings"
+          },
+          "answer": "C",
+          "analysis": "【判型】Researchers think that guilt can be a good thing because it may help____是一个待补 【拆句】题干主干是 Researchers think that guilt can be a good thing，that 从句陈述研究者的 判断；其后 because it may help____是补充原因的状语从句，空格填动词原形，是 help 后 【定位】P1 This is why researchers generally regard so-called moral guilt, in the right amount, to be a good thing. 【选项】A) 偷换概念 原文 Unlike so-called basic emotions such as sadness, fear, and anger, guilt emerges a little later只是把 guilt 与基本情绪做对比说出现时机，从未说 guilt 能 regulate 基本情绪。 通篇讨论的是道德、社交、情绪层面的功能，未出现 intellectual ability 或近义概念， improve a child's intellectual ability在原文找不到任何依据。 C) ✓ 正确 in conjunction with a child's growing grasp of social and moral norms ↔ foster a child's moral development regard so-called moral guilt, in the right amount, to be a good thing ↔ foster a child's moral development child's moral development恰好把这一语义化为 foster + moral development，与定 原文承认 guilt 本身是'uncomfortable'(见 deeply uncomfortable)的负面情绪，研究 者欣赏的是它的道德功能而非'强化积极感受'，intensify a child's positive feelings方向",
+          "position": 0
+        },
+        {
+          "id": 22,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "According to Paragraph 2, many people still consider guilt to be____.",
+          "options": {
+            "A": "deceptive",
+            "B": "burdensome",
+            "C": "addictive",
+            "D": "inexcusable"
+          },
+          "answer": "B",
+          "analysis": "【判型】According to Paragraph 2, many people still consider guilt to be____是对段内一个具 【拆句】According to Paragraph 2, many people still consider guilt to be____主干是 many people consider guilt to be ___，consider sb/sth (to be) + 形容词 是常考结构；空格填 【定位】P2 In the popular imagination, of course, guilt still gets a bad rap. It is deeply uncomfortable – it's the emotional equivalent of wearing a jacket weighted with stones. 【选项】A) 无中生有 原文从未提及 guilt 具有 deceptive(欺骗性)属性，仅说大众觉得它 uncomfortable， deceptive无原文支撑。 B) ✓ 正确 wearing a jacket weighted with stones ↔ burdensome guilt still gets a bad rap ↔ burdensome consider...to be ___ 的语法槽位。 原文没有任何 addict/habit/dependence 类表述，addictive凭空给 guilt 加上成瘾 原文只说 guilt 让人 uncomfortable、a bad rap，从未上升到 inexcusable(不可原谅) 的道德指控；inexcusable的程度远超 P2描述。",
+          "position": 0
+        },
+        {
+          "id": 23,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "Vaish holds that the rethinking about guilt comes from an awareness that____.",
+          "options": {
+            "A": "emotions are context-independent",
+            "B": "emotions are socially constructive",
+            "C": "emotional stability can benefit health",
+            "D": "an emotion can play opposing roles"
+          },
+          "answer": "D",
+          "analysis": "【判型】Vaish holds that the rethinking about guilt comes from an awareness that____问的是 【拆句】主干 Vaish holds that the rethinking about guilt comes from an awareness，holds that 引导宾语从句；其中 comes from an awareness that ___ 用了 awareness 的同位 【定位】P2 \"There has been a kind of revival or a rethinking about what guilt is and what role guilt can serve,\" says Amrisha Vaish, a psychology researcher at the University of Virginia, adding that this revival is part of a larger recognition that emotions aren't binary – feelings that may be advantageous in one context may be harmful in another. 【选项】A) 与原文相反 原文 feelings that may be advantageous in one context may be harmful in another恰好强调情绪'依赖语境'(context-dependent)，context-independent与之直 constructive是另一维度的判断。 Vaish 谈的是情绪的双面性，并未谈情绪 stability，更未涉及 benefit health； emotional stability can benefit health全句无原文支撑。 D) ✓ 正确 emotions aren't binary ↔ an emotion can play opposing roles feelings that may be advantageous in one context may be harmful in another ↔ an emotion can play opposing roles 预判答案的核心是'同一情绪能正反两面'，D an emotion can play opposing roles恰好 把 emotions aren't binary的否定式定义和后续对照例证压缩成'扮演相反角色'。",
+          "position": 0
+        },
+        {
+          "id": 24,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "Malti and others have shown that cooperation and sharing____.",
+          "options": {
+            "A": "may help correct emotional deficiencies",
+            "B": "can result from either sympathy or guilt",
+            "C": "can bring about emotional satisfaction",
+            "D": "may be the outcome of impulsive acts"
+          },
+          "answer": "B",
+          "analysis": "【判型】Malti and others have shown that cooperation and sharing____问的是 Malti 团队已 经'shown'的事实结论，have shown 是明示动词，不是推断。 【拆句】Malti and others have shown that cooperation and sharing____结构清晰：主语 Malti and others，谓语 have shown，that 从句中 cooperation and sharing 是主语，空格填 谓语动词短语，注意是对 cooperation and sharing 两者共同作主语的陈述。 【定位】P4 In a number of studies, Malti and others have shown that guilt and sympathy may represent different pathways to cooperation and sharing. 【选项】A) 与原文相反 原文是 Some kids who are low in sympathy may make up for that shortfall by experiencing more guilt——更多罪疚弥补同情不足；may help correct emotional deficiencies把因果反置，说成 cooperation and sharing 帮助纠正情绪不足。 B) ✓ 正确 guilt and sympathy may represent different pathways to cooperation and sharing ↔ can result from either sympathy or guilt Some kids who are low in sympathy may make up for that shortfall by experiencing more guilt ↔ can result from either sympathy or guilt 预判答案核心是'两种情绪可分别通向合作与分享'，B can result from either sympathy or guilt用 result from + either...or 完整复现 different pathways 的双源含义。 原文只谈合作与分享与 guilt/sympathy 之间的因果，从未谈其后续会带来 emotional satisfaction；can bring about emotional satisfaction脱离原文。 原文 can rein in their nastier impulses说罪疚是 rein in(抑制)冲动；选项 may be the outcome of impulsive acts说合作分享是 impulsive acts 的结果，与'抑制冲动'完全",
+          "position": 0
+        },
+        {
+          "id": 25,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "The word \"transgressions\" (Line 4, Para. 5) is closest in meaning to____.",
+          "options": {
+            "A": "teachings",
+            "B": "discussions",
+            "C": "restrictions",
+            "D": "wrongdoings"
+          },
+          "answer": "D",
+          "analysis": "第5段第4行中的\"transgressions\"一词在意义上最接近____ A) 教导 B) 讨论 C) 限制 D) 过错行为 【判型】The word \"transgressions\" (Line 4, Para. 5) is closest in meaning to____中 is closest in meaning to 是词义题铁标志。 【拆句】The word \"transgressions\" (Line 4, Para. 5) is closest in meaning to____结构平铺直 叙：主语是 the word transgressions，括号内是位置注释，谓语 is closest in meaning to 【定位】P5 Using caregiver assessments and the children's self-observations, she rated each child's overall sympathy level and his or her tendency to feel negative emotions after moral transgressions. 【选项】A) 与原文相反 teachings 表'教诲、教导'，moral teachings(道德教诲)虽是常见搭配，但 after moral teachings 后跟 negative emotions 在语境里不成立——人在被教导后不该普遍产生负 discussions(讨论)在 moral discussions 搭配下意为'道德讨论'，与 negative restrictions 是'限制、约束'，moral restrictions 意为'道德约束'，但 after restrictions(约束之后)与 negative emotions(负面情绪)不构成 P5描述的'做错事→ D) ✓ 正确 moral transgressions ↔ wrongdoings feel negative emotions after moral transgressions ↔ wrongdoings wrongdoings 是常用搭配，回带后语义不变，选 D。 SENTENCE INSIGHTS · 句子精讲 12 Children aren't born knowing how to say \"I'm sorry\"; rather, they learn over time that such statements appease parents and friends – and their own consciences. Yet this understanding is outdated. \"There has been a kind of revival or a rethinking about what guilt is and what role guilt can serve,\" says Amrisha Vaish, a psychology researcher at the University of Virginia, adding that this revival is part of a larger recognition that emotions aren't binary – feelings that may be advantageous in one context m...",
+          "position": 0
+        },
+        {
+          "id": 26,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "By saying \"one of the harder challenges,\" the author implies that____.",
+          "options": {
+            "A": "global climate change may get out of control",
+            "B": "people may misunderstand global warming",
+            "C": "extreme weather conditions may arise",
+            "D": "forests may become a potential threat"
+          },
+          "answer": "D",
+          "analysis": "【判型】题干By saying \"one of the harder challenges,\" the author implies that里 implies 直接 【拆句】主干是the author implies that，前置的By saying \"one of the harder challenges\"是介词 【定位】P1 Even as we humans count on forests to soak up a good share of the carbon dioxide we produce, we are threatening their ability to do so. The climate change we are hastening could one day leave us with forests that emit more carbon than they absorb. 【选项】A) 偷换概念 global climate change may get out of control谈的是气候本身失控，而原文的\"挑 people may misunderstand global warming谈的是公众认知误差，原文从头到尾未 extreme weather conditions may arise说的是极端天气，原文虽属气候话题但未点 D) ✓ 正确 could one day leave us with forests that emit more carbon than they absorb ↔ forests may become a potential threat 预判\"森林反倒成为净排碳源\"，与forests may become a potential threat在\"角色由助",
+          "position": 0
+        },
+        {
+          "id": 27,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "To maintain forests as valuable \"carbon sinks,\" we may need to____.",
+          "options": {
+            "A": "preserve the diversity of species in them",
+            "B": "accelerate the growth of young trees",
+            "C": "strike a balance among different plants",
+            "D": "lower their present carbon-absorbing capacity"
+          },
+          "answer": "D",
+          "analysis": "【判型】To maintain forests as valuable \"carbon sinks,\" we may need to是补全句，问的是原文 【拆句】题干是不定式短语To maintain ... \"carbon sinks\"作目的状语 + 主句we may need to接选 【定位】P2 Helping forests flourish as valuable \"carbon sinks\" long into the future may require reducing their capacity to absorb carbon now. 【选项】A) 无中生有 preserve the diversity of species in them谈生物多样性，原文从未谈及森林内的物种 原文第 3 段提到疏伐后the remaining trees draw a greater share of the available moisture, so they grow and thrive，但这是疏伐的连锁结果，不是\"维持碳汇\"的题面 动作；且对象是 remaining trees，不是 young trees。 strike a balance among different plants套用了原文striking a subtle balance的措 D) ✓ 正确 may require reducing their capacity to absorb carbon now ↔ lower their present carbon-absorbing capacity 预判\"降低当下吸碳能力\"与lower their present carbon-absorbing capacity在动词、",
+          "position": 0
+        },
+        {
+          "id": 28,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "California's Forest Carbon Plan endeavors to____.",
+          "options": {
+            "A": "cultivate more drought-resistant trees",
+            "B": "reduce the density of some of its forests",
+            "C": "find more effective ways to kill insects",
+            "D": "restore its forests quickly after wildfires"
+          },
+          "answer": "B",
+          "analysis": "【判型】California's Forest Carbon Plan endeavors to要求选出该计划具体要做什么，答案应在原 【拆句】主语California's Forest Carbon Plan+谓语endeavors to+不定式由选项补齐。无从句、无 【定位】P3 The state's proposed Forest Carbon Plan aims to double efforts to thin out young trees and clear brush in parts of the forest. 【选项】A) 无中生有 B) ✓ 正确 thin out young trees and clear brush in parts of the forest ↔ reduce the density of some of its forests 预判\"在部分林地疏伐幼树清灌木\"与reduce the density of some of its forests在\"动作 原文只说Healthy trees are also better able to fend off insects是减密度的副效果，并 原文Even in the event of a fire, fewer trees are consumed讲的是减密度使大火少烧",
+          "position": 0
+        },
+        {
+          "id": 29,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "What is essential to California's plan according to Paragraph 5?",
+          "options": {
+            "A": "To handle the areas in serious danger first.",
+            "B": "To carry it out before the year of 2020.",
+            "C": "To perfect the emissions-permit auctions.",
+            "D": "To obtain enough financial support."
+          },
+          "answer": "A",
+          "analysis": "【判型】题干What is essential to California's plan according to Paragraph 5?要求从指定段抽出 【拆句】特殊疑问句，主语What、系动词 is、表语essential to California's plan、状语according to Paragraph 5。结构平直。 【定位】P5 That's only a small share of the total acreage that could benefit, about half a million acres in all, so it will be vital to prioritize areas at greatest risk of fire or drought. 【选项】A) ✓ 正确 prioritize areas at greatest risk of fire or drought ↔ To handle the areas in serious danger first. 预判\"优先处理风险最高区域\"与To handle the areas in serious danger first.在\"对象= 原文California plans to treat 35,000 acres of forest a year by 2020, and 60,000 by 原文只用financed from the proceeds of the state's emissions-permit auctions说明",
+          "position": 0
+        },
+        {
+          "id": 30,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "The author's attitude to California's plan can best be described as____.",
+          "options": {
+            "A": "ambiguous",
+            "B": "tolerant",
+            "C": "supportive",
+            "D": "cautious"
+          },
+          "answer": "C",
+          "analysis": "A) 模糊的 B) 宽容的 C) 支持的 D) 谨慎的 【判型】The author's attitude to California's plan can best be described as里 attitude 直接宣 【拆句】主语The author's attitude to California's plan+情态被动can best be described as+表 【选项】A) 与原文相反 ambiguous意为含糊不清，但全文从 leading the way 到 vital 再到 should serve as a serve as a model，远超容忍。 C) ✓ 正确 should serve as a model ↔ supportive California is leading the way ↔ supportive cautious意为审慎、保留，但原文末段以 should serve as a model 直接背书，并未对 SENTENCE INSIGHTS · 句子精讲 9 Even as we humans count on forests to soak up a good share of the carbon dioxide we produce, we are threatening their ability to do so. The climate change we are hastening could one day leave us with forests that emit more carbon than they absorb. California is leading the way, as it does on so many climate efforts, in figuring out the details. But the remaining trees draw a greater share of the available moisture, so they grow and thrive, restoring the forest's capacity to pull carbon from the air. Even in the event of a fire, fewer trees are consumed. That's only a small share of the total acreage that could benefit, about half a million acres in all, so it will be vital to prioritize areas at greatest risk of fire or drought. The strategy also aims to ensure that carbon in woody material removed from the forests is locked away in the form of solid lumber or burned as biofuel in vehicles that would otherwise run on fossil fuels. 内有并列谓语(且第二个谓语承前省略 is)、过去分词作后置定语 \"removed from the forests\"、多 个不同类型的状语(方式状语 in the form o...",
+          "position": 0
+        },
+        {
+          "id": 31,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "What problem should be addressed according to the first two paragraphs?",
+          "options": {
+            "A": "Discrimination against foreign workers in the U.S.",
+            "B": "Biased laws in favor of some American businesses.",
+            "C": "Flaws in U.S. immigration rules for farm workers.",
+            "D": "Decline of job opportunities in U.S. agriculture."
+          },
+          "answer": "C",
+          "analysis": "【判型】What problem should be addressed according to the first two paragraphs? 限定段 落、直接问事实，没有 infer/imply 等推断信号。 【拆句】题干主干 What problem should be addressed 是被动式 wh- 问句，should be addressed 在考研英语二里 address 是熟词僻义「处理 / 解决」，不是「地址」； according to the first two paragraphs 是范围状语。 【定位】P1 The complaints are unlikely to stop without an overhaul of immigration rules for farm workers. 【选项】A) 无中生有 Discrimination against foreign workers in the U.S. 谈「歧视」，前两段只谈 labor shortages 与 visa，毫无歧视论述。 Biased laws in favor of some American businesses. 的核心词 Biased 在前两段无对 应；American businesses, communities, and consumers will be the losers 把企业 C) ✓ 正确 an overhaul of immigration rules for farm workers ↔ Flaws in U.S. immigration rules for farm workers immigration rules for farm workers ↔ U.S. immigration rules for farm workers 预判要求选「农场工人移民规则待改」，Flaws in U.S. immigration rules for farm Decline of job opportunities in U.S. agriculture. 说的是「岗位机会下降」，而原文 labor shortages 是「找不到工人」——岗位空缺反而旺盛，方向完全相反。",
+          "position": 0
+        },
+        {
+          "id": 32,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "One trouble with U.S. agricultural workforce is____.",
+          "options": {
+            "A": "the rising number of illegal immigrants",
+            "B": "the high mobility of crop workers",
+            "C": "the lack of experienced laborers",
+            "D": "the aging of immigrant farm workers"
+          },
+          "answer": "D",
+          "analysis": "【判型】One trouble with U.S. agricultural workforce is____. 是补全陈述句，问的是文中已写明的 【拆句】题干 One trouble with U.S. agricultural workforce is____. 是 SVC 结构的补全句，空格处 【定位】P3 They're also aging. At the start of this century, about one-third of crop workers were over the age of 35. Now more than half are. And picking crops is hard on older bodies. 【选项】A) 与原文相反 the rising number of illegal immigrants 说「无证移民数量在上升」，但原文是 As fewer such workers enter the country——方向是减少不是增加。 the high mobility of crop workers 说工人流动性高，但原文 more likely to be settled rather than migrating 明确表示他们更倾向定居、不再迁徙。 the lack of experienced laborers 谈「经验丰富的工人短缺」，但原文谈的是 aging D) ✓ 正确 They're also aging. ↔ the aging of immigrant farm workers Today's farm laborers, while still predominantly born in Mexico ↔ immigrant farm workers 预判的核心是「老龄化」+「农场工人是移民」，the aging of immigrant farm",
+          "position": 0
+        },
+        {
+          "id": 33,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "What is the much-argued solution to the labor shortage in U.S. farming?",
+          "options": {
+            "A": "To attract younger laborers to farm work.",
+            "B": "To get native U.S. workers back to farming.",
+            "C": "To use more robots to grow high-value crops.",
+            "D": "To strengthen financial support for farmers."
+          },
+          "answer": "B",
+          "analysis": "【判型】What is the much-argued solution to the labor shortage in U.S. farming? 问的是文中 【拆句】much-argued 是「副词 much + 过去分词 argued」复合形容词，相当于「被广泛争论 【定位】P3 One oft-debated cure for this labor shortage remains as implausible as it's been all along: Native U.S. workers won't be returning to the farm. 【选项】A) 偷换概念 To attract younger laborers to farm work. 把方案换成「吸引年轻劳力」，但原文只 说 Native U.S. workers won't be returning，没有针对「年轻 vs 年长」做方案。 B) ✓ 正确 Native U.S. workers won't be returning to the farm ↔ To get native U.S. workers back to farming to the farm ↔ to farming 预判要求选「让本地人回农场」这一方案本身，To get native U.S. workers back to To use more robots to grow high-value crops. 与 Mechanization isn't the answer, either 直接相反；且原文是说 high-value, labor-intensive crops, such as strawberries, need labor。 To strengthen financial support for farmers. 全文未出现 financial support 任何对应",
+          "position": 0
+        },
+        {
+          "id": 34,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "Agricultural employers complain about the H-2A visa for its____.",
+          "options": {
+            "A": "slow granting procedures",
+            "B": "limit on duration of stay",
+            "C": "tightened requirements",
+            "D": "control of annual admissions"
+          },
+          "answer": "A",
+          "analysis": "农业雇主抱怨H-2A签证的____。 【判型】Agricultural employers complain about the H-2A visa for its____. 问的是 H-2A 签证的 【拆句】complain about the H-2A visa for its____ 中 for its 表「因为它的某点」，空格填的应是 【定位】P6 The process is cumbersome, expensive, and unreliable. One survey found that bureaucratic delays led the average H-2A worker to arrive on the job 22 days late. 【选项】A) ✓ 正确 bureaucratic delays ↔ slow granting procedures cumbersome, expensive, and unreliable ↔ slow granting procedures arrive on the job 22 days late ↔ slow granting procedures 原文 cumbersome / delays / 22 days late 三处线索共同指向「办证慢」，选项 slow granting procedures 是其精确同义替换。 limit on duration of stay 谈「停留时长上限」，原文 let foreign workers stay longer tightened requirements 说「要求被收紧」，原文未提及 H-2A 申请门槛上调；只提到 control of annual admissions 说「年度名额管控」，但 The H-2A visa has no numerical cap 明确说 H-2A 没有数量上限，与选项方向相反。",
+          "position": 0
+        },
+        {
+          "id": 35,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "Which of the following could be the best title for this text?",
+          "options": {
+            "A": "U.S. Agriculture in Decline?",
+            "B": "Import Food or Labor?",
+            "C": "America Saved by Mexico?",
+            "D": "Manpower vs. Automation?"
+          },
+          "answer": "B",
+          "analysis": "【判型】Which of the following could be the best title for this text? 是典型的标题概括题型。 【拆句】题干结构简单：Which of the following could be the best title for this text?，could 表 【选项】A) 以偏概全 U.S. Agriculture in Decline? 把全文主题降级为「美国农业是否衰退」，原文只谈劳动 B) ✓ 正确 the U.S. can import food or it can import the workers who pick it ↔ Import Food or Labor? From 1998 to 2000, 14.5 percent of the fruit Americans consumed was imported. Little more than a decade later, the share of imports was 25.8 percent. ↔ Import Food or Labor? 用 → 进口水果增加 → 二选一；Import Food or Labor? 是唯一同时覆盖「劳动力 / 食 America Saved by Mexico? 把墨西哥渲染为「拯救者」，但原文 Some western farmers have responded by moving operations to Mexico. 只说部分农场把生产搬 Manpower vs. Automation? 只覆盖 P4 一段「机械化不是答案」的话题，全文其他段 SENTENCE INSIGHTS · 句子精讲 5 Even dairy farms, where robots do a small share of milking, have a long way to go before they're automated. 语从句的组合模式常见；\"have a long way to go\" 是常考的习惯表达；\"before\" 引导的时间状语从 As a result, farms have grown increasingly reliant on temporary guest workers using the H-2A visa to fill the gaps in the workforce. Starting around 2012, requests for the visas rose sharply; from 2011 to 2016 the number of visas issued more than doubled. Even so, employers complain they aren't given all the workers they need. In a 2012 survey, 71 percent of tree-fruit growers and almost 80 percent of raisin and berry growers said they were short of labor. HIGH-FREQUENCY · 真题高频词 60 labor B1 crop B1 n. 劳动 n. 农作物 本篇6 次 · 真题 41 句 本篇5 次 · 真题 17 句 import B1 shortage B2 v. 进口...",
+          "position": 0
+        },
+        {
+          "id": 36,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "Some celebrities star in a new video to____.",
+          "options": {
+            "A": "demand new laws on the use of plastics",
+            "B": "urge consumers to cut the use of plastics",
+            "C": "invite public opinion on the plastics crisis",
+            "D": "disclose the causes of the plastics crisis"
+          },
+          "answer": "B",
+          "analysis": "【判型】Some celebrities star in a new video to____. 让考生填动作目的，是对原文具体行为的客 【拆句】Some celebrities star in a new video to____. 主干 Some celebrities star in a new video，star in 意为「主演」；不定式 to ____ 充当目的状语，空格需填动词原形短语。结 【定位】P1 They're part of a bunch of celebrities starring in a new video for World Environment Day – encouraging you, the consumer, to swap out your single-use plastic staples like straws and cutlery to combat the plastics crisis. 【选项】A) 张冠李戴 demand new laws on the use of plastics 把视频定位成「要求新法律」，但定位句明 确视频面向 you, the consumer，呼吁立法是 a call for governments to enact legislation 的「副线」，并非视频本身的「key message」。 B) ✓ 正确 encouraging you, the consumer, to swap out your single-use plastic staples like straws and cutlery ↔ urge consumers to cut the use of plastics B 把定位句 encouraging you, the consumer, to swap out your single-use plastic invite public opinion on the plastics crisis 暗示视频在「征求公众意见」，但定位句 disclose the causes of the plastics crisis 说视频在「揭示原因」，但 P1 全段在讲呼吁 个人改变，未涉及 plastics crisis 的起因。",
+          "position": 0
+        },
+        {
+          "id": 37,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "The author is concerned that \"moral licensing\" may____.",
+          "options": {
+            "A": "mislead us into doing worthless things",
+            "B": "prevent us from making further efforts",
+            "C": "weaken our sense of accomplishment",
+            "D": "suppress our desire for success"
+          },
+          "answer": "B",
+          "analysis": "【判型】The author is concerned that \"moral licensing\" may____. 让考生补出作者担心这一概念 【拆句】The author is concerned that \"moral licensing\" may____. 主干 The author is concerned，that 引导宾语从句；从句主语 moral licensing 加情态动词 may，空格补谓 【定位】P3 They could even be detrimental, satisfying a need to have \"done our bit\" without ever progressing onto bigger, bolder, more effective actions – a kind of \"moral licensing\" that allays our concerns and stops us doing more and asking more of those in charge. 【选项】A) 偷换概念 mislead us into doing worthless things 把后果说成「误导我们去做无意义之事」，但 could even be detrimental 也只是说「可能有害」，不是说事情本身没价值。 B) ✓ 正确 stops us doing more and asking more of those in charge ↔ prevent us from making further efforts without ever progressing onto bigger, bolder, more effective actions ↔ prevent us from making further efforts weaken our sense of accomplishment 说「削弱成就感」，但定位句明说 satisfying a need to have \"done our bit\"，是「满足成就感」，方向恰好相反。 suppress our desire for success 谈「压制成功欲」，但原文谈的是环保行动而非个人",
+          "position": 0
+        },
+        {
+          "id": 38,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "By pointing out our identity \"citizens\", the author indicates that____.",
+          "options": {
+            "A": "our focus should be shifted to community welfare",
+            "B": "our relationship with local industries is improving",
+            "C": "we have been actively exercising our civil rights",
+            "D": "we should press our government to lead the combat"
+          },
+          "answer": "D",
+          "analysis": "【判型】By pointing out our identity \"citizens\", the author indicates that____. 用 indicates 【拆句】By pointing out our identity \"citizens\", the author indicates that____. 句首 By doing 介词短语充当方式状语，主干 the author indicates that ____；that 引导宾语从句，空格 【定位】P4 While the conversation around our environment and our responsibility toward it remains centered on shopping bags and straws, we're ignoring the balance of power that implies that as \"consumers\" we must shop sustainably, rather than as \"citizens\" hold our governments and industries to account to push for real systemic change. 【选项】A) 偷换概念 our focus should be shifted to community welfare 把「公民身份」往 community our relationship with local industries is improving 说我们与当地产业的关系在改 善，但原文是 ignoring the balance of power 并要求 hold…industries to account， we have been actively exercising our civil rights 说我们一直在积极行使公民权，但 定位句明说 we're ignoring the balance of power——作者认为现实恰恰是没去行使。 D) ✓ 正确 hold our governments and industries to account to push for real systemic change ↔ press our government to lead the combat",
+          "position": 0
+        },
+        {
+          "id": 39,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "DeSombre argues that the best way for a collective change should be____.",
+          "options": {
+            "A": "a win-win arrangement",
+            "B": "a self-driven mechanism",
+            "C": "a cost-effective approach",
+            "D": "a top-down process"
+          },
+          "answer": "D",
+          "analysis": "【判型】DeSombre argues that the best way for a collective change should be____. 问 【拆句】DeSombre argues that the best way for a collective change should be____. 主干 DeSombre argues；that 引导宾语从句，从句主语 the best way 后接介词短语 for a collective change 作定语，谓语 should be 后接表语，空格即此处。结构清楚。 【定位】P5 In her latest book, Why Good People Do Bad Environmental Things, Wellesley College professor Elizabeth R. DeSombre argues that the best way to collectively change the behavior of large numbers of people is for the change to be structural. Wellesley 学院的 Elizabeth R. DeSombre 教授在新书《为什么好人做坏环境的事》中主 【选项】A) 无中生有 a win-win arrangement 说「双赢安排」，但原文谈的是「结构性变革」，并未在「各 a self-driven mechanism 强调「自驱动」，意为靠个体自觉，但 DeSombre 的论点是 individual actions are too slow，正是要绕开「靠个人自觉」。 a cost-effective approach 谈「划算」，adds a cost to environmentally problematic action 中虽出现 cost，但那是「给污染行为加成本」的政策手段，不是说 D) ✓ 正确 the best way to collectively change the behavior of large numbers of people is for the change to be structural ↔ a top-down process implementing policy such as a plastic tax that adds a cost to environmentally problematic action, or banning single-use plastics altogether ↔ a top-down process",
+          "position": 0
+        },
+        {
+          "id": 40,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "The author concludes that individual efforts____. Part B Directions: Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points) In choosing a new home, Camille McClain's kids have a single demand: a backyard. McClain's little ones aren't the only kids who have an opinion when it comes to housing, and in many cases youngsters' views weigh heavily on parents' real estate decisions, according to a 2018 Harris Poll survey of more than 2,000 U.S. adults. While more families buck an older-generation proclivity to leave kids in the dark about real estate decisions, realty agents and psychologists have mixed views about the financial, personal and long-term effects kids' opinions may have. The idea of involving children in a big decision is a great idea because it can help them feel a sense of control and ownership in what can be an overwhelming process, said Ryan Hooper, clinical psychologist in Chicago. \"Children may face serious difficulties in coping with significant moves, especially if it removes them from their current school or support system,\" he said. Greg Jaroszewski, real estate broker with Gagliardo Realty Associates, said he's not convinced that kids should be involved in selecting a home – but their opinions should be considered in regards to proximity to friends and social activities, if possible. Younger children should feel like they're choosing their home – without actually getting a choice in the matter, said Adam Bailey, real estate attorney based in New York. Asking them questions about what they like about the backyard of a potential home will make them feel like they're being included in the decision-making process, Bailey said. Many of the aspects of homebuying aren't a consideration for children, said Tracey Hampson, a real estate agent based in Santa Clarita, Calif. And placing too much emphasis on their opinions can ruin a fantastic home purchase. \"Speaking with your children before you make a real estate decision is wise, but I wouldn't base the purchasing decision solely on their opinions.\" Hampson said. The other issue is that many children – especially older ones – may base their real estate knowledge on HGTV shows, said Aaron Norris of The Norris Group in Riverside, Calif. \"They love Chip and Joanna Gaines just as much as the rest of us,\" he said. \"HGTV has seriously changed how people view real estate. It's not shelter, it's a lifestyle. With that mindset change come some serious money consequences.\" Kids tend to get stuck in the features and the immediate benefits to them personally, Norris said. Parents need to remind their children that their needs and desires may change over time, said Julie Gurner, a real estate analyst with FitSmallBusiness.com. \"Their opinions can change tomorrow,\" Gurner said. \"Harsh as it may be to say, that decision should likely not be made contingent on a child's opinions, but rather made for them with great consideration into what home can meet their needs best–and give them an opportunity to customize it a bit and make it their own.\" This advice is more relevant now than ever before, even as more parents want to embrace the ideas of their children, despite the current housing crunch. challenges to children.",
+          "options": {
+            "A": "remarks that significant moves may pose",
+            "B": "says that it is wise to leave kids in the dark",
+            "C": "are far from sufficient",
+            "D": "are far from rational"
+          },
+          "answer": "C",
+          "analysis": "【判型】The author concludes that individual efforts____. 让考生选作者对 individual efforts 的 【拆句】The author concludes that individual efforts____. 主干 The author concludes；that 引 【选项】A) 无中生有 can be too aggressive 说个人努力「过于激进」，但全文没有任何对个人行动「太激 can be too inconsistent 说个人努力「不一致」，但原文谈的是「effect 太弱、速度太 C) ✓ 正确 On their own, taking our own bags to the grocery store or quitting plastic straws, for example, will accomplish little and require very little of us ↔ are far from sufficient individual actions are too slow, she says, for that to be the only, or even primary, approach to changing widespread behavior ↔ are far from sufficient We don't have time to wait. We need progressive policies that shape collective action (and rein in polluting businesses), alongside engaged citizens pushing for change ↔ are far from sufficient are far from rational 说个人努力「远不理性」，但全文从未质疑 individual efforts 的 SENTENCE INSIGHTS · 句子精讲 5 The key messages that have been put together for World Environment Day do include a call for governments to enact legislation to curb single-use plastics. While the conversation around our environment and our responsibility toward it remains centered on shopping bags and straws, we're ignoring the balance of power that implies that as \"consumers\" we must shop sustainably, rather than as \"citizens\" hold our governments and industries to account to push for real systemic change. DeSombre isn't saying people should stop caring about the environment. It's just that individual actions are too ...",
+          "position": 0
+        }
+      ]
+    }
+  ]
+}

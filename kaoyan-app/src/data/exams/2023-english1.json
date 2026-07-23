@@ -1,0 +1,843 @@
+{
+  "id": "2023-english1",
+  "year": 2023,
+  "subject": "英语一",
+  "title": "2023年英语一",
+  "sections": [
+    {
+      "id": "sec-cloze",
+      "type": "cloze",
+      "title": "英语知识运用",
+      "directions": "Directions: Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "cloze-1",
+          "title": "完形填空",
+          "type": "cloze",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Caravanserais were roadside inns that were built along the Silk Road in areas including China, North Africa and the Middle East. They were typically "
+            },
+            {
+              "type": "blank",
+              "blankId": 1
+            },
+            {
+              "type": "paragraph",
+              "content": " outside the walls of a city or village and were usually funded by local governments or "
+            },
+            {
+              "type": "blank",
+              "blankId": 2
+            },
+            {
+              "type": "paragraph",
+              "content": " . The word \"caravanserai\" is a "
+            },
+            {
+              "type": "blank",
+              "blankId": 3
+            },
+            {
+              "type": "paragraph",
+              "content": " of the Persian words \"karvan\", which means a group of travellers or a caravan, and \"saray\", a palace or enclosed building. The term caravan was used to "
+            },
+            {
+              "type": "blank",
+              "blankId": 4
+            },
+            {
+              "type": "paragraph",
+              "content": " groups of people who travelled together across the ancient network for safety reasons, "
+            },
+            {
+              "type": "blank",
+              "blankId": 5
+            },
+            {
+              "type": "paragraph",
+              "content": " merchants, travellers or pilgrims. From the 10th century onwards, as merchant and travel routes became more developed, the "
+            },
+            {
+              "type": "blank",
+              "blankId": 6
+            },
+            {
+              "type": "paragraph",
+              "content": " of caravanserais increased and they served as a safe place for people to rest at night. Travellers on the Silk Road "
+            },
+            {
+              "type": "blank",
+              "blankId": 7
+            },
+            {
+              "type": "paragraph",
+              "content": " the possibility of being attacked by thieves or being "
+            },
+            {
+              "type": "blank",
+              "blankId": 8
+            },
+            {
+              "type": "paragraph",
+              "content": " to extreme weather conditions. For this reason, caravanserais were strategically placed "
+            },
+            {
+              "type": "blank",
+              "blankId": 9
+            },
+            {
+              "type": "paragraph",
+              "content": " they could be reached in a day's travel time. Caravanserais served as an informal "
+            },
+            {
+              "type": "blank",
+              "blankId": 10
+            },
+            {
+              "type": "paragraph",
+              "content": " point for the various people who travelled the Silk Road. "
+            },
+            {
+              "type": "blank",
+              "blankId": 11
+            },
+            {
+              "type": "paragraph",
+              "content": " , these structures became important centres for cultural "
+            },
+            {
+              "type": "blank",
+              "blankId": 12
+            },
+            {
+              "type": "paragraph",
+              "content": " and interaction, with travellers sharing their cultures, ideas and beliefs, "
+            },
+            {
+              "type": "blank",
+              "blankId": 13
+            },
+            {
+              "type": "paragraph",
+              "content": " taking knowledge with them, greatly "
+            },
+            {
+              "type": "blank",
+              "blankId": 14
+            },
+            {
+              "type": "paragraph",
+              "content": " the development of several civilisations. Caravanserais were also an important marketplace for commodities and "
+            },
+            {
+              "type": "blank",
+              "blankId": 15
+            },
+            {
+              "type": "paragraph",
+              "content": " in the trade of goods along the Silk Road. "
+            },
+            {
+              "type": "blank",
+              "blankId": 16
+            },
+            {
+              "type": "paragraph",
+              "content": " , it was frequently the first stop for merchants looking to sell their wares and "
+            },
+            {
+              "type": "blank",
+              "blankId": 17
+            },
+            {
+              "type": "paragraph",
+              "content": " supplies for their own journeys. It is "
+            },
+            {
+              "type": "blank",
+              "blankId": 18
+            },
+            {
+              "type": "paragraph",
+              "content": " that around 12,000 to 15,000 caravanserais were built along the Silk Road, "
+            },
+            {
+              "type": "blank",
+              "blankId": 19
+            },
+            {
+              "type": "paragraph",
+              "content": " only about 3,000 are known to remain today, many of which are in "
+            },
+            {
+              "type": "blank",
+              "blankId": 20
+            },
+            {
+              "type": "paragraph",
+              "content": " ."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "displayed [ B ]occupied [ C ]located [ D ]equipped",
+            "B": "occupied",
+            "C": "located",
+            "D": "equipped"
+          },
+          "answer": "C",
+          "analysis": "located 【线索】线索是后接的方位短语 outside the walls were typically __(1)__ outside the walls of a city or village 中 outside the walls 是表\"地 【选项】A) displayed ✗ 义为\"展示\",与\"位于城墙外\"不搭 B) occupied ✗ 义为\"占据\",后接地点不通且语义生硬 occupied 表\"占用/占领\",其被动 were occupied outside 不成立(occupy 后直接跟所占空间,不接 outside the walls 这种方位状语),搭配错。 C) located ✓ be located + 地点 = 坐落于,精确匹配 located 与 outside the walls 构成 be located outside…(坐落于城墙之外),正是描述选址的标准 D) equipped ✗ 义为\"配备\",答非所问 equipped 指给…装备设施(be equipped with…),回答的是\"配了什么\",而非\"在哪里\",与方位状语 outside the walls 不对应。 【验证】代回为 They were typically __(1)__ outside the walls of a city or village→were typically located outside the walls,意为\"通常坐落在城墙之外\",整句通顺,且与全篇客观介绍驿站的",
+          "position": 0
+        },
+        {
+          "id": 2,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "privately [ B ]regularly [ C ]respectively [ D ]permanently",
+            "B": "regularly",
+            "C": "respectively",
+            "D": "permanently"
+          },
+          "answer": "A",
+          "analysis": "privately 【线索】线索是并列项 local governments(政府=公共出资) funded by local governments or __(2)__ 提示两种出资来源并列:前者是\"政府(公共)\",空应 【选项】 A) privately ✓ 私人出资,与\"政府出资\"恰成公私对照 privately funded 指由私人/民间资助,与 local governments(公共)由 or 并列,形成\"公或私\"两种 B) regularly ✗ 义为\"定期地\",讲频率而非来源 C) respectively ✗ 义为\"分别地\",需有多对一一对应才用 D) permanently ✗ 义为\"永久地\",与\"资助来源\"无关 permanently 表持续时长,同样不在\"由谁出资\"这一维度,与 governments 不形成来源对照。 【验证】代回 funded by local governments or __(2)__→funded by local governments or",
+          "position": 0
+        },
+        {
+          "id": 3,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "definition [ B ]transition [ C ]substitution [ D ]combination",
+            "B": "transition",
+            "C": "substitution",
+            "D": "combination"
+          },
+          "answer": "D",
+          "analysis": "combination 【线索】线索是 of … \"karvan\"… and \"saray\"(两个词相加) a __(3)__ of the Persian words \"karvan\"… and \"saray\" 把两个波斯词用 and 并提,且全段 【选项】A) definition ✗ 义为\"定义\",一个词不是两词的\"定义\" definition 指释义,a definition of words 逻辑不通——caravanserai 不是对那两个词下定义,而是 B) transition ✗ 义为\"过渡/转变\",与\"两词合成\"无关 C) substitution ✗ 义为\"替换\",方向相反 D) combination ✓ a combination of A and B = A 与 B 的组合,正中构词 combination 与 of … and … 完美搭配,意为 caravanserai 是 karvan 与 saray 两词的组合,正是 【验证】代回 is a __(3)__ of the Persian words \"karvan\"… and \"saray\"→is a combination of the",
+          "position": 0
+        },
+        {
+          "id": 4,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "classify [ B ]record [ C ]describe [ D ]connect",
+            "B": "record",
+            "C": "describe",
+            "D": "connect"
+          },
+          "answer": "C",
+          "analysis": "describe 【线索】线索是主语\"The term caravan\"(一个称谓词) The term caravan was used to __(4)__ groups of people who travelled together across the ancient network 主语是一个术语,作用对象是\"结伴出行的人群\",指向\"这个词用 【选项】A) classify ✗ 义为\"分类\",一个词不会\"给人分类\" B) record ✗ 义为\"记录\",术语本身不\"记录\"人 C) describe ✓ term was used to describe…=用来描述/指称,贴切 describe 与 The term…was used to 构成\"这个词用来描述/称呼…\"的标准说法,正好解释 D) connect ✗ 义为\"连接\",词不\"连接\"人 【验证】代回 was used to __(4)__ groups of people who travelled together→was used to describe groups of people…,意为\"这个词用来描述结伴出行的人群\",与前句解释词源的逻",
+          "position": 0
+        },
+        {
+          "id": 5,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "apart from [ B ]instead of [ C ]such as [ D ]along with",
+            "B": "instead of",
+            "C": "such as",
+            "D": "along with"
+          },
+          "answer": "C",
+          "analysis": "such as 【线索】线索是 groups of people 与其后三类人的\"总—分\"关系 groups of people who travelled together across the ancient network for safety reasons, __(5)__ merchants, travellers or pilgrims:前为\"结伴出行的人群\"(总),后为商人、 旅人、朝圣者(分),二者是\"整体—举例\"关系,要求 such as。 【选项】A) apart from ✗ 义为\"除…之外\",把例子排除在外,逻辑反 B) instead of ✗ 义为\"而非\",表替代,不合举例 instead of 表\"取而代之\",意味用 merchants 替换 groups of people,但二者是包含关系而非替代 C) such as ✓ such as 引出实例,正合\"总—分\" such as 用于列举前述概念的典型例子,merchants, travellers or pilgrims 正是 groups of D) along with ✗ 义为\"连同\",表伴随并列而非举例 along with 表\"和…一起\",会把 merchants 等说成与\"人群\"并列的另一些人,而非人群的实例,层级关 【验证】代回 groups of people who travelled together… __(5)__ merchants, travellers or pilgrims→…such as merchants, travellers or pilgrims,意为\"结伴出行的人群,如商人、旅",
+          "position": 0
+        },
+        {
+          "id": 6,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "construction [ B ]restoration [ C ]impression [ D ]evaluation",
+            "B": "restoration",
+            "C": "impression",
+            "D": "evaluation"
+          },
+          "answer": "A",
+          "analysis": "construction 【线索】线索是 routes became more developed → increased as merchant and travel routes became more developed, the __(6)__ of caravanserais (construction)\"这一过程的增加。 【选项】 A) construction ✓ 建造增多,契合\"路线发达→多建驿站\" construction 指修建,the construction of caravanserais increased=驿站的修建增多,与 routes became more developed 的因果顺承一致。 B) restoration ✗ 义为\"修复\",针对旧物,与新增不符 C) impression ✗ 义为\"印象\",与\"数量增加\"无关 impression 表主观印象,无法被 routes developed 直接\"增多\",逻辑不通。 D) evaluation ✗ 义为\"评估\",答非所问 【验证】代回 the __(6)__ of caravanserais increased→the construction of caravanserais",
+          "position": 0
+        },
+        {
+          "id": 7,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "doubted [ B ]faced [ C ]accepted [ D ]reduced",
+            "B": "faced",
+            "C": "accepted",
+            "D": "reduced"
+          },
+          "answer": "B",
+          "analysis": "faced 【线索】线索是宾语 the possibility of being attacked… extreme weather(纯负面风险) __(7)__ the possibility of being attacked by thieves or being __(8)__ to extreme weather:宾语全是出行风险,且下句 For this reason, caravanserais were strategically 【选项】A) doubted ✗ 义为\"怀疑\",风险真实存在,不该被怀疑 B) faced ✓ faced the possibility=面临…的可能,贴切 C) accepted ✗ 义为\"接受\",态度色彩与下文应对措施冲突 D) reduced ✗ 义为\"减少\",旅人本身并未减少风险 【验证】代回 Travellers on the Silk Road __(7)__ the possibility of being attacked→Travellers faced the possibility of being attacked,意为\"旅人面临被劫的可能\",顺接下句\"为此而设驿",
+          "position": 0
+        },
+        {
+          "id": 8,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "assigned [ B ]subjected [ C ]accustomed [ D ]opposed",
+            "B": "subjected",
+            "C": "accustomed",
+            "D": "opposed"
+          },
+          "answer": "B",
+          "analysis": "subjected 【线索】线索是 being ___ to extreme weather 与前文 being attacked 并列(均为风险) being attacked by thieves or being __(8)__ to extreme weather conditions:由 or 与\"被 【选项】A) assigned ✗ be assigned to=被分配到,语义不符 B) subjected ✓ be subjected to=遭受,与\"被劫\"并列贴切 subjected 与 to 构成 be subjected to extreme weather=遭受恶劣天气,被动且负面,与 being attacked 并列,语义、搭配双对。 C) accustomed ✗ be accustomed to=习惯于,色彩相反 D) opposed ✗ be opposed to=反对,主谓逻辑不通 【验证】代回 being __(8)__ to extreme weather conditions→being subjected to extreme weather conditions,意为\"遭受恶劣天气\",与前面 being attacked 并列,共同构成旅人面临",
+          "position": 0
+        },
+        {
+          "id": 9,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "so that [ B ]even if [ C ]now that [ D ]in case",
+            "B": "even if",
+            "C": "now that",
+            "D": "in case"
+          },
+          "answer": "A",
+          "analysis": "so that 【线索】线索是 strategically placed(有意为之)与\"一天可达\"的目的关系 were strategically placed __(9)__ they could be reached in a day's travel time:\"战略性 【选项】 A) so that ✓ so that 引出目的,正合\"刻意选址以便一日可达\" so that 表目的,\"战略性选址\"正是\"为了能在一天内到达\",strategically 与目的状语呼应,逻辑 B) even if ✗ 义为\"即使\",表让步,无转折语境 C) now that ✗ 义为\"既然\",表已知原因,因果方向反 D) in case ✗ 义为\"以防\",表预防的偶发情况,不合 【验证】代回 were strategically placed __(9)__ they could be reached in a day's travel time→… placed so that they could be reached in a day's travel time,意为\"战略性地选址,以便能 在一天行程内到达\",目的逻辑与 strategically 呼应,通顺自洽。",
+          "position": 0
+        },
+        {
+          "id": 10,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "talking [ B ]starting [ C ]breaking [ D ]meeting",
+            "B": "starting",
+            "C": "breaking",
+            "D": "meeting"
+          },
+          "answer": "D",
+          "analysis": "meeting 【线索】线索是 for the various people who travelled(各路人) an informal __(10)__ point for the various people who travelled the Silk Road:服务对 人\"相聚\"之地,meeting point=会合点。 【选项】A) talking ✗ talking point=\"热议话题\",非\"地点\" talking point 指\"谈资、话题\",是抽象议题而非供人聚集的场所,与 for the various people 的\"地 B) starting ✗ starting point=起点,只对单向起程,偏窄 C) breaking ✗ breaking point=\"崩溃点/极限\",语义全反 D) meeting ✓ meeting point=会合点,正合\"各路人相聚\" meeting point 指\"碰头/会合地点\",与 for the various people 及下文\"分享文化、互相交流\"严 【验证】代回 an informal __(10)__ point for the various people→an informal meeting point for the various people,意为\"各路人的非正式会合点\",并自然引出下句\"成为文化交流中心\",",
+          "position": 0
+        },
+        {
+          "id": 11,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "By the way [ B ]On occasion [ C ]In comparison [ D ]As a result",
+            "B": "On occasion",
+            "C": "In comparison",
+            "D": "As a result"
+          },
+          "answer": "D",
+          "analysis": "As a result 【线索】线索是上句\"会合点\"→本句\"成为文化交流中心\"的因果 上句 Caravanserais served as an informal __(10)__ point for the various people 说它 是各路人汇聚地,本句 these structures became important centres for cultural __(12)__ a result。 【选项】A) By the way ✗ 义为\"顺便说\",引出离题补充,不合 B) On occasion ✗ 义为\"偶尔\",与\"成为重要中心\"的常态冲突 C) In comparison ✗ 义为\"相比之下\",无对比对象 D) As a result ✓ As a result 引出结果,正合\"汇聚→成交流中心\" 【验证】代回 __(11)__, these structures became important centres for cultural __(12)__ and interaction→As a result, these structures became important centres…,意为\"因此,这些",
+          "position": 0
+        },
+        {
+          "id": 12,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "heritage [ B ]revival [ C ]exchange [ D ]status",
+            "B": "revival",
+            "C": "exchange",
+            "D": "status"
+          },
+          "answer": "C",
+          "analysis": "exchange 【线索】线索是 with travellers sharing their cultures, ideas and beliefs(互相分享) cultural __(12)__ and interaction, with travellers sharing their cultures, ideas and beliefs:with 状语点明旅人\"彼此分享文化、思想、信仰\",这正是\"文化交流(exchange)\"的具 体内容,与 interaction(互动)同义复现。 【选项】A) heritage ✗ 义为\"遗产\",静态,不含\"互相\"义 heritage 指文化遗产,是被继承之物,无\"双向往来\"含义,与 interaction 及\"互相分享\"不同向。 B) revival ✗ 义为\"复兴\",讲重新兴起,非交流 C) exchange ✓ cultural exchange=文化交流,与\"互相分享\"印证 exchange 指交流、互换,cultural exchange 与 interaction 同向并列,正被 with travellers sharing… 这一\"互相分享\"具体化,严丝合缝。 D) status ✗ 义为\"地位\",与\"交流互动\"无关 status 指地位、身份,既不与 interaction 同义,也与\"分享文化思想\"的行为无关。 【验证】代回 centres for cultural __(12)__ and interaction→centres for cultural exchange and interaction,意为\"文化交流与互动的中心\",被 with travellers sharing their cultures 具体印",
+          "position": 0
+        },
+        {
+          "id": 13,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "with regard to [ B ]in spite of [ C ]as well as [ D ]in line with",
+            "B": "in spite of",
+            "C": "as well as",
+            "D": "in line with"
+          },
+          "answer": "C",
+          "analysis": "as well as 【线索】线索是\"sharing(分享出去)\"与\"taking knowledge(带走)\"两动作同向并列 sharing their cultures, ideas and beliefs, __(13)__ taking knowledge with them:旅人 又…\"的并列,需 as well as。 【选项】A) with regard to ✗ 义为\"关于\",引出话题,不连接动作 with regard to 表\"就…而言\",后接话题名词,无法把 sharing 与 taking 两个并行动作连 成\"既…又…\"。 B) in spite of ✗ 义为\"尽管\",但两动作无对立,无让步 C) as well as ✓ as well as=以及,把\"分享\"与\"带走\"并列 D) in line with ✗ 义为\"与…一致\",表符合,非并列 【验证】代回 sharing their cultures, ideas and beliefs, __(13)__ taking knowledge with them→…sharing… as well as taking knowledge with them,意为\"分享文化…以及带走知",
+          "position": 0
+        },
+        {
+          "id": 14,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "completing [ B ]influencing [ C ]resuming [ D ]pioneering",
+            "B": "influencing",
+            "C": "resuming",
+            "D": "pioneering"
+          },
+          "answer": "B",
+          "analysis": "influencing 【线索】线索是上文\"文化交流\"对\"文明发展\"的推动 travellers sharing their cultures… greatly __(14)__ the development of several 向 influencing(影响)。 【选项】A) completing ✗ 义为\"完成\",文明发展非被\"完成\" B) influencing ✓ greatly influencing=极大地影响,贴切 influencing 与 greatly 及宾语 the development 搭配,意为\"极大地影响了多个文明的发展\",正 C) resuming ✗ 义为\"重启/恢复\",无\"中断后再启\"语境 D) pioneering ✗ 义为\"开创\",程度过头且不搭 development 【验证】代回 greatly __(14)__ the development of several civilisations→greatly influencing the development of several civilisations,意为\"极大地影响了几大文明的发展\",收束第4",
+          "position": 0
+        },
+        {
+          "id": 15,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "aided [ B ]invested [ C ]failed [ D ]competed",
+            "B": "invested",
+            "C": "failed",
+            "D": "competed"
+          },
+          "answer": "A",
+          "analysis": "aided 【线索】线索是 an important marketplace(重要市场,正面促进) Caravanserais were also an important marketplace for commodities and __(15)__ in the trade of goods:既是\"重要市场\",其对货物贸易自然是\"助力(aided)\",aid in=有助于, 【选项】 A) aided ✓ aided in the trade=助力贸易,与\"重要市场\"同向 aided 指帮助、促进,aided in the trade of goods=助力货物贸易,与前半句\"是重要市场\"的正面 B) invested ✗ invest in 主语应是投资者,搭配主体不符 C) failed ✗ 义为\"失败\",负面,与\"重要市场\"色彩冲突 D) competed ✗ compete in=参与竞争,驿站非贸易竞争方 【验证】代回 an important marketplace for commodities and __(15)__ in the trade of goods→…and aided in the trade of goods,意为\"(驿站)是重要市场,并助力货物贸易\",与第",
+          "position": 0
+        },
+        {
+          "id": 16,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "Rather [ B ]Indeed [ C ]Otherwise [ D ]However",
+            "B": "Indeed",
+            "C": "Otherwise",
+            "D": "However"
+          },
+          "answer": "B",
+          "analysis": "Indeed 【线索】线索是上句\"重要市场\"与本句\"常是商人第一站\"的同向强化 上句 Caravanserais were also an important marketplace 说它是重要市场,本句 it was frequently the first stop for merchants looking to sell their wares 进一步举证它常是商 【选项】A) Rather ✗ 义为\"相反/而是\",需先否定再纠正,无此语境 B) Indeed ✓ Indeed 强化印证,正合\"重要市场→常是第一站\" C) Otherwise ✗ 义为\"否则\",表反向假设,不合 D) However ✗ 义为\"然而\",表转折,但前后无对立 【验证】代回 __(16)__, it was frequently the first stop for merchants→Indeed, it was frequently the first stop for merchants…,意为\"的确,它常常是商人(卖货)的第一站\",强化上",
+          "position": 0
+        },
+        {
+          "id": 17,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "go in for [ B ]stand up for [ C ]close in on [ D ]stock up on",
+            "B": "stand up for",
+            "C": "close in on",
+            "D": "stock up on"
+          },
+          "answer": "D",
+          "analysis": "stock up on 【线索】线索是 supplies for their own journeys(为自己旅途备的物资) sell their wares and __(17)__ supplies for their own journeys:商人来此既卖货(sell wares)又为自己旅程\"备足补给\",stock up on=囤积、大量购入,与 supplies 及\"备旅途之 【选项】A) go in for ✗ 义为\"爱好/参加\",不与 supplies 搭 go in for 表\"从事、热衷于(某活动)\",宾语应是活动/爱好,接 supplies(物资)语义不通。 B) stand up for ✗ 义为\"维护/支持\",对象应是人或主张 stand up for 表\"为…挺身而出、维护\",宾语应是权利/人/立场,与\"备物资\"无关。 C) close in on ✗ 义为\"逼近/包围\",方向语义全不符 close in on 表\"逼近、围拢(目标)\",带追捕意味,与\"购备补给\"毫无关系。 D) stock up on ✓ stock up on supplies=囤备补给,正合语境 stock up on 指大量购入囤积,stock up on supplies for their own journeys=为自己的旅程备 【验证】代回 sell their wares and __(17)__ supplies for their own journeys→…and stock up on supplies for their own journeys,意为\"卖掉货物并为自己的旅程囤备补给\",两动作并列合",
+          "position": 0
+        },
+        {
+          "id": 18,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "believed [ B ]predicted [ C ]recalled [ D ]implied",
+            "B": "predicted",
+            "C": "recalled",
+            "D": "implied"
+          },
+          "answer": "A",
+          "analysis": "believed 【线索】线索是\"around 12,000 to 15,000…were built\"(对过去数量的估算) It is __(18)__ that around 12,000 to 15,000 caravanserais were built along the Silk believed(据信)。 【选项】 A) believed ✓ It is believed that=据信,正合对历史数量的估计 believed 用于 It is believed that(人们据信/普遍认为),引出对过去建造数量的概略估计,客观中 B) predicted ✗ 义为\"预测\",指向未来,与 were built 时态冲突 C) recalled ✗ 义为\"回忆\",需亲历者,不合泛指估计 recalled 表回忆,主体应是经历过的人;千年前的建造数量无人亲历可\"回忆\",且 It is recalled that 不 D) implied ✗ 义为\"暗示\",与直接给出数字不符 【验证】代回 It is __(18)__ that around 12,000 to 15,000 caravanserais were built→It is believed that around 12,000 to 15,000… were built,意为\"据信约建有1.2万至1.5万座驿",
+          "position": 0
+        },
+        {
+          "id": 19,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "until [ B ]because [ C ]unless [ D ]although",
+            "B": "because",
+            "C": "unless",
+            "D": "although"
+          },
+          "answer": "D",
+          "analysis": "although 【线索】线索是\"建过 12,000-15,000\"与\"今仅存约 3,000\"的数量反差 around 12,000 to 15,000… were built…, __(19)__ only about 3,000 are known to remain today:曾建上万座 vs 今仅存约三千座,数字\"多\"与\"少\"形成鲜明反差(尤其 only 强 化),属转折,需 although(尽管/虽然)。 【选项】A) until ✗ 义为\"直到\",表时间终点,无时间延续关系 B) because ✗ 义为\"因为\",二者非因果 C) unless ✗ 义为\"除非\",表条件,不合陈述事实 D) although ✓ although 表转折,正合\"曾建上万 vs 今存三千\"反差 【验证】代回 around 12,000 to 15,000… were built…, __(19)__ only about 3,000 are known to remain today→…were built…, although only about 3,000 are known to remain today,",
+          "position": 0
+        },
+        {
+          "id": 20,
+          "articleId": "cloze-1",
+          "type": "cloze",
+          "question": "",
+          "options": {
+            "A": "ruins [ B ]debt [ C ]fashion [ D ]series",
+            "B": "debt",
+            "C": "fashion",
+            "D": "series"
+          },
+          "answer": "A",
+          "analysis": "ruins 【线索】线索是 only about 3,000 remain(幸存的古老建筑) only about 3,000 are known to remain today, many of which are in __(20)__:主语是\"今 【选项】 A) ruins ✓ in ruins=破败、成废墟,正合古迹现状 B) debt ✗ in debt=负债,主体应是人/机构 C) fashion ✗ in fashion=流行,与\"破败古迹\"色彩相反 D) series ✗ in series=串联,术语义,不合语境 series 的 in series 多指(电路)串联或\"成系列\",描述建筑保存状态不通,语义不搭。 【验证】代回 many of which are in __(20)__→many of which are in ruins,意为\"其中许多已破败 成废墟\",承接 only about 3,000 remain,收尾全篇对驿站现状的客观交代,自洽。 OVERVIEW · 通读建境 丝绸之路驿站(caravanserais)的功能与历史介绍 were roadside inns that were built along the Silk Road,其后逐段展开它的选址、词源、兴 第1段给定义与选址(roadside inns);第2段拆词源(The word \"caravanserai\" is a __(3)__ of the Persian words);第3段讲10世纪后路线发达、驿站增多以避盗贼与恶劣天气(From the 10th century onwards);第4段讲它成为文化交汇点(these structures became important centres for cultural __(12)__ and interaction);第5段讲它作为市场的贸易作用与今日仅存约3000座的 现状(around 12,000 to 15,000 caravanserais were built)。把握这条说明文主线,每个空都能 SENTENCE INSIGHTS · 句子精讲 5 The term caravan was used to describe groups of people who travelled together across the ancient network for safety reasons, such as merchants, travellers or pilgrims. For this reason, caravanserais were strategically placed so that they could be reached in a day's travel time. As a result, these structures became important centres for cultural exchange and interaction, with travellers sharing their cultures, ideas and beliefs, as well as taking knowledge with them, greatly influencing the development of several civilisations. Indeed, it was frequently the first s...",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-reading",
+      "type": "reading",
+      "title": "阅读理解",
+      "directions": "Read the following four texts. Answer the questions after each text by choosing A, B, C or D. Mark your answers on the ANSWER SHEET. (40 points)",
+      "articles": [
+        {
+          "id": "text-1",
+          "title": "Text 1",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "The weather in Texas may have cooled since the recent extreme heat, but the temperature will be high at the State Board of Education meeting in Austin this month as officials debate how climate change is taught in Texas schools. Pat Hardy, who sympathises with the views of the energy sector, is resisting proposed changes to science standards for pre-teen pupils. \"There are as many scientists working against all the panic of global climate change as there are those who are pushing it,\" she claims. \"Texas is an energy state and we need to recognise that. You need to remember where your bread is buttered.\" Most scientists and experts sharply dispute Hardy's views. Board members like her \"casually dismiss the career work of scholars and scientists as just another misguided opinion,\" says Dan Quinn, senior communications strategist at the Texas Freedom Network, a non-profit group that monitors public education. Such debates reflect fierce discussions across the US, as researchers, policymakers, teachers and students step up demands for a greater focus on teaching about the facts of climate change in schools. A study last year by the National Center for Science Education, a non-profit group of scientists and teachers, looking at how state public schools across the country address climate change in science classes, gave barely half of US states a grade B+ or higher. Among the 10 worst performers were some of the most populous states, including Texas, which was given the lowest grade (F) and has a disproportionate influence because its textbooks are widely sold elsewhere. Glenn Branch, the centre's deputy director, cautions that setting state-level science standards is only one limited benchmark in a country that decentralises decisions to local school boards. Even if a state is considered a high performer in its science standards, \"that does not mean it will be taught\", he says. Another issue is that while climate change is well integrated into some subjects and at some ages—such as earth and space sciences in high schools—it is not as well represented in curricula for younger children and in subjects that are more widely taught, such as biology and chemistry. It is also less prominent in many social studies courses. Branch points out that, even if a growing number of official guidelines and textbooks reflect scientific consensus on climate change, unofficial educational materials that convey more slanted perspectives are being distributed to teachers. They include materials sponsored by energy industry associations."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "title": "Text 2",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Communities throughout New England have been attempting to regulate short-term rentals since sites like Airbnb took off in the 2010s. Now, with record-high home prices and historically low inventory, there's an increased urgency in such regulation, particularly among those who worry that developers will come in and buy up swaths of housing to flip for a fortune on the short-term rental market. In New Hampshire, where the rental vacancy rate has dropped below 1 percent, housing advocates fear unchecked short-term rentals will put further pressure on an already strained market. The state Legislature recently voted against a bill that would've made it illegal for towns to create legislation restricting short-term rentals. \"We are at a crisis level on the supply of rental housing,\" said Nick Taylor, executive director of the Workforce Housing Coalition of the Greater Seacoast. Without enough affordable housing in southern New Hampshire towns, \"employers are having a hard time attracting employees, and workers are having a hard time finding a place to live,\" Taylor said. However, short-term rentals also provide housing for tourists, pointed out Ryan Castle, CEO of a local association of realtors. \"A lot of workers are servicing the tourist industry, and the tourism industry is serviced by those people coming in short term,\" Castle said, \"and so it's a cyclical effect.\" Short-term rentals themselves are not the crux of the issue, said Keren Hom, an expert on affordable housing policy. \"I think individuals being able to rent out their second home is a good thing. If it's their vacation home anyway, and it's just empty, why can't you make money off it?\" Hom said. Issues arise, however, when developers attempt to create large-scale short-term rental facilities—de facto hotels—to bypass taxes and regulations. \"I think the question is, shouldn't a developer who's really building a hotel, but disguising it as not a hotel, be treated and taxed and regulated like a hotel?\" Hom said. At the end of 2018, Governor Charlie Baker of Massachusetts signed a bill to rein in those potential investor-buyers. The bill requires every rental host to register with the state, mandates they carry insurance, and opens the potential for local taxes on top of a new state levy. Boston took things even further, requiring renters to register with the city's Inspectional Services Department. Hom said similar registration requirements could benefit struggling cities and towns, but \"if we want to make a change in the housing market, the main one is we have to build a lot more.\""
+            }
+          ]
+        },
+        {
+          "id": "text-3",
+          "title": "Text 3",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "If you're heading for your nearest branch of Waterstones, the biggest book retailer in the UK, in search of the Duchess of Sussex's new children's book The Bench, you might have to be prepared to hunt around a bit; the same may be true of The President's Daughter, the new thriller by Bill Clinton and James Patterson. Both of these books are published next week by Penguin Random House (PRH), a company currently involved in a stand-off with Waterstones. The problem began late last year, when PRH confirmed that it had introduced a credit limit with Waterstones \"at a very significant level\". The trade magazine The Bookseller reported that Waterstones branch managers were being told to remove PRH books from prominent areas such as tables, display spaces and windows, and were \"quietly retiring them to their relevant sections\". PRH declined to comment on the issue, but a spokesperson for Waterstones told me: \"Waterstones are currently operating with reduced credit terms from PRH, the only publisher in the UK to place any limitations on our ability to trade. We are not boycotting PRH titles but we are doing our utmost to ensure that availability for customers remains good despite the lower overall levels of stock. We are hopeful with our shops now open again that normality will return and that we will be allowed to buy appropriately. Certainly, our shops are exceptionally busy. The sales for our May Books of the Month surpassed any month since 2018.\" In the meantime, PRH authors have been the losers. Big-name PRH authors may suffer a bit, but it's those mid-list authors, who normally rely on Waterstones staff's passion for promoting books by lesser-known writers, who will be praying for an end to the dispute. It comes at a time when authors are already worried about the consequences of the proposed merger between PRH and another big publisher, Simon & Schuster—the reduction in the number of unaligned UK publishers is likely to lead to fewer bidding wars, lower advances, and more conformity in terms of what is published. \"This is all part of a wider change towards concentration of power,\" says literary agent Andrew Lownie. \"The publishing industry talks about diversity in terms of authors and staff but it also needs a plurality of ways of delivering intellectual contact, choice and different voices. After all, many of the most interesting books in recent years have come from small publishers.\" We shall see whether that plurality is a casualty of the current need among publishers to be big enough to take on all-comers."
+            }
+          ]
+        },
+        {
+          "id": "text-4",
+          "title": "Text 4",
+          "type": "reading",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Scientific papers are the recordkeepers of progress in research. Each year researchers publish millions of papers in more than 30,000 journals. The scientific community measures the quality of those papers in a number of ways, including the perceived quality of the journal (as reflected by the title's impact factor) and the number of citations a specific paper accumulates. The careers of scientists and the reputation of their institutions depend on the number and prestige of the papers they produce, but even more so on the citations attracted by these papers. Citation cartels, where journals, authors, and institutions conspire to inflate citation numbers, have existed for a long time. In 2016, researchers developed an algorithm to recognize suspicious citation patterns, including groups of authors that disproportionately cite one another and groups of journals that cite each other frequently to increase the impact factors of their publications. Recently, another expression of this predatory behavior has emerged: so-called support service consultancies that provide language and other editorial support to individual authors and to journals sometimes advise contributors to add a number of citations to their articles. The advent of electronic publishing and authors' need to find outlets for their papers resulted in thousands of new journals. The birth of predatory journals wasn't far behind. These journals can act as milk cows where every single article in an issue may cite a specific paper or a series of papers. In some instances, there is absolutely no relationship between the content of the article and the citations. The peculiar part is that the journal that the editor is supposedly working for is not profiting at all—it is just providing citations to other journals. Such practices can lead an article to accrue more than 150 citations in the same year that it was published. How insidious is this type of citation manipulation? In one example, an individual—acting as author, editor, and consultant—was able to use at least 15 journals as citation providers to articles published by five scientists at three universities. The problem is rampant in Scopus, a citation database, which includes a high number of the new \"international\" journals. In fact, a listing in Scopus seems to be a criterion to be targeted in this type of citation manipulation. Scopus itself has all the data necessary to detect this malpractice. Red flags include a large number of citations to an article within the first year. And for authors who wish to steer clear of citation cartel activities: when an editor, a reviewer, or a support service asks you to add inappropriate references, do not oblige and do report the request to the journal."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 21,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "In Paragraph 1, the weather in Texas is mentioned to",
+          "options": {
+            "A": "forecast a policy shift in Texas schools.",
+            "B": "stress the consequences of climate change.",
+            "C": "indicate the atmosphere at the board meeting.",
+            "D": "draw the public's attention to energy shortages."
+          },
+          "answer": "C",
+          "analysis": "【判型】题干用 the weather in Texas is mentioned to，问的是「提到 weather 是为了……」—— 【拆句】In Paragraph 1, the weather in Texas is mentioned to 是一个被动语态加不定式的不完 整陈述句，骨架为「the weather is mentioned (in order) to do sth」，四个选项均为不 mentioned to 还原成「提到 X 的目的是……」即可，无陷阱。 【定位】P1 The weather in Texas may have cooled since the recent extreme heat, but the temperature will be high at the State Board of Education meeting in Austin this month as officials debate how climate change is taught in Texas schools. 【选项】A) 无中生有 forecast a policy shift in Texas schools 中的 policy shift 在第 1 段并无任何支撑—— 原文只说会议将「辩论 how climate change is taught」，辩论本身既未给出政策走 向，也未预告任何 shift。 stress the consequences of climate change 把题目从「为什么提天气」答成了「天气 extreme heat 用来强调气候变化的后果。 C) ✓ 正确 the temperature will be high at the State Board of Education meeting ↔ indicate the atmosphere at the board meeting officials debate how climate change is taught in Texas schools ↔ atmosphere at the board meeting 预判要的是「类比烘托会议气氛」，indicate the atmosphere at the board meeting 中的 indicate + atmosphere + board meeting 三处分别对接「烘托」「气氛」「教 draw the public's attention to energy shortages 中的 energy shortages 在第 1 段 没有任何对应——首段谈 climate change is taught，从未提及能源短缺；公众的注意",
+          "position": 0
+        },
+        {
+          "id": 22,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "What does Quinn think of Hardy?",
+          "options": {
+            "A": "She exaggerates the existing panic.",
+            "B": "She denies the value of scientific work.",
+            "C": "She shows no concern for pre-teens.",
+            "D": "She expresses self-contradictory views."
+          },
+          "answer": "B",
+          "analysis": "Quinn 如何看待 Hardy? 【判型】What does Quinn think of Hardy? 问 Quinn 对 Hardy 的具体看法，定位句中即有原话， 【拆句】What does Quinn think of Hardy? 是 think of sb 的常规疑问句式，think of = have an opinion of，无倒装无省略，骨架透明。 【定位】P3 Most scientists and experts sharply dispute Hardy's views. Board members like her \"casually dismiss the career work of scholars and scientists as just another misguided opinion,\" says Dan Quinn, senior communications strategist at the Texas Freedom Network, a non-profit group that monitors public education. 大多数科学家和专家强烈反对 Hardy 的观点。Texas Freedom Network 高级传播策略师 【选项】A) 张冠李戴 exaggerates the existing panic 与原文不符——Quinn 并未指控 Hardy 夸大 panic； 恰恰相反，是 Hardy 自己在第 2 段把 all the panic of global climate change 当作被 B) ✓ 正确 casually dismiss the career work of scholars and scientists ↔ denies the value of scientific work as just another misguided opinion ↔ denies the value 预判核心是「Hardy 轻视、否定科研工作价值」，She denies the value of scientific work 中 denies + value + scientific work 三项分别对接「否定」「价值」「科研工 shows no concern for pre-teens 凭空生造「不关心未成年学生」这一论点——第 3 teens 的态度。 expresses self-contradictory views 指责 Hardy 「自相矛盾」——第 3 段 Quinn 只 contradict / contradictory 的同义表达。",
+          "position": 0
+        },
+        {
+          "id": 23,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "The study mentioned in Paragraph 5 shows that",
+          "options": {
+            "A": "climate education is insufficient at state public schools.",
+            "B": "policymakers have little drive for science education.",
+            "C": "Texas is reluctant to rewrite its science textbooks.",
+            "D": "environmental teaching in some states lacks supervision."
+          },
+          "answer": "A",
+          "analysis": "【判型】The study mentioned in Paragraph 5 shows that 让你转述该研究「表明了什么」，是对 【拆句】The study mentioned in Paragraph 5 shows that 中 mentioned in Paragraph 5 是过去 【定位】P5 A study last year by the National Center for Science Education, a non-profit group of scientists and teachers, looking at how state public schools across the country address climate change in science classes, gave barely half of US states a grade B+ or higher. 去年由 National Center for Science Education（一个由科学家与教师组成的非营利组 【选项】A) ✓ 正确 gave barely half of US states a grade B+ or higher ↔ climate education is insufficient at state public schools state public schools across the country ↔ state public schools how state public schools across the country address climate change in science classes ↔ climate education schools）、研究内容（climate education）、研究结论（insufficient）——A 项 climate education is insufficient at state public schools 三层全中、无延伸，是正 policymakers have little drive for science education 把研究结论的对象换成了「政策 制定者」，但研究考察的是 state public schools 的教育成效，未涉及政策制定者的驱 Texas is reluctant to rewrite its science textbooks 把研究的全美结论窄化为 Texas 的 具体行为；原文虽提到 Texas, which was given the lowest grade (F)，但只说 Texas environmental teaching in some states lacks supervision 中的 supervision（监",
+          "position": 0
+        },
+        {
+          "id": 24,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "According to Branch, state-level science standards in the US______",
+          "options": {
+            "A": "call for regular revision.",
+            "B": "require urgent application.",
+            "C": "have limited influence.",
+            "D": "cater to local needs."
+          },
+          "answer": "C",
+          "analysis": "【判型】According to Branch, state-level science standards in the US 让你转述 Branch 关于 state-level science standards 的原话，答案直接在他的话里，无需推断。 【拆句】According to Branch, state-level science standards in the US 是带空格的不完整陈述 句，According to Branch 作插入语，state-level science standards 是主语，in the US 【定位】P6 Glenn Branch, the centre's deputy director, cautions that setting state-level science standards is only one limited benchmark in a country that decentralises decisions to local school boards. 【选项】A) 无中生有 call for regular revision 在第 6 段没有任何支撑——Branch 只评价州级标准的影响是 有限的，从未谈到「需要定期修订」；regular revision 是凭空生造的新论点。 require urgent application 强调「亟需推行/应用」，但 Branch 的态度是「州级标准 是 only one limited benchmark」——他在弱化、降级而不是催促紧急推行，方向恰 C) ✓ 正确 only one limited benchmark ↔ have limited influence in a country that decentralises decisions to local school boards ↔ limited 预判核心「州级标准影响力有限」由 limited 与 decentralises 两点共同支撑，have limited influence 中 limited 直接同根复用、influence 与 benchmark 在「指标→实际 cater to local needs 把「决策权下放给地方学区」偷换成「迎合地方需要」——",
+          "position": 0
+        },
+        {
+          "id": 25,
+          "articleId": "text-1",
+          "type": "reading",
+          "question": "It is implied in the last paragraph that climate change teaching in some schools______",
+          "options": {
+            "A": "agrees to major public demands.",
+            "B": "reflects teachers' personal bias.",
+            "C": "may misrepresent the energy sector.",
+            "D": "can be swayed by external forces."
+          },
+          "answer": "D",
+          "analysis": "【判型】题干 It is implied in the last paragraph that 中的 implied 直接亮出推断属性——答案是 【拆句】It is implied in the last paragraph that climate change teaching in some schools 是 It 形式主语句式，真正的主语从句由 that 引导，从句主语是 climate change teaching in some schools，谓语和补足成分藏在四个选项里；in some schools 是关键限定，提醒考 【定位】P8 Branch points out that, even if a growing number of official guidelines and textbooks reflect scientific consensus on climate change, unofficial educational materials that convey more slanted perspectives are being distributed to teachers. They include materials sponsored by energy industry associations. 【选项】A) 与原文相反 agrees to major public demands 中的 public demands 在末段没有任何对应—— reflects teachers' personal bias 把责任推到「老师本人有偏见」——但末段 unofficial educational materials that convey more slanted perspectives are being distributed to teachers 说的是资料被分发给老师，老师是受方而非来源，slanted（偏 may misrepresent the energy sector 暗示教学「歪曲了能源行业」——但末段说的是 materials sponsored by energy industry associations，即能源行业资助资料去影响 D) ✓ 正确 unofficial educational materials that convey more slanted perspectives are being distributed to teachers ↔ can be swayed by external forces materials sponsored by energy industry associations ↔ external forces external forces 用 can 控住语气、用 swayed 等值 distributed/influenced、用 external forces 抽象 energy industry associations——一步推断、不增不减，D 项即 SENTENCE INSIGHTS · 句子精讲 11 The weather in Texas may have cooled since the recent extreme heat, but the temperature will be high at the State Board of Education meeting in Austin th...",
+          "position": 0
+        },
+        {
+          "id": 26,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "Which of the following is true of New England?",
+          "options": {
+            "A": "Its housing supply is at a very low level.",
+            "B": "Its communities are in need of funding.",
+            "C": "Its rental vacancy rate is going up slowly.",
+            "D": "Its home prices are under strict control."
+          },
+          "answer": "A",
+          "analysis": "【判型】Which of the following is true of New England 没有给出具体细节方向，只问 \"哪个 【拆句】题干 Which of the following is true of New England? 是一个直接特殊疑问句，主干 Which is true，of New England 是后置介词短语限定话题范围。结构平铺直叙，无陷阱。 【定位】P1 Now, with record-high home prices and historically low inventory, there's an increased urgency in such regulation, particularly among those who worry that developers will come in and buy up swaths of housing to flip for a fortune on the short-term rental market. 【选项】A) ✓ 正确 historically low inventory ↔ housing supply is at a very low level 四个选项中只有 A 与 historically low inventory 一一对应，其余三项与原文要么相反 in need of funding（缺资金）与原文焦点 record-high home prices and historically 原文说 rental vacancy rate has dropped below 1 percent（空置率下降），选项却说 going up slowly（缓慢上升），方向完全相反。 原文 record-high home prices 表明房价创新高、无任何被控制的描述，选项 under strict control 凭空生成 \"严格控制\" 的状态。",
+          "position": 0
+        },
+        {
+          "id": 27,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "The bill mentioned in Paragraph 2 was intended to______",
+          "options": {
+            "A": "curb short-term rental speculation.",
+            "B": "ensure the supply of cheap housing.",
+            "C": "punish illegal dealings in housing.",
+            "D": "allow a free short-term rental market."
+          },
+          "answer": "D",
+          "analysis": "【判型】was intended to 询问议案的具体意图，正确答案应是原文议案描述的客观转述。 【拆句】题干为不完整陈述句 The bill mentioned in Paragraph 2 was intended to______。主语 The bill，定语 mentioned in Paragraph 2 是过去分词后置定语，谓语 was intended to 接选项作补足。需要特别警惕的是：原文第 2 段说 voted against a bill that would've made it illegal for towns to create legislation restricting short-term rentals，这里既有 against（反对），又有 illegal（禁止），又有 restricting（限制）三重否定/限制叠加，理 清议案本身的 intend 是关键。 【定位】P2 The state Legislature recently voted against a bill that would've made it illegal for towns to create legislation restricting short-term rentals. 【选项】A) 与原文相反 curb short-term rental speculation 是 \"遏制短租投机\"，而议案本意是阻止地方限制 短租，方向恰好相反。考生若没看出 made it illegal+restricting 的双否定，就会被 short-term rental 这个共有词带跑。 supply of cheap housing 是 Taylor 在第 3 段的诉求，与本议案目的张冠李戴。 议案涉及的是各镇能否制定限制法规，与 punish illegal dealings in housing 所说的 \"惩治非法房产交易\" 完全无关，原文也没有 illegal dealings 的概念。 D) ✓ 正确 made it illegal for towns to create legislation restricting short-term rentals ↔ allow a free short-term rental market short-term rental market 等值。",
+          "position": 0
+        },
+        {
+          "id": 28,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "Compared with Castle, Taylor is more likely to support______",
+          "options": {
+            "A": "further investment in local tourism.",
+            "B": "an increase in affordable housing.",
+            "C": "strict management of real estate agents.",
+            "D": "a favorable policy for short-term workers."
+          },
+          "answer": "B",
+          "analysis": "与Castle相比,Taylor更可能支持______ 【判型】is more likely to support 是基于人物立场的一步外推，要从 Taylor 的发言推他更可能支持 【拆句】题干 Compared with Castle, Taylor is more likely to support______ 是不完整陈述句。 Compared with Castle 是分词短语作状语，逻辑主语是 Taylor；主干 Taylor is more likely to support…。关键短语 more likely to 表外推语气——答案是 Taylor 立场的一步合 【定位】P3 \"We are at a crisis level on the supply of rental housing,\" said Nick Taylor, executive director of the Workforce Housing Coalition of the Greater Seacoast. Without enough affordable housing in southern New Hampshire towns, \"employers are having a hard time attracting employees, and workers are having a hard time finding a place to live,\" Taylor said. 很难找到住处，\" Taylor 说。 【选项】A) 张冠李戴 further investment in local tourism 完全是 Castle 的角度（旅游业-工人-短租循 环），不是 Taylor 的诉求。Taylor 关心的是住房供给。 B) ✓ 正确 Without enough affordable housing in southern New Hampshire towns ↔ an increase in affordable housing 四项里只有 B 抓住 Taylor 反复点名的 affordable housing 焦点；其余三项要么属于 Taylor 没有提及房地产中介；管理 real estate agents 这一诉求原文无任何依据。原文 里的 realtors 出现在 Ryan Castle, CEO of a local association of realtors，是 Castle Taylor 关心的是 employees / workers 找不到住处，而非 a favorable policy for short-term workers（针对短期工人的政策）。原文 those people coming in short",
+          "position": 0
+        },
+        {
+          "id": 29,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "What does Hom emphasize in Paragraph 5?",
+          "options": {
+            "A": "The urgency to upgrade short-term rental facilities.",
+            "B": "The efficient operation of the local housing market.",
+            "C": "The necessity to stop developers from evading taxes.",
+            "D": "The proper procedures for renting out spare houses."
+          },
+          "answer": "C",
+          "analysis": "【判型】What does Hom emphasize in Paragraph 5 是对第 5 段 Hom 发言重心的客观核对，重 【拆句】题干 What does Hom emphasize in Paragraph 5? 是一个一般疑问句结构，What 作 emphasize 的宾语前置，主语 Hom，谓语 emphasize，状语 in Paragraph 5。结构平铺 【定位】P5 Issues arise, however, when developers attempt to create large-scale short-term rental facilities—de facto hotels—to bypass taxes and regulations. \"I think the question is, shouldn't a developer who's really building a hotel, but disguising it as not a hotel, be treated and taxed and regulated like a hotel?\" Hom said. 【选项】A) 无中生有 Hom 没有谈及短租设施的硬件升级问题，upgrade short-term rental facilities 是凭空 捏造的诉求。原文出现的 short-term rental facilities 字样只是被她用来批评 \"开发商伪 operation of the local housing market 是宏观、空泛的概念，原文无对应。 C) ✓ 正确 developers attempt to create large-scale short-term rental facilities—de facto hotels—to bypass taxes and regulations ↔ The necessity to stop developers from evading taxes shouldn't a developer who's really building a hotel, but disguising it as not a hotel, be treated and taxed and regulated like a hotel ↔ stop developers from evading taxes proper procedures for renting out spare houses 把 Hom 的强调降级为 \"个人闲置房 出租的程序\"。原文中她确实说过 individuals being able to rent out their second home is a good thing，但这是让步的铺垫，而非 emphasize 的对象。",
+          "position": 0
+        },
+        {
+          "id": 30,
+          "articleId": "text-2",
+          "type": "reading",
+          "question": "Hom holds that imposing registration requirements is______",
+          "options": {
+            "A": "an irrational decision.",
+            "B": "an unfeasible proposal.",
+            "C": "an unnecessary measure.",
+            "D": "an inadequate solution."
+          },
+          "answer": "D",
+          "analysis": "Hom认为实施登记要求是______ 【判型】Hom holds that 配合让步结构 could benefit … but if we want to make a change … we have to build a lot more，正确答案是从 \"but\" 转折推出的态度判断。 【拆句】题干 Hom holds that imposing registration requirements is______ 是不完整陈述句。主 语 Hom，谓语 holds that 接宾语从句；从句主语 imposing registration requirements 【定位】P7 Hom said similar registration requirements could benefit struggling cities and towns, but \"if we want to make a change in the housing market, the main one is we have to build a lot more.\" 【选项】A) 过度推断 an irrational decision 意为 \"不理智的决定\"，否定彻底。但 Hom 明明承认登记 could benefit struggling cities and towns，并未否定其合理性，仅认为它不够。 an unfeasible proposal（不可行的提议）涉及 \"能否实施\" 的维度，Hom 全文没讨论 an unnecessary measure 等于完全否定登记的必要性，但原文 could benefit struggling cities and towns 明确承认它有用，本身就证明它并非 unnecessary。 D) ✓ 正确 could benefit struggling cities and towns, but \"if we want to make a change in the housing market, the main one is we have to build a lot more\" ↔ an inadequate solution solution 完整保留这两层语义——它仍是 solution（承认有用），但是 inadequate （不充分）。 SENTENCE INSIGHTS · 句子精讲 11 Communities throughout New England have been attempting to regulate short- term rentals since sites like Airbnb took off in the 2010s. Now, with record-high home prices and historically low inventory, there's an increased urgency in such regulation, particularly among those who worry that developers will come in and buy up swaths of housing to flip for a fortune on the short-term rental market. \"Now\"、\"with...\"、\"particularly among...\" 考查状语类型判断;定语从句中 \"who\" 既是...",
+          "position": 0
+        },
+        {
+          "id": 31,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "The author mentions two books in Paragraph 1 to present______",
+          "options": {
+            "A": "an ongoing conflict.",
+            "B": "an intellectual concept.",
+            "C": "a prevailing sentiment.",
+            "D": "a literary phenomenon."
+          },
+          "answer": "A",
+          "analysis": "【判型】The author mentions two books in Paragraph 1 to present，主句结构\"作者举例 + to 【拆句】主干 The author mentions two books，in Paragraph 1 作地点状语；to present 是目的 【定位】P1 Both of these books are published next week by Penguin Random House (PRH), a company currently involved in a stand-off with Waterstones. 【选项】A) ✓ 正确 a company currently involved in a stand-off with Waterstones ↔ an ongoing conflict 心是\"两家正陷在持续的对抗里\"，与 an ongoing conflict 完全等值。 an intellectual concept 指\"思想/学术概念\"——第 1 段从书名到段尾全是商业/销售层 a prevailing sentiment 指\"流行的情绪/情感\"——原文谈的是两家公司之间的商业僵 a literary phenomenon 把两本书拔高为\"一种文学现象\"——原文只是用两本具体新书",
+          "position": 0
+        },
+        {
+          "id": 32,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "Why did Waterstones shops retire PRH books to their relevant sections?",
+          "options": {
+            "A": "To make them easily noticeable.",
+            "B": "To comply with PRH's requirement.",
+            "C": "To respond to PRH's business move.",
+            "D": "To arrange them in a systematic way."
+          },
+          "answer": "C",
+          "analysis": "【判型】Why did Waterstones shops retire PRH books to their relevant sections?问的是一个原 【拆句】一般过去时疑问句，主语 Waterstones shops，谓语 retire，宾语 PRH books，to + 地 【定位】P2 The problem began late last year, when PRH confirmed that it had introduced a credit limit with Waterstones \"at a very significant level\". The trade magazine The Bookseller reported that Waterstones branch managers were being told to remove PRH books from prominent areas such as tables, display spaces and windows, and were \"quietly retiring them to their relevant sections\". 【选项】A) 与原文相反 To make them easily noticeable 说撤书是为\"让它们更容易被注意\"——但原文明白说 是把书从 prominent areas such as tables, display spaces and windows 撤下，恰恰 To comply with PRH's requirement 说撤书是\"遵从 PRH 的要求\"——但原文中要求撤 书的是 Waterstones branch managers were being told，下令方是 Waterstones 自 己（管理层），不是 PRH；PRH 只是设了\"信用额度\"，从未要求 Waterstones 撤书。 C) ✓ 正确 PRH confirmed that it had introduced a credit limit with Waterstones ↔ To respond to PRH's business move 预判要求选项把\"PRH 商业动作 → Waterstones 回应\"完整体现；C 项同时具备 business move（指 PRH 设限额）和 respond（指 Waterstones 撤书）两个核心要 To arrange them in a systematic way 把撤书包装成\"按系统化方式排列\"——这是把一",
+          "position": 0
+        },
+        {
+          "id": 33,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "What message does the spokesperson for Waterstones seem to convey?",
+          "options": {
+            "A": "Their customers remain loyal.",
+            "B": "The credit limit will be removed.",
+            "C": "Their stock is underestimated.",
+            "D": "The book market is rather slack."
+          },
+          "answer": "A",
+          "analysis": "【判型】What message does the spokesperson for Waterstones seem to convey? 含 seem to 【拆句】What 引导特殊疑问句，message 作宾语前置；定语从句 the spokesperson for Waterstones seem to convey 修饰 message。基础句式，不构成阅读障碍。 【定位】P3 We are not boycotting PRH titles but we are doing our utmost to ensure that availability for customers remains good despite the lower overall levels of stock. We are hopeful with our shops now open again that normality will return and that we will be allowed to buy appropriately. Certainly, our shops are exceptionally busy. The sales for our May Books of the Month surpassed any month since 2018. 【选项】A) ✓ 正确 our shops are exceptionally busy. The sales for our May Books of the Month surpassed any month since 2018 ↔ Their customers remain loyal The credit limit will be removed 把发言人对\"恢复正常\"的希望直接说成\"信用额度将被 取消\"——原文只说 hopeful…that normality will return 是希望，未来事件不确定； hopeful 远不等于 will be removed。 Their stock is underestimated 说\"他们的库存被低估\"——但原文明确承认 the lower overall levels of stock，是\"整体库存确实变低\"，与\"被低估\"语义完全相反； underestimated 还把\"客观少\"歪曲成\"被主观看轻\"。 The book market is rather slack 说\"图书市场相当萧条\"——原文恰恰强调店里 exceptionally busy、销量 surpassed any month since 2018，是市场红火的证据；D",
+          "position": 0
+        },
+        {
+          "id": 34,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "What can be one consequence of the current dispute?",
+          "options": {
+            "A": "Sales of books by mid-list PRH writers fall off considerably.",
+            "B": "Lesser-known PRH writers become the target of criticism.",
+            "C": "Waterstones staff hesitate to promote big-name authors' books.",
+            "D": "Waterstones branches suffer a severe reduction in revenue."
+          },
+          "answer": "A",
+          "analysis": "C) Waterstones的员工对推广知名作家的书籍犹豫不决。 D) Waterstones的分店收入严重减少。 【判型】What can be one consequence of the current dispute? 问的是文中明示的一种后果—— 【拆句】情态动词 can 表示\"可能存在的一种\"——暗示原文给的不止一个后果，问其中之一。主干结 【定位】P4 Big-name PRH authors may suffer a bit, but it's those mid-list authors, who normally rely on Waterstones staff's passion for promoting books by lesser-known writers, who will be praying for an end to the dispute. 【选项】A) ✓ 正确 those mid-list authors, who normally rely on Waterstones staff's passion for promoting books ↔ Sales of books by mid-list PRH writers fall off considerably 预判中的\"中层作者销量下滑\"在 A 项里完整呈现：主体（mid-list PRH writers）= 中层 作者；后果（sales fall off considerably）= 销量明显下滑——两者一一对应。 Lesser-known PRH writers become the target of criticism 说不知名作者\"成了被批评 Waterstones staff hesitate to promote big-name authors' books 把推介对象错配 为\"大牌作者\"——原文 promoting books by lesser-known writers 写得很清楚：店员 Waterstones branches suffer a severe reduction in revenue 说 Waterstones 分 店\"营收严重下降\"——但原文 our shops are exceptionally busy 还在强调店内极忙，",
+          "position": 0
+        },
+        {
+          "id": 35,
+          "articleId": "text-3",
+          "type": "reading",
+          "question": "Which of the following statements best represents Lownie's view?",
+          "options": {
+            "A": "Small publishers ought to stick together.",
+            "B": "Big publishers will lose their dominance.",
+            "C": "The publishing industry is having a hard time.",
+            "D": "The merger of publishers is a worrying trend."
+          },
+          "answer": "D",
+          "analysis": "【判型】Which of the following statements best represents Lownie's view? 用 best represents 【拆句】Which of the following statements 主语前置，best represents 谓语，宾语 Lownie's 【定位】P6 \"This is all part of a wider change towards concentration of power,\" says literary agent Andrew Lownie. \"The publishing industry talks about diversity in terms of authors and staff but it also needs a plurality of ways of delivering intellectual contact, choice and different voices. After all, many of the most interesting books in recent years have come from small publishers.\" 【选项】A) 无中生有 Small publishers ought to stick together 说\"小出版社应该团结起来\"——原文 Big publishers will lose their dominance 说\"大出版商将失去其主导地位\"——但 The publishing industry is having a hard time 把 Lownie 的具体担忧（合并/集中 D) ✓ 正确 This is all part of a wider change towards concentration of power ↔ The merger of publishers is a worrying trend After all, many of the most interesting books in recent years have come from small publishers ↔ The merger of publishers is a worrying trend SENTENCE INSIGHTS · 句子精讲 9 If you're heading for your nearest branch of Waterstones, the biggest book retailer in the UK, in search of the Duchess of Sussex's new children's book The Bench, you might have to be prepared to hunt around a bit; the same may be true of The President's Daughter, the new thriller by Bill Clinton and James Patterson. Both of these books are published next week by Penguin Random House (PRH), a company currently involved in a stand-off with Waterstones. The trade...",
+          "position": 0
+        },
+        {
+          "id": 36,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "According to Paragraph 1, the careers of scientists can be determined by______",
+          "options": {
+            "A": "how many citations their works contain.",
+            "B": "how many times their papers are cited.",
+            "C": "the prestige of the people they work with.",
+            "D": "the status they have in scientific circles."
+          },
+          "answer": "B",
+          "analysis": "【判型】题干 According to Paragraph 1, the careers of scientists can be determined by 是 '根 【拆句】题干 the careers of scientists can be determined by______ 是一个待补全的被动结构，主 语 careers of scientists、谓语 can be determined by，by 后面缺宾语就是要选的内容； 【定位】P1 The careers of scientists and the reputation of their institutions depend on the number and prestige of the papers they produce, but even more so on the citations attracted by these papers. 【选项】A) 与原文相反 选项 how many citations their works contain 说的是 '论文里包含多少处引用'（即作 者引了多少别人），而原文强调 citations attracted by these papers 是 '被多少人引 B) ✓ 正确 the citations attracted by these papers ↔ how many times their papers are cited 选项 how many times their papers are cited 与预判 '论文被引用了多少次' 字面与语 选项 the prestige of the people they work with 说 '一起共事者的声望'，但原文 the number and prestige of the papers they produce 中的 prestige 修饰的是 papers 选项 the status they have in scientific circles 谈 '其在学界的个人地位'，原文从未把 status/standing 作为决定要素列出，且 reputation of their institutions 谈的是机构声",
+          "position": 0
+        },
+        {
+          "id": 37,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "The support service consultancies tend to______",
+          "options": {
+            "A": "recommend journals to their clients.",
+            "B": "list citation patterns for their clients.",
+            "C": "ask authors to include extra citations.",
+            "D": "advise contributors to cite each other."
+          },
+          "answer": "C",
+          "analysis": "【判型】题干 The support service consultancies tend to______ 锁定特定对象问其常做的事，是典 型 'A 通常做 B' 型细节题。 【拆句】题干 The support service consultancies tend to______ 主语是 The support service consultancies，谓语是 tend to + 动词原形，所选 A/B/C/D 都是动词原形短语，直接补在 【定位】P2 Recently, another expression of this predatory behavior has emerged: so-called support service consultancies that provide language and other editorial support to individual authors and to journals sometimes advise contributors to add a number of citations to their articles. 【选项】A) 无中生有 选项 recommend journals to their clients 说 '向客户推荐期刊'，但定位句只说 advise contributors to add citations，没提推荐期刊一事。 选项 list citation patterns for their clients 说 '为客户列出引用模式'，可定位句的动词 是 advise to add，不是 list；citation patterns 也只在前文 suspicious citation patterns 由 2016 年算法识别出现，与 support service consultancies 无关。 C) ✓ 正确 advise contributors to add a number of citations to their articles ↔ ask authors to include extra citations 选项 ask authors to include extra citations 与预判 '让作者加引用' 字面与语义完全对 选项 advise contributors to cite each other 把动作扭曲成 '让投稿人之间互相引用'， 可定位句只说 add citations to their articles，并未规定要互引；互引描述的是 groups of authors that disproportionately cite one another，属另一主体。",
+          "position": 0
+        },
+        {
+          "id": 38,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "The function of the \"milk cow\" journals is to______",
+          "options": {
+            "A": "boost citation counts for certain authors.",
+            "B": "help scholars publish articles at low cost.",
+            "C": "instruct first-time contributors in citation.",
+            "D": "increase the readership of new journals."
+          },
+          "answer": "A",
+          "analysis": "【判型】题干 The function of the \"milk cow\" journals is to______ 锁定文中一个具体对象问其功 【拆句】题干 The function of the \"milk cow\" journals is to______ 主干为 The function ... is to + 【定位】P3 These journals can act as milk cows where every single article in an issue may cite a specific paper or a series of papers. In some instances, there is absolutely no relationship between the content of the article and the citations. 【选项】A) ✓ 正确 every single article in an issue may cite a specific paper or a series of papers ↔ boost citation counts for certain authors Such practices can lead an article to accrue more than 150 citations in the same year that it was published ↔ boost citation counts for certain authors 选项 boost citation counts for certain authors 既对应 'cite a specific paper' 的机 制，又对应 'accrue more than 150 citations' 的后果，是唯一同时覆盖原文机制 + 结 选项 help scholars publish articles at low cost 说 '帮学者低成本发表文章'，原文 P3 从头到尾没提 cost/fee/charge 等任何成本词，纯属增项。 选项 instruct first-time contributors in citation 说 '指导首次投稿人如何引用'，原文 P3 完全没出现 first-time / instruct / teach 等动词，与 milk cow 期刊的 '互引刷量' 功 选项 increase the readership of new journals 说 '扩大新期刊读者群'，原文重点在 'citations'（引用次数）而非 'readership'（读者群），且 the journal that the editor is supposedly working for is not profiting at all 直接否认其期刊本身受益。",
+          "position": 0
+        },
+        {
+          "id": 39,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "What can be learned about Scopus from the last two paragraphs?",
+          "options": {
+            "A": "It fosters competition among citation providers.",
+            "B": "It has the capability to identify suspicious citations.",
+            "C": "It hinders the growth of \"international\" journals.",
+            "D": "It is established to prevent citation manipulation."
+          },
+          "answer": "B",
+          "analysis": "【判型】题干 What can be learned about Scopus from the last two paragraphs? 用 learned 而 非 inferred/implied，问的是 '段内交代了关于 X 的什么事实'，仍是细节题。 【拆句】题干 What can be learned about Scopus from the last two paragraphs? 是 What 引导 的特殊疑问句，about Scopus 是话题、from the last two paragraphs 是范围状语；结构 【定位】P5 Scopus itself has all the data necessary to detect this malpractice. 【选项】A) 无中生有 选项 It fosters competition among citation providers 说 'Scopus 促进引用提供者间 的竞争'，原文 P4P5 全无 foster、competition、competitors 等词，且 Scopus 在文 中是被 '攻陷' 的角色，谈不上 'foster competition'。 B) ✓ 正确 Scopus itself has all the data necessary to detect this malpractice ↔ It has the capability to identify suspicious citations Red flags include a large number of citations to an article within the first year ↔ It has the capability to identify suspicious citations 选项 It has the capability to identify suspicious citations 把 '有数据可检测不端' 客 选项 It hinders the growth of \"international\" journals 说 'Scopus 阻碍国际期刊成 长'，原文 The problem is rampant in Scopus 恰恰相反——这些 'international' 期刊 选项 It is established to prevent citation manipulation 说 'Scopus 被建立来防止引 用操纵'，但原文只说它 has all the data necessary to detect this malpractice，谈的 'established to prevent' 的语义相悖。",
+          "position": 0
+        },
+        {
+          "id": 40,
+          "articleId": "text-4",
+          "type": "reading",
+          "question": "What should an author do to deal with citation manipulators? Part B Directions: The following paragraphs are given in a wrong order. For questions 41 -45, you are required to reorganize these paragraphs into a coherent text by choosing from the list A-H and filling them into the numbered boxes. Paragraphs A, E, and H have been correctly placed. Mark your answers on the ANSWER SHEET. (10 points) photographer William Henry Jackson. Jackson snapped the first-ever shots of iconic landmarks such as the Tetons, Old Faithful and the Colorado Rockies on a late 19th-century expedition through the Yellowstone Basin, conducted by the head of the U.S. Geological and Geographical Survey of the Territories, Ferdinand V. Hayden. The team included a meteorologist, a zoologist, a mineralogist, and an agricultural statistician. settlers. One of the turning points in public support for land conservation efforts—and recognizing the magnificence of the Yellowstone region in particular—came in the form of vivid photographs. visuals. He asked Jackson to print out large copies and distributed them, along with reproductions of Moran's paintings, to each member of Congress. \"The visualization, particularly those photographs, really hit home that this is something that has to be protected,\" says Alicia Murphy, Yellowstone's park historian. involved coating the plates with a chemical mixture, exposing them and developing the resulting images with a portable darkroom. The crude technique required educated guesses on exposure times, and involved heavy, awkward equipment—several men had to assist in its transportation. Despite these challenges, Jackson captured dozens of striking photos, ranging from majestic images like his now-famous snapshot of Old Faithful, to casual portraits of expedition members at the camp. While veterans of previous expeditions had written at length about stunning sights, these vivid photographs were another thing entirely. [ E ] The journey officially began in Ogden, Utah, on June 8, 1871. Over nearly four months, dozens of men made their way on horseback into Montana and traversed along the Yellowstone River and around Yellowstone Lake. That fall, they concluded the survey in Fort Bridger, Wyoming. [ F ] Though Native Americans (and later miners and fur trappers) had long recognized the area's riches, most Americans did not. That's why Hayden's expedition aimed to produce a fuller understanding of the Yellowstone River region, from its hot springs and waterfalls to its variety of flora and fauna. In addition to the entourage of scientists, the team also included artists: Painter Thomas Moran and photographer Jackson were charged with capturing this astounding natural beauty and sharing it with the world. [ G ] The bill proved largely popular and sailed through Congress with large majorities in favor. In quick succession, the Senate and House passed legislation protecting Yellowstone in early 1872. That March, President Ulysses S. Grant signed an act into law that established Yellowstone as the world's first national park. While some locals opposed the designation, the decision was largely accepted—and Jackson's photos played a key role in the fight to protect the area. \"I don't believe that the legal protection would have happened in the time frame that it did without those images,\" says Heather Hansen, journalist and author of Prophets and Moguls, Rangers and Rogues, Bison and Bears: 100 Years of the National Park Service. [ H ] Perhaps most importantly, these images provided documentary evidence that later made its way to government officials. Weeks after completing the expedition, Hayden collected his team's observations into an extensive report aimed at convincing senators and representatives, along with colleagues at government agencies like the Department of the Interior, that Yellowstone ought to be preserved.",
+          "options": {
+            "A": "Last year marked the 150th anniversary of a series of Yellowstone photographs by the renowned landscape",
+            "B": "Two centuries ago, the idea of preserving nature, rather than exploiting it, was a novel one to many US",
+            "C": "As an effective Washington operator, Hayden sensed that he could capitalize on the expedition's stunning",
+            "D": "Throughout the trip, Jackson juggled multiple cameras and plate sizes using the collodion process that"
+          },
+          "answer": "D",
+          "analysis": "【判型】题干 What should an author do to deal with citation manipulators? 直接问 '应该做什 【拆句】题干 What should an author do to deal with citation manipulators? 主干是 What should an author do，to deal with citation manipulators 是目的状语；结构平铺直叙， 【定位】P5 And for authors who wish to steer clear of citation cartel activities: when an editor, a reviewer, or a support service asks you to add inappropriate references, do not oblige and do report the request to the journal. 【选项】A) 过度推断 选项 Take legal action 说 '诉诸法律'，原文只说向所投期刊举报（report the request 选项 Demand an apology 说 '要求一份道歉'，原文 P5 的建议是 'do not oblige and do report'，完全没提 apologize/apology，纯属无中生有。 选项 Seek professional advice 说 '寻求专业建议'，可原文给的建议是作者本人直接拒 绝并举报，没让作者再去咨询他人；且 so-called support service consultancies 反而 是文中给作者添麻烦的角色，'professional advice' 在本文语境下是负面来源。 D) ✓ 正确 do report the request to the journal ↔ Reveal their misconduct 选项 Reveal their misconduct 与预判 '举报/上报/披露' 对应；'do not oblige' 是消 SENTENCE INSIGHTS · 句子精讲 7 Citation cartels, where journals, authors, and institutions conspire to inflate citation numbers, have existed for a long time. Recently, another expression of this predatory behavior has emerged: so-called support service consultancies that provide language and other editorial support to individual authors and to journals sometimes advise contributors to add a number of citations to their articles. The advent of electronic publishing and authors' need to find outlets for their papers resulted in thousands of new journals. These journals can ...",
+          "position": 0
+        }
+      ]
+    }
+  ]
+}

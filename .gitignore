@@ -29,3 +29,6 @@ yarn.lock
 # ide
 .idea
 *.iml
+
+# Cloudflare Pages Functions 本地开发密钥（勿提交）
+.dev.vars
