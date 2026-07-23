@@ -6,6 +6,14 @@
 //     phrase:  /api/translate（短句，含网络释义）
 //     sentence:/api/translate（带简单长难句结构分析）
 //
+// 翻译源（多源容错，任一成功即返回）：
+//   前端直连（CORS）：
+//     1. MyMemory  —— 免费免 Key，CORS *，日限 5000 词
+//   后端代理 /api/translate（无 CORS 限制，服务端多源）：
+//     2. apihz.cn  —— 自有 API Key，质量稳定（需配置 env）
+//     3. uapis.cn  —— 免费免 Key，中英互译
+//     4. Google gtx —— 免费免 Key，translate.googleapis.com
+//
 // 缓存：localStorage key `ky:trans:cache`，TTL 7 天，上限 500 条（LRU 淘汰）
 // 并发去重：同 key 进行中的请求复用同一 Promise
 
@@ -139,6 +147,7 @@ interface TranslateApiResponse {
   to: number
   text: string
   translation: string
+  source?: string
 }
 
 /** 检测文本是否主要为中文（中文 → 译成英文；否则 → 译成中文） */
@@ -157,9 +166,10 @@ function fetchWithTimeout(url: string, init: RequestInit, ms = 10000): Promise<R
 
 /**
  * 主翻译源：自托管 /api/translate（Cloudflare Worker / Pages Functions）
- * 仅当后端可用时使用；失败则降级到公共免费源
+ * 后端内部多源容错：apihz.cn → uapis.cn → Google gtx
+ * 仅当后端可用时使用；失败则降级到前端直连源
  */
-async function callSelfHostedApi(text: string): Promise<string> {
+async function callSelfHostedApi(text: string): Promise<TranslateResult> {
   const resp = await fetchWithTimeout('/api/translate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -168,14 +178,15 @@ async function callSelfHostedApi(text: string): Promise<string> {
   if (!resp.ok) throw new Error(`翻译服务异常 (${resp.status})`)
   const data = (await resp.json()) as TranslateApiResponse
   if (data.code !== 200) throw new Error(data.msg || '翻译失败')
-  return data.translation || ''
+  if (!data.translation) throw new Error('后端返回空译文')
+  return { translation: data.translation, source: data.source || 'backend' }
 }
 
 /**
- * 兜底源 1：MyMemory 免费 API（无需密钥，支持 CORS，日限约 5000 词）
+ * 前端直连源：MyMemory 免费 API（无需密钥，支持 CORS，日限约 5000 词）
  * 自动判定中→英 / 英→中
  */
-async function callMyMemory(text: string): Promise<string> {
+async function callMyMemory(text: string): Promise<TranslateResult> {
   const toChinese = !isChineseText(text)
   const langpair = toChinese ? 'en|zh' : 'zh|en'
   // 截断超长文本（MyMemory 单次建议 < 500 字符）
@@ -199,23 +210,29 @@ async function callMyMemory(text: string): Promise<string> {
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
-  return translated
+  return { translation: translated, source: 'mymemory' }
+}
+
+/** 翻译结果（含来源标记） */
+interface TranslateResult {
+  translation: string
+  source: string
 }
 
 /**
  * 统一翻译入口：多源容错
- * 顺序：自托管 /api/translate → MyMemory
+ * 顺序：后端 /api/translate（apihz→uapis→google） → MyMemory（前端直连）
  * 任一成功即返回；全部失败抛错
  */
-async function callTranslateApi(text: string): Promise<string> {
+async function callTranslateApi(text: string): Promise<TranslateResult> {
   const errors: string[] = []
-  // 源 1：自托管后端（若部署了 Worker / Pages Functions）
+  // 源 1：后端代理（服务端多源：apihz → uapis → Google gtx）
   try {
     return await callSelfHostedApi(text)
   } catch (e) {
     errors.push(`后端: ${e instanceof Error ? e.message : String(e)}`)
   }
-  // 源 2：MyMemory 公共免费 API（无需后端，纯前端可用）
+  // 源 2：MyMemory 公共免费 API（前端直连，CORS OK）
   try {
     return await callMyMemory(text)
   } catch (e) {
@@ -299,17 +316,17 @@ export async function translate(text: string): Promise<TranslateResponse> {
           : await lookup(text)
         result = { kind: 'word', data: r }
       } else if (kind === 'phrase') {
-        const translation = await callTranslateApi(text)
+        const { translation, source } = await callTranslateApi(text)
         result = {
           kind: 'phrase',
           text,
           translation,
           found: !!translation,
-          source: 'api',
+          source,
         }
       } else {
         // sentence
-        const translation = await callTranslateApi(text)
+        const { translation, source } = await callTranslateApi(text)
         const structure = analyzeSentenceStructure(text)
         result = {
           kind: 'sentence',
@@ -317,7 +334,7 @@ export async function translate(text: string): Promise<TranslateResponse> {
           translation,
           structure,
           found: !!translation,
-          source: 'api',
+          source,
         }
       }
       setCache(text, kind, result)

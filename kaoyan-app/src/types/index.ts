@@ -332,7 +332,8 @@ export interface PhraseResult {
   text: string
   translation: string
   found: boolean
-  source: 'api' | 'cache'
+  /** 翻译来源：apihz / uapis / google / mymemory / backend / cache */
+  source: string
 }
 
 /** 长句翻译结果 */
@@ -346,7 +347,8 @@ export interface SentenceResult {
     clauses: string[]
   }
   found: boolean
-  source: 'api' | 'cache'
+  /** 翻译来源：apihz / uapis / google / mymemory / backend / cache */
+  source: string
 }
 
 /** 统一查询响应：三种形态联合类型 */
