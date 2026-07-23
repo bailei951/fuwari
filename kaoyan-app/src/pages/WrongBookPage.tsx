@@ -286,7 +286,7 @@ function WrongItemRow({ item }: { item: WrongItem }) {
           <div className="flex items-center gap-3 text-xs">
             <span className="text-green-700">
               <span className="font-mono font-bold mr-1">正确</span>
-              {item.answer}. {item.options[item.answer] ?? '—'}
+              {item.answer ? `${item.answer}. ${item.options[item.answer] ?? '—'}` : '—'}
             </span>
             {item.userAnswer && item.userAnswer !== item.answer && (
               <span className="text-seal-dark">

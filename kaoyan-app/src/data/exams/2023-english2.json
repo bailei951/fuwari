@@ -826,7 +826,7 @@
           "id": 40,
           "articleId": "text-4",
           "type": "reading",
-          "question": "What is the text mainly about? Part B Directions: Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points) Net-Zero Rules Set to Send Cost of New Homes and Extensions Soaring New building regulations aimed at improving energy efficiency are set to increase the price of new homes, as well as those of extensions and loft conversions on existing ones. The rules, which came into effect on Wednesday in England, are part of government plans to reduce the UK's carbon emissions to net zero by 2050. They set new standards for ventilation, energy efficiency and heating, and state that new residential buildings must have charging points for electric vehicles. The moves are the most significant change to building regulations in years, and industry experts say they will inevitably lead to higher prices at a time when a shortage of materials and high labour costs are already driving up bills. Brian Berry, chief executive of the Federation of Master Builders, says the measures will require new materials, testing methods, products and systems to be installed. \"All this comes at an increased cost during a time when prices are already sky high. Inevitably, consumers will have to pay more,\" he says. Gareth Belsham, of surveyors Naismiths, says people who are upgrading, or extending their home, will be directly affected. \"The biggest changes relate to heating and insulation,\" he explains. \"There are new rules concerning the amount of glazing used in extensions, and any new windows or doors must be highly insulated.\" Windows and doors will have to adhere to higher standards, while there are new limits on the amount of glazing you can have to reduce unwanted heat from the sun. Thomas Goodman, of MyJobQuote, says this will bring in new restrictions for extensions. \"Glazing on windows, doors and roof lights must cover no more than 25% of the floor area to prevent heat loss,\" he says. As the rules came into effect last Wednesday, property developers were rushing to file plans just before the deadline. Any plans submitted before that date are considered to be under the previous rules, and can go ahead as long as work starts before 15 June next year. Builders which have costed projects, but have not filed the paperwork, may need to go back and submit fresh estimates, says Marcus Jefford of Build Aviator. Materials prices are already up 25% in the last two years. How much overall prices will increase as a result of the rule changes is not clear. \"Whilst admirable in their intentions, they will add to the cost of housebuilding at a time when many already feel that they are priced out of homeownership,\" says Jonathan Rolande of the National Association of Property Buyers. \"An average extension will probably see around £3,000 additional cost thanks to the new regs.\" John Kelly, a construction lawyer at Freeths law firm, believes prices will eventually come down. But not in the immediate future. \"As the marketplace adapts to the new requirements, and the technologies that support them, the scaling up of these technologies will eventually bring costs down, but in the short term, we will all have to pay the price of the necessary transition,\" he says. However, the long-term effects of the changes will be more comfortable and energy-efficient homes, adds Andrew Mellor, of PRP architects. \"Homeowners will probably recoup that cost over time in energy bill savings. It will obviously be very volatile at the moment, but they will have that benefit over time.\" matter.",
+          "question": "What is the text mainly about?",
           "options": {
             "A": "The rise of home prices is a temporary",
             "B": "Builders possibly need to submit new",
@@ -836,6 +836,235 @@
           "answer": "A",
           "analysis": "【判型】What is the text mainly about? 问「整篇文章主要讲什么」，是全文级别的概括，需要在 【拆句】题干是简单疑问句 What is the text mainly about?，主旨题常见句式，无从句、无修饰， 【选项】A) ✓ 正确 Teenagers are paradoxical ↔ Why teenagers are self-contradictory Is there some common factor that underlies these apparently contradictory developments? ↔ Why The good and bad sides of adolescence seem to develop together ↔ self-contradictory 主线既包含「现象＝矛盾」也包含「解释＝共同成因」，A 项 Why teenagers are self- contradictory 一次性覆盖「为什么」+「自相矛盾」，与主线吻合。 Why teenagers are risk-sensitive 把原文反复出现的 reward sensitivity 偷换成 risk- sensitive；原文 Reward sensitivity measures how much reward it takes to outweigh risk 明确说 reward sensitivity 衡量的是「需要多大奖赏才能压过风险」，是 How teenagers develop prosociality 只覆盖第 3–5 段亲社会行为的部分，忽略了第 1 How teenagers become independent 只抓住第 1 段 helpless and dependent children ... become independent people 一句，忽略了文章后续对「矛盾、并行、共 SENTENCE INSIGHTS · 句子精讲 12 In adolescence, helpless and dependent children who have relied on grown-ups for just about everything become independent people who can take care of themselves and help each other. A new study published in the journal Child Development, by Eveline Crone of the University of Leiden and colleagues, suggests that the positive and negative sides of teenagers go hand in hand. For a long time, scientists and policy makers concentrated on the idea that teenagers were a problem that needed to be solved. The researchers studied \"prosocial\" and rebellious traits in more than 200 children and young adults, ranging from 11 ...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Net-Zero Rules Set to Send Cost of New Homes and Extensions Soaring New building regulations aimed at improving energy efficiency are set to increase the price of new homes, as well as those of extensions and loft conversions on existing ones. The rules, which came into effect on Wednesday in England, are part of government plans to reduce the UK's carbon emissions to net zero by 2050. They set new standards for ventilation, energy efficiency and heating, and state that new residential buildings must have charging points for electric vehicles. The moves are the most significant change to building regulations in years, and industry experts say they will inevitably lead to higher prices at a time when a shortage of materials and high labour costs are already driving up bills. Brian Berry, chief executive of the Federation of Master Builders, says the measures will require new materials, testing methods, products and systems to be installed. \"All this comes at an increased cost during a time when prices are already sky high. Inevitably, consumers will have to pay more,\" he says. Gareth Belsham, of surveyors Naismiths, says people who are upgrading, or extending their home, will be directly affected. \"The biggest changes relate to heating and insulation,\" he explains. \"There are new rules concerning the amount of glazing used in extensions, and any new windows or doors must be highly insulated.\" Windows and doors will have to adhere to higher standards, while there are new limits on the amount of glazing you can have to reduce unwanted heat from the sun. Thomas Goodman, of MyJobQuote, says this will bring in new restrictions for extensions. \"Glazing on windows, doors and roof lights must cover no more than 25% of the floor area to prevent heat loss,\" he says. As the rules came into effect last Wednesday, property developers were rushing to file plans just before the deadline. Any plans submitted before that date are considered to be under the previous rules, and can go ahead as long as work starts before 15 June next year. Builders which have costed projects, but have not filed the paperwork, may need to go back and submit fresh estimates, says Marcus Jefford of Build Aviator. Materials prices are already up 25% in the last two years. How much overall prices will increase as a result of the rule changes is not clear. \"Whilst admirable in their intentions, they will add to the cost of housebuilding at a time when many already feel that they are priced out of homeownership,\" says Jonathan Rolande of the National Association of Property Buyers. \"An average extension will probably see around £3,000 additional cost thanks to the new regs.\" John Kelly, a construction lawyer at Freeths law firm, believes prices will eventually come down. But not in the immediate future. \"As the marketplace adapts to the new requirements, and the technologies that support them, the scaling up of these technologies will eventually bring costs down, but in the short term, we will all have to pay the price of the necessary transition,\" he says. However, the long-term effects of the changes will be more comfortable and energy-efficient homes, adds Andrew Mellor, of PRP architects. \"Homeowners will probably recoup that cost over time in energy bill savings. It will obviously be very volatile at the moment, but they will have that benefit over time.\" matter."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 0
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 约 100 词；Part B 根据图表写作约 150 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的短文（书信 / 通知 / 便条等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图表撰写一篇约 150 词的议论文，描述图表并进行分析论证。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 15,
+            "wordLimit": "约 150 词"
+          }
         }
       ]
     }

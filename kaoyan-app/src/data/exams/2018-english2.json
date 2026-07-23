@@ -826,7 +826,7 @@
           "id": 40,
           "articleId": "text-4",
           "type": "reading",
-          "question": "This text is mainly about____. Part B Directions: Read the following text and answer the questions by choosing the most suitable subheading from the list A-G for each of the numbered paragraphs (41-45). There are two extra subheadings which you do not need to use. Mark your answers on the ANSWER SHEET. (10 points) Five ways to make conversation with anyone Conversations are links, which means when you have a conversation with a new person a link gets formed and every conversation you have after that moment will strengthen the link. You meet new people every day: the grocery worker, the cab driver, new people at work or the security guard at the door. Simply starting a conversation with them will form a link. Here are five simple ways that you can make the first move and start a conversation with strangers. (41)占位符这是等待完型填空的句⼦位置 Suppose you are in a room with someone you don't know and something within you says \"I want to talk with this person\" – this is something that mostly happens with all of us. You wanted to say something – the first word – but it just won't come out, it feels like it is stuck somewhere. I know the feeling and here is my advice: just get it out. Just think: what is the worst that could happen? They won't talk with you? Well, they are not talking with you now! So keep it simple: \"Hi\", \"Hey\" or \"Hello\" – do the best you can to gather all of the enthusiasm and energy you can, put on a big smile and say \"Hi\". (42)占位符这是等待完型填空的句⼦位置 It is a problem all of us face; you have limited time with the person that you want to talk with and you want to make this talk memorable. Honestly, if we got stuck in the rut of \"hi\", \"hello\", \"how are you?\" and \"what is going on?\", you will fail to give the initial jolt to the conversation that can make it so memorable. So don't be afraid to ask more personal questions. Trust me, you'll be surprised to see how much people are willing to share if you just ask. (43)占位符这是等待完型填空的句⼦位置 When you meet a person for the first time, make an effort to find the things which you and that person have in common so that you can build the conversation from that point. When you start conversation from there and then move outwards, you'll find all of a sudden that the conversation becomes a lot easier. (44)占位符这是等待完型填空的句⼦位置 Imagine you are pouring your heart out to someone and they are just busy on their phone, and if you ask for their attention you get the response \"I can multitask\". So when someone tries to communicate with you, just be in that communication wholeheartedly. Make eye contact. Trust me, eye contact is where all the magic happens. When you make eye contact, you can feel the conversation. (45)占位符这是等待完型填空的句⼦位置 You all came into a conversation where you first met the person, but after some time you may have met again and have forgotten their name. Isn't that awkward! So, remember the little details of the people you met or you talked with; perhaps the places they have been to, the places they want to go, the things they like, the things they hate – whatever you talk about. When you remember such things you can automatically become an investor in their wellbeing. So they feel a responsibility to you to keep that relationship going. That's it. Five amazing ways that you can make conversation with almost anyone. Every person is a really good book to read, or to have a conversation with! [ E ]Find the \"me too\"s [ F ]Skip the small talk [ G ]Ask for an opinion",
+          "question": "This text is mainly about____.",
           "options": {
             "A": "Just say it",
             "B": "Be present",
@@ -836,6 +836,295 @@
           "answer": "B",
           "analysis": "【判型】This text is mainly about 中 mainly about 是主旨题的标准触发词,直接判定为主旨题、走 【拆句】题干 This text is mainly about 是 主语 + 系动词 + 介词 about 的结构,选项是 about 后面 【选项】A) 以偏概全 ways to relieve the tension of busy life 中 relieve the tension「缓解忙碌生活的紧张 感」只是 P6 embrace downtime 和 P7 Idleness 这一两段的局部主题,并不能涵盖 P1 至 P5 关于 deep work、deep scheduling、to-do list 的内容,也不涵盖 P8 至 P9 的脑 B) ✓ 正确 Another approach to getting more done in less time ↔ approaches to getting more done in less time get more done in less time ↔ getting more done in less time 预判要求「如何用更少时间完成更多事」,B 用 approaches to getting more done in less time 几乎字面对应原文 Another approach to getting more done in less time, 且覆盖 P1 至 P9 各段招式,故选 B。 the key to eliminating distractions 中 eliminating distractions「消除干扰」只是 P3 combat constant interruptions 的局部话题,且原文从未主张「完全消除」(eliminate), 反而 leaving room for improvisation 主张为干扰留余地。既不覆盖全文,又与文章具体 the cause of the lack of focus time 的 the cause 是「原因」,但全文从未追溯「为什 SENTENCE INSIGHTS · 句子精讲 9 To combat the trap of putting a premium on being busy, Cal Newport, author of Deep Work: Rules for Focused Success in a Distracted World, recommends building a habit of \"deep work\" – the ability to focus without distraction. There are a number of approaches to mastering the art of deep work – be it lengthy retreats dedicated to a specific task; developing a daily ritual; or taking a \"journalistic\" approach to seizing moments of deep work when you can throughout the day. Whichever approach, the key is to determine your length of focus time and s...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following text and answer the questions by choosing the most suitable subheading from the list A-G for each of the numbered paragraphs (41-45). There are two extra subheadings which you do not need to use. Mark your answers on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Five ways to make conversation with anyone Conversations are links, which means when you have a conversation with a new person a link gets formed and every conversation you have after that moment will strengthen the link. You meet new people every day: the grocery worker, the cab driver, new people at work or the security guard at the door. Simply starting a conversation with them will form a link. Here are five simple ways that you can make the first move and start a conversation with strangers."
+            },
+            {
+              "type": "blank",
+              "blankId": 41
+            },
+            {
+              "type": "paragraph",
+              "content": "Suppose you are in a room with someone you don't know and something within you says \"I want to talk with this person\" – this is something that mostly happens with all of us. You wanted to say something – the first word – but it just won't come out, it feels like it is stuck somewhere. I know the feeling and here is my advice: just get it out. Just think: what is the worst that could happen? They won't talk with you? Well, they are not talking with you now! So keep it simple: \"Hi\", \"Hey\" or \"Hello\" – do the best you can to gather all of the enthusiasm and energy you can, put on a big smile and say \"Hi\"."
+            },
+            {
+              "type": "blank",
+              "blankId": 42
+            },
+            {
+              "type": "paragraph",
+              "content": "It is a problem all of us face; you have limited time with the person that you want to talk with and you want to make this talk memorable. Honestly, if we got stuck in the rut of \"hi\", \"hello\", \"how are you?\" and \"what is going on?\", you will fail to give the initial jolt to the conversation that can make it so memorable. So don't be afraid to ask more personal questions. Trust me, you'll be surprised to see how much people are willing to share if you just ask."
+            },
+            {
+              "type": "blank",
+              "blankId": 43
+            },
+            {
+              "type": "paragraph",
+              "content": "When you meet a person for the first time, make an effort to find the things which you and that person have in common so that you can build the conversation from that point. When you start conversation from there and then move outwards, you'll find all of a sudden that the conversation becomes a lot easier."
+            },
+            {
+              "type": "blank",
+              "blankId": 44
+            },
+            {
+              "type": "paragraph",
+              "content": "Imagine you are pouring your heart out to someone and they are just busy on their phone, and if you ask for their attention you get the response \"I can multitask\". So when someone tries to communicate with you, just be in that communication wholeheartedly. Make eye contact. Trust me, eye contact is where all the magic happens. When you make eye contact, you can feel the conversation."
+            },
+            {
+              "type": "blank",
+              "blankId": 45
+            },
+            {
+              "type": "paragraph",
+              "content": "You all came into a conversation where you first met the person, but after some time you may have met again and have forgotten their name. Isn't that awkward! So, remember the little details of the people you met or you talked with; perhaps the places they have been to, the places they want to go, the things they like, the things they hate – whatever you talk about. When you remember such things you can automatically become an investor in their wellbeing. So they feel a responsibility to you to keep that relationship going. That's it. Five amazing ways that you can make conversation with almost anyone. Every person is a really good book to read, or to have a conversation with!"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Find the \"me too\"s",
+            "F": "Skip the small talk",
+            "G": "Ask for an opinion"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Find the \"me too\"s",
+            "F": "Skip the small talk",
+            "G": "Ask for an opinion"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Find the \"me too\"s",
+            "F": "Skip the small talk",
+            "G": "Ask for an opinion"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Find the \"me too\"s",
+            "F": "Skip the small talk",
+            "G": "Ask for an opinion"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Find the \"me too\"s",
+            "F": "Skip the small talk",
+            "G": "Ask for an opinion"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": true,
+        "optionCount": 3
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 约 100 词；Part B 根据图表写作约 150 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的短文（书信 / 通知 / 便条等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图表撰写一篇约 150 词的议论文，描述图表并进行分析论证。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 15,
+            "wordLimit": "约 150 词"
+          }
         }
       ]
     }

@@ -10,7 +10,6 @@ import QuestionNav from './QuestionNav'
 
 interface MobileQuestionNavProps {
   paper: Paper
-  mode: 'original' | 'study'
   getStatus: (questionId: number) => QuestionStatus | null
   isMarked: (questionId: number) => boolean
   activeQuestionId: number | null
@@ -21,7 +20,6 @@ interface MobileQuestionNavProps {
 
 export default function MobileQuestionNav({
   paper,
-  mode,
   getStatus,
   isMarked,
   activeQuestionId,
@@ -125,7 +123,6 @@ export default function MobileQuestionNav({
             <div className="flex-1 overflow-y-auto px-4 py-3 pb-6">
               <QuestionNav
                 paper={paper}
-                mode={mode}
                 getStatus={getStatus}
                 isMarked={isMarked}
                 activeQuestionId={activeQuestionId}

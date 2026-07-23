@@ -607,7 +607,7 @@
           "id": 30,
           "articleId": "text-5",
           "type": "reading",
-          "question": "The author implies that the results of scientific research____. Part B Directions: Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points) (31)While there are almost as many definitions of history as there are historians, modern practice most closely conforms to one that sees history as the attempt to recreate and explain the significant events of the past. Caught in the web of its own time and place, each generation of historians determines anew what is significant for it in the past. In this search the evidence found is always incomplete and scattered; it is also frequently partial or partisan. The irony of the historian's craft is that its practitioners always know that their efforts are but contributions to an unending process. (32)Interest in historical methods has arisen less through external challenge to the validity of history as an intellectual discipline and more from internal quarrels among historians themselves. While history once revered its affinity to literature and philosophy, the emerging social sciences seemed to afford greater opportunities for asking new questions and providing rewarding approaches to an understanding of the past. Social science methodologies had to be adapted to a discipline governed by the primacy of historical sources rather than the imperatives of the contemporary world. (33)During this transfer, traditional historical methods were augmented by additional methodologies designed to interpret the new forms of evidence in the historical study. Methodology is a term that remains inherently ambiguous in the historical profession. (34)There is no agreement whether methodology refers to the concepts peculiar to historical work in general or to the research techniques appropriate to the various branches of historical inquiry. Historians, especially those so blinded by their research interests that they have been accused of \"tunnel method,\" frequently fall victim to the \"technical fallacy.\" Also common in the natural sciences, the technicist fallacy mistakenly identifies the discipline as a whole with certain parts of its technical implementation. (35)It applies equally to traditional historians who view history as only the external and internal criticism of sources, and to social science historians who equate their activity with specific techniques.",
+          "question": "The author implies that the results of scientific research____.",
           "options": {
             "A": "may not be as profitable as they are expected",
             "B": "can be measured in dollars and cents",
@@ -617,6 +617,235 @@
           "answer": "A",
           "analysis": "【判型】The author implies that the results of scientific research____ 中 implies 是推断题的硬 【拆句】The author implies that the results of scientific research____ 中 that 引导宾语从句，空 格补的是从句谓语部分；the results of scientific research 是从句主语，注意作者用的是 implies 而非 says——答案不在字面而在弦外之音。 【定位】P4 If experiments are planned and carried out according to plan as faithfully as the reports in the science journals indicate, then it is perfectly logical for management to expect research to produce results measurable in dollars and cents. 【选项】A) ✓ 正确 research to produce results measurable in dollars and cents ↔ may not be as profitable as they are expected Unpredictability is part of the essential nature of research ↔ may not be as profitable as they are expected 作者把 results measurable in dollars and cents 写成管理层\"合乎逻辑\"的期望，本 意是讽刺它建立在错误前提上；故作者实际暗示是 may not be as profitable as they are expected。 can be measured in dollars and cents 直接把原文反讽的话当作作者主张照搬，可衡 rely on conformity to a standard pattern 说科研结果依赖于\"墨守成规\"——但原文 regularity and conformity to a standard pattern 描述的是\"科学家写论文呈现的姿 are mostly underestimated by management 说成果\"大多被管理层低估\"，但原文相 反——管理层是被科学家自己骗得期望过高（has convinced industrial and business management that they are true），是\"高估\"而非\"低估\"。 SENTENCE INSIGHTS · 句子精讲 9 Science, in practice, depends far less on the experiments it prepares than on the preparedness of the minds of the men who watch the experiments. But Newton for years had been curious about the cause of the orbital motion of the moon and planets. How many men would...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "(31)While there are almost as many definitions of history as there are historians, modern practice most closely conforms to one that sees history as the attempt to recreate and explain the significant events of the past. Caught in the web of its own time and place, each generation of historians determines anew what is significant for it in the past. In this search the evidence found is always incomplete and scattered; it is also frequently partial or partisan. The irony of the historian's craft is that its practitioners always know that their efforts are but contributions to an unending process. (32)Interest in historical methods has arisen less through external challenge to the validity of history as an intellectual discipline and more from internal quarrels among historians themselves. While history once revered its affinity to literature and philosophy, the emerging social sciences seemed to afford greater opportunities for asking new questions and providing rewarding approaches to an understanding of the past. Social science methodologies had to be adapted to a discipline governed by the primacy of historical sources rather than the imperatives of the contemporary world. (33)During this transfer, traditional historical methods were augmented by additional methodologies designed to interpret the new forms of evidence in the historical study. Methodology is a term that remains inherently ambiguous in the historical profession. (34)There is no agreement whether methodology refers to the concepts peculiar to historical work in general or to the research techniques appropriate to the various branches of historical inquiry. Historians, especially those so blinded by their research interests that they have been accused of \"tunnel method,\" frequently fall victim to the \"technical fallacy.\" Also common in the natural sciences, the technicist fallacy mistakenly identifies the discipline as a whole with certain parts of its technical implementation. (35)It applies equally to traditional historians who view history as only the external and internal criticism of sources, and to social science historians who equate their activity with specific techniques."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 0
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 应用文约 100 词；Part B 图画作文 160-200 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图画撰写一篇 160-200 词的议论文，描述图画并论述其寓意。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 20,
+            "wordLimit": "160-200 词"
+          }
         }
       ]
     }

@@ -1,12 +1,11 @@
 // 题号导航栏（右栏）：按分区展示所有题号，点击滚动到对应题目
-// 学习模式下显示答题状态色块
+// 显示答题状态色块
 
 import type { Paper, QuestionStatus } from '../../types'
 
 interface QuestionNavProps {
   paper: Paper
-  mode: 'original' | 'study'
-  /** paperId → questionId → status 的映射（学习模式用） */
+  /** questionId → status 映射 */
   getStatus: (questionId: number) => QuestionStatus | null
   isMarked: (questionId: number) => boolean
   activeQuestionId: number | null
@@ -23,7 +22,6 @@ const SECTION_LABEL: Record<string, string> = {
 
 export default function QuestionNav({
   paper,
-  mode,
   getStatus,
   isMarked,
   activeQuestionId,
@@ -43,8 +41,8 @@ export default function QuestionNav({
           </div>
           <div className="grid grid-cols-5 gap-1">
             {sec.questions.map((q) => {
-              const status = mode === 'study' ? getStatus(q.id) : null
-              const marked = mode === 'study' && isMarked(q.id)
+              const status = getStatus(q.id)
+              const marked = isMarked(q.id)
               const isActive = activeQuestionId === q.id
 
               return (
@@ -85,6 +83,10 @@ function getStatusClass(
   }
   if (status === 'correct') {
     return 'border-green-500 text-green-700 bg-green-50'
+  }
+  if (status === 'submitted') {
+    // 已提交但无标准答案（新题型 / 主观题）
+    return 'border-ochre text-ochre-dark bg-ochre-pale/40'
   }
   // wrong
   return 'border-seal/50 text-seal-dark bg-seal/5'

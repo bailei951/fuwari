@@ -826,7 +826,7 @@
           "id": 40,
           "articleId": "text-4",
           "type": "reading",
-          "question": "The author holds that the future of street festivals depends on ____ Part B Directions: Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points) In an effort to support restoration programmes, specialists are developing supplies of seeds and seedlings, maintaining gene banks and sequencing the genomes of indigenous trees and other crops. Their work deals with one of the problems that could block major restoration efforts in different parts of the world. \"Where's the planting material going to come from? That's one big bottleneck,\" says genetic-resources specialist Ramni Jamnadass. Asia is arguably the region most neglected by global efforts to increase diversity in restoration and to study native species. Christopher Kettle, Biodiversity International's director for forest genetic resources and restoration in Rome, says that the need for infrastructure — things such as mechanisms for collecting and storing seeds, and nurseries to raise seedlings — might be most desperate here because many trees are 'masting' species, which don't produce seeds every year. People need to be ready. \"Otherwise, you miss the boat, you lose all the seed and you've got to wait another seven years,\" says Kettle. \"This is a really, really critical issue for restoration in Southeast Asia, because many of the most important timber species and tree species — the ones that will lock up the most carbon — they're all masting species.\" Climate change is a driving factor in the push to restore forests, but it also raises questions, such as where trees can thrive in the future. Climate change is also expected to alter relationships between trees, insects, diseases and other forest species. \"Insects that today are a minor problem may become a major problem if they can produce three or four generations in a year,\" says forest ecologist John Stanturf. This remains a significant knowledge gap. \"We know enough to know that this is a concern, but we don't know enough about how to respond to it yet. That's a great area to be doing research.\" So is soil, says Cindy Prescott, a forest ecologist at the University of British Columbia in Vancouver. \"If you don't look at the soil at the start, you can spend a lot of money and time putting in species that aren't going to survive there.\" With so much research left to do, leaders in the field have been doing some soul-searching, and acknowledging that restoration can be motivated by — and designed to meet — different needs. \"When you talk about conservation or restoration, the first question has to be restoration by whom, for whom?\" says Daniel Janzen, a biologist at the University of Pennsylvania. The question can have more than one answer. Much of the global funding for restoration is dedicated to developing it as a tool to mitigate climate change, notes restoration ecologist Pedro Brancalion. \"But if you ask a farmer in Brazil if he or she is concerned about climate change, they would say, 'No, I am concerned about water,'\" he says. Their interests as stewards of the land need to be better integrated with those who have the money to support restoration. That has been the strongest lesson of all for forest ecologist Robin Chazdon. Restoration is about more than what gets planted in the ground, she says. \"Yes, it's about forests, but it's really about people. They are the agents of restoration.\" some kinds of trees do not produce seeds annually.",
+          "question": "The author holds that the future of street festivals depends on ____",
           "options": {
             "A": "People must pay attention to the fact that",
             "B": "Soil is an important element to be taken into",
@@ -836,6 +836,235 @@
           "answer": "B",
           "analysis": "【判型】The author holds that the future of street festivals depends on ____ 既不限段落、又问 【拆句】The author holds that the future of street festivals depends on ____ 是「主语 + holds depends on 与选项的搭配（介词 on 后须是名词性短语）。 【选项】A) 以偏概全 P5 虽出现 live indie music, local art, small business vendors 一类多种内容，但原文 并未把节日的存续归因于「活动种类多样」；the variety of activities 把局部描述当成 B) ✓ 正确 they exist because of community support ↔ the generosity of attendants it happens when we all chip in ↔ the generosity of attendants gate donations reached their lowest point in our history ↔ the generosity of attendants 在四个选项中，只有 B 同时覆盖了 P2、P5 的「捐款下滑」与 P6 的「community support / chip in」呼吁；其他选项只对应局部、或与文意不符。 原文谈 Hyde Park、Wicker Park 等社区名声，是为了说明节日扎根社区，并非把节日 存续归因于「社区名声」；the reputation of neighborhoods 与「未来取决于什么」 P5 提到 making additional cuts to reduce our costs 是被迫削减支出，但原文从未说 节日未来取决于「支出管理」；the management of expenditures 把「不得已的削 SENTENCE INSIGHTS · 句子精讲 5 What began as a small neighborhood gathering blossomed into a massive cultural event, welcoming tens of thousands of people each year over nearly two decades before abruptly shutting down. Chicago's summer festivals are about more than just entertainment; they are economic engines that directly benefit the neighborhoods they're in and the city of Chicago as a whole. Despite the turnout, gate donations reached their lowest point in our history. We are eliminating a stage, booking fewer performers and making additional cuts to reduce our costs, all while striving to keep the festival as vibr...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "In an effort to support restoration programmes, specialists are developing supplies of seeds and seedlings, maintaining gene banks and sequencing the genomes of indigenous trees and other crops. Their work deals with one of the problems that could block major restoration efforts in different parts of the world. \"Where's the planting material going to come from? That's one big bottleneck,\" says genetic-resources specialist Ramni Jamnadass. Asia is arguably the region most neglected by global efforts to increase diversity in restoration and to study native species. Christopher Kettle, Biodiversity International's director for forest genetic resources and restoration in Rome, says that the need for infrastructure — things such as mechanisms for collecting and storing seeds, and nurseries to raise seedlings — might be most desperate here because many trees are 'masting' species, which don't produce seeds every year. People need to be ready. \"Otherwise, you miss the boat, you lose all the seed and you've got to wait another seven years,\" says Kettle. \"This is a really, really critical issue for restoration in Southeast Asia, because many of the most important timber species and tree species — the ones that will lock up the most carbon — they're all masting species.\" Climate change is a driving factor in the push to restore forests, but it also raises questions, such as where trees can thrive in the future. Climate change is also expected to alter relationships between trees, insects, diseases and other forest species. \"Insects that today are a minor problem may become a major problem if they can produce three or four generations in a year,\" says forest ecologist John Stanturf. This remains a significant knowledge gap. \"We know enough to know that this is a concern, but we don't know enough about how to respond to it yet. That's a great area to be doing research.\" So is soil, says Cindy Prescott, a forest ecologist at the University of British Columbia in Vancouver. \"If you don't look at the soil at the start, you can spend a lot of money and time putting in species that aren't going to survive there.\" With so much research left to do, leaders in the field have been doing some soul-searching, and acknowledging that restoration can be motivated by — and designed to meet — different needs. \"When you talk about conservation or restoration, the first question has to be restoration by whom, for whom?\" says Daniel Janzen, a biologist at the University of Pennsylvania. The question can have more than one answer. Much of the global funding for restoration is dedicated to developing it as a tool to mitigate climate change, notes restoration ecologist Pedro Brancalion. \"But if you ask a farmer in Brazil if he or she is concerned about climate change, they would say, 'No, I am concerned about water,'\" he says. Their interests as stewards of the land need to be better integrated with those who have the money to support restoration. That has been the strongest lesson of all for forest ecologist Robin Chazdon. Restoration is about more than what gets planted in the ground, she says. \"Yes, it's about forests, but it's really about people. They are the agents of restoration.\" some kinds of trees do not produce seeds annually."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 0
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 约 100 词；Part B 根据图表写作约 150 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的短文（书信 / 通知 / 便条等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图表撰写一篇约 150 词的议论文，描述图表并进行分析论证。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 15,
+            "wordLimit": "约 150 词"
+          }
         }
       ]
     }

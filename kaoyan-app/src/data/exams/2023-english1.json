@@ -826,7 +826,7 @@
           "id": 40,
           "articleId": "text-4",
           "type": "reading",
-          "question": "What should an author do to deal with citation manipulators? Part B Directions: The following paragraphs are given in a wrong order. For questions 41 -45, you are required to reorganize these paragraphs into a coherent text by choosing from the list A-H and filling them into the numbered boxes. Paragraphs A, E, and H have been correctly placed. Mark your answers on the ANSWER SHEET. (10 points) photographer William Henry Jackson. Jackson snapped the first-ever shots of iconic landmarks such as the Tetons, Old Faithful and the Colorado Rockies on a late 19th-century expedition through the Yellowstone Basin, conducted by the head of the U.S. Geological and Geographical Survey of the Territories, Ferdinand V. Hayden. The team included a meteorologist, a zoologist, a mineralogist, and an agricultural statistician. settlers. One of the turning points in public support for land conservation efforts—and recognizing the magnificence of the Yellowstone region in particular—came in the form of vivid photographs. visuals. He asked Jackson to print out large copies and distributed them, along with reproductions of Moran's paintings, to each member of Congress. \"The visualization, particularly those photographs, really hit home that this is something that has to be protected,\" says Alicia Murphy, Yellowstone's park historian. involved coating the plates with a chemical mixture, exposing them and developing the resulting images with a portable darkroom. The crude technique required educated guesses on exposure times, and involved heavy, awkward equipment—several men had to assist in its transportation. Despite these challenges, Jackson captured dozens of striking photos, ranging from majestic images like his now-famous snapshot of Old Faithful, to casual portraits of expedition members at the camp. While veterans of previous expeditions had written at length about stunning sights, these vivid photographs were another thing entirely. [ E ] The journey officially began in Ogden, Utah, on June 8, 1871. Over nearly four months, dozens of men made their way on horseback into Montana and traversed along the Yellowstone River and around Yellowstone Lake. That fall, they concluded the survey in Fort Bridger, Wyoming. [ F ] Though Native Americans (and later miners and fur trappers) had long recognized the area's riches, most Americans did not. That's why Hayden's expedition aimed to produce a fuller understanding of the Yellowstone River region, from its hot springs and waterfalls to its variety of flora and fauna. In addition to the entourage of scientists, the team also included artists: Painter Thomas Moran and photographer Jackson were charged with capturing this astounding natural beauty and sharing it with the world. [ G ] The bill proved largely popular and sailed through Congress with large majorities in favor. In quick succession, the Senate and House passed legislation protecting Yellowstone in early 1872. That March, President Ulysses S. Grant signed an act into law that established Yellowstone as the world's first national park. While some locals opposed the designation, the decision was largely accepted—and Jackson's photos played a key role in the fight to protect the area. \"I don't believe that the legal protection would have happened in the time frame that it did without those images,\" says Heather Hansen, journalist and author of Prophets and Moguls, Rangers and Rogues, Bison and Bears: 100 Years of the National Park Service. [ H ] Perhaps most importantly, these images provided documentary evidence that later made its way to government officials. Weeks after completing the expedition, Hayden collected his team's observations into an extensive report aimed at convincing senators and representatives, along with colleagues at government agencies like the Department of the Interior, that Yellowstone ought to be preserved.",
+          "question": "What should an author do to deal with citation manipulators?",
           "options": {
             "A": "Last year marked the 150th anniversary of a series of Yellowstone photographs by the renowned landscape",
             "B": "Two centuries ago, the idea of preserving nature, rather than exploiting it, was a novel one to many US",
@@ -836,6 +836,260 @@
           "answer": "D",
           "analysis": "【判型】题干 What should an author do to deal with citation manipulators? 直接问 '应该做什 【拆句】题干 What should an author do to deal with citation manipulators? 主干是 What should an author do，to deal with citation manipulators 是目的状语；结构平铺直叙， 【定位】P5 And for authors who wish to steer clear of citation cartel activities: when an editor, a reviewer, or a support service asks you to add inappropriate references, do not oblige and do report the request to the journal. 【选项】A) 过度推断 选项 Take legal action 说 '诉诸法律'，原文只说向所投期刊举报（report the request 选项 Demand an apology 说 '要求一份道歉'，原文 P5 的建议是 'do not oblige and do report'，完全没提 apologize/apology，纯属无中生有。 选项 Seek professional advice 说 '寻求专业建议'，可原文给的建议是作者本人直接拒 绝并举报，没让作者再去咨询他人；且 so-called support service consultancies 反而 是文中给作者添麻烦的角色，'professional advice' 在本文语境下是负面来源。 D) ✓ 正确 do report the request to the journal ↔ Reveal their misconduct 选项 Reveal their misconduct 与预判 '举报/上报/披露' 对应；'do not oblige' 是消 SENTENCE INSIGHTS · 句子精讲 7 Citation cartels, where journals, authors, and institutions conspire to inflate citation numbers, have existed for a long time. Recently, another expression of this predatory behavior has emerged: so-called support service consultancies that provide language and other editorial support to individual authors and to journals sometimes advise contributors to add a number of citations to their articles. The advent of electronic publishing and authors' need to find outlets for their papers resulted in thousands of new journals. These journals can ...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:The following paragraphs are given in a wrong order. For questions 41 -45, you are required to reorganize these paragraphs into a coherent text by choosing from the list A-H and filling them into the numbered boxes. Paragraphs A, E, and H have been correctly placed. Mark your answers on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "photographer William Henry Jackson. Jackson snapped the first-ever shots of iconic landmarks such as the Tetons, Old Faithful and the Colorado Rockies on a late 19th-century expedition through the Yellowstone Basin, conducted by the head of the U.S. Geological and Geographical Survey of the Territories, Ferdinand V. Hayden. The team included a meteorologist, a zoologist, a mineralogist, and an agricultural statistician. settlers. One of the turning points in public support for land conservation efforts—and recognizing the magnificence of the Yellowstone region in particular—came in the form of vivid photographs. visuals. He asked Jackson to print out large copies and distributed them, along with reproductions of Moran's paintings, to each member of Congress. \"The visualization, particularly those photographs, really hit home that this is something that has to be protected,\" says Alicia Murphy, Yellowstone's park historian. involved coating the plates with a chemical mixture, exposing them and developing the resulting images with a portable darkroom. The crude technique required educated guesses on exposure times, and involved heavy, awkward equipment—several men had to assist in its transportation. Despite these challenges, Jackson captured dozens of striking photos, ranging from majestic images like his now-famous snapshot of Old Faithful, to casual portraits of expedition members at the camp. While veterans of previous expeditions had written at length about stunning sights, these vivid photographs were another thing entirely."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "The journey officially began in Ogden, Utah, on June 8, 1871. Over nearly four months, dozens of men made their way on horseback into Montana and traversed along the Yellowstone River and around Yellowstone Lake. That fall, they concluded the survey in Fort Bridger, Wyoming.",
+            "F": "Though Native Americans (and later miners and fur trappers) had long recognized the area's riches, most Americans did not. That's why Hayden's expedition aimed to produce a fuller understanding of the Yellowstone River region, from its hot springs and waterfalls to its variety of flora and fauna. In addition to the entourage of scientists, the team also included artists: Painter Thomas Moran and photographer Jackson were charged with capturing this astounding natural beauty and sharing it with the world.",
+            "G": "The bill proved largely popular and sailed through Congress with large majorities in favor. In quick succession, the Senate and House passed legislation protecting Yellowstone in early 1872. That March, President Ulysses S. Grant signed an act into law that established Yellowstone as the world's first national park. While some locals opposed the designation, the decision was largely accepted—and Jackson's photos played a key role in the fight to protect the area. \"I don't believe that the legal protection would have happened in the time frame that it did without those images,\" says Heather Hansen, journalist and author of Prophets and Moguls, Rangers and Rogues, Bison and Bears: 100 Years of the National Park Service.",
+            "H": "Perhaps most importantly, these images provided documentary evidence that later made its way to government officials. Weeks after completing the expedition, Hayden collected his team's observations into an extensive report aimed at convincing senators and representatives, along with colleagues at government agencies like the Department of the Interior, that Yellowstone ought to be preserved."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "The journey officially began in Ogden, Utah, on June 8, 1871. Over nearly four months, dozens of men made their way on horseback into Montana and traversed along the Yellowstone River and around Yellowstone Lake. That fall, they concluded the survey in Fort Bridger, Wyoming.",
+            "F": "Though Native Americans (and later miners and fur trappers) had long recognized the area's riches, most Americans did not. That's why Hayden's expedition aimed to produce a fuller understanding of the Yellowstone River region, from its hot springs and waterfalls to its variety of flora and fauna. In addition to the entourage of scientists, the team also included artists: Painter Thomas Moran and photographer Jackson were charged with capturing this astounding natural beauty and sharing it with the world.",
+            "G": "The bill proved largely popular and sailed through Congress with large majorities in favor. In quick succession, the Senate and House passed legislation protecting Yellowstone in early 1872. That March, President Ulysses S. Grant signed an act into law that established Yellowstone as the world's first national park. While some locals opposed the designation, the decision was largely accepted—and Jackson's photos played a key role in the fight to protect the area. \"I don't believe that the legal protection would have happened in the time frame that it did without those images,\" says Heather Hansen, journalist and author of Prophets and Moguls, Rangers and Rogues, Bison and Bears: 100 Years of the National Park Service.",
+            "H": "Perhaps most importantly, these images provided documentary evidence that later made its way to government officials. Weeks after completing the expedition, Hayden collected his team's observations into an extensive report aimed at convincing senators and representatives, along with colleagues at government agencies like the Department of the Interior, that Yellowstone ought to be preserved."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "The journey officially began in Ogden, Utah, on June 8, 1871. Over nearly four months, dozens of men made their way on horseback into Montana and traversed along the Yellowstone River and around Yellowstone Lake. That fall, they concluded the survey in Fort Bridger, Wyoming.",
+            "F": "Though Native Americans (and later miners and fur trappers) had long recognized the area's riches, most Americans did not. That's why Hayden's expedition aimed to produce a fuller understanding of the Yellowstone River region, from its hot springs and waterfalls to its variety of flora and fauna. In addition to the entourage of scientists, the team also included artists: Painter Thomas Moran and photographer Jackson were charged with capturing this astounding natural beauty and sharing it with the world.",
+            "G": "The bill proved largely popular and sailed through Congress with large majorities in favor. In quick succession, the Senate and House passed legislation protecting Yellowstone in early 1872. That March, President Ulysses S. Grant signed an act into law that established Yellowstone as the world's first national park. While some locals opposed the designation, the decision was largely accepted—and Jackson's photos played a key role in the fight to protect the area. \"I don't believe that the legal protection would have happened in the time frame that it did without those images,\" says Heather Hansen, journalist and author of Prophets and Moguls, Rangers and Rogues, Bison and Bears: 100 Years of the National Park Service.",
+            "H": "Perhaps most importantly, these images provided documentary evidence that later made its way to government officials. Weeks after completing the expedition, Hayden collected his team's observations into an extensive report aimed at convincing senators and representatives, along with colleagues at government agencies like the Department of the Interior, that Yellowstone ought to be preserved."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "The journey officially began in Ogden, Utah, on June 8, 1871. Over nearly four months, dozens of men made their way on horseback into Montana and traversed along the Yellowstone River and around Yellowstone Lake. That fall, they concluded the survey in Fort Bridger, Wyoming.",
+            "F": "Though Native Americans (and later miners and fur trappers) had long recognized the area's riches, most Americans did not. That's why Hayden's expedition aimed to produce a fuller understanding of the Yellowstone River region, from its hot springs and waterfalls to its variety of flora and fauna. In addition to the entourage of scientists, the team also included artists: Painter Thomas Moran and photographer Jackson were charged with capturing this astounding natural beauty and sharing it with the world.",
+            "G": "The bill proved largely popular and sailed through Congress with large majorities in favor. In quick succession, the Senate and House passed legislation protecting Yellowstone in early 1872. That March, President Ulysses S. Grant signed an act into law that established Yellowstone as the world's first national park. While some locals opposed the designation, the decision was largely accepted—and Jackson's photos played a key role in the fight to protect the area. \"I don't believe that the legal protection would have happened in the time frame that it did without those images,\" says Heather Hansen, journalist and author of Prophets and Moguls, Rangers and Rogues, Bison and Bears: 100 Years of the National Park Service.",
+            "H": "Perhaps most importantly, these images provided documentary evidence that later made its way to government officials. Weeks after completing the expedition, Hayden collected his team's observations into an extensive report aimed at convincing senators and representatives, along with colleagues at government agencies like the Department of the Interior, that Yellowstone ought to be preserved."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "The journey officially began in Ogden, Utah, on June 8, 1871. Over nearly four months, dozens of men made their way on horseback into Montana and traversed along the Yellowstone River and around Yellowstone Lake. That fall, they concluded the survey in Fort Bridger, Wyoming.",
+            "F": "Though Native Americans (and later miners and fur trappers) had long recognized the area's riches, most Americans did not. That's why Hayden's expedition aimed to produce a fuller understanding of the Yellowstone River region, from its hot springs and waterfalls to its variety of flora and fauna. In addition to the entourage of scientists, the team also included artists: Painter Thomas Moran and photographer Jackson were charged with capturing this astounding natural beauty and sharing it with the world.",
+            "G": "The bill proved largely popular and sailed through Congress with large majorities in favor. In quick succession, the Senate and House passed legislation protecting Yellowstone in early 1872. That March, President Ulysses S. Grant signed an act into law that established Yellowstone as the world's first national park. While some locals opposed the designation, the decision was largely accepted—and Jackson's photos played a key role in the fight to protect the area. \"I don't believe that the legal protection would have happened in the time frame that it did without those images,\" says Heather Hansen, journalist and author of Prophets and Moguls, Rangers and Rogues, Bison and Bears: 100 Years of the National Park Service.",
+            "H": "Perhaps most importantly, these images provided documentary evidence that later made its way to government officials. Weeks after completing the expedition, Hayden collected his team's observations into an extensive report aimed at convincing senators and representatives, along with colleagues at government agencies like the Department of the Interior, that Yellowstone ought to be preserved."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 4
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 应用文约 100 词；Part B 图画作文 160-200 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图画撰写一篇 160-200 词的议论文，描述图画并论述其寓意。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 20,
+            "wordLimit": "160-200 词"
+          }
         }
       ]
     }

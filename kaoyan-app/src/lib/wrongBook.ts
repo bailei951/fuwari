@@ -17,6 +17,7 @@ import type {
   Paper,
   ExamIndex,
   ExamIndexEntry,
+  OptionKey,
 } from '../types'
 import { getExamIndex, loadPaper } from './dataLoader'
 
@@ -37,11 +38,11 @@ export interface WrongItem {
   /** 题干（完形为空） */
   question: string
   /** 选项 */
-  options: Record<string, string>
+  options: Partial<Record<OptionKey, string>>
   /** 正确答案 */
-  answer: 'A' | 'B' | 'C' | 'D'
+  answer: OptionKey | ''
   /** 用户选的答案 */
-  userAnswer: 'A' | 'B' | 'C' | 'D' | null
+  userAnswer: OptionKey | null
   /** 提交时间 */
   submittedAt: string
   /** 是否标记 */

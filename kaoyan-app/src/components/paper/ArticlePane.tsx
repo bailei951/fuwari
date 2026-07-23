@@ -1,13 +1,12 @@
 // 文章区（左栏）：渲染所有分区的文章，内含 ArticleView
-// 每个分区有标题，每个文章独立支持查词/批注/空格
+// 每个分区有标题，每个文章独立支持查词/翻译/批注/空格
 
 import { forwardRef } from 'react'
 import ArticleView from './ArticleView'
-import type { Paper, ReadMode } from '../../types'
+import type { Paper } from '../../types'
 
 interface ArticlePaneProps {
   paper: Paper
-  mode: ReadMode
   activeQuestionId: number | null
   onBlankClick: (questionId: number) => void
 }
@@ -21,7 +20,7 @@ const SECTION_LABEL: Record<string, string> = {
 }
 
 const ArticlePane = forwardRef<HTMLDivElement, ArticlePaneProps>(
-  function ArticlePane({ paper, mode, activeQuestionId, onBlankClick }, ref) {
+  function ArticlePane({ paper, activeQuestionId, onBlankClick }, ref) {
     return (
       <div ref={ref} className="lg:h-full lg:overflow-y-auto px-4 py-4">
         {/* 分区导航锚点 */}
@@ -45,7 +44,6 @@ const ArticlePane = forwardRef<HTMLDivElement, ArticlePaneProps>(
                 key={art.id}
                 article={art}
                 paperId={paper.id}
-                mode={mode}
                 activeQuestionId={activeQuestionId}
                 onBlankClick={onBlankClick}
               />

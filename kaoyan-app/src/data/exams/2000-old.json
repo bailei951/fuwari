@@ -607,7 +607,7 @@
           "id": 30,
           "articleId": "text-5",
           "type": "reading",
-          "question": "From the last paragraph the conclusion can be drawn that ambition should be maintained____. Part B Directions: Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points) Governments throughout the world act on the assumption that the welfare of their people depends largely on the economic strength and wealth of the community. (31)Under modern conditions, this requires varying measures of centralized control and hence the help of specialized scientists such as economists and operational research experts. (32)Furthermore, it is obvious that the strength of a country's economy is directly bound up with the efficiency of its agriculture and industry, and that this in turn rests upon the efforts of scientists and technologists of all kinds. It also means that governments are increasingly compelled to interfere in these sectors in order to step up production and ensure that it is utilized to the best advantage. For example, they may encourage research in various ways, including the setting up of their own research centers; they may alter the structure of education, or interfere in order to reduce the wastage of natural resources or tap resources hitherto unexploited; or they may cooperate directly in the growing number of international projects related to science, economics and industry. In any case, all such interventions are heavily dependent on scientific advice and also scientific and technological manpower of all kinds. (33)Owing to the remarkable development in mass-communications, people everywhere are feeling new wants and are being exposed to new customs and ideas, while governments are often forced to introduce still further innovations for the reasons given above. At the same time, the normal rate of social change throughout the world is taking place at a vastly accelerated speed compared with the past. For example, (34)in the early industrialized countries of Europe the process of industrialization—with all the far-reaching changes in social patterns that followed—was spread over nearly a century, whereas nowadays a developing nation may undergo the same process in a decade or so. All this has the effect of building up unusual pressures and tensions within the community and consequently presents serious problems for the governments concerned. (35)Additional social stresses may also occur because of the population explosion or problems arising from mass migration movements —themselves made relatively easy nowadays by modern means of transport. As a result of all these factors, governments are becoming increasingly dependent on biologists and social scientists for planning the appropriate programs and putting them into effect.",
+          "question": "From the last paragraph the conclusion can be drawn that ambition should be maintained____.",
           "options": {
             "A": "secretly and vigorously",
             "B": "openly and enthusiastically",
@@ -617,6 +617,235 @@
           "answer": "B",
           "analysis": "【判型】the conclusion can be drawn 显示本题不是直接细节，而是要从末段事实推出作者的隐含 【拆句】From the last paragraph the conclusion can be drawn that ambition should be maintained____. 是 \"From+地点状语+主句+that 同位语从句\" 结构；待补全的是 maintained 之后的方式状语（副词），暗示选项是 \"副词+副词\" 组合。 【定位】P3 This does not mean that ambition is at an end, that people no longer feel its stirrings and promptings, but only that, no longer openly honored, it is less openly professed. Consequences follow from this, of course, some of which are that ambition is driven underground, or made sly. 【选项】A) 与原文相反 secretly and vigorously 里的 secretly 恰好是作者所批评的 driven underground, or B) ✓ 正确 no longer openly honored, it is less openly professed ↔ openly and enthusiastically ambition is driven underground, or made sly ↔ openly and enthusiastically openly and enthusiastically 一头复现作者赞许的 openly，一头取反作者批评的 underground/sly，正反两面同时贴合，是末段立场的完整还原。 easily and momentarily 中的 momentarily（一瞬间地、短暂地）在末段完全无对应， 作者主张的是长期持续地维护 ambition，而非 \"短暂地\"；easily 也偏\"轻松/随便\"，与 verbally and spiritually 把作者主张的 \"openly（公开地、明面上）\" 偷换成 \"verbally （口头上）\"——但作者全文恰恰在批判 Succeed at all costs but avoid appearing 场；spiritually（精神上）原文亦无对应。 SENTENCE INSIGHTS · 句子精讲 9 If ambition is to be well regarded, the rewards of ambition—wealth, distinction, control over one's destiny—must be deemed worthy of the sacrifices made on ambition's behalf. In an odd way, however, it is the educated who have claimed to have given up on ambition as an ideal. There is a heavy note of hypocrisy in this, a case of closing the barn doo...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Governments throughout the world act on the assumption that the welfare of their people depends largely on the economic strength and wealth of the community. (31)Under modern conditions, this requires varying measures of centralized control and hence the help of specialized scientists such as economists and operational research experts. (32)Furthermore, it is obvious that the strength of a country's economy is directly bound up with the efficiency of its agriculture and industry, and that this in turn rests upon the efforts of scientists and technologists of all kinds. It also means that governments are increasingly compelled to interfere in these sectors in order to step up production and ensure that it is utilized to the best advantage. For example, they may encourage research in various ways, including the setting up of their own research centers; they may alter the structure of education, or interfere in order to reduce the wastage of natural resources or tap resources hitherto unexploited; or they may cooperate directly in the growing number of international projects related to science, economics and industry. In any case, all such interventions are heavily dependent on scientific advice and also scientific and technological manpower of all kinds. (33)Owing to the remarkable development in mass-communications, people everywhere are feeling new wants and are being exposed to new customs and ideas, while governments are often forced to introduce still further innovations for the reasons given above. At the same time, the normal rate of social change throughout the world is taking place at a vastly accelerated speed compared with the past. For example, (34)in the early industrialized countries of Europe the process of industrialization—with all the far-reaching changes in social patterns that followed—was spread over nearly a century, whereas nowadays a developing nation may undergo the same process in a decade or so. All this has the effect of building up unusual pressures and tensions within the community and consequently presents serious problems for the governments concerned. (35)Additional social stresses may also occur because of the population explosion or problems arising from mass migration movements —themselves made relatively easy nowadays by modern means of transport. As a result of all these factors, governments are becoming increasingly dependent on biologists and social scientists for planning the appropriate programs and putting them into effect."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 0
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 应用文约 100 词；Part B 图画作文 160-200 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图画撰写一篇 160-200 词的议论文，描述图画并论述其寓意。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 20,
+            "wordLimit": "160-200 词"
+          }
         }
       ]
     }

@@ -826,7 +826,7 @@
           "id": 40,
           "articleId": "text-4",
           "type": "reading",
-          "question": "Regarding the future of the EU, the author seems to feel____. Part B Directions: Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points) Leading doctors today weigh in on the debate over the government's role in promoting public health by demanding that ministers impose \"fat taxes\" on unhealthy food and introduce cigarette-style warnings to children about the dangers of a poor diet. The demands follow comments made last week by the health secretary, Andrew Lansley, who insisted the government could not force people to make healthy choices and promised to free businesses from public health regulations. But senior medical figures want to stop fast-food outlets opening near schools, restrict advertising of products high in fat, salt or sugar, and limit sponsorship of sports events by fast-food producers such as McDonald's. They argue that government action is necessary to curb Britain's addiction to unhealthy food and help halt spiraling rates of obesity, diabetes and heart disease. Professor Terence Stephenson, president of the Royal College of Paediatrics and Child Health, said that the consumption of unhealthy food should be seen to be just as damaging as smoking or excessive drinking. \"Thirty years ago, it would have been inconceivable to have imagined a ban on smoking in the workplace or in pubs, and yet that is what we have now. Are we willing to be just as courageous in respect of obesity? I would suggest that we should be,\" said the leader of the UK's children's doctors. Lansley has alarmed health campaigners by suggesting he wants industry rather than government to take the lead. He said that manufacturers of crisps and candies could play a central role in the Change4Life campaign, the centrepiece of government efforts to boost healthy eating and fitness. He has also criticised the celebrity chef Jamie Oliver's high-profile attempt to improve school lunches in England as an example of how \"lecturing\" people was not the best way to change their behaviour. Stephenson suggested potential restrictions could include banning TV advertisements for foods high in fat, salt or sugar before 9 p.m. and limiting them on billboards or in cinemas. \"If we were really bold, we might even begin to think of high-calorie fast food in the same way as cigarettes – by setting strict limits on advertising, product placement and sponsorship of sports events,\" he said. Such a move could affect firms such as McDonald's, which sponsors the youth coaching scheme run by the Football Association. Fast-food chains should also stop offering \"inducements\" such as toys, cute animals and mobile phone credit to lure young customers, Stephenson said. Professor Dinesh Bhugra, president of the Royal College of Psychiatrists, said: \"If children are taught about the impact that food has on their growth, and that some things can harm, at least information is available up front.\" He also urged councils to impose \"fast-food-free zones\" around schools and hospitals – areas within which takeaways cannot open. A Department of Health spokesperson said: \"We need to create a new vision for public health where all of society works together to get healthy and live longer. This includes creating a new 'responsibility deal' with business, built on social responsibility, not state regulation. Later this year, we will publish a white paper setting out exactly how we will achieve this.\" The food industry will be alarmed that such senior doctors back such radical moves, especially the call to use some of the tough tactics that have been deployed against smoking over the last decade. producers such as McDonald's.",
+          "question": "Regarding the future of the EU, the author seems to feel____.",
           "options": {
             "A": "\"fat taxes\" should be imposed on fast-food",
             "B": "the government should ban fast-food outlets",
@@ -836,6 +836,235 @@
           "answer": "D",
           "analysis": "A) 悲观 B) 绝望 C) 自负 D) 充满希望 【判型】题干 Regarding the future of the EU, the author seems to feel____ 直接问作者情感倾 向，且选项均为情感形容词（pessimistic、desperate、conceited、hopeful），态度题确 【拆句】Regarding the future of the EU, the author seems to feel____ 句首 Regarding... 是介词 短语作话题状语，主句是 the author seems to feel ___，seem to do 是「似乎」，弱化语 【选项】A) 与原文相反 pessimistic 与作者 too soon to write off 表达的「仍有希望」方向相反；考生若被前 desperate（绝望的）比 pessimistic 更负向、更极端，远超原文情感强度，且方向与作 D) ✓ 正确 It is too soon to write off the EU ↔ hopeful It is an ambitious attempt to blunt the sharpest edges of globalisation, and make capitalism benign ↔ hopeful hopeful 是温和的正向情感词，与作者使用 too soon to write off 这种克制肯定相符 ——既未走极端 optimistic，也不悲观，体现了 the author seems to feel 中 seems SENTENCE INSIGHTS · 句子精讲 5 The question would have sounded strange not long ago. It is stuck because the euro zone's dominant powers, France and Germany, agree on the need for greater harmonisation within the euro zone, but disagree about what to harmonise. It insists that economic co-ordination should involve all 27 members of the EU club, among whom there is a small majority for free-market liberalism and economic rigour; in the inner core alone, Germany fears, a small majority favour French interference. \"there be\" 结构也是常见易混点 Finally, figures close to the French government have murmured, euro-zone members should agree to some fiscal and social harmonisation: e.g., curbing competition in corporate-tax rates or labour costs. It is too soon to write off the EU. HIGH-FREQUENCY · 真题...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Leading doctors today weigh in on the debate over the government's role in promoting public health by demanding that ministers impose \"fat taxes\" on unhealthy food and introduce cigarette-style warnings to children about the dangers of a poor diet. The demands follow comments made last week by the health secretary, Andrew Lansley, who insisted the government could not force people to make healthy choices and promised to free businesses from public health regulations. But senior medical figures want to stop fast-food outlets opening near schools, restrict advertising of products high in fat, salt or sugar, and limit sponsorship of sports events by fast-food producers such as McDonald's. They argue that government action is necessary to curb Britain's addiction to unhealthy food and help halt spiraling rates of obesity, diabetes and heart disease. Professor Terence Stephenson, president of the Royal College of Paediatrics and Child Health, said that the consumption of unhealthy food should be seen to be just as damaging as smoking or excessive drinking. \"Thirty years ago, it would have been inconceivable to have imagined a ban on smoking in the workplace or in pubs, and yet that is what we have now. Are we willing to be just as courageous in respect of obesity? I would suggest that we should be,\" said the leader of the UK's children's doctors. Lansley has alarmed health campaigners by suggesting he wants industry rather than government to take the lead. He said that manufacturers of crisps and candies could play a central role in the Change4Life campaign, the centrepiece of government efforts to boost healthy eating and fitness. He has also criticised the celebrity chef Jamie Oliver's high-profile attempt to improve school lunches in England as an example of how \"lecturing\" people was not the best way to change their behaviour. Stephenson suggested potential restrictions could include banning TV advertisements for foods high in fat, salt or sugar before 9 p.m. and limiting them on billboards or in cinemas. \"If we were really bold, we might even begin to think of high-calorie fast food in the same way as cigarettes – by setting strict limits on advertising, product placement and sponsorship of sports events,\" he said. Such a move could affect firms such as McDonald's, which sponsors the youth coaching scheme run by the Football Association. Fast-food chains should also stop offering \"inducements\" such as toys, cute animals and mobile phone credit to lure young customers, Stephenson said. Professor Dinesh Bhugra, president of the Royal College of Psychiatrists, said: \"If children are taught about the impact that food has on their growth, and that some things can harm, at least information is available up front.\" He also urged councils to impose \"fast-food-free zones\" around schools and hospitals – areas within which takeaways cannot open. A Department of Health spokesperson said: \"We need to create a new vision for public health where all of society works together to get healthy and live longer. This includes creating a new 'responsibility deal' with business, built on social responsibility, not state regulation. Later this year, we will publish a white paper setting out exactly how we will achieve this.\" The food industry will be alarmed that such senior doctors back such radical moves, especially the call to use some of the tough tactics that have been deployed against smoking over the last decade. producers such as McDonald's."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 0
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 约 100 词；Part B 根据图表写作约 150 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的短文（书信 / 通知 / 便条等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图表撰写一篇约 150 词的议论文，描述图表并进行分析论证。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 15,
+            "wordLimit": "约 150 词"
+          }
         }
       ]
     }

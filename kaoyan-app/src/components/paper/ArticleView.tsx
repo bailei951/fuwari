@@ -1,24 +1,21 @@
-// 单篇文章视图：block 渲染 + 完形空格 + 划词查词 + 批注高亮
-// 阅读理解文章支持批注；完形文章仅支持查词（空格会破坏字符偏移）
+// 单篇文章视图：block 渲染 + 完形/新题型空格 + 划词查词/翻译 + 批注高亮
+// 阅读理解文章支持批注；完形/新题型文章仅支持查词/翻译（空格会破坏字符偏移）
 
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { BookOpen, Highlighter } from 'lucide-react'
-import FontSizeControl from '../article/FontSizeControl'
 import WordPopup from '../article/WordPopup'
 import SelectionToolbar from '../article/SelectionToolbar'
 import AnnotationEditor from '../article/AnnotationEditor'
 import AnnotationList from '../article/AnnotationList'
-import { useFontScale } from '../../hooks/useFontScale'
 import { useTextSelection } from '../../hooks/useTextSelection'
 import { useAnnotations } from '../../context/AnnotationContext'
 import { useProgress } from '../../context/ProgressContext'
 import { applyHighlights, computeRangeOffsets, jumpToAnnotation } from '../../lib/annotationDom'
-import type { Article, HighlightColor, Annotation, ReadMode, OptionKey, Block } from '../../types'
+import type { Article, HighlightColor, Annotation, OptionKey, Block } from '../../types'
 
 interface ArticleViewProps {
   article: Article
   paperId: string
-  mode: ReadMode
   /** 当前激活的题号（用于高亮空格/段落） */
   activeQuestionId: number | null
   onBlankClick: (questionId: number) => void
@@ -32,19 +29,18 @@ type EditorState =
 export default function ArticleView({
   article,
   paperId,
-  mode,
   activeQuestionId,
   onBlankClick,
 }: ArticleViewProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const textRef = useRef<HTMLDivElement>(null)
-  const fontScale = useFontScale()
   const { selection, clear } = useTextSelection(textRef, { minLength: 1 })
   const { getAnnotations, addAnnotation, updateAnnotation, removeAnnotation, clearArticle } =
     useAnnotations()
   const { getProgress } = useProgress()
 
-  const isCloze = article.type === 'cloze'
+  // 含空格的题型（完形 / 新题型段落排序）：空格会破坏批注偏移，故不支持批注
+  const hasBlanks = article.type === 'cloze' || article.type === 'newType'
   const articleId = `${paperId}:${article.id}`
   const annotations = getAnnotations(articleId)
 
@@ -56,13 +52,13 @@ export default function ArticleView({
     if (selection) setLookup(null)
   }, [selection])
 
-  // 高亮渲染（仅阅读文章）
+  // 高亮渲染（仅无空格文章）
   useLayoutEffect(() => {
-    if (isCloze) return
+    if (hasBlanks) return
     const el = textRef.current
     if (!el) return
     applyHighlights(el, annotations)
-  }, [annotations, article.id, isCloze])
+  }, [annotations, article.id, hasBlanks])
 
   // 切换文章时清理
   useLayoutEffect(() => {
@@ -70,7 +66,7 @@ export default function ArticleView({
     setLookup(null)
   }, [article.id])
 
-  function handleLookup() {
+  function openPopup() {
     if (!selection) return
     setLookup({ text: selection.text, rect: selection.rect })
     clear()
@@ -116,7 +112,7 @@ export default function ArticleView({
     if (el) jumpToAnnotation(el, id)
   }
 
-  // 完形空格状态
+  // 空格状态
   function getBlankStatus(blankNum: number): { selected: OptionKey | null; status: string; submitted: boolean } {
     const p = getProgress(paperId, blankNum)
     return {
@@ -162,20 +158,12 @@ export default function ArticleView({
           <h3 className="font-serif text-sm font-bold text-ink truncate">
             {article.title ?? '正文'}
           </h3>
-          {!isCloze && annotations.length > 0 && (
+          {!hasBlanks && annotations.length > 0 && (
             <span className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] text-seal bg-seal/5 border border-seal/30 rounded-sm font-mono">
               <Highlighter className="w-2.5 h-2.5" />
               {annotations.length}
             </span>
           )}
-        </div>
-        <div className="hidden sm:block">
-          <FontSizeControl
-            scale={fontScale.scale}
-            onIncrease={fontScale.increase}
-            onDecrease={fontScale.decrease}
-            onReset={fontScale.reset}
-          />
         </div>
       </div>
 
@@ -183,11 +171,10 @@ export default function ArticleView({
       <div
         ref={textRef}
         onClick={handleArticleClick}
-        className={`article-body ${fontScale.className}`}
+        className="article-body text-article-base"
       >
         {renderBlocks(article.blocks, {
-          isCloze,
-          mode,
+          hasBlanks,
           activeQuestionId,
           getBlankStatus,
           onBlankClick,
@@ -195,8 +182,8 @@ export default function ArticleView({
         })}
       </div>
 
-      {/* 批注列表（仅阅读文章） */}
-      {!isCloze && (
+      {/* 批注列表（仅无空格文章） */}
+      {!hasBlanks && (
         <AnnotationList
           annotations={annotations}
           onEdit={(ann) => setEditor({ mode: 'edit', annotation: ann })}
@@ -211,12 +198,13 @@ export default function ArticleView({
         <SelectionToolbar
           text={selection.text}
           rect={selection.rect}
-          onLookup={handleLookup}
-          onAnnotate={isCloze ? undefined : handleAnnotate}
+          onLookup={openPopup}
+          onTranslate={openPopup}
+          onAnnotate={hasBlanks ? undefined : handleAnnotate}
         />
       )}
 
-      {/* 查词弹窗 */}
+      {/* 查词/翻译弹窗 */}
       {lookup && (
         <WordPopup
           text={lookup.text}
@@ -243,8 +231,7 @@ interface BlankStatus {
 }
 
 interface RenderBlocksOptions {
-  isCloze: boolean
-  mode: ReadMode
+  hasBlanks: boolean
   activeQuestionId: number | null
   getBlankStatus: (n: number) => BlankStatus
   onBlankClick: (n: number) => void
@@ -254,15 +241,15 @@ interface RenderBlocksOptions {
 /**
  * 渲染 blocks 数组：
  * - paragraph block → <p> 标签，内含空段落时跳过
- * - blank block → <span class="cloze-blank">（仅完形）
+ * - blank block → <span class="cloze-blank">（完形 / 新题型）
  *
- * 完形文章：连续的 paragraph + blank 在同一段内渲染
- * 阅读文章：每个 paragraph block 独立成段
+ * 含空格文章：连续的 paragraph + blank 在同一段内渲染
+ * 无空格文章：每个 paragraph block 独立成段
  */
 function renderBlocks(blocks: Block[], opts: RenderBlocksOptions) {
   if (!blocks || blocks.length === 0) return null
 
-  if (!opts.isCloze) {
+  if (!opts.hasBlanks) {
     // 阅读文章：每个 paragraph block 一个 <p>
     return blocks.map((block, i) => {
       if (block.type !== 'paragraph') return null
@@ -278,7 +265,7 @@ function renderBlocks(blocks: Block[], opts: RenderBlocksOptions) {
     })
   }
 
-  // 完形文章：把连续的 paragraph + blank 合并到同一段
+  // 含空格文章：把连续的 paragraph + blank 合并到同一段
   // 遇到空 content 的 paragraph 视为段落分隔
   const segments: React.ReactNode[] = []
   let currentPara: React.ReactNode[] = []
@@ -314,11 +301,13 @@ function renderBlocks(blocks: Block[], opts: RenderBlocksOptions) {
       const isActive = opts.activeQuestionId === num
       const { selected, status, submitted } = opts.getBlankStatus(num)
 
-      const showAnswer = opts.mode === 'study' && submitted
       const classes = ['cloze-blank']
-      if (showAnswer) {
-        classes.push(status === 'correct' ? 'correct' : 'wrong')
-      } else if (opts.mode === 'study' && selected) {
+      if (submitted) {
+        // 有标准答案：按对错着色；无标准答案（新题型 status='submitted'）：仅标记已答
+        if (status === 'correct') classes.push('correct')
+        else if (status === 'wrong') classes.push('wrong')
+        else classes.push('answered')
+      } else if (selected) {
         classes.push('answered')
       }
       if (isActive) classes.push('active')
@@ -333,7 +322,7 @@ function renderBlocks(blocks: Block[], opts: RenderBlocksOptions) {
             opts.onBlankClick(num)
           }}
         >
-          {showAnswer ? selected : num}
+          {submitted ? selected : num}
         </span>,
       )
     }

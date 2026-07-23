@@ -826,7 +826,7 @@
           "id": 40,
           "articleId": "text-4",
           "type": "reading",
-          "question": "It can be inferred that the \"high-income threshold\" in Australia____ Part B Directions: In the following text, there are five people’s opinions about Emma Manis’s article “ The Case Against Zoos”. For Questions 41-45, choose the best statement from the list A-G to summarize each numbered person’s opinion. There are two extra choices which do not fit in any of the blanks. Mark your answers on the ANSWER SHEET. (10 points) Teri Byrd: (41)占位符这是等待完型填空的句⼦位置 I was a zoo and wildlife park employee for years. Both the wildlife park and zoo claimed to be operating for the benefit of the animals and for conservation purposes. This claim was false. Neither one of them actually participated in any contributions to animal research or conservation. They are profitable institutions whose bottom line is much more important than the condition of the animals. Animals despise being captives in zoos. No matter how you \"enhance\" enclosures, they do not allow for freedom, a natural diet or adequate exercise. Animals end up stressed and unhealthy or dead. It's past time for transparency with these institutions, and it's past time to eliminate zoos from our culture. Karen R. Sime: (42)占位符这是等待完型填空的句⼦位置 As a zoology professor, I agree with Emma Marris that zoo displays can be sad and cruel. But she underestimates the educational value of zoos. The zoology program at my university attracts students for whom zoo visits were the crucial formative experience that led them to major in biological sciences. These are mostly students who had no opportunity as children to travel to wilderness areas, wildlife refuges or national parks. Although good TV shows can help stir children's interest in conservation, they cannot replace the excitement of a zoo visit as an intense, immersive and interactive experience. Surely there must be some middle ground that balances zoos' treatment of animals with their educational potential. Greg Newberry: (43)占位符这是等待完型填空的句⼦位置 Emma Marris's article is an insult and a disservice to the thousands of passionate people who work tirelessly to improve the lives of animals and protect our planet. She uses outdated research and decades-old examples to undermine the noble mission of organizations committed to connecting children to a world beyond their own. Zoos are at the forefront of conservation and constantly evolving to improve how they care for animals and protect each species in its natural habitat. Are there tragedies? Of course. But they are the exception, not the norm that Ms. Marris implies. A distressed animal in a zoo will get as good or better treatment than most of us at our local hospital. Dean Gallea: (44)占位符这是等待完型填空的句⼦位置 As a fellow environmentalist, animal-protection advocate and longtime vegetarian, I could properly be in the same camp as Emma Marris on the issue of zoos. But I believe that well-run zoos, and the heroic animals that suffer their captivity, do serve a higher purpose. Were it not for opportunities to observe these beautiful, wild creatures close to home, many more people would be driven by their fascination to travel to wild areas to seek out, disturb and even hunt them down. Zoos are, in that sense, similar to natural history and archeology museums, serving to satisfy our need for contact with these living creatures while leaving the vast majority undisturbed in their natural environments. John Fraser: (45)占位符这是等待完型填空的句⼦位置 Emma Marris selectively describes and misrepresents the findings of our research. Our studies focused on the impact of zoo experiences on how people think about themselves and nature, and the data points extracted from our studies do not, in any way, discount what is learned in a zoo visit. Zoos are tools for thinking. Our research provides strong support for the value of zoos in connecting people with animals and with nature. Zoos provide a critical voice for conservation and environmental protection. They afford an opportunity for people from all backgrounds to encounter a range of animals, from drone bees to springbok or salmon, to better understand the natural world we live in. creatures in their care. the path of related sciences. [ E ]For wild animals that cannot be returned to their natural habitats, zoos offer the best alternative. [ F ]Zoos should have been closed down as they prioritize money making over animals' wellbeing. [ G ]Marris distorts our findings which actually prove that zoos serve as an indispensable link between man and nature. Part C Directions: Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points) Between 1807 and 1814 the Iberian Peninsula (comprising Spain and Portugal) was the scene of a titanic and merciless struggle. It took place on many different planes: between Napoleon's French army and the angry inhabitants; between the British, ever keen to exacerbate the emperor's difficulties, and the marshals sent from Paris to try to keep them in check; between new forces of science and meritocracy and old ones of conservatism and birth. (46)It was also, and this is unknown even to many people well read about the period, a battle between those who made codes and those who broke them. I first discovered the Napoleonic cryptographic battle a few years ago when I was reading Sir Charles Oman's epic History of the Peninsular War. In volume V he had attached an appendix, The Scovell Ciphers. (47)It listed many documents in code that had been captured from the French army of Spain, and whose secrets had been revealed by the work of one George Scovell, an officer in British headquarters. Oman rated Scovell's significance highly, but at the same time, the general nature of his History meant that (48)he could not analyze carefully what this obscure officer may or may not have contributed to that great struggle between nations or indeed tell us anything much about the man himself. I was keen to read more, but was surprised to find that Oman's appendix, published in 1914, was the only considered thing that had been written about this secret war. I became convinced that this story was every bit as exciting and significant as that of Enigma and the breaking of German codes in the Second World War. The question was, could it be told? Studying Scovell's papers at the Public Record Office, London, I found that he had left an extensive journal and copious notes about his work in the peninsula. What was more, many original French dispatches had been preserved in this collection, which I realized was priceless. (49)There may have been many spies and intelligence officers during the Napoleonic Wars, but it is usually extremely difficult to find the material they actually provided or worked on. As I researched Scovell's story I found far more of interest besides his intelligence work. His status in Lord Wellington's headquarters and the recognition given to him for his work were all bound up with the class politics of the army at the time. His tale of self-improvement and hard work would make a fascinating biography in its own right, but represents something more than that. (50)Just as the code breaking has its wider relevance in the struggle for Spain, so his attempts to make his way up the promotion ladder speak volumes about British society.",
+          "question": "It can be inferred that the \"high-income threshold\" in Australia____",
           "options": {
             "A": "Zoos which spare no effort to take care of animals should not be subjected to unfair criticism.",
             "B": "To pressure zoos to spend less on their animals would lead to inhumane outcomes for the precious",
@@ -836,6 +836,399 @@
           "answer": "C",
           "analysis": "【判型】It can be inferred that the \"high-income threshold\" in Australia____ 直接用 inferred 【拆句】It can be inferred that the \"high-income threshold\" in Australia____ 是 It + 被动 + 【定位】P8 Australia deals with the unjustified dismissal paradox by excluding employees earning above a specified \"high-income threshold\" from the protection of its unfair dismissal laws. 【选项】A) 无中生有 has secured managers' earnings 谈「保住了管理者的收入」，但 P8 只说门槛划定 has produced undesired results 谈「产生了不良后果」，但 P8 对澳大利亚做法是中 mechanisms proposed were unwieldy）。 C) ✓ 正确 excluding employees earning above a specified \"high-income threshold\" from the protection of its unfair dismissal laws ↔ is beneficial to business owners constraining firms from firing poorly performing, high-earning managers is a handbrake on boosting productivity and overall performance ↔ is beneficial to business owners is difficult to put into practice 谈「难以落地」，但澳大利亚的门槛是已经在用的现行 做法（Australia deals with the unjustified dismissal paradox by excluding 用一般 SENTENCE INSIGHTS · 句子精讲 13 The personal grievance provisions of New Zealand's Employment Relations Act 2000 (ERA) prevent an employer from firing an employee without good cause. 本句体现了 \"prevent somebody from doing something\" 这一高频动词搭配结构，在四六级和考研 Instead, dismissals must be justified. Employers must both show cause and act in a procedurally fair way. Long gone are the days when a boss could simply give an employee contractual notice. But these provisions create difficulties for businesses when applied to highly pa...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:In the following text, there are five people’s opinions about Emma Manis’s article “ The Case Against Zoos”. For Questions 41-45, choose the best statement from the list A-G to summarize each numbered person’s opinion. There are two extra choices which do not fit in any of the blanks. Mark your answers on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Teri Byrd:"
+            },
+            {
+              "type": "blank",
+              "blankId": 41
+            },
+            {
+              "type": "paragraph",
+              "content": "I was a zoo and wildlife park employee for years. Both the wildlife park and zoo claimed to be operating for the benefit of the animals and for conservation purposes. This claim was false. Neither one of them actually participated in any contributions to animal research or conservation. They are profitable institutions whose bottom line is much more important than the condition of the animals. Animals despise being captives in zoos. No matter how you \"enhance\" enclosures, they do not allow for freedom, a natural diet or adequate exercise. Animals end up stressed and unhealthy or dead. It's past time for transparency with these institutions, and it's past time to eliminate zoos from our culture. Karen R. Sime:"
+            },
+            {
+              "type": "blank",
+              "blankId": 42
+            },
+            {
+              "type": "paragraph",
+              "content": "As a zoology professor, I agree with Emma Marris that zoo displays can be sad and cruel. But she underestimates the educational value of zoos. The zoology program at my university attracts students for whom zoo visits were the crucial formative experience that led them to major in biological sciences. These are mostly students who had no opportunity as children to travel to wilderness areas, wildlife refuges or national parks. Although good TV shows can help stir children's interest in conservation, they cannot replace the excitement of a zoo visit as an intense, immersive and interactive experience. Surely there must be some middle ground that balances zoos' treatment of animals with their educational potential. Greg Newberry:"
+            },
+            {
+              "type": "blank",
+              "blankId": 43
+            },
+            {
+              "type": "paragraph",
+              "content": "Emma Marris's article is an insult and a disservice to the thousands of passionate people who work tirelessly to improve the lives of animals and protect our planet. She uses outdated research and decades-old examples to undermine the noble mission of organizations committed to connecting children to a world beyond their own. Zoos are at the forefront of conservation and constantly evolving to improve how they care for animals and protect each species in its natural habitat. Are there tragedies? Of course. But they are the exception, not the norm that Ms. Marris implies. A distressed animal in a zoo will get as good or better treatment than most of us at our local hospital. Dean Gallea:"
+            },
+            {
+              "type": "blank",
+              "blankId": 44
+            },
+            {
+              "type": "paragraph",
+              "content": "As a fellow environmentalist, animal-protection advocate and longtime vegetarian, I could properly be in the same camp as Emma Marris on the issue of zoos. But I believe that well-run zoos, and the heroic animals that suffer their captivity, do serve a higher purpose. Were it not for opportunities to observe these beautiful, wild creatures close to home, many more people would be driven by their fascination to travel to wild areas to seek out, disturb and even hunt them down. Zoos are, in that sense, similar to natural history and archeology museums, serving to satisfy our need for contact with these living creatures while leaving the vast majority undisturbed in their natural environments. John Fraser:"
+            },
+            {
+              "type": "blank",
+              "blankId": 45
+            },
+            {
+              "type": "paragraph",
+              "content": "Emma Marris selectively describes and misrepresents the findings of our research. Our studies focused on the impact of zoo experiences on how people think about themselves and nature, and the data points extracted from our studies do not, in any way, discount what is learned in a zoo visit. Zoos are tools for thinking. Our research provides strong support for the value of zoos in connecting people with animals and with nature. Zoos provide a critical voice for conservation and environmental protection. They afford an opportunity for people from all backgrounds to encounter a range of animals, from drone bees to springbok or salmon, to better understand the natural world we live in. creatures in their care. the path of related sciences."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "For wild animals that cannot be returned to their natural habitats, zoos offer the best alternative.",
+            "F": "Zoos should have been closed down as they prioritize money making over animals' wellbeing.",
+            "G": "Marris distorts our findings which actually prove that zoos serve as an indispensable link between man and nature."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "For wild animals that cannot be returned to their natural habitats, zoos offer the best alternative.",
+            "F": "Zoos should have been closed down as they prioritize money making over animals' wellbeing.",
+            "G": "Marris distorts our findings which actually prove that zoos serve as an indispensable link between man and nature."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "For wild animals that cannot be returned to their natural habitats, zoos offer the best alternative.",
+            "F": "Zoos should have been closed down as they prioritize money making over animals' wellbeing.",
+            "G": "Marris distorts our findings which actually prove that zoos serve as an indispensable link between man and nature."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "For wild animals that cannot be returned to their natural habitats, zoos offer the best alternative.",
+            "F": "Zoos should have been closed down as they prioritize money making over animals' wellbeing.",
+            "G": "Marris distorts our findings which actually prove that zoos serve as an indispensable link between man and nature."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "For wild animals that cannot be returned to their natural habitats, zoos offer the best alternative.",
+            "F": "Zoos should have been closed down as they prioritize money making over animals' wellbeing.",
+            "G": "Marris distorts our findings which actually prove that zoos serve as an indispensable link between man and nature."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": true,
+        "optionCount": 3
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "Between 1807 and 1814 the Iberian Peninsula (comprising Spain and Portugal) was the scene of a titanic and merciless struggle. It took place on many different planes: between Napoleon's French army and the angry inhabitants; between the British, ever keen to exacerbate the emperor's difficulties, and the marshals sent from Paris to try to keep them in check; between new forces of science and meritocracy and old ones of conservatism and birth. (46)It was also, and this is unknown even to many people well read about the period, a battle between those who made codes and those who broke them. I first discovered the Napoleonic cryptographic battle a few years ago when I was reading Sir Charles Oman's epic History of the Peninsular War. In volume V he had attached an appendix, The Scovell Ciphers. (47)It listed many documents in code that had been captured from the French army of Spain, and whose secrets had been revealed by the work of one George Scovell, an officer in British headquarters. Oman rated Scovell's significance highly, but at the same time, the general nature of his History meant that (48)he could not analyze carefully what this obscure officer may or may not have contributed to that great struggle between nations or indeed tell us anything much about the man himself. I was keen to read more, but was surprised to find that Oman's appendix, published in 1914, was the only considered thing that had been written about this secret war. I became convinced that this story was every bit as exciting and significant as that of Enigma and the breaking of German codes in the Second World War. The question was, could it be told? Studying Scovell's papers at the Public Record Office, London, I found that he had left an extensive journal and copious notes about his work in the peninsula. What was more, many original French dispatches had been preserved in this collection, which I realized was priceless. (49)There may have been many spies and intelligence officers during the Napoleonic Wars, but it is usually extremely difficult to find the material they actually provided or worked on. As I researched Scovell's story I found far more of interest besides his intelligence work. His status in Lord Wellington's headquarters and the recognition given to him for his work were all bound up with the class politics of the army at the time. His tale of self-improvement and hard work would make a fascinating biography in its own right, but represents something more than that. (50)Just as the code breaking has its wider relevance in the struggle for Spain, so his attempts to make his way up the promotion ladder speak volumes about British society."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "It was also, and this is unknown even to many people well read about the period, a battle between those who made codes and those who broke them.",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容，无漏译、错译",
+              "译文通顺连贯，符合中文表达习惯",
+              "专有名词、长难句结构处理得当"
+            ],
+            "maxScore": 2,
+            "wordLimit": "译成中文"
+          }
+        },
+        {
+          "id": 47,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "It listed many documents in code that had been captured from the French army of Spain, and whose secrets had been revealed by the work of one George Scovell, an officer in British headquarters.",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容，无漏译、错译",
+              "译文通顺连贯，符合中文表达习惯",
+              "专有名词、长难句结构处理得当"
+            ],
+            "maxScore": 2,
+            "wordLimit": "译成中文"
+          }
+        },
+        {
+          "id": 48,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "he could not analyze carefully what this obscure officer may or may not have contributed to that great struggle between nations or indeed tell us anything much about the man himself.",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容，无漏译、错译",
+              "译文通顺连贯，符合中文表达习惯",
+              "专有名词、长难句结构处理得当"
+            ],
+            "maxScore": 2,
+            "wordLimit": "译成中文"
+          }
+        },
+        {
+          "id": 49,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "There may have been many spies and intelligence officers during the Napoleonic Wars, but it is usually extremely difficult to find the material they actually provided or worked on.",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容，无漏译、错译",
+              "译文通顺连贯，符合中文表达习惯",
+              "专有名词、长难句结构处理得当"
+            ],
+            "maxScore": 2,
+            "wordLimit": "译成中文"
+          }
+        },
+        {
+          "id": 50,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "Just as the code breaking has its wider relevance in the struggle for Spain, so his attempts to make his way up the promotion ladder speak volumes about British society.",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容，无漏译、错译",
+              "译文通顺连贯，符合中文表达习惯",
+              "专有名词、长难句结构处理得当"
+            ],
+            "maxScore": 2,
+            "wordLimit": "译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 应用文约 100 词；Part B 图画作文 160-200 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图画撰写一篇 160-200 词的议论文，描述图画并论述其寓意。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 20,
+            "wordLimit": "160-200 词"
+          }
         }
       ]
     }

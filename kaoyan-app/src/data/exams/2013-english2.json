@@ -826,7 +826,7 @@
           "id": 40,
           "articleId": "text-4",
           "type": "reading",
-          "question": "Women entering top management become headlines due to the lack of____. Part B Directions: Read the following text and answer the questions by choosing the most suitable subheading from the list A-G for each of the numbered paragraphs (41-45). There are two extra subheadings which you do not need to use. Mark your answers on the ANSWER SHEET. (10 points) The hugely popular blog the Skint Foodie chronicles how Tony balances his love of good food with living on benefits. After bills, Tony has £60 a week to spend, £40 of which goes on food, but 10 years ago he was earning £130,000 a year working in corporate communications and eating at London's best restaurants at least twice a week. Then his marriage failed, his career burned out and his drinking became serious. \"The community mental health team saved my life. And I felt like that again, to a certain degree, when people responded to the blog so well. It gave me the validation and confidence that I'd lost. But it's still a day-by-day thing.\" Now he's living in a council flat and fielding offers from literary agents. He's feeling positive, but he'll carry on blogging – not about eating as cheaply as you can – \"there are so many people in a much worse state, with barely any money to spend on food\" – but eating well on a budget. Here's his advice for economical foodies. (41)占位符这是等待完型填空的句⼦位置 Impulsive spending isn't an option, so plan your week's menu in advance, making shopping lists for your ingredients in their exact quantities. I have an Excel template for a week of breakfast, lunch and dinner. Stop laughing: it's not just cost effective but helps you balance your diet. It's also a good idea to shop daily instead of weekly, because, being human, you'll sometimes change your mind about what you fancy. (42)占位符这是等待完型填空的句⼦位置 This is where supermarkets and their anonymity come in handy. With them, there's not the same embarrassment as when buying one carrot in a little greengrocer. And if you plan properly, you'll know that you only need, say, 350g of shin of beef and six rashers of bacon, not whatever weight is pre-packed in the supermarket chiller. (43)占位符这是等待完型填空的句⼦位置 You may proudly claim to only have frozen peas in the freezer – that's not good enough. Mine is filled with leftovers, bread, stock, meat and fish. Planning ahead should eliminate wastage, but if you have surplus vegetables you'll do a vegetable soup, and all fruits threatening to \"go off\" will be cooked or juiced. (44)占位符这是等待完型填空的句⼦位置 Everyone says this, but it really is a top tip for frugal eaters. Shop at butchers, delis and fish-sellers regularly, even for small things, and be super friendly. Soon you'll feel comfortable asking if they've any knuckles of ham for soups and stews, or beef bones, chicken carcasses and fish heads for stock which, more often than not, they'll let you have for free. (45)占位符这是等待完型填空的句⼦位置 You won't be eating out a lot, but save your pennies and once every few months treat yourself to a set lunch at a good restaurant – £1.75 a week for three months gives you £21 – more than enough for a three- course lunch at Michelin-starred Arbutus. It's £16.95 there – or £12.99 for a large pizza from Domino's: I know which I'd rather eat. [ E ]Stick to what you need [ F ]Planning is everything [ G ]Waste not, want not",
+          "question": "Women entering top management become headlines due to the lack of____.",
           "options": {
             "A": "Live like a peasant",
             "B": "Balance your diet",
@@ -836,6 +836,295 @@
           "answer": "C",
           "analysis": "【判型】Women entering top management become headlines due to the lack of____ 是 due 【拆句】Women entering top management become headlines due to the lack of____ 是\"主 +系动词性短语 become+表语\"补全句。Women entering top management 中 entering 是现在分词作后置定语，等于 \"who enter top management\" = 进入高管层的女性。due to the lack of 是\"由于缺少……\"，后面要填一个名词短语，作\"缺少的对象\"。 【定位】P7 If appropriate public policies were in place to help all women – whether CEOs or their children's caregivers – and all families, Sandberg would be no more newsworthy than any other highly capable person living in a more just society. 【选项】A) 过度推断 more social justice 把 a more just society 当作答案，但\"更公正的社会\"是\"如果有合 massive media attention（大量媒体关注）与原文 they attract massive attention 形 C) ✓ 正确 appropriate public policies ↔ suitable public policies If appropriate public policies were in place ↔ the lack of 预判是\"缺合适公共政策\"，suitable public policies 与 appropriate public policies 是 greater \"soft pressure\" 与原文相反：no matter how much soft pressure is put SENTENCE INSIGHTS · 句子精讲 8 In particular, the corporate workplace will never be completely family-friendly until women are part of senior management decisions, and Europe's top corporate-governance positions remain overwhelmingly male. Indeed, women hold only 14 per cent of positions on European corporate boards. But her appeal was considered a failure: only 24 companies took it up. I don't like quotas either; they run counter to my belief in meritocracy, governance by the capable. 涵盖主谓宾、主谓状、同位语、副词状语等多种成分;\"run counter to\" 固定搭...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following text and answer the questions by choosing the most suitable subheading from the list A-G for each of the numbered paragraphs (41-45). There are two extra subheadings which you do not need to use. Mark your answers on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "The hugely popular blog the Skint Foodie chronicles how Tony balances his love of good food with living on benefits. After bills, Tony has £60 a week to spend, £40 of which goes on food, but 10 years ago he was earning £130,000 a year working in corporate communications and eating at London's best restaurants at least twice a week. Then his marriage failed, his career burned out and his drinking became serious. \"The community mental health team saved my life. And I felt like that again, to a certain degree, when people responded to the blog so well. It gave me the validation and confidence that I'd lost. But it's still a day-by-day thing.\" Now he's living in a council flat and fielding offers from literary agents. He's feeling positive, but he'll carry on blogging – not about eating as cheaply as you can – \"there are so many people in a much worse state, with barely any money to spend on food\" – but eating well on a budget. Here's his advice for economical foodies."
+            },
+            {
+              "type": "blank",
+              "blankId": 41
+            },
+            {
+              "type": "paragraph",
+              "content": "Impulsive spending isn't an option, so plan your week's menu in advance, making shopping lists for your ingredients in their exact quantities. I have an Excel template for a week of breakfast, lunch and dinner. Stop laughing: it's not just cost effective but helps you balance your diet. It's also a good idea to shop daily instead of weekly, because, being human, you'll sometimes change your mind about what you fancy."
+            },
+            {
+              "type": "blank",
+              "blankId": 42
+            },
+            {
+              "type": "paragraph",
+              "content": "This is where supermarkets and their anonymity come in handy. With them, there's not the same embarrassment as when buying one carrot in a little greengrocer. And if you plan properly, you'll know that you only need, say, 350g of shin of beef and six rashers of bacon, not whatever weight is pre-packed in the supermarket chiller."
+            },
+            {
+              "type": "blank",
+              "blankId": 43
+            },
+            {
+              "type": "paragraph",
+              "content": "You may proudly claim to only have frozen peas in the freezer – that's not good enough. Mine is filled with leftovers, bread, stock, meat and fish. Planning ahead should eliminate wastage, but if you have surplus vegetables you'll do a vegetable soup, and all fruits threatening to \"go off\" will be cooked or juiced."
+            },
+            {
+              "type": "blank",
+              "blankId": 44
+            },
+            {
+              "type": "paragraph",
+              "content": "Everyone says this, but it really is a top tip for frugal eaters. Shop at butchers, delis and fish-sellers regularly, even for small things, and be super friendly. Soon you'll feel comfortable asking if they've any knuckles of ham for soups and stews, or beef bones, chicken carcasses and fish heads for stock which, more often than not, they'll let you have for free."
+            },
+            {
+              "type": "blank",
+              "blankId": 45
+            },
+            {
+              "type": "paragraph",
+              "content": "You won't be eating out a lot, but save your pennies and once every few months treat yourself to a set lunch at a good restaurant – £1.75 a week for three months gives you £21 – more than enough for a three- course lunch at Michelin-starred Arbutus. It's £16.95 there – or £12.99 for a large pizza from Domino's: I know which I'd rather eat."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Stick to what you need",
+            "F": "Planning is everything",
+            "G": "Waste not, want not"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Stick to what you need",
+            "F": "Planning is everything",
+            "G": "Waste not, want not"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Stick to what you need",
+            "F": "Planning is everything",
+            "G": "Waste not, want not"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Stick to what you need",
+            "F": "Planning is everything",
+            "G": "Waste not, want not"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "Stick to what you need",
+            "F": "Planning is everything",
+            "G": "Waste not, want not"
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": true,
+        "optionCount": 3
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 约 100 词；Part B 根据图表写作约 150 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的短文（书信 / 通知 / 便条等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图表撰写一篇约 150 词的议论文，描述图表并进行分析论证。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 15,
+            "wordLimit": "约 150 词"
+          }
         }
       ]
     }

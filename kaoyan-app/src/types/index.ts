@@ -10,17 +10,19 @@ export type Subject = '英语一' | '英语二' | '统一卷'
 /** 题型 */
 export type SectionType = 'cloze' | 'reading' | 'newType' | 'translation' | 'writing'
 
-/** 选项字母 */
-export type OptionKey = 'A' | 'B' | 'C' | 'D'
+/** 选项字母：完形/阅读为 A-D，新题型（段落排序/匹配）可扩展至 A-G */
+export type OptionKey = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G'
 
-/** 题目状态：未提交/答对/答错。标记用独立布尔字段 */
-export type QuestionStatus = 'unanswered' | 'correct' | 'wrong'
+/**
+ * 题目状态：
+ * - unanswered: 未提交
+ * - correct / wrong: 客观题判定
+ * - submitted: 已提交但无标准答案（新题型缺答案 key）/ 主观题已提交查看参考
+ */
+export type QuestionStatus = 'unanswered' | 'correct' | 'wrong' | 'submitted'
 
 /** 高亮颜色 */
 export type HighlightColor = 'yellow' | 'green' | 'pink' | 'blue'
-
-/** 阅读模式 */
-export type ReadMode = 'original' | 'study'
 
 // =================================================================
 // 试卷数据结构（新 Schema：data/exams/*.json）
@@ -52,12 +54,15 @@ export interface Article {
   blocks: Block[]
 }
 
-/** 结构化解析：错误选项分析 */
+/** 结构化解析：错误选项分析（A-D 常用；新题型 A-G 按需） */
 export interface OptionAnalysis {
-  A: string
-  B: string
-  C: string
-  D: string
+  A?: string
+  B?: string
+  C?: string
+  D?: string
+  E?: string
+  F?: string
+  G?: string
 }
 
 /** 结构化解析：分章节展示 */
@@ -73,27 +78,50 @@ export interface StructuredAnalysis {
 }
 
 /**
+ * 主观题（翻译 / 写作）参考答案与评分标准
+ * 存在该字段即为主观题：作答区为文本框，无客观对错，提供参考译文/范文与评分维度
+ */
+export interface SubjectiveAnswer {
+  /** 参考译文 / 范文（可为空，标注"待补充"） */
+  reference: string
+  /** 评分标准 / 维度（按条目展示） */
+  scoringCriteria?: string[]
+  /** 满分分值 */
+  maxScore?: number
+  /** 字数要求提示 */
+  wordLimit?: string
+}
+
+/**
  * 题目：关联到具体文章 + 段落位置
  * analysis 支持两种形态：
  * - 旧数据：string（dataLoader 自动包装为 { coreAnalysis: string }）
  * - 新数据：StructuredAnalysis 对象
  * 用 analysisText 字段保留旧字符串以兼容
+ *
+ * 题型分支：
+ * - 客观题（cloze/reading/newType）：options + answer；newType 选项可至 A-G，answer 可为 ''（无标准答案）
+ * - 主观题（translation/writing）：subjective 字段存在，作答为文本
  */
 export interface Question {
   id: number
   /** 关联的文章 id */
   articleId: string
   type: SectionType
-  /** 题干；完形题干为空（空格在文章中） */
+  /** 题干；完形题干为空（空格在文章中）；翻译题为待译原文句子 */
   question: string
-  options: Record<OptionKey, string>
-  answer: OptionKey
+  /** 选项（客观题）；Partial 以兼容 A-D 与 A-G */
+  options: Partial<Record<OptionKey, string>>
+  /** 正确选项；'' 表示无标准答案（新题型数据缺失时） */
+  answer: OptionKey | ''
   /** 结构化解析（新） */
   analysis: StructuredAnalysis
   /** 旧字符串解析（兼容字段；新数据为空字符串） */
   analysisText: string
   /** 段落索引：点击题号 → 左栏滚动到 article.paragraphs[position] */
   position: number
+  /** 主观题参考答案与评分标准（翻译/写作） */
+  subjective?: SubjectiveAnswer
 }
 
 /**
@@ -217,6 +245,10 @@ export interface QuestionProgress {
   /** 是否被标记（用于错题回顾/收藏，与对错独立） */
   marked: boolean
   submittedAt: string | null
+  /** 主观题（翻译/写作）作答文本 */
+  textAnswer?: string
+  /** 主观题自评分数 */
+  selfScore?: number
 }
 
 /** key: paperId, value: { questionId -> progress } */

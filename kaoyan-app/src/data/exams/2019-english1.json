@@ -826,7 +826,7 @@
           "id": 40,
           "articleId": "text-4",
           "type": "reading",
-          "question": "In dealing with the Supreme Court decision Thursday, the author____ Part B Directions: The following paragraphs are given in a wrong order. For questions 41 -45, you are required to reorganize these paragraphs into a coherent text by choosing from the list A-G and filling them into the numbered boxes. Paragraphs C and F have been correctly placed. Mark your answers on the ANSWER SHEET. (10 points) in the better sense of learning about the issues that divide people. Learning why they disagree with us and learning to talk and work together with them. If we readjust our view of arguments – from a verbal fight or tennis game to a reasoned exchange through which we all gain mutual respect, and understanding – then we change the very nature of what it means to \"win\" an argument. bad arguments too quickly. We need to learn how to evaluate them properly. A large part of evaluation is calling out bad arguments, but we also need to admit good arguments by opponents and to apply the same critical standards to ourselves. Humility requires you to recognize weakness in your own arguments and sometimes also to accept reasons on the opposite side. formulate an argument for what you claim and honestly ask yourself whether your argument is any good. Next time you talk with someone who takes a stand, ask them to give you a reason for their view. Spell out their argument fully and charitably. Assess its strength impartially. Raise objections and listen carefully to their replies. fights, verbal fights can leave both sides bloodied. Even when you win, you end up no better off. Your prospects would be almost as dismal if arguments were even just competitions – like, say, tennis games. Pairs of opponents hit the ball back and forth until one winner emerges from all who entered. Everybody else loses. This kind of thinking is why so many people try to avoid arguments, especially about politics and religion. [ E ] In his 1936 work How to Win Friends and Influence People, Dale Carnegie wrote: \"There is only one way…to get the best of an argument – and that is to avoid it.\" This aversion to arguments is common, but it depends on a mistaken view of arguments that causes profound problems for our personal and social lives – and in many ways misses the point of arguing in the first place. [ F ] These views of arguments also undermine reason. If you see a conversation as a fight or competition, you can win by cheating as long as you don't get caught. You will be happy to convince people with bad arguments. You can call their views stupid, or joke about how ignorant they are. None of these tricks will help you understand them, their positions or the issues that divide you, but they can help you win – in one way. [ G ] There is a better way to win arguments. Imagine that you favor increasing the minimum wage in our state, and I do not. If you yell, \"Yes,\" and I yell, \"No,\" neither of us learns anything. We neither understand nor respect each other, and we have no basis for compromise or cooperation. In contrast, suppose you give a reasonable argument: that full-time workers should not have to live in poverty. Then I counter with another reasonable argument: that a higher minimum wage will force businesses to employ fewer people for less time. Now we can understand each other's positions and recognize our shared values, since we both care about needy workers.",
+          "question": "In dealing with the Supreme Court decision Thursday, the author____",
           "options": {
             "A": "These tools can help you win every argument – not in the unhelpful sense of beating your opponents but",
             "B": "Of course, many discussions are not so successful. Still, we need to be careful not to accuse opponents of",
@@ -836,6 +836,255 @@
           "answer": "A",
           "analysis": "【判型】In dealing with the Supreme Court decision Thursday, the author____ 问的是作者整体 【拆句】Q40 由状语 In dealing with the Supreme Court decision Thursday 引导，主句 the 【选项】A) ✓ 正确 States will be able to force more people to pay sales tax when they make online purchases under a Supreme Court decision Thursday ↔ gives a factual account of it Retail trade groups praised the ruling ↔ discusses its consequences gives a factual account of it and discusses its consequences 中两个动作 give a factual account / discuss consequences 正好对应作者前后两段使命，与预判完全吻 合，故选 A。 describes the long and complicated process of its making 说作者描写判决的漫长 presents its main points with conflicting views on them 说作者陈列判决要点并附冲 points 要点清单，只引了 Kennedy 单人观点；conflicting views 描述也偏强，原文是 cites some cases related to it and analyzes their implications 说作者引用相关案例 并分析其含义。文中只在第 3 段提到 The cases the court overturned 这一被推翻的旧 SENTENCE INSIGHTS · 句子精讲 10 The Supreme Court's opinion Thursday overruled a pair of decades-old decisions that states said cost them billions of dollars in lost revenue annually. The decisions made it more difficult for states to collect sales tax on certain online purchases. \"make it + 形容词 + for sb to do sth\" 是四六级和考研阅读中极为常见的句式,掌握后可直接迁移到 The cases the court overturned said that if a business was shipping a customer's purchase to a state where the business didn't have a physical presence such as a warehouse or office, the business didn't have to collect sales tax for the state. Customers were generally responsible for paying the s...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:The following paragraphs are given in a wrong order. For questions 41 -45, you are required to reorganize these paragraphs into a coherent text by choosing from the list A-G and filling them into the numbered boxes. Paragraphs C and F have been correctly placed. Mark your answers on the ANSWER SHEET. (10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "in the better sense of learning about the issues that divide people. Learning why they disagree with us and learning to talk and work together with them. If we readjust our view of arguments – from a verbal fight or tennis game to a reasoned exchange through which we all gain mutual respect, and understanding – then we change the very nature of what it means to \"win\" an argument. bad arguments too quickly. We need to learn how to evaluate them properly. A large part of evaluation is calling out bad arguments, but we also need to admit good arguments by opponents and to apply the same critical standards to ourselves. Humility requires you to recognize weakness in your own arguments and sometimes also to accept reasons on the opposite side. formulate an argument for what you claim and honestly ask yourself whether your argument is any good. Next time you talk with someone who takes a stand, ask them to give you a reason for their view. Spell out their argument fully and charitably. Assess its strength impartially. Raise objections and listen carefully to their replies. fights, verbal fights can leave both sides bloodied. Even when you win, you end up no better off. Your prospects would be almost as dismal if arguments were even just competitions – like, say, tennis games. Pairs of opponents hit the ball back and forth until one winner emerges from all who entered. Everybody else loses. This kind of thinking is why so many people try to avoid arguments, especially about politics and religion."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "In his 1936 work How to Win Friends and Influence People, Dale Carnegie wrote: \"There is only one way…to get the best of an argument – and that is to avoid it.\" This aversion to arguments is common, but it depends on a mistaken view of arguments that causes profound problems for our personal and social lives – and in many ways misses the point of arguing in the first place.",
+            "F": "These views of arguments also undermine reason. If you see a conversation as a fight or competition, you can win by cheating as long as you don't get caught. You will be happy to convince people with bad arguments. You can call their views stupid, or joke about how ignorant they are. None of these tricks will help you understand them, their positions or the issues that divide you, but they can help you win – in one way.",
+            "G": "There is a better way to win arguments. Imagine that you favor increasing the minimum wage in our state, and I do not. If you yell, \"Yes,\" and I yell, \"No,\" neither of us learns anything. We neither understand nor respect each other, and we have no basis for compromise or cooperation. In contrast, suppose you give a reasonable argument: that full-time workers should not have to live in poverty. Then I counter with another reasonable argument: that a higher minimum wage will force businesses to employ fewer people for less time. Now we can understand each other's positions and recognize our shared values, since we both care about needy workers."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "In his 1936 work How to Win Friends and Influence People, Dale Carnegie wrote: \"There is only one way…to get the best of an argument – and that is to avoid it.\" This aversion to arguments is common, but it depends on a mistaken view of arguments that causes profound problems for our personal and social lives – and in many ways misses the point of arguing in the first place.",
+            "F": "These views of arguments also undermine reason. If you see a conversation as a fight or competition, you can win by cheating as long as you don't get caught. You will be happy to convince people with bad arguments. You can call their views stupid, or joke about how ignorant they are. None of these tricks will help you understand them, their positions or the issues that divide you, but they can help you win – in one way.",
+            "G": "There is a better way to win arguments. Imagine that you favor increasing the minimum wage in our state, and I do not. If you yell, \"Yes,\" and I yell, \"No,\" neither of us learns anything. We neither understand nor respect each other, and we have no basis for compromise or cooperation. In contrast, suppose you give a reasonable argument: that full-time workers should not have to live in poverty. Then I counter with another reasonable argument: that a higher minimum wage will force businesses to employ fewer people for less time. Now we can understand each other's positions and recognize our shared values, since we both care about needy workers."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "In his 1936 work How to Win Friends and Influence People, Dale Carnegie wrote: \"There is only one way…to get the best of an argument – and that is to avoid it.\" This aversion to arguments is common, but it depends on a mistaken view of arguments that causes profound problems for our personal and social lives – and in many ways misses the point of arguing in the first place.",
+            "F": "These views of arguments also undermine reason. If you see a conversation as a fight or competition, you can win by cheating as long as you don't get caught. You will be happy to convince people with bad arguments. You can call their views stupid, or joke about how ignorant they are. None of these tricks will help you understand them, their positions or the issues that divide you, but they can help you win – in one way.",
+            "G": "There is a better way to win arguments. Imagine that you favor increasing the minimum wage in our state, and I do not. If you yell, \"Yes,\" and I yell, \"No,\" neither of us learns anything. We neither understand nor respect each other, and we have no basis for compromise or cooperation. In contrast, suppose you give a reasonable argument: that full-time workers should not have to live in poverty. Then I counter with another reasonable argument: that a higher minimum wage will force businesses to employ fewer people for less time. Now we can understand each other's positions and recognize our shared values, since we both care about needy workers."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "In his 1936 work How to Win Friends and Influence People, Dale Carnegie wrote: \"There is only one way…to get the best of an argument – and that is to avoid it.\" This aversion to arguments is common, but it depends on a mistaken view of arguments that causes profound problems for our personal and social lives – and in many ways misses the point of arguing in the first place.",
+            "F": "These views of arguments also undermine reason. If you see a conversation as a fight or competition, you can win by cheating as long as you don't get caught. You will be happy to convince people with bad arguments. You can call their views stupid, or joke about how ignorant they are. None of these tricks will help you understand them, their positions or the issues that divide you, but they can help you win – in one way.",
+            "G": "There is a better way to win arguments. Imagine that you favor increasing the minimum wage in our state, and I do not. If you yell, \"Yes,\" and I yell, \"No,\" neither of us learns anything. We neither understand nor respect each other, and we have no basis for compromise or cooperation. In contrast, suppose you give a reasonable argument: that full-time workers should not have to live in poverty. Then I counter with another reasonable argument: that a higher minimum wage will force businesses to employ fewer people for less time. Now we can understand each other's positions and recognize our shared values, since we both care about needy workers."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {
+            "E": "In his 1936 work How to Win Friends and Influence People, Dale Carnegie wrote: \"There is only one way…to get the best of an argument – and that is to avoid it.\" This aversion to arguments is common, but it depends on a mistaken view of arguments that causes profound problems for our personal and social lives – and in many ways misses the point of arguing in the first place.",
+            "F": "These views of arguments also undermine reason. If you see a conversation as a fight or competition, you can win by cheating as long as you don't get caught. You will be happy to convince people with bad arguments. You can call their views stupid, or joke about how ignorant they are. None of these tricks will help you understand them, their positions or the issues that divide you, but they can help you win – in one way.",
+            "G": "There is a better way to win arguments. Imagine that you favor increasing the minimum wage in our state, and I do not. If you yell, \"Yes,\" and I yell, \"No,\" neither of us learns anything. We neither understand nor respect each other, and we have no basis for compromise or cooperation. In contrast, suppose you give a reasonable argument: that full-time workers should not have to live in poverty. Then I counter with another reasonable argument: that a higher minimum wage will force businesses to employ fewer people for less time. Now we can understand each other's positions and recognize our shared values, since we both care about needy workers."
+          },
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 3
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 应用文约 100 词；Part B 图画作文 160-200 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图画撰写一篇 160-200 词的议论文，描述图画并论述其寓意。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 20,
+            "wordLimit": "160-200 词"
+          }
         }
       ]
     }

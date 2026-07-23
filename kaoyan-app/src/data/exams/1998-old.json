@@ -607,7 +607,7 @@
           "id": 30,
           "articleId": "text-5",
           "type": "reading",
-          "question": "The passage is mainly about ________. Part B Directions: Read the following passage carefully and then translate the underlined sentences into Chinese. Your translation must be written clearly on the ANSWER SHEET 2. (15 points) They were, by far, the largest and most distant objects that scientists had ever detected: a strip of enormous cosmic clouds some 15 billion light-years from earth. (31)But even more important, it was the farthest that scientists had been able to look into the past, for what they were seeing were the patterns and structures that existed 15 billion years ago. That was just about the moment that the universe was born. What the researchers found was at once both amazing and expected: the US National Aeronautics and Space Administration's Cosmic Background Explorer satellite—Cobe—had discovered landmark evidence that the universe did in fact begin with the primeval explosion that has become known as the Big Bang (the theory that the universe originated in an explosion from a single mass of energy). (32)The existence of the giant clouds was virtually required for the Big Bang, first put forward in the 1920s, to maintain its reign as the dominant explanation of the cosmos. According to the theory, the universe burst into being as a submicroscopic, unimaginably dense knot of pure energy that flew outward in all directions, emitting radiation as it went, condensing into particles and then into atoms of gas. Over billions of years, the gas was compressed by gravity into galaxies, stars, planets and eventually, even humans. Cobe is designed to see just the biggest structures, but astronomers would like to see much smaller hot spots as well, the seeds of local objects like clusters and superclusters of galaxies. They shouldn't have long to wait. (33)Astrophysicists working with ground-based detectors at the South Pole and balloon-borne instruments are closing in on such structures, and may report their findings soon. (34)If the small hot spots look as expected, that will be a triumph for yet another scientific idea, a refinement of the Big Bang called the inflationary universe theory. Inflation says that very early on, the universe expanded in size by more than a trillion trillion trillion trillion fold in much less than a second, propelled by a sort of antigravity. (35)Odd though it sounds, cosmic inflation is a scientifically plausible consequence of some respected ideas in elementary particle physics, and many astrophysicists have been convinced for the better part of a decade that it is true.",
+          "question": "The passage is mainly about ________.",
           "options": {
             "A": "the features of volcanic activities",
             "B": "the importance of the theory about drifting plates",
@@ -617,6 +617,235 @@
           "answer": "C",
           "analysis": "这篇文章主要讨论________。 【判型】The passage is mainly about 显式询问文章主旨，无需任何细节锚点。 【拆句】\"is mainly about\" 是判定结构，简洁明确，无语法陷阱。 【选项】A) 以偏概全 全文只有第一段提到 volcanic activity，且只作为引出 hot spots 的背景；火山活动的 而是借这一理论引出 hot spots 的角色。 C) ✓ 正确 The significance of hot spots is not confined to their role as a frame of reference ↔ the significance of hot spots in geophysical studies Hot spots, anchored in the deeper layers of the earth, provide the measuring instruments needed to resolve the question ↔ the significance of hot spots in geophysical studies C 项的 significance 与 hot spots 复用原文主词，再以 geophysical studies 上位概括 成\"的过程；formation of volcanoes 本身不是全文话题。 SENTENCE INSIGHTS · 句子精讲 8 Scattered around the globe are more than 100 small regions of isolated volcanic activity known to geologists as hot spots. Unlike most of the world's volcanoes, they are not always found at the boundaries of the great drifting plates that make up the earth's surface; on the contrary, many of them lie deep in the interior of a plate. Africa and South America, for example, are moving away from each other as new material is injected into the sea floor between them. The relative motion of the plates carrying these continents has been constructed in detail, but the motion of one plate with respect to another cannot readily be translated into motion with respect to the earth's interior. It is not possible to determine whether both continents are moving in opposite directions or whether one continent is stationary and the other is drifting a...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following passage carefully and then translate the underlined sentences into Chinese. Your translation must be written clearly on the ANSWER SHEET 2. (15 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "They were, by far, the largest and most distant objects that scientists had ever detected: a strip of enormous cosmic clouds some 15 billion light-years from earth. (31)But even more important, it was the farthest that scientists had been able to look into the past, for what they were seeing were the patterns and structures that existed 15 billion years ago. That was just about the moment that the universe was born. What the researchers found was at once both amazing and expected: the US National Aeronautics and Space Administration's Cosmic Background Explorer satellite—Cobe—had discovered landmark evidence that the universe did in fact begin with the primeval explosion that has become known as the Big Bang (the theory that the universe originated in an explosion from a single mass of energy). (32)The existence of the giant clouds was virtually required for the Big Bang, first put forward in the 1920s, to maintain its reign as the dominant explanation of the cosmos. According to the theory, the universe burst into being as a submicroscopic, unimaginably dense knot of pure energy that flew outward in all directions, emitting radiation as it went, condensing into particles and then into atoms of gas. Over billions of years, the gas was compressed by gravity into galaxies, stars, planets and eventually, even humans. Cobe is designed to see just the biggest structures, but astronomers would like to see much smaller hot spots as well, the seeds of local objects like clusters and superclusters of galaxies. They shouldn't have long to wait. (33)Astrophysicists working with ground-based detectors at the South Pole and balloon-borne instruments are closing in on such structures, and may report their findings soon. (34)If the small hot spots look as expected, that will be a triumph for yet another scientific idea, a refinement of the Big Bang called the inflationary universe theory. Inflation says that very early on, the universe expanded in size by more than a trillion trillion trillion trillion fold in much less than a second, propelled by a sort of antigravity. (35)Odd though it sounds, cosmic inflation is a scientifically plausible consequence of some respected ideas in elementary particle physics, and many astrophysicists have been convinced for the better part of a decade that it is true."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 0
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 应用文约 100 词；Part B 图画作文 160-200 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图画撰写一篇 160-200 词的议论文，描述图画并论述其寓意。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 20,
+            "wordLimit": "160-200 词"
+          }
         }
       ]
     }

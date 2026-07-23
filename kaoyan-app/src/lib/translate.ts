@@ -141,24 +141,87 @@ interface TranslateApiResponse {
   translation: string
 }
 
-async function callTranslateApi(text: string): Promise<string> {
+/** 检测文本是否主要为中文（中文 → 译成英文；否则 → 译成中文） */
+function isChineseText(text: string): boolean {
+  const cn = (text.match(/[\u4e00-\u9fa5]/g) || []).length
+  const en = (text.match(/[a-zA-Z]/g) || []).length
+  return cn > en
+}
+
+/** 超时 fetch 封装 */
+function fetchWithTimeout(url: string, init: RequestInit, ms = 10000): Promise<Response> {
   const ctrl = new AbortController()
-  const t = setTimeout(() => ctrl.abort(), 10000)
-  let resp: Response
-  try {
-    resp = await fetch('/api/translate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text }),
-      signal: ctrl.signal,
-    })
-  } finally {
-    clearTimeout(t)
-  }
+  const t = setTimeout(() => ctrl.abort(), ms)
+  return fetch(url, { ...init, signal: ctrl.signal }).finally(() => clearTimeout(t))
+}
+
+/**
+ * 主翻译源：自托管 /api/translate（Cloudflare Worker / Pages Functions）
+ * 仅当后端可用时使用；失败则降级到公共免费源
+ */
+async function callSelfHostedApi(text: string): Promise<string> {
+  const resp = await fetchWithTimeout('/api/translate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text }),
+  })
   if (!resp.ok) throw new Error(`翻译服务异常 (${resp.status})`)
   const data = (await resp.json()) as TranslateApiResponse
   if (data.code !== 200) throw new Error(data.msg || '翻译失败')
   return data.translation || ''
+}
+
+/**
+ * 兜底源 1：MyMemory 免费 API（无需密钥，支持 CORS，日限约 5000 词）
+ * 自动判定中→英 / 英→中
+ */
+async function callMyMemory(text: string): Promise<string> {
+  const toChinese = !isChineseText(text)
+  const langpair = toChinese ? 'en|zh' : 'zh|en'
+  // 截断超长文本（MyMemory 单次建议 < 500 字符）
+  const q = text.length > 480 ? text.slice(0, 480) : text
+  const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=${langpair}`
+  const resp = await fetchWithTimeout(url, { method: 'GET' })
+  if (!resp.ok) throw new Error(`MyMemory 异常 (${resp.status})`)
+  const data = (await resp.json()) as {
+    responseStatus: number
+    responseData?: { translatedText?: string }
+    responseDetails?: string
+  }
+  if (data.responseStatus !== 200 || !data.responseData?.translatedText) {
+    throw new Error(data.responseDetails || 'MyMemory 翻译失败')
+  }
+  let translated = data.responseData.translatedText
+  // MyMemory 偶尔返回 HTML 实体
+  translated = translated
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+  return translated
+}
+
+/**
+ * 统一翻译入口：多源容错
+ * 顺序：自托管 /api/translate → MyMemory
+ * 任一成功即返回；全部失败抛错
+ */
+async function callTranslateApi(text: string): Promise<string> {
+  const errors: string[] = []
+  // 源 1：自托管后端（若部署了 Worker / Pages Functions）
+  try {
+    return await callSelfHostedApi(text)
+  } catch (e) {
+    errors.push(`后端: ${e instanceof Error ? e.message : String(e)}`)
+  }
+  // 源 2：MyMemory 公共免费 API（无需后端，纯前端可用）
+  try {
+    return await callMyMemory(text)
+  } catch (e) {
+    errors.push(`MyMemory: ${e instanceof Error ? e.message : String(e)}`)
+  }
+  throw new Error(`翻译失败（已尝试多源）：${errors.join('；')}`)
 }
 
 // ============================================================

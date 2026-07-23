@@ -10,6 +10,14 @@ interface ProgressContextValue {
   getProgress: (examKey: string, questionId: number) => QuestionProgress
   selectOption: (examKey: string, questionId: number, option: OptionKey) => void
   submitAnswer: (examKey: string, questionId: number, answer: OptionKey) => QuestionStatus
+  /** 无标准答案客观题（新题型缺 key）：仅记录提交，不判定对错 */
+  submitSelection: (examKey: string, questionId: number) => void
+  /** 主观题（翻译/写作）作答文本 */
+  setTextAnswer: (examKey: string, questionId: number, text: string) => void
+  /** 主观题提交：标记已提交，展示参考答案 */
+  submitSubjective: (examKey: string, questionId: number) => void
+  /** 主观题自评分数 */
+  setSelfScore: (examKey: string, questionId: number, score: number) => void
   toggleMark: (examKey: string, questionId: number) => void
   resetExam: (examKey: string) => void
   getExamStats: (examKey: string) => {
@@ -94,6 +102,86 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     [],
   )
 
+  const submitSelection = useCallback((examKey: string, questionId: number) => {
+    setStore((prev) => {
+      const examProgress = prev[examKey] ?? {}
+      const current = examProgress[questionId] ?? DEFAULT_PROGRESS
+      if (current.submittedAt) return prev // 已提交不重复
+      const next: ProgressStore = {
+        ...prev,
+        [examKey]: {
+          ...examProgress,
+          [questionId]: {
+            ...current,
+            status: 'submitted',
+            submittedAt: new Date().toISOString(),
+          },
+        },
+      }
+      writeJSON(StorageKeys.PROGRESS, next)
+      return next
+    })
+  }, [])
+
+  const setTextAnswer = useCallback(
+    (examKey: string, questionId: number, text: string) => {
+      setStore((prev) => {
+        const examProgress = prev[examKey] ?? {}
+        const current = examProgress[questionId] ?? DEFAULT_PROGRESS
+        // 主观题提交后允许继续编辑（覆盖文本，但不重置 submittedAt）
+        const next: ProgressStore = {
+          ...prev,
+          [examKey]: {
+            ...examProgress,
+            [questionId]: { ...current, textAnswer: text },
+          },
+        }
+        writeJSON(StorageKeys.PROGRESS, next)
+        return next
+      })
+    },
+    [],
+  )
+
+  const submitSubjective = useCallback((examKey: string, questionId: number) => {
+    setStore((prev) => {
+      const examProgress = prev[examKey] ?? {}
+      const current = examProgress[questionId] ?? DEFAULT_PROGRESS
+      const next: ProgressStore = {
+        ...prev,
+        [examKey]: {
+          ...examProgress,
+          [questionId]: {
+            ...current,
+            status: 'submitted',
+            submittedAt: current.submittedAt ?? new Date().toISOString(),
+          },
+        },
+      }
+      writeJSON(StorageKeys.PROGRESS, next)
+      return next
+    })
+  }, [])
+
+  const setSelfScore = useCallback(
+    (examKey: string, questionId: number, score: number) => {
+      setStore((prev) => {
+        const examProgress = prev[examKey] ?? {}
+        const current = examProgress[questionId] ?? DEFAULT_PROGRESS
+        const next: ProgressStore = {
+          ...prev,
+          [examKey]: {
+            ...examProgress,
+            [questionId]: { ...current, selfScore: score },
+          },
+        }
+        writeJSON(StorageKeys.PROGRESS, next)
+        return next
+      })
+    },
+    [],
+  )
+
   const toggleMark = useCallback((examKey: string, questionId: number) => {
     setStore((prev) => {
       const examProgress = prev[examKey] ?? {}
@@ -148,12 +236,29 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       getProgress,
       selectOption,
       submitAnswer,
+      submitSelection,
+      setTextAnswer,
+      submitSubjective,
+      setSelfScore,
       toggleMark,
       resetExam,
       getExamStats,
       reload,
     }),
-    [store, getProgress, selectOption, submitAnswer, toggleMark, resetExam, getExamStats, reload],
+    [
+      store,
+      getProgress,
+      selectOption,
+      submitAnswer,
+      submitSelection,
+      setTextAnswer,
+      submitSubjective,
+      setSelfScore,
+      toggleMark,
+      resetExam,
+      getExamStats,
+      reload,
+    ],
   )
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>

@@ -845,7 +845,7 @@
           "id": 40,
           "articleId": "text-5",
           "type": "reading",
-          "question": "According to the passage, downshifting emerged in the U.S. as a result of____ Part B Directions: Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points) In less than 30 years' time the Star Trek holodeck will be a reality. Direct links between the brain's nervous system and a computer will also create full sensory virtual environments, allowing virtual vacations like those in the film Total Recall. (41)There will be television chat shows hosted by robots, and cars with pollution monitors that will disable them when they offend. (42)Children will play with dolls equipped with personality chips, computers with in- built personalities will be regarded as workmates rather than tools, relaxation will be in front of smell television, and the digital age will have arrived. According to BT's futurologist, Ian Pearson, these are among the developments scheduled for the first few decades of the new millennium(a period of 1,000 years), when supercomputers will dramatically accelerate progress in all areas of life. (43)Pearson has pieced together the work of hundreds of researchers around the world to produce a unique millennium technology calendar that gives the latest dates when we can expect hundreds of key breakthroughs and discoveries to take place. Some of the biggest developments will be in medicine, including an extended life expectancy and dozens of artificial organs coming into use between now and 2040. Pearson also predicts a breakthrough in computer-human links. \"By linking directly to our nervous system, computers could pick up what we feel and, hopefully, simulate feeling too so that we can start to develop full sensory environments, rather like the holidays in Total Recall or the Star Trek holodeck,\" he says. (44)But that, Pearson points out, is only the start of man-machine integration: \"It will be the beginning of the long process of integration that will ultimately lead to a fully electronic human before the end of the next century.\" Through his research, Pearson is able to put dates to most of the breakthroughs that can be predicted. However, there are still no forecasts for when faster-than-light travel will be available, or when human cloning will be perfected, or when time travel will be possible. But he does expect social problems as a result of technological advances. A boom in neighborhood surveillance cameras will, for example, cause problems in 2010, while the arrival of synthetic lifelike robots will mean people may not be able to distinguish between their human friends and the droids. (45)And home appliances will also become so smart that controlling and operating them will result in the breakout of a new psychological disorder—kitchen rage.",
+          "question": "According to the passage, downshifting emerged in the U.S. as a result of____",
           "options": {
             "A": "the quick pace of modern life",
             "B": "man's adventurous spirit",
@@ -855,6 +855,235 @@
           "answer": "D",
           "analysis": "【判型】downshifting emerged in the U.S. as a result of____ 询问的是一个客观因果关系，且范 【拆句】According to the passage, downshifting emerged in the U.S. as a result of____ 主句结 构为 downshifting emerged，状语 in the U.S. 和 as a result of___ 分别给出地点和原 【定位】P5 While in America the trend started as a reaction to the economic decline—after the mass redundancies caused by downsizing in the late '80s—and is still linked to the politics of thrift, in Britain, at least among the middle-class downshifters of my acquaintance, we have different reasons for seeking to simplify our lives. 【选项】A) 无中生有 the quick pace of modern life 中的 quick pace 在原文里没有任何对应；原文给出的 man's adventurous spirit 中的\"冒险精神\"在文中没有任何痕迹；作者对 downshifting man's search for mythical experiences 把 the mythical good life 偷换成 mythical experiences；原文用 the mythical good life 是说英国女性 downshifting 时并非追 求这种田园神话（not so much...as...），且只描述英国、与美国 downshifting 起因 D) ✓ 正确 the trend started as a reaction to the economic decline ↔ the economic situation 预判说\"经济衰退所致\"，D 项 the economic situation 把 economic decline 一般化 为\"经济状况\"；再结合 the mass redundancies caused by downsizing in the late SENTENCE INSIGHTS · 句子精讲 6 When I decided to quit my full time employment it never occurred to me that I might become a part of a new international trend. A lateral move that hurt my pride and blocked my professional progress prompted me to abandon my relatively high profile career although, in the manner of a disgraced government minister, I covered my exit by claiming \"I wanted to spend more...",
           "position": 0
+        }
+      ]
+    },
+    {
+      "id": "sec-newtype",
+      "type": "newType",
+      "title": "新题型",
+      "directions": "Part B Directions:Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. ( 10 points)",
+      "articles": [
+        {
+          "id": "newtype-1",
+          "title": "新题型",
+          "type": "newType",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "In less than 30 years' time the Star Trek holodeck will be a reality. Direct links between the brain's nervous system and a computer will also create full sensory virtual environments, allowing virtual vacations like those in the film Total Recall. (41)There will be television chat shows hosted by robots, and cars with pollution monitors that will disable them when they offend. (42)Children will play with dolls equipped with personality chips, computers with in- built personalities will be regarded as workmates rather than tools, relaxation will be in front of smell television, and the digital age will have arrived. According to BT's futurologist, Ian Pearson, these are among the developments scheduled for the first few decades of the new millennium(a period of 1,000 years), when supercomputers will dramatically accelerate progress in all areas of life. (43)Pearson has pieced together the work of hundreds of researchers around the world to produce a unique millennium technology calendar that gives the latest dates when we can expect hundreds of key breakthroughs and discoveries to take place. Some of the biggest developments will be in medicine, including an extended life expectancy and dozens of artificial organs coming into use between now and 2040. Pearson also predicts a breakthrough in computer-human links. \"By linking directly to our nervous system, computers could pick up what we feel and, hopefully, simulate feeling too so that we can start to develop full sensory environments, rather like the holidays in Total Recall or the Star Trek holodeck,\" he says. (44)But that, Pearson points out, is only the start of man-machine integration: \"It will be the beginning of the long process of integration that will ultimately lead to a fully electronic human before the end of the next century.\" Through his research, Pearson is able to put dates to most of the breakthroughs that can be predicted. However, there are still no forecasts for when faster-than-light travel will be available, or when human cloning will be perfected, or when time travel will be possible. But he does expect social problems as a result of technological advances. A boom in neighborhood surveillance cameras will, for example, cause problems in 2010, while the arrival of synthetic lifelike robots will mean people may not be able to distinguish between their human friends and the droids. (45)And home appliances will also become so smart that controlling and operating them will result in the breakout of a new psychological disorder—kitchen rage."
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 42,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 43,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 44,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        },
+        {
+          "id": 45,
+          "articleId": "newtype-1",
+          "type": "newType",
+          "question": "",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0
+        }
+      ],
+      "_meta": {
+        "hasBlanks": false,
+        "optionCount": 0
+      }
+    },
+    {
+      "id": "sec-translation",
+      "type": "translation",
+      "title": "翻译",
+      "directions": "Part C Directions:Translate the following into Chinese. (15 points)",
+      "articles": [
+        {
+          "id": "trans-1",
+          "title": "翻译",
+          "type": "translation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "（翻译原文待录入：请参考当年真题对应段落。）"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "articleId": "trans-1",
+          "type": "translation",
+          "question": "请将下列英文段落译成中文。",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "准确传达原文内容",
+              "译文通顺连贯，符合中文表达习惯",
+              "关键词汇与长难句结构处理得当"
+            ],
+            "maxScore": 15,
+            "wordLimit": "将一段约 150 词的英文译成中文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec-writing",
+      "type": "writing",
+      "title": "写作",
+      "directions": "Part A 与 Part B 两部分。Part A 应用文约 100 词；Part B 图画作文 160-200 词。",
+      "articles": [
+        {
+          "id": "writing-1",
+          "title": "写作",
+          "type": "writing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "content": "请在下方答题区作答。提交后可查看评分标准进行自评。具体写作题目以当年真题为准。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 51,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 10,
+            "wordLimit": "约 100 词"
+          }
+        },
+        {
+          "id": 52,
+          "articleId": "writing-1",
+          "type": "writing",
+          "question": "Part B 大作文：请根据图画撰写一篇 160-200 词的议论文，描述图画并论述其寓意。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "options": {},
+          "answer": "",
+          "analysis": {
+            "coreAnalysis": "",
+            "optionAnalysis": {},
+            "location": "",
+            "vocab": []
+          },
+          "analysisText": "",
+          "position": 0,
+          "subjective": {
+            "reference": "",
+            "scoringCriteria": [
+              "内容切题，涵盖题目要求的信息点",
+              "结构清晰，段落分明，逻辑连贯",
+              "语言准确，语法与用词得当",
+              "词汇与句式多样，表达地道",
+              "格式与语域符合文体要求"
+            ],
+            "maxScore": 20,
+            "wordLimit": "160-200 词"
+          }
         }
       ]
     }

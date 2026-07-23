@@ -1,5 +1,5 @@
-// 整卷阅读页：三栏布局（左文章 · 中题目 · 右题号）
-// 支持原卷模式（PDF 式浏览）与学习模式（答题 · 解析 · 查词 · 批注）
+// 整卷答题页：三栏布局（左文章 · 中题目 · 右题号）
+// 答题 · 解析 · 查词/翻译 · 批注
 // 点击题号 → 左栏滚动到文章定位 + 中栏滚动到题目
 // 键盘快捷键：A/B/C/D 选选项、Enter 提交、← → 切题、M 标记
 
@@ -8,34 +8,25 @@ import { Link, useParams } from 'react-router-dom'
 import { Loader2, FileQuestion } from 'lucide-react'
 import { loadPaper } from '../lib/dataLoader'
 import { useRecent } from '../context/RecentContext'
-import { useFontScale } from '../hooks/useFontScale'
 import { useProgress } from '../context/ProgressContext'
 import PaperHeader from '../components/paper/PaperHeader'
 import ArticlePane from '../components/paper/ArticlePane'
 import QuestionPane from '../components/paper/QuestionPane'
 import QuestionNav from '../components/paper/QuestionNav'
 import MobileQuestionNav from '../components/paper/MobileQuestionNav'
-import type { Paper, ReadMode, Question } from '../types'
-
-const MODE_STORAGE_KEY = 'ky:readMode'
+import type { Paper, Question } from '../types'
 
 export default function PaperPage() {
   const { paperId } = useParams<{ paperId: string }>()
   const [paper, setPaper] = useState<Paper | null>(null)
   const [loading, setLoading] = useState(true)
-  const [mode, setMode] = useState<ReadMode>(() => {
-    try {
-      const stored = localStorage.getItem(MODE_STORAGE_KEY) as ReadMode | null
-      return stored === 'study' || stored === 'original' ? stored : 'study'
-    } catch {
-      return 'study'
-    }
-  })
   const [activeQuestionId, setActiveQuestionId] = useState<number | null>(null)
+  /** 自增 token：重置答题后递增，强制子组件重置内部状态（如展开的解析） */
+  const [resetToken, setResetToken] = useState(0)
 
-  const fontScale = useFontScale()
   const { pushRecent } = useRecent()
-  const { getProgress, selectOption, submitAnswer, toggleMark } = useProgress()
+  const { getProgress, selectOption, submitAnswer, toggleMark, resetExam, getExamStats } =
+    useProgress()
 
   const articleRef = useRef<HTMLDivElement>(null)
   const questionRef = useRef<HTMLDivElement>(null)
@@ -51,15 +42,6 @@ export default function PaperPage() {
     })
   }, [paperId, pushRecent])
 
-  // 持久化阅读模式
-  useEffect(() => {
-    try {
-      localStorage.setItem(MODE_STORAGE_KEY, mode)
-    } catch {
-      /* 忽略 */
-    }
-  }, [mode])
-
   // 扁平化所有题目（用于上下题导航）
   const allQuestions = useMemo<Question[]>(() => {
     if (!paper) return []
@@ -67,6 +49,12 @@ export default function PaperPage() {
   }, [paper])
 
   const totalCount = allQuestions.length
+
+  // 已作答题数（用于重置确认提示）
+  const answeredCount = useMemo(
+    () => (paperId ? getExamStats(paperId).answered : 0),
+    [paperId, getExamStats, resetToken],
+  )
 
   // 当前题在序列中的位置（1-based）
   const currentIndex = useMemo(() => {
@@ -96,13 +84,13 @@ export default function PaperPage() {
           .flatMap((s) => s.questions)
           .find((q) => q.id === qId)
         if (question && question.articleId) {
-          // 完形：滚动到对应空格
+          // 完形/新题型：滚动到对应空格
           const blankEl = articleRef.current?.querySelector(`[data-blank-num="${qId}"]`)
           if (blankEl) {
             blankEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
             return
           }
-          // 阅读：滚动到对应段落
+          // 阅读/翻译：滚动到对应段落
           const paraEl = articleRef.current?.querySelector(
             `[data-article-id="${question.articleId}"] [data-paragraph-index="${question.position}"]`,
           )
@@ -128,16 +116,13 @@ export default function PaperPage() {
 
   // 键盘快捷键
   useEffect(() => {
-    if (!paperId || mode !== 'study') return
-    // 闭包外窄化：TS 在闭包内不会延续 narrowing，提取为本地 const
+    if (!paperId) return
     const pid = paperId
     function onKey(e: KeyboardEvent) {
-      // 忽略输入框中的按键
       const target = e.target as HTMLElement
       if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable) {
         return
       }
-      // 忽略带 Ctrl/Meta 的组合键
       if (e.ctrlKey || e.metaKey || e.altKey) return
 
       // 无激活题时，← → 仅激活第一题
@@ -152,47 +137,38 @@ export default function PaperPage() {
 
       const q = activeQuestion
       if (!q) return
+      // 主观题（翻译/写作）不走字母快捷键
+      const isObjective = !q.subjective
 
       switch (e.key) {
         case 'a':
-        case 'A': {
-          e.preventDefault()
-          if (!getProgress(pid, q.id).submittedAt) {
-            selectOption(pid, q.id, 'A')
-          }
-          break
-        }
+        case 'A':
         case 'b':
-        case 'B': {
-          e.preventDefault()
-          if (!getProgress(pid, q.id).submittedAt) {
-            selectOption(pid, q.id, 'B')
-          }
-          break
-        }
+        case 'B':
         case 'c':
-        case 'C': {
-          e.preventDefault()
-          if (!getProgress(pid, q.id).submittedAt) {
-            selectOption(pid, q.id, 'C')
-          }
-          break
-        }
+        case 'C':
         case 'd':
-        case 'D': {
+        case 'D':
+        case 'e':
+        case 'E':
+        case 'f':
+        case 'F':
+        case 'g':
+        case 'G': {
+          if (!isObjective) return
           e.preventDefault()
+          const opt = e.key.toUpperCase() as 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G'
           if (!getProgress(pid, q.id).submittedAt) {
-            selectOption(pid, q.id, 'D')
+            selectOption(pid, q.id, opt)
           }
           break
         }
         case 'Enter': {
           e.preventDefault()
           const p = getProgress(pid, q.id)
-          if (!p.submittedAt && p.selected) {
+          if (!p.submittedAt && p.selected && q.answer) {
             submitAnswer(pid, q.id, q.answer)
           } else if (p.submittedAt) {
-            // 已提交 → Enter 跳下一题
             goToNext()
           }
           break
@@ -219,7 +195,6 @@ export default function PaperPage() {
     return () => window.removeEventListener('keydown', onKey)
   }, [
     paperId,
-    mode,
     activeQuestionId,
     activeQuestion,
     allQuestions,
@@ -259,7 +234,7 @@ export default function PaperPage() {
     [],
   )
 
-  // 完形空格点击 → 中栏滚动到题目
+  // 完形/新题型空格点击 → 中栏滚动到题目
   const handleBlankClick = useCallback(
     (questionId: number) => {
       scrollToQuestion(questionId)
@@ -271,16 +246,13 @@ export default function PaperPage() {
   const handleLocate = useCallback(
     (q: Question) => {
       if (!q.articleId) return
-      // 完形：滚动到对应空格
       const blankEl = articleRef.current?.querySelector(`[data-blank-num="${q.id}"]`)
       if (blankEl) {
         blankEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
-        // 闪烁高亮
         blankEl.classList.add('ring-2', 'ring-ochre')
         setTimeout(() => blankEl.classList.remove('ring-2', 'ring-ochre'), 1500)
         return
       }
-      // 阅读：滚动到对应段落
       const paraEl = articleRef.current?.querySelector(
         `[data-article-id="${q.articleId}"] [data-paragraph-index="${q.position}"]`,
       )
@@ -309,6 +281,16 @@ export default function PaperPage() {
     },
     [paperId, getProgress],
   )
+
+  function handleReset() {
+    if (!paperId) return
+    resetExam(paperId)
+    setActiveQuestionId(null)
+    setResetToken((t) => t + 1)
+    // 滚回顶部
+    articleRef.current?.scrollTo({ top: 0 })
+    questionRef.current?.scrollTo({ top: 0 })
+  }
 
   if (loading) {
     return (
@@ -339,14 +321,10 @@ export default function PaperPage() {
     <div className="flex flex-col lg:h-[calc(100vh-3.5rem)]">
       <PaperHeader
         paper={paper}
-        mode={mode}
-        onModeChange={setMode}
-        fontScale={fontScale.scale}
-        onFontIncrease={fontScale.increase}
-        onFontDecrease={fontScale.decrease}
-        onFontReset={fontScale.reset}
         sections={paper.sections}
         onSectionJump={scrollToSection}
+        onReset={handleReset}
+        answeredCount={answeredCount}
       />
 
       <div className="flex-1 flex flex-col lg:flex-row lg:overflow-hidden">
@@ -355,7 +333,6 @@ export default function PaperPage() {
           <ArticlePane
             ref={articleRef}
             paper={paper}
-            mode={mode}
             activeQuestionId={activeQuestionId}
             onBlankClick={handleBlankClick}
           />
@@ -367,8 +344,9 @@ export default function PaperPage() {
           className="flex-1 lg:min-w-0 lg:overflow-y-auto border-t lg:border-t-0 lg:border-r lg:border-line pb-14 lg:pb-0"
         >
           <QuestionPane
+            key={resetToken}
             paper={paper}
-            mode={mode}
+            paperId={paper.id}
             activeQuestionId={activeQuestionId}
             onQuestionClick={handleQuestionClick}
             onPrev={currentIndex > 1 ? goToPrev : null}
@@ -384,12 +362,11 @@ export default function PaperPage() {
           <div className="mb-3 pb-2 border-b border-line">
             <h2 className="font-serif text-xs font-bold text-ink-muted">题号导航</h2>
             <p className="text-[10px] text-ink-muted/70 font-mono mt-0.5">
-              快捷键 A-D 选 · Enter 提交 · ← → 切题 · M 标记
+              快捷键 A-G 选 · Enter 提交 · ← → 切题 · M 标记
             </p>
           </div>
           <QuestionNav
             paper={paper}
-            mode={mode}
             getStatus={getQuestionStatus}
             isMarked={isQuestionMarked}
             activeQuestionId={activeQuestionId}
@@ -401,7 +378,6 @@ export default function PaperPage() {
       {/* 移动端底部题号抽屉（lg 以下显示，替代右栏） */}
       <MobileQuestionNav
         paper={paper}
-        mode={mode}
         getStatus={getQuestionStatus}
         isMarked={isQuestionMarked}
         activeQuestionId={activeQuestionId}
