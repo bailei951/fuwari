@@ -432,11 +432,20 @@ function NewTypeSection({
 
   const questions = section.questions
 
-  // 从首题提取共享选项（待选段落），A-H 排序
+  // 从首题提取共享选项（所有段落），A-H 排序
   const sharedOptions = questions[0]?.options ?? {}
-  const optionKeys = (Object.keys(sharedOptions) as OptionKey[])
+  const allOptionKeys = (Object.keys(sharedOptions) as OptionKey[])
     .filter((k) => sharedOptions[k])
     .sort()
+
+  // 从 article 读取已放置段落与顺序结构
+  const article = section.articles[0]
+  const placedSet = new Set<OptionKey>(article?.placedParagraphs ?? [])
+  const paragraphOrder = article?.paragraphOrder
+
+  // 区分已放置段落（仅展示）与待选段落（可选择）
+  const placedKeys = allOptionKeys.filter((k) => placedSet.has(k))
+  const selectableKeys = allOptionKeys.filter((k) => !placedSet.has(k))
 
   const stats = questions.reduce(
     (acc, q) => {
@@ -474,18 +483,81 @@ function NewTypeSection({
     <section data-section-id={section.id}>
       <SectionHeader section={section} questionCount={questions.length} />
 
-      {/* 待选段落面板（共享选项，展示一次） */}
-      {optionKeys.length > 0 && (
+      {/* 段落顺序结构（如 "F → 41 → 42 → H → 43 → C → 44 → 45"） */}
+      {paragraphOrder && (
+        <div className="mb-3 p-2.5 bg-ochre-pale/30 border border-ochre/20 rounded-sm">
+          <div className="flex items-center gap-1.5 mb-1 text-ochre-dark">
+            <ListOrdered className="w-3.5 h-3.5" />
+            <span className="font-serif text-xs font-bold">段落顺序</span>
+            <span className="text-[10px] text-ink-muted ml-auto">字母=已放置 · 数字=待填空</span>
+          </div>
+          <div className="flex items-center gap-1 flex-wrap font-mono text-xs text-ink-soft">
+            {paragraphOrder
+              .split('→')
+              .map((t) => t.trim())
+              .filter(Boolean)
+              .map((token, i) => {
+                const isPlaced = /^[A-H]$/.test(token)
+                return (
+                  <span key={i} className="flex items-center gap-1">
+                    {i > 0 && <span className="text-ink-muted">→</span>}
+                    <span
+                      className={`px-1.5 py-0.5 rounded-sm ${
+                        isPlaced
+                          ? 'bg-green-50 text-green-700 border border-green-500/30'
+                          : 'bg-ink text-paper'
+                      }`}
+                    >
+                      {token}
+                    </span>
+                  </span>
+                )
+              })}
+          </div>
+        </div>
+      )}
+
+      {/* 已放置段落（只读展示，不可选择） */}
+      {placedKeys.length > 0 && (
+        <div className="mb-3 p-3 bg-green-50/40 border border-green-500/20 rounded-sm">
+          <div className="flex items-center gap-1.5 mb-2 text-green-700">
+            <CheckCircle2 className="w-3.5 h-3.5" />
+            <span className="font-serif text-xs font-bold">已放置段落</span>
+            <span className="text-[10px] text-ink-muted font-mono ml-auto">
+              共 {placedKeys.length} 项（已在文中）
+            </span>
+          </div>
+          <ul className="space-y-1.5">
+            {placedKeys.map((key) => {
+              const text = sharedOptions[key]
+              if (!text) return null
+              return (
+                <li key={key} className="flex items-start gap-2 opacity-80">
+                  <span className="flex-shrink-0 w-5 h-5 flex items-center justify-center font-mono text-[10px] font-bold rounded-sm bg-green-100 text-green-700 border border-green-500/30">
+                    {key}
+                  </span>
+                  <span className="flex-1 text-xs text-ink-soft leading-relaxed font-serif">
+                    {text}
+                  </span>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      )}
+
+      {/* 待选段落面板（可选择，排除已放置） */}
+      {selectableKeys.length > 0 && (
         <div className="mb-3 p-3 bg-paper-deep/30 border border-line-soft rounded-sm">
           <div className="flex items-center gap-1.5 mb-2 text-ochre-dark">
             <ListOrdered className="w-3.5 h-3.5" />
             <span className="font-serif text-xs font-bold">待选段落</span>
             <span className="text-[10px] text-ink-muted font-mono ml-auto">
-              共 {optionKeys.length} 项
+              共 {selectableKeys.length} 项
             </span>
           </div>
           <ul className="space-y-1.5">
-            {optionKeys.map((key) => {
+            {selectableKeys.map((key) => {
               const text = sharedOptions[key]
               if (!text) return null
               return (
@@ -534,9 +606,9 @@ function NewTypeSection({
                   {q.id}
                 </span>
 
-                {/* 紧凑字母选择器 */}
+                {/* 紧凑字母选择器（仅待选段落，不含已放置） */}
                 <div className="flex items-center gap-1 flex-wrap">
-                  {optionKeys.map((key) => {
+                  {selectableKeys.map((key) => {
                     const isSelected = p.selected === key
                     const isAnswer = q.answer === key
                     const showResult = submitted && hasKey

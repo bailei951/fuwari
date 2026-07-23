@@ -52,6 +52,10 @@ export interface Article {
   type: SectionType
   /** 统一 block 数组：paragraph / blank 混合渲染 */
   blocks: Block[]
+  /** 新题型段落排序：已正确放置的段落字母（如 ['F','H','C']） */
+  placedParagraphs?: OptionKey[]
+  /** 新题型段落排序：段落顺序结构（如 "F → 41 → 42 → H → 43 → C → 44 → 45"） */
+  paragraphOrder?: string
 }
 
 /** 结构化解析：错误选项分析（A-D 常用；新题型 A-H 按需） */

@@ -854,7 +854,12 @@
               "type": "paragraph",
               "content": "it in the pages of The Monthly Magazine. From then on his sketches, which appeared under the pen name \"Boz\" in The Evening Chronicle, earned him a modest reputation. There were Pickwick coats and Pickwick cigars, and the plump, spectacled hero, Samuel Pickwick, became a national figure. installments, as a backdrop for a series of woodcuts by the then-famous artist Robert Seymour, who had originated the idea for the story. With characteristic confidence, Dickens successfully insisted that Seymour's pictures illustrate his own story instead. After the first installment, Dickens wrote to the artist and asked him to correct a drawing Dickens felt was not faithful enough to his prose. Seymour made the change, went into his backyard, and expressed his displeasure by committing suicide. Dickens and his publishers simply pressed on with a new artist. The comic novel, The Posthumous Papers of the Pickwick Club, appeared serially in 1836 and 1837 and was first published in book form in 1837. century. A moralist, satirist, and social reformer, Dickens crafted complex plots and striking characters that capture the panorama of English society."
             }
-          ]
+          ],
+          "placedParagraphs": [
+            "B",
+            "D"
+          ],
+          "paragraphOrder": "D → 41 → 42 → 43 → 44 → B → 45"
         }
       ],
       "questions": [

@@ -854,7 +854,13 @@
               "type": "paragraph",
               "content": "of reality, a \"glimpsed alternative\" that sets up a contradiction with your own, in ways little and large. The negotiation, between you and it, is the heart of the matter. What does the poet see that you don't? What does the difference mean? It could be one of the best conversations you ever have. Forget self-help books; reading is self-help in action. who reads regularly. Many skip newspapers, and magazines are a stretch. They don't have time, they say. It's inefficient; they can get the information they need from those around them. At a pinch, they might pick up a business book before a long flight, in the hope that, like a cookbook, it will provide a foolproof recipe. Some are drawn to what I think of as \"business car crash\" books — the stories of Theranos, Purdue, or WeWork. But outside those narrow pools of interest, a vast ocean awaits, bountiful with simmering ideas, mental adventure and imaginative refreshment. good for you. Reading will keep you better informed about the world but it can also improve our tech- shattered ability to concentrate. Standing in the shoes of others fine tunes our social understanding, useful as we struggle to understand friends, neighbours, customers and co-workers. Different parts of our brain engage as we simulate scenes, characters and mental states. Our imagination — remember that? — is rekindled. hand. Reading is cheap, easy and, most important, it's fun. Liberate your imagination this year."
             }
-          ]
+          ],
+          "placedParagraphs": [
+            "C",
+            "F",
+            "H"
+          ],
+          "paragraphOrder": "F → 41 → 42 → H → 43 → C → 44 → 45"
         }
       ],
       "questions": [
@@ -1143,7 +1149,7 @@
           "id": 51,
           "articleId": "writing-1",
           "type": "writing",
-          "question": "Part A 小作文：请根据给定情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函 / 推荐信等）。\n\n要求：\n1) 内容切题，涵盖题目要求的全部信息点；\n2) 格式与语域符合文体要求；\n3) 语言准确、连贯，用词与句式得当。\n\n（具体情境以当年真题为准，此处为作答与评分模块。请参考真题题目作答。）",
+          "question": "Directions: Read the following email from an international student and write a reply.\n\nDear Li Ming,\n\nI've got a class assignment to make an oral report on an ancient Chinese scientist, but I'm not sure how to prepare for it. Can you give me some advice? Thank you for your help.\n\nYours,\nPaul\n\nWrite your answer in about 100 words on the ANSWER SHEET.\n\nDo not use your own name in your email; use \"Li Ming\" instead. (10 points)",
           "options": {},
           "answer": "",
           "analysis": {
