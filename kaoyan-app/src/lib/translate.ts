@@ -8,10 +8,11 @@
 //
 // 翻译源（多源容错，任一成功即返回）：
 //   前端直连（CORS）：
-//     1. MyMemory  —— 免费免 Key，CORS *，日限 5000 词
+//     MyMemory  —— 免费免 Key，CORS *，日限 5000 词
 //   后端代理 /api/translate（无 CORS 限制，服务端多源）：
-//     2. apihz.cn  —— 自有 API Key，质量稳定（需配置 env）
-//     3. uapis.cn  —— 免费免 Key，中英互译
+//     1. DeepL      —— 质量 best，需 env.DEEPL_API_KEY（Free/Pro 自动判别端点）
+//     2. apihz.cn   —— 自有 API Key，质量稳定（需配置 env）
+//     3. uapis.cn   —— 免费免 Key，中英互译
 //     4. Google gtx —— 免费免 Key，translate.googleapis.com
 //
 // 缓存：localStorage key `ky:trans:cache`，TTL 7 天，上限 500 条（LRU 淘汰）

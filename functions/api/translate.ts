@@ -4,9 +4,10 @@
 //   → 多源容错翻译代理（服务端无 CORS 限制，可调用任意 API）
 //
 // 翻译源优先级（任一成功即返回）：
-//   1. apihz.cn    —— 自有 API Key（env.APIHZ_ID / env.APIHZ_KEY），质量稳定
-//   2. uapis.cn    —— 免费免 Key，中英互译，无需配置
-//   3. Google gtx  —— 免费免 Key，translate.googleapis.com 兜底
+//   1. DeepL       —— 质量 best，需 env.DEEPL_API_KEY（Free/Pro 自动判别端点）
+//   2. apihz.cn    —— 自有 API Key（env.APIHZ_ID / env.APIHZ_KEY）
+//   3. uapis.cn    —— 免费免 Key，中英互译，无需配置
+//   4. Google gtx  —— 免费免 Key，translate.googleapis.com 兜底
 //
 // 语种：1=英语 2=简体中文。自动识别：含汉字→中→英，否则英→中。
 // 限制：text ≤ 5000 字符；每源 8s 超时。
@@ -50,7 +51,44 @@ function toGoogleLang(code: number): string {
 }
 
 // ============================================================
-// 翻译源 1：apihz.cn（需 API Key）
+// 翻译源 1：DeepL（质量最佳，需 API Key）
+// Free 版 Key 以 :fx 结尾 → 端点 api-free.deepl.com
+// Pro  版 Key 无后缀   → 端点 api.deepl.com
+// ============================================================
+
+interface DeepLResponse {
+  translations?: Array<{ text?: string; detected_source_language?: string }>
+  message?: string
+}
+
+async function callDeepL(text: string, to: number, env: Env): Promise<string> {
+  const key = env.DEEPL_API_KEY
+  if (!key) throw new Error('DeepL 未配置 API Key')
+  // :fx 后缀 → Free API 端点；否则 Pro 端点
+  const endpoint = key.endsWith(':fx')
+    ? 'https://api-free.deepl.com/v2/translate'
+    : 'https://api.deepl.com/v2/translate'
+  const targetLang = to === 2 ? 'ZH' : 'EN'
+  const resp = await fetchWithTimeout(endpoint, {
+    method: 'POST',
+    headers: {
+      Authorization: `DeepL-Auth-Key ${key}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ text: [text], target_lang: targetLang }),
+  })
+  if (!resp.ok) {
+    const errBody = (await resp.json().catch(() => ({}))) as DeepLResponse
+    throw new Error(`DeepL 异常 (${resp.status}): ${errBody.message ?? ''}`)
+  }
+  const data = (await resp.json()) as DeepLResponse
+  const translation = data.translations?.[0]?.text
+  if (!translation) throw new Error('DeepL 返回空译文')
+  return translation
+}
+
+// ============================================================
+// 翻译源 2：apihz.cn（需 API Key）
 // ============================================================
 
 const APIHZ_API = 'https://cn.apihz.cn/api/zici/fanyiapihz.php'
@@ -163,8 +201,9 @@ export const onRequestPost = async (ctx: PagesContext<Env>): Promise<Response> =
   const to = body.to ?? (isChinese ? 1 : 2)
   if (from === to) return errorJson('源语种与目标语种相同', 400)
 
-  // 多源尝试：apihz → uapis → Google gtx
+  // 多源尝试：DeepL → apihz → uapis → Google gtx
   const sources: Array<{ name: string; fn: () => Promise<string> }> = [
+    { name: 'deepl', fn: () => callDeepL(text, to, env) },
     { name: 'apihz', fn: () => callApihz(text, from, to, env) },
     { name: 'uapis', fn: () => callUapis(text, to) },
     { name: 'google', fn: () => callGoogleGtx(text, from, to) },

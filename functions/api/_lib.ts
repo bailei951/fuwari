@@ -10,6 +10,8 @@
 //   - 错误不向前端泄露内部细节
 
 export interface Env {
+  /** DeepL API Key（含 :fx 后缀为 Free 版，自动选用 api-free 端点） */
+  DEEPL_API_KEY?: string
   /** apihz.cn 开发者 ID（数字字符串） */
   APIHZ_ID: string
   /** apihz.cn 通讯秘钥 */
