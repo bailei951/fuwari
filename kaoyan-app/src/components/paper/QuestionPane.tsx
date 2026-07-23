@@ -1,7 +1,8 @@
 // 题目区（中栏）：按分区渲染所有题目
-// 答题 · 解析（默认关闭，点击"查看解析"展开） · 按题型整体提交
-// 客观题（完形/阅读/新题型）：选项作答；新题型选项可至 A-G，无标准答案时仅记录
-// 主观题（翻译/写作）：文本作答 + 参考答案/评分标准 + 自评
+// - 阅读：按篇章分组，每篇独立提交 + 修改重交
+// - 新题型：待选段落面板 + 紧凑题号选择器（选项 A-H）
+// - 完形/翻译/写作：整题型提交
+// 解析默认关闭，点击"查看解析"展开；主观题（翻译/写作）文本作答 + 参考答案/评分标准 + 自评
 
 import { useState } from 'react'
 import {
@@ -16,6 +17,8 @@ import {
   CheckCircle2,
   CircleDot,
   Award,
+  RotateCcw,
+  ListOrdered,
 } from 'lucide-react'
 import type { Paper, Question, OptionKey } from '../../types'
 import { useProgress } from '../../context/ProgressContext'
@@ -100,7 +103,10 @@ export default function QuestionPane({
 }
 
 // =================================================================
-// 分区块：题目列表 + 按题型整体提交
+// 分区块：按题型分发渲染
+// - reading：按篇章分组，每篇独立提交 + 修改重交
+// - newType：待选段落面板 + 紧凑题号选择器
+// - 其他（cloze/translation/writing）：整题型提交
 // =================================================================
 
 interface SectionBlockProps {
@@ -118,11 +124,54 @@ function SectionBlock({
   onQuestionClick,
   onLocate,
 }: SectionBlockProps) {
+  if (section.type === 'reading') {
+    return (
+      <ReadingSection
+        section={section}
+        paperId={paperId}
+        activeQuestionId={activeQuestionId}
+        onQuestionClick={onQuestionClick}
+        onLocate={onLocate}
+      />
+    )
+  }
+  if (section.type === 'newType') {
+    return (
+      <NewTypeSection
+        section={section}
+        paperId={paperId}
+        activeQuestionId={activeQuestionId}
+        onQuestionClick={onQuestionClick}
+        onLocate={onLocate}
+      />
+    )
+  }
+  return (
+    <DefaultSection
+      section={section}
+      paperId={paperId}
+      activeQuestionId={activeQuestionId}
+      onQuestionClick={onQuestionClick}
+      onLocate={onLocate}
+    />
+  )
+}
+
+// =================================================================
+// 默认区块（完形 / 翻译 / 写作）：整题型提交
+// =================================================================
+
+function DefaultSection({
+  section,
+  paperId,
+  activeQuestionId,
+  onQuestionClick,
+  onLocate,
+}: SectionBlockProps) {
   const { getProgress, submitAnswer, submitSelection, submitSubjective } = useProgress()
 
   const questions = section.questions
 
-  // 统计：已提交 / 已作答未提交
   const stats = questions.reduce(
     (acc, q) => {
       const p = getProgress(paperId, q.id)
@@ -152,20 +201,7 @@ function SectionBlock({
 
   return (
     <section data-section-id={section.id}>
-      <div className="flex items-center gap-2 mb-3 pb-1.5 border-b border-line">
-        <h2 className="font-serif text-sm font-bold text-ochre-dark">
-          {SECTION_LABEL[section.type] ?? section.title}
-        </h2>
-        <span className="text-[10px] text-ink-muted font-mono">
-          {questions.length} 题
-        </span>
-        {section.directions && (
-          <span className="text-[10px] text-ink-muted/70 italic ml-auto truncate max-w-[55%]" title={section.directions}>
-            {section.directions.slice(0, 40)}…
-          </span>
-        )}
-      </div>
-
+      <SectionHeader section={section} questionCount={questions.length} />
       <div className="space-y-3">
         {questions.map((q) =>
           q.subjective ? (
@@ -188,11 +224,445 @@ function SectionBlock({
           ),
         )}
       </div>
+      <SubmitBar
+        onSubmit={handleSectionSubmit}
+        canSubmit={canSubmit}
+        allSubmitted={allSubmitted}
+        submitted={stats.submitted}
+        total={questions.length}
+        pending={stats.pending}
+      />
+    </section>
+  )
+}
 
-      {/* 按题型整体提交 */}
-      <div className="mt-3 flex items-center gap-2">
+// =================================================================
+// 阅读理解：按篇章分组，每篇独立提交 + 修改重交
+// =================================================================
+
+function ReadingSection({
+  section,
+  paperId,
+  activeQuestionId,
+  onQuestionClick,
+  onLocate,
+}: SectionBlockProps) {
+  const articleMap = new Map(section.articles.map((a) => [a.id, a]))
+  // 按 articleId 分组，保持文章顺序
+  const groups: Array<{ articleId: string; title: string; questions: Question[] }> = []
+  const seen = new Set<string>()
+  for (const q of section.questions) {
+    const aid = q.articleId || '_none'
+    if (!seen.has(aid)) {
+      seen.add(aid)
+      groups.push({
+        articleId: aid,
+        title: articleMap.get(aid)?.title ?? `篇章 ${groups.length + 1}`,
+        questions: [],
+      })
+    }
+    groups[groups.length - 1].questions.push(q)
+  }
+
+  return (
+    <section data-section-id={section.id}>
+      <SectionHeader section={section} questionCount={section.questions.length} />
+      <div className="space-y-5">
+        {groups.map((g, idx) => (
+          <PassageBlock
+            key={g.articleId}
+            title={g.title}
+            index={idx + 1}
+            questions={g.questions}
+            paperId={paperId}
+            activeQuestionId={activeQuestionId}
+            onQuestionClick={onQuestionClick}
+            onLocate={onLocate}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+interface PassageBlockProps {
+  title: string
+  index: number
+  questions: Question[]
+  paperId: string
+  activeQuestionId: number | null
+  onQuestionClick: (q: Question) => void
+  onLocate?: (q: Question) => void
+}
+
+function PassageBlock({
+  title,
+  index,
+  questions,
+  paperId,
+  activeQuestionId,
+  onQuestionClick,
+  onLocate,
+}: PassageBlockProps) {
+  const { getProgress, submitAnswer, submitSelection, reopenAnswer } = useProgress()
+
+  const stats = questions.reduce(
+    (acc, q) => {
+      const p = getProgress(paperId, q.id)
+      if (p.submittedAt) acc.submitted++
+      else if (p.selected) acc.pending++
+      return acc
+    },
+    { submitted: 0, pending: 0 },
+  )
+
+  const allSubmitted = stats.submitted === questions.length
+  const canSubmit = stats.pending > 0 && !allSubmitted
+
+  function handlePassageSubmit() {
+    for (const q of questions) {
+      const p = getProgress(paperId, q.id)
+      if (p.submittedAt) continue
+      if (p.selected) {
+        const ans = q.answer
+        if (ans) submitAnswer(paperId, q.id, ans)
+        else submitSelection(paperId, q.id)
+      }
+    }
+  }
+
+  function handleReopen() {
+    for (const q of questions) {
+      const p = getProgress(paperId, q.id)
+      if (p.submittedAt) reopenAnswer(paperId, q.id)
+    }
+  }
+
+  return (
+    <div className="border border-line rounded-sm p-3 bg-paper/50">
+      {/* 篇章标题 + 状态 */}
+      <div className="flex items-center gap-2 mb-2 pb-1.5 border-b border-line-soft">
+        <span className="flex-shrink-0 w-5 h-5 flex items-center justify-center font-mono text-[10px] font-bold rounded-sm bg-ochre-pale text-ochre-dark">
+          {index}
+        </span>
+        <span className="font-serif text-xs font-bold text-ink">{title}</span>
+        <span className="text-[10px] text-ink-muted font-mono ml-auto">
+          {questions.length} 题
+        </span>
+        {allSubmitted && (
+          <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[10px] text-green-700 bg-green-50 border border-green-500/30 rounded-sm">
+            <CheckCircle2 className="w-2.5 h-2.5" /> 已提交
+          </span>
+        )}
+        {!allSubmitted && stats.submitted > 0 && (
+          <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[10px] text-ochre-dark bg-ochre-pale/50 border border-ochre/30 rounded-sm">
+            部分提交
+          </span>
+        )}
+        {!allSubmitted && stats.submitted === 0 && (
+          <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[10px] text-ink-muted bg-paper-deep/40 border border-line rounded-sm">
+            未提交
+          </span>
+        )}
+      </div>
+
+      {/* 题目 */}
+      <div className="space-y-3">
+        {questions.map((q) => (
+          <ObjectiveCard
+            key={q.id}
+            question={q}
+            paperId={paperId}
+            isActive={activeQuestionId === q.id}
+            onClick={() => onQuestionClick(q)}
+            onLocate={onLocate}
+          />
+        ))}
+      </div>
+
+      {/* 篇章提交 / 修改 */}
+      <div className="mt-3 flex items-center gap-2 flex-wrap">
         <button
-          onClick={handleSectionSubmit}
+          onClick={handlePassageSubmit}
+          disabled={!canSubmit}
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-ink text-paper rounded-sm hover:bg-ochre-dark transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+        >
+          {allSubmitted ? (
+            <>
+              <CheckCircle2 className="w-3.5 h-3.5" /> 本篇已提交
+            </>
+          ) : (
+            <>
+              <Send className="w-3.5 h-3.5" /> 提交本篇
+            </>
+          )}
+        </button>
+        {allSubmitted && (
+          <button
+            onClick={handleReopen}
+            className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs text-ink-soft border border-line rounded-sm hover:border-ochre hover:text-ochre-dark transition-colors"
+            title="重开本篇答案以修改后重新提交"
+          >
+            <RotateCcw className="w-3 h-3" /> 修改答案
+          </button>
+        )}
+        <span className="text-[10px] text-ink-muted font-mono">
+          已提交 {stats.submitted}/{questions.length}
+          {stats.pending > 0 && ` · 待提交 ${stats.pending}`}
+        </span>
+      </div>
+    </div>
+  )
+}
+
+// =================================================================
+// 新题型（段落排序 / 匹配）：待选段落面板 + 紧凑选择器
+// =================================================================
+
+function NewTypeSection({
+  section,
+  paperId,
+  activeQuestionId,
+  onQuestionClick,
+  onLocate,
+}: SectionBlockProps) {
+  const { getProgress, selectOption, submitAnswer, submitSelection, toggleMark, reopenAnswer } =
+    useProgress()
+  const [showAnalysis, setShowAnalysis] = useState<Record<number, boolean>>({})
+
+  const questions = section.questions
+
+  // 从首题提取共享选项（待选段落），A-H 排序
+  const sharedOptions = questions[0]?.options ?? {}
+  const optionKeys = (Object.keys(sharedOptions) as OptionKey[])
+    .filter((k) => sharedOptions[k])
+    .sort()
+
+  const stats = questions.reduce(
+    (acc, q) => {
+      const p = getProgress(paperId, q.id)
+      if (p.submittedAt) acc.submitted++
+      else if (p.selected) acc.pending++
+      return acc
+    },
+    { submitted: 0, pending: 0 },
+  )
+
+  const allSubmitted = stats.submitted === questions.length
+  const canSubmit = stats.pending > 0 && !allSubmitted
+
+  function handleSubmitAll() {
+    for (const q of questions) {
+      const p = getProgress(paperId, q.id)
+      if (p.submittedAt) continue
+      if (p.selected) {
+        const ans = q.answer
+        if (ans) submitAnswer(paperId, q.id, ans)
+        else submitSelection(paperId, q.id)
+      }
+    }
+  }
+
+  function handleReopenAll() {
+    for (const q of questions) {
+      const p = getProgress(paperId, q.id)
+      if (p.submittedAt) reopenAnswer(paperId, q.id)
+    }
+  }
+
+  return (
+    <section data-section-id={section.id}>
+      <SectionHeader section={section} questionCount={questions.length} />
+
+      {/* 待选段落面板（共享选项，展示一次） */}
+      {optionKeys.length > 0 && (
+        <div className="mb-3 p-3 bg-paper-deep/30 border border-line-soft rounded-sm">
+          <div className="flex items-center gap-1.5 mb-2 text-ochre-dark">
+            <ListOrdered className="w-3.5 h-3.5" />
+            <span className="font-serif text-xs font-bold">待选段落</span>
+            <span className="text-[10px] text-ink-muted font-mono ml-auto">
+              共 {optionKeys.length} 项
+            </span>
+          </div>
+          <ul className="space-y-1.5">
+            {optionKeys.map((key) => {
+              const text = sharedOptions[key]
+              if (!text) return null
+              return (
+                <li key={key} className="flex items-start gap-2">
+                  <span className="flex-shrink-0 w-5 h-5 flex items-center justify-center font-mono text-[10px] font-bold rounded-sm bg-ochre-pale/60 text-ochre-dark border border-ochre/30">
+                    {key}
+                  </span>
+                  <span className="flex-1 text-xs text-ink-soft leading-relaxed font-serif">
+                    {text}
+                  </span>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      )}
+
+      {/* 紧凑题号选择器 */}
+      <div className="space-y-2">
+        {questions.map((q) => {
+          const p = getProgress(paperId, q.id)
+          const submitted = p.submittedAt !== null
+          const hasKey = !!q.answer
+          const isCorrect = p.status === 'correct'
+          const ansOpen = showAnalysis[q.id] ?? false
+          const hasAnalysis =
+            !!q.analysis.coreAnalysis ||
+            !!q.analysisText ||
+            !!q.analysis.location ||
+            (q.analysis.optionAnalysis !== undefined &&
+              Object.values(q.analysis.optionAnalysis).some((v) => !!v))
+
+          return (
+            <div
+              key={q.id}
+              data-question-id={q.id}
+              className={`paper-card p-2.5 transition-all scroll-mt-2 ${
+                activeQuestionId === q.id ? 'ring-2 ring-ochre shadow-paper-hover' : ''
+              }`}
+            >
+              <div className="flex items-center gap-2 flex-wrap">
+                <span
+                  className="flex-shrink-0 w-6 h-6 flex items-center justify-center font-mono text-xs font-bold rounded-sm bg-ink text-paper cursor-pointer"
+                  onClick={() => onQuestionClick(q)}
+                >
+                  {q.id}
+                </span>
+
+                {/* 紧凑字母选择器 */}
+                <div className="flex items-center gap-1 flex-wrap">
+                  {optionKeys.map((key) => {
+                    const isSelected = p.selected === key
+                    const isAnswer = q.answer === key
+                    const showResult = submitted && hasKey
+                    return (
+                      <button
+                        key={key}
+                        onClick={() => !submitted && selectOption(paperId, q.id, key)}
+                        disabled={submitted}
+                        className={`w-7 h-7 flex items-center justify-center font-mono text-xs font-bold rounded-sm border transition-all ${
+                          showResult
+                            ? isAnswer
+                              ? 'border-green-500 bg-green-50 text-green-700'
+                              : isSelected && !isAnswer
+                                ? 'border-seal/50 bg-seal/5 text-seal-dark'
+                                : 'border-line bg-transparent text-ink-muted opacity-60'
+                            : isSelected
+                              ? 'border-ochre bg-ochre-pale/60 text-ochre-dark'
+                              : 'border-line bg-transparent text-ink-soft hover:border-ochre/50 hover:bg-ochre-pale/30'
+                        } ${submitted ? 'cursor-default' : 'cursor-pointer'}`}
+                      >
+                        {key}
+                      </button>
+                    )
+                  })}
+                </div>
+
+                {/* 状态反馈 */}
+                {submitted && hasKey && (
+                  <span
+                    className={`text-[11px] font-medium ${
+                      isCorrect ? 'text-green-700' : 'text-seal-dark'
+                    }`}
+                  >
+                    {isCorrect ? '✓' : '✗'} 正确：{q.answer}
+                  </span>
+                )}
+                {submitted && !hasKey && (
+                  <span className="inline-flex items-center gap-1 text-[11px] font-medium text-ochre-dark">
+                    <CircleDot className="w-3 h-3" /> 已提交
+                  </span>
+                )}
+
+                {/* 标记 + 解析 */}
+                <button
+                  onClick={() => toggleMark(paperId, q.id)}
+                  className={`ml-auto p-1 rounded-sm transition-colors ${
+                    p.marked
+                      ? 'text-seal-dark bg-seal/5'
+                      : 'text-ink-muted hover:text-seal-dark'
+                  }`}
+                  title={p.marked ? '取消标记' : '标记'}
+                >
+                  <Flag className="w-3 h-3" fill={p.marked ? 'currentColor' : 'none'} />
+                </button>
+                {submitted && hasAnalysis && (
+                  <button
+                    onClick={() =>
+                      setShowAnalysis((prev) => ({ ...prev, [q.id]: !prev[q.id] }))
+                    }
+                    className="p-1 text-ochre-dark hover:bg-ochre-pale/40 rounded-sm transition-colors"
+                    title="查看解析"
+                  >
+                    <FileText className="w-3 h-3" />
+                  </button>
+                )}
+              </div>
+
+              {/* 题干（如有） */}
+              {q.question && (
+                <p className="mt-1.5 text-xs text-ink-soft leading-relaxed whitespace-pre-wrap pl-8">
+                  {q.question}
+                </p>
+              )}
+
+              {/* 解析 */}
+              {submitted && ansOpen && hasAnalysis && (
+                <div className="mt-2 ml-8 p-2 bg-paper-deep/30 rounded-sm border border-line-soft">
+                  {q.analysis.coreAnalysis && (
+                    <p className="text-xs text-ink-soft leading-relaxed whitespace-pre-wrap mb-1.5">
+                      {q.analysis.coreAnalysis}
+                    </p>
+                  )}
+                  {!q.analysis.coreAnalysis && q.analysisText && (
+                    <p className="text-xs text-ink-soft leading-relaxed whitespace-pre-wrap mb-1.5">
+                      {q.analysisText}
+                    </p>
+                  )}
+                  {q.analysis.location && (
+                    <p className="text-xs text-ochre-dark italic mt-1.5 pt-1.5 border-t border-line-soft flex items-start gap-1">
+                      <MapPin className="w-3 h-3 mt-0.5 flex-shrink-0" />
+                      原文定位：{q.analysis.location}
+                      {onLocate && (
+                        <button
+                          onClick={() => onLocate(q)}
+                          className="ml-1 px-1.5 py-0.5 text-[10px] not-italic font-mono bg-ochre-pale/40 hover:bg-ochre-pale text-ochre-dark rounded-sm transition-colors"
+                        >
+                          跳转 →
+                        </button>
+                      )}
+                    </p>
+                  )}
+                  {Object.keys(q.analysis.optionAnalysis ?? {}).length > 0 && (
+                    <ul className="text-xs text-ink-muted mt-1.5 pt-1.5 border-t border-line-soft space-y-0.5">
+                      {(Object.keys(q.analysis.optionAnalysis) as OptionKey[]).map((k) => {
+                        const text = q.analysis.optionAnalysis[k]
+                        if (!text) return null
+                        return (
+                          <li key={k}>
+                            <span className="font-mono font-bold mr-1">{k}.</span>
+                            {text}
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  )}
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+
+      {/* 整体提交 / 修改 */}
+      <div className="mt-3 flex items-center gap-2 flex-wrap">
+        <button
+          onClick={handleSubmitAll}
           disabled={!canSubmit}
           className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-ink text-paper rounded-sm hover:bg-ochre-dark transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
         >
@@ -206,12 +676,89 @@ function SectionBlock({
             </>
           )}
         </button>
+        {allSubmitted && (
+          <button
+            onClick={handleReopenAll}
+            className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs text-ink-soft border border-line rounded-sm hover:border-ochre hover:text-ochre-dark transition-colors"
+          >
+            <RotateCcw className="w-3 h-3" /> 修改答案
+          </button>
+        )}
         <span className="text-[10px] text-ink-muted font-mono">
           已提交 {stats.submitted}/{questions.length}
           {stats.pending > 0 && ` · 待提交 ${stats.pending}`}
         </span>
       </div>
     </section>
+  )
+}
+
+// =================================================================
+// 共用：分区标题栏 / 提交栏
+// =================================================================
+
+function SectionHeader({
+  section,
+  questionCount,
+}: {
+  section: Paper['sections'][number]
+  questionCount: number
+}) {
+  return (
+    <div className="flex items-center gap-2 mb-3 pb-1.5 border-b border-line">
+      <h2 className="font-serif text-sm font-bold text-ochre-dark">
+        {SECTION_LABEL[section.type] ?? section.title}
+      </h2>
+      <span className="text-[10px] text-ink-muted font-mono">{questionCount} 题</span>
+      {section.directions && (
+        <span
+          className="text-[10px] text-ink-muted/70 italic ml-auto truncate max-w-[55%]"
+          title={section.directions}
+        >
+          {section.directions.slice(0, 40)}…
+        </span>
+      )}
+    </div>
+  )
+}
+
+function SubmitBar({
+  onSubmit,
+  canSubmit,
+  allSubmitted,
+  submitted,
+  total,
+  pending,
+}: {
+  onSubmit: () => void
+  canSubmit: boolean
+  allSubmitted: boolean
+  submitted: number
+  total: number
+  pending: number
+}) {
+  return (
+    <div className="mt-3 flex items-center gap-2">
+      <button
+        onClick={onSubmit}
+        disabled={!canSubmit}
+        className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-ink text-paper rounded-sm hover:bg-ochre-dark transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+      >
+        {allSubmitted ? (
+          <>
+            <CheckCircle2 className="w-3.5 h-3.5" /> 本题型已提交
+          </>
+        ) : (
+          <>
+            <Send className="w-3.5 h-3.5" /> 提交本题型
+          </>
+        )}
+      </button>
+      <span className="text-[10px] text-ink-muted font-mono">
+        已提交 {submitted}/{total}
+        {pending > 0 && ` · 待提交 ${pending}`}
+      </span>
+    </div>
   )
 }
 

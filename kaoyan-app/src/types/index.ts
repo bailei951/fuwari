@@ -10,8 +10,8 @@ export type Subject = '英语一' | '英语二' | '统一卷'
 /** 题型 */
 export type SectionType = 'cloze' | 'reading' | 'newType' | 'translation' | 'writing'
 
-/** 选项字母：完形/阅读为 A-D，新题型（段落排序/匹配）可扩展至 A-G */
-export type OptionKey = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G'
+/** 选项字母：完形/阅读为 A-D，新题型（段落排序/匹配）可扩展至 A-H */
+export type OptionKey = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H'
 
 /**
  * 题目状态：
@@ -54,7 +54,7 @@ export interface Article {
   blocks: Block[]
 }
 
-/** 结构化解析：错误选项分析（A-D 常用；新题型 A-G 按需） */
+/** 结构化解析：错误选项分析（A-D 常用；新题型 A-H 按需） */
 export interface OptionAnalysis {
   A?: string
   B?: string
@@ -63,6 +63,7 @@ export interface OptionAnalysis {
   E?: string
   F?: string
   G?: string
+  H?: string
 }
 
 /** 结构化解析：分章节展示 */

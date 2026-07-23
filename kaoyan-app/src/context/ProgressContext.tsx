@@ -18,6 +18,8 @@ interface ProgressContextValue {
   submitSubjective: (examKey: string, questionId: number) => void
   /** 主观题自评分数 */
   setSelfScore: (examKey: string, questionId: number, score: number) => void
+  /** 重开已提交的题目用于修改（清除提交状态，保留已选答案） */
+  reopenAnswer: (examKey: string, questionId: number) => void
   toggleMark: (examKey: string, questionId: number) => void
   resetExam: (examKey: string) => void
   getExamStats: (examKey: string) => {
@@ -198,6 +200,27 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     })
   }, [])
 
+  const reopenAnswer = useCallback((examKey: string, questionId: number) => {
+    setStore((prev) => {
+      const examProgress = prev[examKey] ?? {}
+      const current = examProgress[questionId] ?? DEFAULT_PROGRESS
+      // 清除提交状态，保留已选答案与标记，便于修改后重新提交
+      const next: ProgressStore = {
+        ...prev,
+        [examKey]: {
+          ...examProgress,
+          [questionId]: {
+            ...current,
+            status: 'unanswered',
+            submittedAt: null,
+          },
+        },
+      }
+      writeJSON(StorageKeys.PROGRESS, next)
+      return next
+    })
+  }, [])
+
   const resetExam = useCallback((examKey: string) => {
     setStore((prev) => {
       const next = { ...prev }
@@ -240,6 +263,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       setTextAnswer,
       submitSubjective,
       setSelfScore,
+      reopenAnswer,
       toggleMark,
       resetExam,
       getExamStats,
@@ -254,6 +278,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       setTextAnswer,
       submitSubjective,
       setSelfScore,
+      reopenAnswer,
       toggleMark,
       resetExam,
       getExamStats,

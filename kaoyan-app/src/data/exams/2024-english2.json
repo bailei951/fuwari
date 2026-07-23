@@ -967,7 +967,7 @@
           "id": 46,
           "articleId": "trans-1",
           "type": "translation",
-          "question": "请将下列英文段落译成中文。",
+          "question": "Part C 翻译：请将下列英文段落译成中文。（15 分）\n\n翻译要求：\n1) 准确传达原文内容，无遗漏与误译；\n2) 译文通顺连贯，符合中文表达习惯；\n3) 关键词汇与长难句结构处理得当。\n\n（翻译原文见左侧文章；若原文待录入，请参考当年真题对应段落作答。）",
           "options": {},
           "answer": "",
           "analysis": {
@@ -1014,7 +1014,7 @@
           "id": 51,
           "articleId": "writing-1",
           "type": "writing",
-          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的短文（书信 / 通知 / 便条等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "question": "Suppose you are planning a graduation trip. Write an email to your friend to invite him/her to join the trip and introduce the itinerary. You should write about 100 words on the ANSWER SHEET.\n\nDo not sign your own name. Use \"Li Ming\" instead.",
           "options": {},
           "answer": "",
           "analysis": {
@@ -1042,7 +1042,7 @@
           "id": 52,
           "articleId": "writing-1",
           "type": "writing",
-          "question": "Part B 大作文：请根据图表撰写一篇约 150 词的议论文，描述图表并进行分析论证。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "question": "Write an essay of about 150 words based on the following chart. In your essay, you should\n1) describe the chart briefly,\n2) analyze the possible reasons, and\n3) give your comments.\n\nYou should write neatly on the ANSWER SHEET. (15 points)",
           "options": {},
           "answer": "",
           "analysis": {

@@ -1178,7 +1178,7 @@
           "id": 51,
           "articleId": "writing-1",
           "type": "writing",
-          "question": "Part A 小作文：请根据情境撰写一篇约 100 词的应用文（书信 / 通知 / 邀请函等）。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "question": "Write an email to a professor to express your thanks for his/her guidance during your thesis writing. You should write about 100 words on the ANSWER SHEET.\n\nDo not sign your own name. Use \"Li Ming\" instead.",
           "options": {},
           "answer": "",
           "analysis": {
@@ -1206,7 +1206,7 @@
           "id": 52,
           "articleId": "writing-1",
           "type": "writing",
-          "question": "Part B 大作文：请根据图画撰写一篇 160-200 词的议论文，描述图画并论述其寓意。\n\n（具体题目以当年真题为准，此处为作答与评分模块。）",
+          "question": "Write an essay of 160-200 words based on the following picture. In your essay, you should\n1) describe the picture briefly,\n2) interpret the implied meaning, and\n3) give your comments.\n\nYou should write neatly on the ANSWER SHEET. (20 points)",
           "options": {},
           "answer": "",
           "analysis": {
