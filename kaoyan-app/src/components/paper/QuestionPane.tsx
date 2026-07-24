@@ -10,8 +10,6 @@ import {
   Flag,
   FileText,
   ChevronDown,
-  ChevronUp as ChevronPrev,
-  ChevronDown as ChevronNext,
   MapPin,
   Send,
   CheckCircle2,
@@ -28,14 +26,6 @@ interface QuestionPaneProps {
   paperId: string
   activeQuestionId: number | null
   onQuestionClick: (q: Question) => void
-  /** 上一题回调（无则隐藏按钮） */
-  onPrev?: (() => void) | null
-  /** 下一题回调（无则隐藏按钮） */
-  onNext?: (() => void) | null
-  /** 当前题在整卷中的位置（1-based） */
-  currentIndex?: number
-  /** 总题数 */
-  totalCount?: number
   /** 跳转到原文定位 */
   onLocate?: (q: Question) => void
 }
@@ -53,41 +43,10 @@ export default function QuestionPane({
   paperId,
   activeQuestionId,
   onQuestionClick,
-  onPrev,
-  onNext,
-  currentIndex,
-  totalCount,
   onLocate,
 }: QuestionPaneProps) {
   return (
     <div className="px-3 sm:px-4 py-3 sm:py-4 space-y-4 sm:space-y-6">
-      {/* 顶部导航条：上一题 / 当前位置 / 下一题 */}
-      {(onPrev || onNext) && currentIndex !== undefined && totalCount !== undefined && (
-        <div className="sticky top-0 z-10 -mx-3 sm:-mx-4 px-3 sm:px-4 py-2 bg-paper/95 backdrop-blur-sm border-b border-line flex items-center justify-between gap-2">
-          <button
-            onClick={() => onPrev?.()}
-            disabled={!onPrev}
-            className="inline-flex items-center gap-1 px-2.5 py-1 text-xs text-ink-soft hover:text-ochre-dark disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-            title="上一题（←）"
-          >
-            <ChevronPrev className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">上一题</span>
-          </button>
-          <span className="text-[11px] font-mono text-ink-muted">
-            {currentIndex} / {totalCount}
-          </span>
-          <button
-            onClick={() => onNext?.()}
-            disabled={!onNext}
-            className="inline-flex items-center gap-1 px-2.5 py-1 text-xs text-ink-soft hover:text-ochre-dark disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-            title="下一题（→ 或 Enter）"
-          >
-            <span className="hidden sm:inline">下一题</span>
-            <ChevronNext className="w-3.5 h-3.5" />
-          </button>
-        </div>
-      )}
-
       {paper.sections.map((sec) => (
         <SectionBlock
           key={sec.id}

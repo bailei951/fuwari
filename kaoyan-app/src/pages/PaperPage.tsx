@@ -12,8 +12,7 @@ import { useProgress } from '../context/ProgressContext'
 import PaperHeader from '../components/paper/PaperHeader'
 import ArticlePane from '../components/paper/ArticlePane'
 import QuestionPane from '../components/paper/QuestionPane'
-import QuestionNav from '../components/paper/QuestionNav'
-import MobileQuestionNav from '../components/paper/MobileQuestionNav'
+import FloatingQuestionNav from '../components/paper/FloatingQuestionNav'
 import type { Paper, Question } from '../types'
 
 export default function PaperPage() {
@@ -70,42 +69,44 @@ export default function PaperPage() {
   }, [activeQuestionId, allQuestions])
 
   // 滚动到题目：同时滚动中栏题目 + 左栏文章定位
-  // 移动端（<lg）：文章和题目在同一滚动容器，仅滚动到题目卡片
-  // 桌面端（≥lg）：左右栏独立滚动，同时定位题目和文章
+  // 滚动到题目：题目卡片居中定位 + 桌面端左栏文章同步定位
+  // 移动端（<lg）：文章和题目在同一滚动容器，仅滚动到题目卡片（居中）
+  // 桌面端（≥lg）：左右栏独立滚动，题目居中 + 文章定位
   const scrollToQuestion = useCallback(
     (qId: number) => {
       setActiveQuestionId(qId)
 
       const isMobile = window.innerWidth < 1024 // lg 断点
 
-      // 中栏：滚动到题目卡片
-      const qEl = questionRef.current?.querySelector(`[data-question-id="${qId}"]`)
-      if (qEl) {
-        qEl.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
-
-      // 移动端：跳过文章滚动（用户刚点击了文章中的空格，已能看到文章）
-      if (isMobile) return
-
-      // 桌面端：左栏滚动到文章对应位置
-      if (paper) {
-        const question = paper.sections
-          .flatMap((s) => s.questions)
-          .find((q) => q.id === qId)
-        if (question && question.articleId) {
-          // 完形/新题型：滚动到对应空格
-          const blankEl = articleRef.current?.querySelector(`[data-blank-num="${qId}"]`)
-          if (blankEl) {
-            blankEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
-            return
-          }
-          // 阅读/翻译：滚动到对应段落
-          const paraEl = articleRef.current?.querySelector(
-            `[data-article-id="${question.articleId}"] [data-paragraph-index="${question.position}"]`,
-          )
-          paraEl?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      // 等待 DOM 更新后再滚动，避免 re-render 与 scroll 冲突导致抖动
+      requestAnimationFrame(() => {
+        // 中栏：滚动到题目卡片，居中定位（非置顶）
+        const qEl = questionRef.current?.querySelector(`[data-question-id="${qId}"]`)
+        if (qEl) {
+          qEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
         }
-      }
+
+        // 移动端：跳过文章滚动
+        if (isMobile) return
+
+        // 桌面端：左栏滚动到文章对应位置
+        if (paper) {
+          const question = paper.sections
+            .flatMap((s) => s.questions)
+            .find((q) => q.id === qId)
+          if (question && question.articleId) {
+            const blankEl = articleRef.current?.querySelector(`[data-blank-num="${qId}"]`)
+            if (blankEl) {
+              blankEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
+              return
+            }
+            const paraEl = articleRef.current?.querySelector(
+              `[data-article-id="${question.articleId}"] [data-paragraph-index="${question.position}"]`,
+            )
+            paraEl?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }
+        }
+      })
     },
     [paper],
   )
@@ -337,8 +338,8 @@ export default function PaperPage() {
       />
 
       <div className="flex-1 flex flex-col lg:flex-row lg:overflow-hidden">
-        {/* 左栏：文章（移动端底部留出悬浮条空间） */}
-        <div className="flex-1 lg:min-w-0 lg:border-r lg:border-line pb-14 lg:pb-0">
+        {/* 左栏：文章 */}
+        <div className="flex-1 lg:min-w-0 lg:border-r lg:border-line">
           <ArticlePane
             ref={articleRef}
             paper={paper}
@@ -347,10 +348,10 @@ export default function PaperPage() {
           />
         </div>
 
-        {/* 中栏：题目（移动端底部留出悬浮条空间） */}
+        {/* 中栏：题目（底部留出悬浮导航空间） */}
         <div
           ref={questionRef}
-          className="flex-1 lg:min-w-0 lg:overflow-y-auto border-t lg:border-t-0 lg:border-r lg:border-line pb-14 lg:pb-0"
+          className="flex-1 lg:min-w-0 lg:overflow-y-auto border-t lg:border-t-0 pb-16 lg:pb-4 overscroll-contain"
         >
           <QuestionPane
             key={resetToken}
@@ -358,34 +359,13 @@ export default function PaperPage() {
             paperId={paper.id}
             activeQuestionId={activeQuestionId}
             onQuestionClick={handleQuestionClick}
-            onPrev={currentIndex > 1 ? goToPrev : null}
-            onNext={currentIndex > 0 && currentIndex < totalCount ? goToNext : null}
-            currentIndex={currentIndex}
-            totalCount={totalCount}
             onLocate={handleLocate}
           />
         </div>
-
-        {/* 右栏：题号导航（仅桌面） */}
-        <aside className="hidden lg:block w-56 flex-shrink-0 lg:overflow-y-auto px-3 py-3">
-          <div className="mb-3 pb-2 border-b border-line">
-            <h2 className="font-serif text-xs font-bold text-ink-muted">题号导航</h2>
-            <p className="text-[10px] text-ink-muted/70 font-mono mt-0.5">
-              快捷键 A-G 选 · Enter 提交 · ← → 切题 · M 标记
-            </p>
-          </div>
-          <QuestionNav
-            paper={paper}
-            getStatus={getQuestionStatus}
-            isMarked={isQuestionMarked}
-            activeQuestionId={activeQuestionId}
-            onQuestionClick={scrollToQuestion}
-          />
-        </aside>
       </div>
 
-      {/* 移动端底部题号抽屉（lg 以下显示，替代右栏） */}
-      <MobileQuestionNav
+      {/* 悬浮题号导航（桌面 + 移动端通用，固定定位可展开/收起） */}
+      <FloatingQuestionNav
         paper={paper}
         getStatus={getQuestionStatus}
         isMarked={isQuestionMarked}
