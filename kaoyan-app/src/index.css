@@ -139,6 +139,13 @@
            cursor-pointer transition-all select-none;
     line-height: 1.6;
   }
+  /* 移动端：增大触摸区域 */
+  @media (max-width: 1023px) {
+    .cloze-blank {
+      @apply min-h-[2.5rem] py-1 px-2;
+      line-height: 1.8;
+    }
+  }
   .cloze-blank:hover {
     @apply bg-ochre-pale/50 border-ochre;
   }

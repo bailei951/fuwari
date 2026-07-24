@@ -60,10 +60,10 @@ export default function QuestionPane({
   onLocate,
 }: QuestionPaneProps) {
   return (
-    <div className="px-4 py-4 space-y-6">
+    <div className="px-3 sm:px-4 py-3 sm:py-4 space-y-4 sm:space-y-6">
       {/* 顶部导航条：上一题 / 当前位置 / 下一题 */}
       {(onPrev || onNext) && currentIndex !== undefined && totalCount !== undefined && (
-        <div className="sticky top-0 z-10 -mx-4 px-4 py-2 bg-paper/95 backdrop-blur-sm border-b border-line flex items-center justify-between gap-2">
+        <div className="sticky top-0 z-10 -mx-3 sm:-mx-4 px-3 sm:px-4 py-2 bg-paper/95 backdrop-blur-sm border-b border-line flex items-center justify-between gap-2">
           <button
             onClick={() => onPrev?.()}
             disabled={!onPrev}
@@ -202,7 +202,7 @@ function DefaultSection({
   return (
     <section data-section-id={section.id}>
       <SectionHeader section={section} questionCount={questions.length} />
-      <div className="space-y-3">
+      <div className="space-y-2 sm:space-y-3">
         {questions.map((q) =>
           q.subjective ? (
             <SubjectiveCard
@@ -367,7 +367,7 @@ function PassageBlock({
       </div>
 
       {/* 题目 */}
-      <div className="space-y-3">
+      <div className="space-y-2 sm:space-y-3">
         {questions.map((q) => (
           <ObjectiveCard
             key={q.id}
@@ -617,7 +617,7 @@ function NewTypeSection({
                         key={key}
                         onClick={() => !submitted && selectOption(paperId, q.id, key)}
                         disabled={submitted}
-                        className={`w-7 h-7 flex items-center justify-center font-mono text-xs font-bold rounded-sm border transition-all ${
+                        className={`w-9 h-9 sm:w-7 sm:h-7 flex items-center justify-center font-mono text-xs font-bold rounded-sm border transition-all ${
                           showResult
                             ? isAnswer
                               ? 'border-green-500 bg-green-50 text-green-700'
@@ -873,13 +873,13 @@ function ObjectiveCard({ question, paperId, isActive, onClick, onLocate }: Objec
   return (
     <div
       data-question-id={question.id}
-      className={`paper-card p-3 transition-all scroll-mt-2 ${
+      className={`paper-card p-2 sm:p-3 transition-all scroll-mt-2 ${
         isActive ? 'ring-2 ring-ochre shadow-paper-hover' : ''
       }`}
     >
       {/* 题头 */}
-      <div className="flex items-start gap-2 cursor-pointer" onClick={onClick}>
-        <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center font-mono text-xs font-bold rounded-sm bg-ink text-paper">
+      <div className="flex items-start gap-1.5 sm:gap-2 cursor-pointer" onClick={onClick}>
+        <span className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center font-mono text-[11px] sm:text-xs font-bold rounded-sm bg-ink text-paper">
           {question.id}
         </span>
         {question.question && (
@@ -896,7 +896,7 @@ function ObjectiveCard({ question, paperId, isActive, onClick, onLocate }: Objec
 
       {/* 选项 */}
       {optionKeys.length > 0 && (
-        <ul className="mt-2 ml-8 space-y-1">
+        <ul className="mt-1.5 sm:mt-2 ml-6 sm:ml-8 space-y-1">
           {optionKeys.map((key) => {
             const text = question.options[key]
             if (!text) return null
@@ -909,7 +909,7 @@ function ObjectiveCard({ question, paperId, isActive, onClick, onLocate }: Objec
                 <button
                   onClick={() => handleSelect(key)}
                   disabled={submitted}
-                  className={`w-full text-left px-2.5 py-1.5 rounded-sm text-xs leading-relaxed
+                  className={`w-full text-left px-2.5 py-2 sm:py-1.5 rounded-sm text-xs leading-relaxed
                              border transition-all flex items-start gap-2
                              ${getOptionClass(isSelected, isCorrect, showResult)}`}
                 >
@@ -926,7 +926,7 @@ function ObjectiveCard({ question, paperId, isActive, onClick, onLocate }: Objec
       )}
 
       {/* 操作区 */}
-      <div className="flex items-center gap-2 mt-2 ml-8">
+      <div className="flex items-center gap-2 mt-1.5 sm:mt-2 ml-6 sm:ml-8">
         {/* 提交后反馈 */}
         {submitted && hasKey && (
           <span className={`text-xs font-medium ${progress.status === 'correct' ? 'text-green-700' : 'text-seal-dark'}`}>
@@ -969,7 +969,7 @@ function ObjectiveCard({ question, paperId, isActive, onClick, onLocate }: Objec
 
       {/* 解析（默认关闭，点击展开） */}
       {submitted && showAnalysis && hasAnalysis && (
-        <div className="mt-2 ml-8 p-2.5 bg-paper-deep/30 rounded-sm border border-line-soft">
+        <div className="mt-1.5 sm:mt-2 ml-6 sm:ml-8 p-2.5 bg-paper-deep/30 rounded-sm border border-line-soft">
           {question.analysis.coreAnalysis && (
             <p className="text-xs text-ink-soft leading-relaxed whitespace-pre-wrap mb-2">
               {question.analysis.coreAnalysis}
@@ -1060,13 +1060,13 @@ function SubjectiveCard({ question, paperId, isActive, onClick }: SubjectiveCard
   return (
     <div
       data-question-id={question.id}
-      className={`paper-card p-3 transition-all scroll-mt-2 ${
+      className={`paper-card p-2 sm:p-3 transition-all scroll-mt-2 ${
         isActive ? 'ring-2 ring-ochre shadow-paper-hover' : ''
       }`}
     >
       {/* 题头 */}
-      <div className="flex items-start gap-2 cursor-pointer" onClick={onClick}>
-        <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center font-mono text-xs font-bold rounded-sm bg-ochre-dark text-paper">
+      <div className="flex items-start gap-1.5 sm:gap-2 cursor-pointer" onClick={onClick}>
+        <span className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center font-mono text-[11px] sm:text-xs font-bold rounded-sm bg-ochre-dark text-paper">
           {question.id}
         </span>
         <div className="flex-1 min-w-0">
@@ -1083,7 +1083,7 @@ function SubjectiveCard({ question, paperId, isActive, onClick }: SubjectiveCard
       </div>
 
       {/* 答题区 */}
-      <div className="mt-2 ml-8">
+      <div className="mt-1.5 sm:mt-2 ml-6 sm:ml-8">
         <textarea
           value={text}
           onChange={(e) => setTextAnswer(paperId, question.id, e.target.value)}

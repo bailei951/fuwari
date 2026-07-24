@@ -70,15 +70,24 @@ export default function PaperPage() {
   }, [activeQuestionId, allQuestions])
 
   // 滚动到题目：同时滚动中栏题目 + 左栏文章定位
+  // 移动端（<lg）：文章和题目在同一滚动容器，仅滚动到题目卡片
+  // 桌面端（≥lg）：左右栏独立滚动，同时定位题目和文章
   const scrollToQuestion = useCallback(
     (qId: number) => {
       setActiveQuestionId(qId)
 
+      const isMobile = window.innerWidth < 1024 // lg 断点
+
       // 中栏：滚动到题目卡片
       const qEl = questionRef.current?.querySelector(`[data-question-id="${qId}"]`)
-      qEl?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      if (qEl) {
+        qEl.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
 
-      // 左栏：滚动到文章对应位置
+      // 移动端：跳过文章滚动（用户刚点击了文章中的空格，已能看到文章）
+      if (isMobile) return
+
+      // 桌面端：左栏滚动到文章对应位置
       if (paper) {
         const question = paper.sections
           .flatMap((s) => s.questions)
@@ -384,6 +393,8 @@ export default function PaperPage() {
         currentIndex={currentIndex}
         totalCount={totalCount}
         onQuestionClick={scrollToQuestion}
+        onPrev={currentIndex > 1 ? goToPrev : null}
+        onNext={currentIndex > 0 && currentIndex < totalCount ? goToNext : null}
       />
     </div>
   )

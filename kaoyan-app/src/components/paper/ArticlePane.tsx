@@ -22,10 +22,10 @@ const SECTION_LABEL: Record<string, string> = {
 const ArticlePane = forwardRef<HTMLDivElement, ArticlePaneProps>(
   function ArticlePane({ paper, activeQuestionId, onBlankClick }, ref) {
     return (
-      <div ref={ref} className="lg:h-full lg:overflow-y-auto px-4 py-4">
+      <div ref={ref} className="lg:h-full lg:overflow-y-auto px-3 sm:px-4 py-3 sm:py-4">
         {/* 分区导航锚点 */}
         {paper.sections.map((sec) => (
-          <div key={sec.id} data-section-id={sec.id} className="mb-6">
+          <div key={sec.id} data-section-id={sec.id} className="mb-4 sm:mb-6">
             <div className="flex items-center gap-2 mb-3 pb-1.5 border-b border-line">
               <h2 className="font-serif text-sm font-bold text-ochre-dark">
                 {SECTION_LABEL[sec.type] ?? sec.title}

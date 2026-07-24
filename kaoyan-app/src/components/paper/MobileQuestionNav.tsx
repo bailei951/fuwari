@@ -4,7 +4,7 @@
 // 选择题号或点击遮罩后自动关闭
 
 import { useEffect, useState } from 'react'
-import { LayoutGrid, X } from 'lucide-react'
+import { LayoutGrid, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import type { Paper, QuestionStatus } from '../../types'
 import QuestionNav from './QuestionNav'
 
@@ -16,6 +16,8 @@ interface MobileQuestionNavProps {
   currentIndex: number
   totalCount: number
   onQuestionClick: (questionId: number) => void
+  onPrev?: (() => void) | null
+  onNext?: (() => void) | null
 }
 
 export default function MobileQuestionNav({
@@ -26,6 +28,8 @@ export default function MobileQuestionNav({
   currentIndex,
   totalCount,
   onQuestionClick,
+  onPrev,
+  onNext,
 }: MobileQuestionNavProps) {
   const [open, setOpen] = useState(false)
 
@@ -64,26 +68,42 @@ export default function MobileQuestionNav({
     <>
       {/* 底部悬浮条（lg 以下显示） */}
       <div className="lg:hidden fixed bottom-0 inset-x-0 z-30 border-t border-line bg-paper/95 backdrop-blur-sm shadow-paper">
-        <div className="flex items-center justify-between gap-3 px-4 py-2.5">
-          <div className="flex items-baseline gap-2 min-w-0">
-            <span className="text-xs text-ink-muted">当前</span>
+        <div className="flex items-center justify-between gap-2 px-3 py-2">
+          {/* 上一题 */}
+          <button
+            onClick={() => onPrev?.()}
+            disabled={!onPrev}
+            className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-sm text-ink-soft hover:text-ochre-dark hover:bg-ochre-pale/40 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            aria-label="上一题"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+
+          {/* 当前位置 + 题号导航 */}
+          <button
+            onClick={() => setOpen(true)}
+            className="flex-1 flex items-center justify-center gap-2 min-w-0 py-1 rounded-sm hover:bg-paper-deep/50 transition-colors"
+          >
             <span className="font-mono text-sm font-bold text-ink">
               {currentIndex > 0 ? currentIndex : '-'}
-              <span className="text-ink-muted">/{totalCount}</span>
+              <span className="text-ink-muted font-normal">/{totalCount}</span>
             </span>
             {activeQuestionId != null && (
               <span className="text-[10px] text-ink-muted/80 font-mono">
-                · 第 {activeQuestionId} 题
+                · 第{activeQuestionId}题
               </span>
             )}
-          </div>
+            <LayoutGrid className="w-3.5 h-3.5 text-ink-muted" />
+          </button>
+
+          {/* 下一题 */}
           <button
-            onClick={() => setOpen(true)}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium bg-ink text-paper rounded-sm hover:bg-ochre-dark transition-colors"
-            aria-label="打开题号导航"
+            onClick={() => onNext?.()}
+            disabled={!onNext}
+            className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-sm text-ink-soft hover:text-ochre-dark hover:bg-ochre-pale/40 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            aria-label="下一题"
           >
-            <LayoutGrid className="w-3.5 h-3.5" />
-            题号
+            <ChevronRight className="w-4 h-4" />
           </button>
         </div>
       </div>
@@ -116,8 +136,8 @@ export default function MobileQuestionNav({
               </button>
             </div>
             {/* 提示 */}
-            <div className="px-4 py-1.5 text-[10px] text-ink-muted/70 font-mono border-b border-line-soft">
-              快捷键 A-D 选 · Enter 提交 · ← → 切题 · M 标记
+            <div className="px-4 py-1.5 text-[10px] text-ink-muted/70 border-b border-line-soft">
+              点击题号跳转 · 长按可标记
             </div>
             {/* 题号网格（可滚动） */}
             <div className="flex-1 overflow-y-auto px-4 py-3 pb-6">
