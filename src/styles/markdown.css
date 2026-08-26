@@ -1,3 +1,7 @@
+/* 自包含：内联 main.css（.link / .expand-animation 等自定义类定义），
+   确保本文件被单独编译（如 vite 依赖重优化）时 @apply 仍可解析 */
+@import "./main.css";
+
 .custom-md {
     h1 {
         @apply text-3xl;

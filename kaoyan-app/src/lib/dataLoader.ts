@@ -193,12 +193,16 @@ function normalizeArticle(article: Article, isCloze: boolean): Article {
  * 文章分段优化：
  * 原始数据中阅读/新题型文章常被压平为单个超长段落，
  * 此处按句子边界 + 段落长度启发式重新切分为符合原真题排版的自然段。
- * - 完形（cloze）：保持原样（真题通常为 1-2 个自然段）
- * - 已是多个段落块或含空格（blank）的文章：保持原样
+ * - 完形（cloze）：按句末标点 + 累积长度在 block 边界插入段落分隔（空 paragraph）
+ * - 含空格（blank）的阅读/新题型文章：保持原样（阅读段内 blank 未见数据，保守处理）
  * - 新题型（newType）：段间插入空段落块作为渲染分隔符
  */
 function resegmentBlocks(blocks: Block[], type: SectionType): Block[] {
-  if (type === 'cloze' || !blocks || blocks.length === 0) return blocks
+  if (!blocks || blocks.length === 0) return blocks
+
+  if (type === 'cloze') {
+    return resegmentClozeBlocks(blocks)
+  }
   if (blocks.some((b) => b.type === 'blank')) return blocks
 
   const contentBlocks = blocks.filter(
@@ -224,6 +228,45 @@ function resegmentBlocks(blocks: Block[], type: SectionType): Block[] {
   }
   // 阅读：每段一个 paragraph block，独立渲染
   return paras.map((p) => ({ type: 'paragraph', content: p } as ParagraphBlock))
+}
+
+/**
+ * 完形分段：真题完形多为 1-5 个自然段，原始数据把全文压成 paragraph+blank 交替的
+ * 单一大段。此处按「累积字符量 + 句末标点」在原有 block 边界插入空段落分隔符：
+ * - 不拆分任何 block（空格编号与顺序完全不变，不影响做题与判分）
+ * - 仅在以 [.?!] 结尾的 paragraph 之后切段，保证语义自然
+ */
+function resegmentClozeBlocks(blocks: Block[]): Block[] {
+  // 已有段落分隔（空 paragraph）的数据保持原样
+  if (blocks.some((b) => b.type === 'paragraph' && b.content === '')) return blocks
+
+  const totalText = blocks.reduce(
+    (s, b) => (b.type === 'paragraph' ? s + b.content.length : s),
+    0,
+  )
+  // 短文（约 <80 词）不分段
+  if (totalText < 500) return blocks
+
+  const nParas = Math.max(2, Math.min(5, Math.round(totalText / 400)))
+  const avg = totalText / nParas
+
+  const out: Block[] = []
+  let acc = 0
+  let segs = 1
+  for (const b of blocks) {
+    out.push(b)
+    if (b.type === 'paragraph' && segs < nParas) {
+      acc += b.content.length
+      const endsSentence = /[.?!]["')\]]?$/.test(b.content.trim())
+      if (acc >= avg && endsSentence) {
+        // 空 content 的 paragraph 作为渲染层段落分隔符
+        out.push({ type: 'paragraph', content: '' } as ParagraphBlock)
+        acc = 0
+        segs++
+      }
+    }
+  }
+  return out
 }
 
 /**
