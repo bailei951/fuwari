@@ -1,8 +1,14 @@
 // 单篇文章视图：block 渲染 + 完形/新题型空格 + 划词查词/翻译 + 批注高亮
 // 阅读理解文章支持批注；完形/新题型文章仅支持查词/翻译（空格会破坏字符偏移）
+//
+// 使用者视角增强：
+// - 段落序号：阅读文章每个自然段带 ①②③ 标识，方便做题时定位原文
+// - 段落导航：长文章可从段落菜单快速跳转到指定段落
+// - 句译模式：开启后点击句子即在句下显示译文（划词翻译依旧可用）
+// - 译文显隐：一键显示/隐藏全部句译文，不影响原文阅读体验
 
-import { useLayoutEffect, useMemo, useRef, useState } from 'react'
-import { BookOpen, Highlighter } from 'lucide-react'
+import { Fragment, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { BookOpen, Highlighter, Languages, ListOrdered, Eye, EyeOff } from 'lucide-react'
 import WordPopup from '../article/WordPopup'
 import SelectionToolbar from '../article/SelectionToolbar'
 import AnnotationEditor from '../article/AnnotationEditor'
@@ -11,6 +17,8 @@ import { useTextSelection } from '../../hooks/useTextSelection'
 import { useAnnotations } from '../../context/AnnotationContext'
 import { useProgress } from '../../context/ProgressContext'
 import { applyHighlights, computeRangeOffsets, jumpToAnnotation } from '../../lib/annotationDom'
+import { splitSentences, circledNumber } from '../../lib/sentenceSplit'
+import { translate } from '../../lib/translate'
 import type { Article, HighlightColor, Annotation, OptionKey, Block } from '../../types'
 
 interface ArticleViewProps {
@@ -25,6 +33,16 @@ type EditorState =
   | { mode: 'create'; text: string; start: number; end: number }
   | { mode: 'edit'; annotation: Annotation }
   | null
+
+/** 句子翻译状态（按句子原文索引） */
+interface SentenceTrans {
+  loading: boolean
+  translation?: string
+  error?: string
+}
+
+/** 显示段落序号的最少段落数 */
+const PARANUM_THRESHOLD = 2
 
 export default function ArticleView({
   article,
@@ -47,6 +65,23 @@ export default function ArticleView({
   const [lookup, setLookup] = useState<{ text: string; rect: DOMRect } | null>(null)
   const [editor, setEditor] = useState<EditorState>(null)
 
+  // 句译模式 + 译文显隐
+  const [sentMode, setSentMode] = useState(false)
+  const [showTrans, setShowTrans] = useState(true)
+  // 段落导航菜单
+  const [paraMenuOpen, setParaMenuOpen] = useState(false)
+
+  // 非空段落列表（用于段落序号 / 导航）
+  const paragraphs = useMemo(
+    () =>
+      article.blocks.filter(
+        (b): b is Extract<Block, { type: 'paragraph' }> =>
+          b.type === 'paragraph' && b.content.trim().length > 0,
+      ),
+    [article.blocks],
+  )
+  const showParaNums = !hasBlanks && paragraphs.length >= PARANUM_THRESHOLD
+
   // 新选区出现时关闭旧弹窗
   useLayoutEffect(() => {
     if (selection) setLookup(null)
@@ -58,13 +93,25 @@ export default function ArticleView({
     const el = textRef.current
     if (!el) return
     applyHighlights(el, annotations)
-  }, [annotations, article.id, hasBlanks])
+  }, [annotations, article.id, hasBlanks, sentMode])
 
   // 切换文章时清理
   useLayoutEffect(() => {
     setEditor(null)
     setLookup(null)
+    setSentMode(false)
+    setParaMenuOpen(false)
   }, [article.id])
+
+  // 点击外部关闭段落菜单
+  useEffect(() => {
+    if (!paraMenuOpen) return
+    function onDocClick(e: MouseEvent) {
+      if (!containerRef.current?.contains(e.target as Node)) setParaMenuOpen(false)
+    }
+    document.addEventListener('mousedown', onDocClick)
+    return () => document.removeEventListener('mousedown', onDocClick)
+  }, [paraMenuOpen])
 
   function openPopup() {
     if (!selection) return
@@ -112,6 +159,13 @@ export default function ArticleView({
     if (el) jumpToAnnotation(el, id)
   }
 
+  /** 段落导航：滚动到指定段落 */
+  function handleJumpToParagraph(paraIndex: number) {
+    setParaMenuOpen(false)
+    const el = textRef.current?.querySelector(`[data-paragraph-index="${paraIndex}"]`)
+    el?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
+
   // 空格状态
   function getBlankStatus(blankNum: number): { selected: OptionKey | null; status: string; submitted: boolean } {
     const p = getProgress(paperId, blankNum)
@@ -151,7 +205,7 @@ export default function ArticleView({
       data-article-id={article.id}
       className="mb-6 scroll-mt-2"
     >
-      {/* 文章标题 */}
+      {/* 文章标题 + 工具按钮 */}
       <div className="flex items-center justify-between gap-2 mb-3 pb-1.5 border-b border-line">
         <div className="flex items-center gap-2 min-w-0">
           <BookOpen className="w-4 h-4 text-ochre-dark flex-shrink-0" />
@@ -165,6 +219,77 @@ export default function ArticleView({
             </span>
           )}
         </div>
+
+        {/* 工具条：句译模式 / 译文显隐 / 段落导航 */}
+        <div className="flex items-center gap-1 flex-shrink-0">
+          {/* 句译模式（仅无空格文章） */}
+          {!hasBlanks && (
+            <button
+              onClick={() => setSentMode((v) => !v)}
+              className={`inline-flex items-center gap-1 px-1.5 py-1 text-[11px] rounded-sm border transition-colors ${
+                sentMode
+                  ? 'bg-ochre-pale/70 text-ochre-dark border-ochre/40 font-medium'
+                  : 'text-ink-muted border-line hover:text-ochre-dark hover:border-ochre/40'
+              }`}
+              title={sentMode ? '关闭句译模式' : '句译模式：点击句子显示译文'}
+            >
+              <Languages className="w-3 h-3" />
+              <span className="hidden sm:inline">句译</span>
+            </button>
+          )}
+
+          {/* 译文显隐（句译模式下有译文时显示） */}
+          {sentMode && (
+            <button
+              onClick={() => setShowTrans((v) => !v)}
+              className={`inline-flex items-center gap-1 px-1.5 py-1 text-[11px] rounded-sm border transition-colors ${
+                showTrans
+                  ? 'bg-ochre-pale/70 text-ochre-dark border-ochre/40'
+                  : 'text-ink-muted border-line hover:text-ochre-dark hover:border-ochre/40'
+              }`}
+              title={showTrans ? '隐藏全部译文' : '显示全部译文'}
+            >
+              {showTrans ? <Eye className="w-3 h-3" /> : <EyeOff className="w-3 h-3" />}
+              <span className="hidden sm:inline">译文</span>
+            </button>
+          )}
+
+          {/* 段落导航（≥2 段时显示） */}
+          {paragraphs.length >= PARANUM_THRESHOLD && (
+            <div className="relative">
+              <button
+                onClick={() => setParaMenuOpen((v) => !v)}
+                className={`inline-flex items-center gap-1 px-1.5 py-1 text-[11px] rounded-sm border transition-colors ${
+                  paraMenuOpen
+                    ? 'bg-ochre-pale/70 text-ochre-dark border-ochre/40'
+                    : 'text-ink-muted border-line hover:text-ochre-dark hover:border-ochre/40'
+                }`}
+                title="段落导航：快速跳转到指定段落"
+              >
+                <ListOrdered className="w-3 h-3" />
+                <span className="hidden sm:inline">段落</span>
+              </button>
+
+              {paraMenuOpen && (
+                <div className="absolute right-0 top-full mt-1 z-40 w-56 max-h-64 overflow-y-auto paper-card shadow-paper-hover animate-pop-in">
+                  {paragraphs.map((p, i) => (
+                    <button
+                      key={i}
+                      onClick={() => handleJumpToParagraph(i)}
+                      className="w-full text-left px-2.5 py-2 text-xs text-ink-soft hover:bg-ochre-pale/50 border-b border-line-soft last:border-b-0 transition-colors"
+                    >
+                      <span className="text-ochre-dark font-mono mr-1.5">
+                        {circledNumber(i + 1)}
+                      </span>
+                      {p.content.slice(0, 46)}
+                      {p.content.length > 46 ? '…' : ''}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* 正文 */}
@@ -173,13 +298,22 @@ export default function ArticleView({
         onClick={handleArticleClick}
         className="article-body text-article-base"
       >
-        {renderBlocks(article.blocks, {
-          hasBlanks,
-          activeQuestionId,
-          getBlankStatus,
-          onBlankClick,
-          articleId: article.id,
-        })}
+        {hasBlanks ? (
+          renderBlankBlocks(article.blocks, {
+            activeQuestionId,
+            getBlankStatus,
+            onBlankClick,
+            articleId: article.id,
+          })
+        ) : (
+          <ReadingBody
+            key={article.id}
+            blocks={article.blocks}
+            sentMode={sentMode}
+            showTrans={showTrans}
+            showParaNums={showParaNums}
+          />
+        )}
       </div>
 
       {/* 批注列表（仅无空格文章） */}
@@ -221,7 +355,120 @@ export default function ArticleView({
 }
 
 // =================================================================
-// 统一 block 渲染：paragraph + blank 混合
+// 阅读文章正文：段落序号 + 句译模式
+// =================================================================
+
+interface ReadingBodyProps {
+  blocks: Block[]
+  /** 句译模式：点击句子显示译文 */
+  sentMode: boolean
+  /** 是否显示句译文（全局开关） */
+  showTrans: boolean
+  /** 是否显示段落序号 */
+  showParaNums: boolean
+}
+
+/**
+ * 无空格文章正文渲染：
+ * - 每个 paragraph block 独立成段，可带 ①②③ 段落序号（CSS ::before，不进入文本流）
+ * - 句译模式：段落切分为句子 span，点击翻译，译文显示在句下
+ *   （句子间以空格连接，textContent 与整段渲染一致，批注偏移不受影响）
+ */
+function ReadingBody({ blocks, sentMode, showTrans, showParaNums }: ReadingBodyProps) {
+  const [trans, setTrans] = useState<Record<string, SentenceTrans>>({})
+
+  // 句子切分缓存（按段落内容 memo）
+  const sentenceCache = useMemo(() => {
+    const map = new Map<string, string[]>()
+    for (const b of blocks) {
+      if (b.type === 'paragraph' && b.content.trim()) {
+        map.set(b.content, splitSentences(b.content))
+      }
+    }
+    return map
+  }, [blocks])
+
+  /** 句子已被译过 → 再点击切换该句译文显隐 */
+  function handleSentenceClick(text: string) {
+    const existing = trans[text]
+    if (existing && existing.translation) {
+      // 单句显隐切换：通过清除记录隐藏（再次点击重新走缓存，秒出）
+      setTrans((prev) => {
+        const next = { ...prev }
+        delete next[text]
+        return next
+      })
+      return
+    }
+    if (existing?.loading) return
+
+    setTrans((prev) => ({ ...prev, [text]: { loading: true } }))
+    translate(text)
+      .then((r) => {
+        const translation =
+          r.kind === 'word'
+            ? r.data.found
+              ? r.data.meanings.join('；')
+              : ''
+            : r.found
+              ? r.translation
+              : ''
+        setTrans((prev) => ({ ...prev, [text]: { loading: false, translation } }))
+      })
+      .catch((err) => {
+        setTrans((prev) => ({
+          ...prev,
+          [text]: { loading: false, error: err instanceof Error ? err.message : '翻译失败' },
+        }))
+      })
+  }
+
+  let paraIndex = -1
+  return (
+    <>
+      {blocks.map((block, i) => {
+        if (block.type !== 'paragraph' || !block.content.trim()) return null
+        paraIndex++
+        const sentences = sentMode ? (sentenceCache.get(block.content) ?? []) : null
+
+        return (
+          <p
+            key={i}
+            data-paragraph-index={paraIndex}
+            data-para-num={
+              showParaNums ? circledNumber(paraIndex + 1) : undefined
+            }
+          >
+            {sentences && sentences.length > 0
+              ? sentences.map((s, j) => (
+                  <Fragment key={j}>
+                    <span
+                      className={sentMode ? 'sent-clickable' : undefined}
+                      onClick={sentMode ? () => handleSentenceClick(s) : undefined}
+                    >
+                      {s}
+                    </span>{' '}
+                    {trans[s] && showTrans && (
+                      <span className="sent-trans">
+                        {trans[s].loading
+                          ? '翻译中…'
+                          : trans[s].error
+                            ? `⚠ ${trans[s].error}`
+                            : trans[s].translation}
+                      </span>
+                    )}
+                  </Fragment>
+                ))
+              : block.content}
+          </p>
+        )
+      })}
+    </>
+  )
+}
+
+// =================================================================
+// 完形 / 新题型：paragraph + blank 混合渲染
 // =================================================================
 
 interface BlankStatus {
@@ -231,7 +478,6 @@ interface BlankStatus {
 }
 
 interface RenderBlocksOptions {
-  hasBlanks: boolean
   activeQuestionId: number | null
   getBlankStatus: (n: number) => BlankStatus
   onBlankClick: (n: number) => void
@@ -239,34 +485,12 @@ interface RenderBlocksOptions {
 }
 
 /**
- * 渲染 blocks 数组：
- * - paragraph block → <p> 标签，内含空段落时跳过
- * - blank block → <span class="cloze-blank">（完形 / 新题型）
- *
- * 含空格文章：连续的 paragraph + blank 在同一段内渲染
- * 无空格文章：每个 paragraph block 独立成段
+ * 渲染含空格文章：把连续的 paragraph + blank 合并到同一段
+ * 遇到空 content 的 paragraph 视为段落分隔
  */
-function renderBlocks(blocks: Block[], opts: RenderBlocksOptions) {
+function renderBlankBlocks(blocks: Block[], opts: RenderBlocksOptions) {
   if (!blocks || blocks.length === 0) return null
 
-  if (!opts.hasBlanks) {
-    // 阅读文章：每个 paragraph block 一个 <p>
-    return blocks.map((block, i) => {
-      if (block.type !== 'paragraph') return null
-      return (
-        <p
-          key={i}
-          data-paragraph-index={i}
-          data-article-id={opts.articleId}
-        >
-          {block.content}
-        </p>
-      )
-    })
-  }
-
-  // 含空格文章：把连续的 paragraph + blank 合并到同一段
-  // 遇到空 content 的 paragraph 视为段落分隔
   const segments: React.ReactNode[] = []
   let currentPara: React.ReactNode[] = []
   let paraIndex = 0

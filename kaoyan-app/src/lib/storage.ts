@@ -62,4 +62,6 @@ export const StorageKeys = {
   VOCAB: 'vocab',
   ANNOTATIONS: 'annotations',
   RECENT: 'recent',
+  TRANSLATE_SETTINGS: 'translate-settings',
+  TRANSLATE_HISTORY: 'translate-history',
 } as const

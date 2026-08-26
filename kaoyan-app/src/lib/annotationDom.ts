@@ -1,18 +1,29 @@
 // 批注高亮的 DOM 操作：基于字符偏移的高亮渲染
 // 偏移相对「文章正文容器」的 textContent 计算（create / restore 共用同一容器）
+//
+// 句译模式兼容：句译文以 span.sent-trans 渲染在正文容器内，
+// 偏移测量与高亮渲染均过滤 .sent-trans 内的文本节点，
+// 保证「显示/隐藏译文」前后字符偏移一致，批注不错位。
 
 import type { Annotation } from '../types'
 
 const MARK_SELECTOR = 'mark.annot-mark'
+const TRANS_SELECTOR = '.sent-trans'
+
+/** 该文本节点是否属于句译文（不参与偏移计算） */
+function isTransNode(node: Node): boolean {
+  const el = node.parentElement
+  return !!el && !!el.closest(TRANS_SELECTOR)
+}
 
 /**
  * 计算选区 Range 相对容器的字符偏移
  * 返回 null 表示选区不在容器内或无效（含边界节点已被卸载的情况）
  *
  * 实现要点：
- * - 用两个独立的 Range 测量 start / end，避免共享 preRange 状态导致 setEnd 行为异常
- * - 测量前先用 compareDocumentPosition 校验边界仍在容器内
- *   （ReactMarkdown 重渲染可能替换 DOM 节点，使捕获的 Range 引用失效）
+ * - 用过滤后的 TreeWalker 累计文本节点长度（跳过句译文），保证译文显隐不影响偏移
+ * - 测量前先校验边界仍在容器内
+ *   （React 重渲染可能替换 DOM 节点，使捕获的 Range 引用失效）
  */
 export function computeRangeOffsets(
   container: HTMLElement,
@@ -35,14 +46,39 @@ export function computeRangeOffsets(
 }
 
 /**
- * 测量从 container 起点到 (node, offset) 之间的字符数（仅文本节点累计）
- * 同时支持 Text / Element 类型的边界节点
+ * 测量从 container 起点到 (node, offset) 之间的字符数
+ * （跳过句译文 .sent-trans 内的文本，保证译文显隐不影响偏移）
+ * 实现：Range 原始长度 − 边界之前译文文本长度
  */
 function measureTextLength(container: HTMLElement, node: Node, offset: number): number {
   const r = document.createRange()
   r.setStart(container, 0)
-  r.setEnd(node, offset)
-  return r.toString().length
+  try {
+    r.setEnd(node, offset)
+  } catch {
+    return -1
+  }
+  const raw = r.toString().length
+  if (raw === 0) return 0
+
+  // 累计边界之前的译文文本长度并扣除
+  let transLen = 0
+  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+    acceptNode: (n) => (isTransNode(n) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT),
+  })
+  let n: Node | null
+  while ((n = walker.nextNode())) {
+    // comparePoint: -1 在边界前，0 恰在边界，1 在边界后
+    let cmp: number
+    try {
+      cmp = r.comparePoint(n, 0)
+    } catch {
+      break
+    }
+    if (cmp > 0) break
+    transLen += n.nodeValue?.length ?? 0
+  }
+  return raw - transLen
 }
 
 /** 移除容器内所有批注高亮 mark，恢复纯文本 */
@@ -80,13 +116,14 @@ export function applyHighlights(container: HTMLElement, annotations: Annotation[
     }
   }
 
-  // 收集容器内全部文本节点 + 累计字符偏移
+  // 收集容器内全部文本节点 + 累计字符偏移（跳过句译文，与偏移测量口径一致）
   const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
     acceptNode: (node) => {
       const parent = node.parentElement
       if (!parent) return NodeFilter.FILTER_REJECT
       const tag = parent.tagName
       if (tag === 'SCRIPT' || tag === 'STYLE') return NodeFilter.FILTER_REJECT
+      if (isTransNode(node)) return NodeFilter.FILTER_REJECT
       return NodeFilter.FILTER_ACCEPT
     },
   })

@@ -26,6 +26,8 @@ import type {
 } from '../types'
 import { lookup, lookupCompound } from './lookup'
 import { isCompoundWord } from './lemmatizer'
+import { getTranslateSettings } from './translateSettings'
+import { recordTranslateHistory } from './translateHistory'
 
 // ============================================================
 // 缓存
@@ -167,14 +169,20 @@ function fetchWithTimeout(url: string, init: RequestInit, ms = 10000): Promise<R
 
 /**
  * 主翻译源：自托管 /api/translate（Cloudflare Worker / Pages Functions）
- * 后端内部多源容错：apihz.cn → uapis.cn → Google gtx
- * 仅当后端可用时使用；失败则降级到前端直连源
+ * 后端内部多源容错：用户自有 apihz Key → DeepL → apihz → uapis → Google gtx
+ * 若用户在设置页配置了自有 apihz 密钥，随请求透传（优先使用，避免共享额度耗尽）
  */
 async function callSelfHostedApi(text: string): Promise<TranslateResult> {
+  const settings = getTranslateSettings()
+  const payload: Record<string, string> = { text }
+  if (settings.apihzId && settings.apihzKey) {
+    payload.apihzId = settings.apihzId
+    payload.apihzKey = settings.apihzKey
+  }
   const resp = await fetchWithTimeout('/api/translate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ text }),
+    body: JSON.stringify(payload),
   })
   if (!resp.ok) throw new Error(`翻译服务异常 (${resp.status})`)
   const data = (await resp.json()) as TranslateApiResponse
@@ -339,6 +347,13 @@ export async function translate(text: string): Promise<TranslateResponse> {
         }
       }
       setCache(text, kind, result)
+      // 记录翻译历史（仅新查询；缓存命中不重复记录）
+      recordTranslateHistory({
+        text,
+        translation: extractTranslationText(result),
+        kind,
+        source: extractSourceLabel(result),
+      })
       return result
     } finally {
       inflight.delete(key)
@@ -347,6 +362,21 @@ export async function translate(text: string): Promise<TranslateResponse> {
 
   inflight.set(key, promise)
   return promise
+}
+
+/** 从查询结果中提取译文文本（用于历史记录） */
+function extractTranslationText(result: TranslateResponse): string {
+  if (result.kind === 'word') {
+    const d = result.data
+    return d.found ? d.meanings.join('；') : ''
+  }
+  return result.found ? result.translation : ''
+}
+
+/** 从查询结果中提取来源标签（用于历史记录） */
+function extractSourceLabel(result: TranslateResponse): string {
+  if (result.kind === 'word') return result.data.source === 'api' ? '在线词典' : '本地词典'
+  return result.source
 }
 
 // ============================================================

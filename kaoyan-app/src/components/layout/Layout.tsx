@@ -2,7 +2,7 @@
 // 导航含：书房首页 / 卷宗 / 生词本 / 学习记录 / 专项训练 / 设置
 
 import { Link, useLocation } from 'react-router-dom'
-import { BookMarked, Library, NotebookPen, ChartNoAxesColumn, Dice5, Settings as SettingsIcon } from 'lucide-react'
+import { BookMarked, Library, NotebookPen, ChartNoAxesColumn, Dice5, Settings as SettingsIcon, Languages } from 'lucide-react'
 import { useVocab } from '../../context/VocabContext'
 
 interface LayoutProps {
@@ -14,6 +14,7 @@ const NAV_ITEMS = [
   { to: '/papers', label: '卷宗', icon: Library },
   { to: '/vocab', label: '生词本', icon: NotebookPen },
   { to: '/history', label: '记录', icon: ChartNoAxesColumn },
+  { to: '/translate-history', label: '译史', icon: Languages },
   { to: '/training', label: '训练', icon: Dice5 },
   { to: '/settings', label: '设置', icon: SettingsIcon },
 ] as const

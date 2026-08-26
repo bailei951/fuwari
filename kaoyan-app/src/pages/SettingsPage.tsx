@@ -1,10 +1,16 @@
-// 设置页：字号 / 主题 / 存档 / 翻译缓存 / 数据重置
+// 设置页：字号 / 主题 / 翻译服务 / 存档 / 翻译缓存 / 数据重置
 import { useEffect, useState } from 'react'
-import { Settings as SettingsIcon, Type, Database, Download, Trash2, AlertTriangle, Languages, Sun, Moon, Monitor } from 'lucide-react'
+import { Settings as SettingsIcon, Type, Database, Download, Trash2, AlertTriangle, Languages, Sun, Moon, Monitor, KeyRound, Check, Eraser } from 'lucide-react'
 import { useFontScale, FONT_SCALE_LABEL } from '../hooks/useFontScale'
 import { useTheme, THEME_LABEL, type Theme } from '../hooks/useTheme'
 import BackupModal from '../components/settings/BackupModal'
 import { clearTranslateCache, getCacheStats } from '../lib/translate'
+import {
+  getTranslateSettings,
+  saveTranslateSettings,
+  clearTranslateSettings,
+} from '../lib/translateSettings'
+import { getTranslateHistoryCount } from '../lib/translateHistory'
 
 export default function SettingsPage() {
   const fontScale = useFontScale()
@@ -12,6 +18,29 @@ export default function SettingsPage() {
   const [backupOpen, setBackupOpen] = useState(false)
   const [confirmReset, setConfirmReset] = useState(false)
   const [cacheStats, setCacheStats] = useState({ count: 0, sizeBytes: 0 })
+
+  // 翻译 API 密钥配置
+  const [apihzId, setApihzId] = useState('')
+  const [apihzKey, setApihzKey] = useState('')
+  const [keySaved, setKeySaved] = useState(false)
+
+  useEffect(() => {
+    const s = getTranslateSettings()
+    setApihzId(s.apihzId)
+    setApihzKey(s.apihzKey)
+  }, [])
+
+  function handleSaveKey() {
+    saveTranslateSettings({ apihzId, apihzKey })
+    setKeySaved(true)
+    setTimeout(() => setKeySaved(false), 2000)
+  }
+
+  function handleClearKey() {
+    clearTranslateSettings()
+    setApihzId('')
+    setApihzKey('')
+  }
 
   function refreshCacheStats() {
     setCacheStats(getCacheStats())
@@ -118,6 +147,69 @@ export default function SettingsPage() {
             )
           })}
         </div>
+      </section>
+
+      {/* 翻译服务：用户自有 API 密钥 */}
+      <section className="paper-card p-4 mb-4">
+        <div className="flex items-center gap-2 mb-3">
+          <KeyRound className="w-4 h-4 text-ink-muted" />
+          <h2 className="font-serif text-sm font-bold text-ink">翻译服务（个人 API 密钥）</h2>
+        </div>
+        <p className="text-xs text-ink-muted mb-3 leading-relaxed">
+          配置你自己的 apihz.cn 翻译 API 密钥后，查词/句译/划词翻译将<b className="text-ochre-dark">优先使用你的专属额度</b>，
+          避免共享额度耗尽导致翻译失败。密钥仅保存在本浏览器（localStorage），
+          并通过本站代理转发，不会暴露给第三方页面。留空则使用站点默认翻译源。
+        </p>
+        <div className="space-y-2.5">
+          <div>
+            <label className="block text-xs text-ink-muted mb-1 font-mono">apihz.cn 用户 ID</label>
+            <input
+              type="text"
+              value={apihzId}
+              onChange={(e) => setApihzId(e.target.value)}
+              placeholder="例如：88888888"
+              className="w-full px-3 py-2 text-sm font-mono bg-paper-deep/50 border border-line rounded-sm
+                         focus:outline-none focus:border-ochre/60 focus:ring-1 focus:ring-ochre/30
+                         placeholder:text-ink-muted/40"
+            />
+          </div>
+          <div>
+            <label className="block text-xs text-ink-muted mb-1 font-mono">apihz.cn API Key</label>
+            <input
+              type="password"
+              value={apihzKey}
+              onChange={(e) => setApihzKey(e.target.value)}
+              placeholder="你的 API 密钥"
+              className="w-full px-3 py-2 text-sm font-mono bg-paper-deep/50 border border-line rounded-sm
+                         focus:outline-none focus:border-ochre/60 focus:ring-1 focus:ring-ochre/30
+                         placeholder:text-ink-muted/40"
+            />
+          </div>
+        </div>
+        <div className="flex items-center gap-2 mt-3">
+          <button
+            onClick={handleSaveKey}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-ink text-paper rounded-sm hover:bg-ochre-dark transition-colors"
+          >
+            {keySaved ? (
+              <>
+                <Check className="w-3 h-3" /> 已保存
+              </>
+            ) : (
+              '保存密钥'
+            )}
+          </button>
+          <button
+            onClick={handleClearKey}
+            disabled={!apihzId && !apihzKey}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs text-ink-muted border border-line rounded-sm hover:text-seal-dark hover:border-seal/40 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            <Eraser className="w-3 h-3" /> 清除
+          </button>
+        </div>
+        <p className="text-[10px] text-ink-muted/60 mt-2">
+          当前翻译历史：<span className="font-mono">{getTranslateHistoryCount()}</span> 条，可在导航「译史」页回顾已翻译内容。
+        </p>
       </section>
 
       {/* 存档管理 */}

@@ -24,6 +24,9 @@ interface TranslateRequest {
   from?: number
   /** 目标语种编号，默认 2（简体中文） */
   to?: number
+  /** 用户自有 apihz.cn 凭据（设置页配置，可选；优先于 env） */
+  apihzId?: string
+  apihzKey?: string
 }
 
 /** 统一返回格式 */
@@ -99,13 +102,18 @@ interface ApihzResponse {
   words?: string
 }
 
-async function callApihz(text: string, from: number, to: number, env: Env): Promise<string> {
-  if (!env.APIHZ_ID || !env.APIHZ_KEY) {
+async function callApihz(
+  text: string,
+  from: number,
+  to: number,
+  credentials: { id?: string; key?: string },
+): Promise<string> {
+  if (!credentials.id || !credentials.key) {
     throw new Error('apihz 未配置 API Key')
   }
   const params = new URLSearchParams({
-    id: env.APIHZ_ID,
-    key: env.APIHZ_KEY,
+    id: credentials.id,
+    key: credentials.key,
     words: text,
     ytype: String(from),
     etype: String(to),
@@ -201,10 +209,26 @@ export const onRequestPost = async (ctx: PagesContext<Env>): Promise<Response> =
   const to = body.to ?? (isChinese ? 1 : 2)
   if (from === to) return errorJson('源语种与目标语种相同', 400)
 
-  // 多源尝试：DeepL → apihz → uapis → Google gtx
+  // 用户自有 apihz 凭据（设置页配置）：优先使用专属额度
+  const userId = (body.apihzId ?? '').trim()
+  const userKey = (body.apihzKey ?? '').trim()
+  const hasUserKey = !!(userId && userKey)
+
+  // 多源尝试：用户 apihz → DeepL → 站点 apihz → uapis → Google gtx
   const sources: Array<{ name: string; fn: () => Promise<string> }> = [
+    ...(hasUserKey
+      ? [
+          {
+            name: 'apihz-user',
+            fn: () => callApihz(text, from, to, { id: userId, key: userKey }),
+          },
+        ]
+      : []),
     { name: 'deepl', fn: () => callDeepL(text, to, env) },
-    { name: 'apihz', fn: () => callApihz(text, from, to, env) },
+    {
+      name: 'apihz',
+      fn: () => callApihz(text, from, to, { id: env.APIHZ_ID, key: env.APIHZ_KEY }),
+    },
     { name: 'uapis', fn: () => callUapis(text, to) },
     { name: 'google', fn: () => callGoogleGtx(text, from, to) },
   ]

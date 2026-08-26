@@ -5,6 +5,7 @@ import PapersPage from './pages/PapersPage'
 import PaperPage from './pages/PaperPage'
 import VocabPage from './pages/VocabPage'
 import HistoryPage from './pages/HistoryPage'
+import TranslateHistoryPage from './pages/TranslateHistoryPage'
 import WrongBookPage from './pages/WrongBookPage'
 import TrainingPage from './pages/TrainingPage'
 import SettingsPage from './pages/SettingsPage'
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/paper/:paperId" element={<PaperPage />} />
         <Route path="/vocab" element={<VocabPage />} />
         <Route path="/history" element={<HistoryPage />} />
+        <Route path="/translate-history" element={<TranslateHistoryPage />} />
         <Route path="/wrongbook" element={<WrongBookPage />} />
         <Route path="/training" element={<TrainingPage />} />
         <Route path="/settings" element={<SettingsPage />} />

@@ -373,3 +373,40 @@ export interface TranslateCacheItem {
 export interface TranslateCacheStore {
   [key: string]: TranslateCacheItem
 }
+
+// =================================================================
+// 翻译设置（用户自有 API 密钥）
+// =================================================================
+
+/** 用户自有翻译 API 凭据（apihz.cn），保存在 localStorage */
+export interface TranslateSettings {
+  /** apihz.cn 用户 ID */
+  apihzId: string
+  /** apihz.cn API Key（仅存本浏览器，经本站代理转发） */
+  apihzKey: string
+}
+
+// =================================================================
+// 翻译历史记录
+// =================================================================
+
+/** 单条翻译历史 */
+export interface TranslateHistoryItem {
+  /** 唯一 id */
+  id: string
+  /** 原文 */
+  text: string
+  /** 译文（单词查询时为释义拼接） */
+  translation: string
+  /** 查询类型 */
+  kind: LookupKind
+  /** 翻译来源：apihz / uapis / google / mymemory / backend / local */
+  source: string
+  /** ISO 时间 */
+  createdAt: string
+}
+
+/** localStorage 翻译历史结构（按时间倒序，最新在前） */
+export interface TranslateHistoryStore {
+  items: TranslateHistoryItem[]
+}

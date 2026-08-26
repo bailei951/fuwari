@@ -17,6 +17,7 @@ import type {
   OptionKey,
   StructuredAnalysis,
 } from '../types'
+import { isLongFlattenedText, splitLongTextToParagraphs } from './sentenceSplit'
 
 // 静态导入索引（体积小，启动即加载）
 import indexJson from '../data/exam-index.json'
@@ -164,23 +165,65 @@ function splitClozeParagraph(text: string): ClozePart[] {
 }
 
 /**
- * 规范化 article：若为旧 paragraphs 结构，转成 blocks
+ * 规范化 article：若为旧 paragraphs 结构，转成 blocks；随后按语义重新分段
  */
 function normalizeArticle(article: Article, isCloze: boolean): Article {
-  if (hasBlocks(article)) return article
-  // 旧结构：paragraphs → blocks
-  const oldArticle = article as unknown as {
-    id: string
-    title?: string
-    type: SectionType
-    paragraphs: string[]
+  let base: Article
+  if (hasBlocks(article)) {
+    base = article
+  } else {
+    // 旧结构：paragraphs → blocks
+    const oldArticle = article as unknown as {
+      id: string
+      title?: string
+      type: SectionType
+      paragraphs: string[]
+    }
+    base = {
+      id: oldArticle.id,
+      title: oldArticle.title,
+      type: oldArticle.type,
+      blocks: paragraphsToBlocks(oldArticle.paragraphs ?? [], isCloze),
+    }
   }
-  return {
-    id: oldArticle.id,
-    title: oldArticle.title,
-    type: oldArticle.type,
-    blocks: paragraphsToBlocks(oldArticle.paragraphs ?? [], isCloze),
+  return { ...base, blocks: resegmentBlocks(base.blocks, base.type) }
+}
+
+/**
+ * 文章分段优化：
+ * 原始数据中阅读/新题型文章常被压平为单个超长段落，
+ * 此处按句子边界 + 段落长度启发式重新切分为符合原真题排版的自然段。
+ * - 完形（cloze）：保持原样（真题通常为 1-2 个自然段）
+ * - 已是多个段落块或含空格（blank）的文章：保持原样
+ * - 新题型（newType）：段间插入空段落块作为渲染分隔符
+ */
+function resegmentBlocks(blocks: Block[], type: SectionType): Block[] {
+  if (type === 'cloze' || !blocks || blocks.length === 0) return blocks
+  if (blocks.some((b) => b.type === 'blank')) return blocks
+
+  const contentBlocks = blocks.filter(
+    (b) => b.type === 'paragraph' && b.content.trim().length > 0,
+  )
+  // 仅对「单块压平长文」重新分段；本身已有分段结构的保持原样
+  if (contentBlocks.length !== 1) return blocks
+
+  const content = (contentBlocks[0] as ParagraphBlock).content
+  if (!isLongFlattenedText(content)) return blocks
+
+  const paras = splitLongTextToParagraphs(content)
+  if (paras.length <= 1) return blocks
+
+  if (type === 'newType') {
+    // 新题型：空段落块作为段落分隔符（渲染层据此分段）
+    const out: Block[] = []
+    paras.forEach((p, i) => {
+      if (i > 0) out.push({ type: 'paragraph', content: '' } as ParagraphBlock)
+      out.push({ type: 'paragraph', content: p } as ParagraphBlock)
+    })
+    return out
   }
+  // 阅读：每段一个 paragraph block，独立渲染
+  return paras.map((p) => ({ type: 'paragraph', content: p } as ParagraphBlock))
 }
 
 /**
